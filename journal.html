@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GII Bulletin — Grassroots Innovation Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+:root {
+  --bg:#dde1e7;--paper:#faf8f3;--paper2:#f1ede6;--ink:#1c2230;--ink-soft:#4a5568;--ink-faint:#94a3b8;--border:#d1d9e0;
+  --accent:#9f1239;--accent-rgb:159,18,57;--accent2:#0f766e;--accent2-rgb:15,118,110;--accent3:#b45309;
+  --accent-pale:rgba(159,18,57,0.06);--risk-low:#059669;--risk-mid:#d97706;--risk-hi:#dc2626;
+  --shadow:0 8px 24px rgba(0,0,0,0.10);--toc-width:200px;
+}
+[data-theme="dark"] {
+  --bg:#0f1117;--paper:#1a1d27;--paper2:#22263a;--ink:#e8ecf4;--ink-soft:#9aa5c0;--ink-faint:#4a5578;--border:#2e3352;
+  --accent:#fb7185;--accent-rgb:251,113,133;--accent2:#34d399;--accent2-rgb:52,211,153;--accent3:#fbbf24;
+  --accent-pale:rgba(251,113,133,0.08);--shadow:0 8px 32px rgba(0,0,0,0.45);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Crimson Pro',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;transition:background .3s,color .3s;}
+.shell{display:flex;justify-content:center;padding:20px 12px;gap:0;}
+/* TOC */
+.toc-sidebar{position:sticky;top:70px;align-self:flex-start;width:var(--toc-width);margin-right:18px;flex-shrink:0;}
+.toc-inner{background:var(--paper);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:4px;padding:14px 12px 10px;box-shadow:var(--shadow);transition:background .3s;}
+.toc-title{font-family:'Montserrat',sans-serif;font-size:7.5pt;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:10px;}
+.toc-list{list-style:none;}
+.toc-list li{margin-bottom:1px;}
+.toc-list a{font-family:'Montserrat',sans-serif;font-size:7.5pt;font-weight:500;color:var(--ink-soft);text-decoration:none;display:block;padding:3px 6px;border-radius:3px;transition:background .15s,color .15s;line-height:1.3;}
+.toc-list a:hover,.toc-list a.active{background:var(--accent-pale);color:var(--accent);}
+.toc-progress{height:3px;background:var(--border);border-radius:2px;margin-top:10px;overflow:hidden;}
+.toc-bar{height:100%;background:var(--accent);width:0%;transition:width .1s;}
+@media(max-width:900px){.toc-sidebar{display:none;}}
+/* TOPBAR */
+.topbar{position:sticky;top:0;z-index:200;background:var(--paper);border-bottom:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.07);padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;transition:background .3s;}
+.topbar-brand{font-family:'Playfair Display',serif;font-size:13pt;font-weight:900;color:var(--accent);}
+.topbar-brand span{color:var(--ink);}
+.topbar-right{display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+select.eslt{padding:6px 10px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;border:1.5px solid var(--border);border-radius:4px;color:var(--ink);background:var(--paper2);cursor:pointer;outline:none;}
+select.eslt:focus{border-color:var(--accent2);}
+.btn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;font-size:11px;font-family:'Montserrat',sans-serif;font-weight:600;border:none;border-radius:4px;cursor:pointer;transition:all .2s;white-space:nowrap;}
+.btn:active{transform:translateY(1px);}
+.btn-p{background:var(--accent2);color:#fff;} .btn-p:hover{background:#0d5c56;}
+.btn-m{background:var(--accent-pale);color:var(--accent);border:1.5px solid rgba(var(--accent-rgb),.25);} .btn-m:hover{background:var(--accent);color:#fff;}
+.btn-c{background:var(--paper2);color:var(--ink-soft);border:1.5px solid var(--border);} .btn-c:hover{border-color:var(--accent2);color:var(--accent2);}
+.thm{cursor:pointer;background:var(--paper2);border:1.5px solid var(--border);border-radius:20px;padding:5px 10px;font-size:13px;color:var(--ink-soft);display:flex;align-items:center;gap:5px;transition:all .2s;}
+.thm:hover{border-color:var(--accent3);}
+/* A4 */
+.a4{background:var(--paper);width:210mm;max-width:100%;min-height:297mm;padding:20mm 20mm 24mm;box-shadow:var(--shadow);font-size:10.5pt;transition:background .3s;}
+/* MASTHEAD */
+.masthead{border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);padding:5px 0;margin-bottom:3px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;}
+.mc{font-family:'DM Mono',monospace;font-size:8.5pt;color:var(--ink-soft);}
+.mc .issn{color:var(--accent);font-weight:500;}
+.jnb{text-align:center;padding:12px 0 8px;border-bottom:3px double var(--ink);margin-bottom:18px;}
+.jseries{font-family:'Montserrat',sans-serif;font-size:8pt;letter-spacing:3px;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px;}
+.jwm{font-family:'Playfair Display',serif;font-size:22pt;font-weight:900;color:var(--ink);line-height:1.1;}
+.jwm em{color:var(--accent);font-style:italic;}
+.jsub{font-family:'Montserrat',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--ink-soft);margin-top:5px;}
+/* META */
+.meta-strip{display:flex;justify-content:center;align-items:center;gap:14px;margin:8px 0 16px;flex-wrap:wrap;}
+.mc2{font-family:'DM Mono',monospace;font-size:8pt;background:var(--paper2);border:1px solid var(--border);border-radius:20px;padding:3px 10px;color:var(--ink-soft);}
+.mc2 strong{color:var(--ink);}
+/* KPI */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 22px;}
+.kpi{background:var(--paper2);border:1px solid var(--border);border-radius:5px;padding:14px 12px;text-align:center;transition:transform .15s,box-shadow .15s;}
+.kpi:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
+.kv{font-family:'Playfair Display',serif;font-size:28pt;font-weight:700;line-height:1;color:var(--accent);}
+.kpi.t .kv{color:var(--accent2);} .kpi.a .kv{color:var(--accent3);} .kpi.d .kv{color:var(--ink);}
+.kl{font-family:'Montserrat',sans-serif;font-size:7.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-soft);margin-top:5px;}
+.ks{font-family:'DM Mono',monospace;font-size:8pt;color:var(--ink-faint);margin-top:2px;}
+/* ABSTRACT */
+.abswrap{border-top:2px solid var(--accent);border-bottom:2px solid var(--accent);padding:14px 0;margin-bottom:22px;background:var(--accent-pale);}
+.abslabel{text-align:center;font-family:'Montserrat',sans-serif;font-size:9pt;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+.absbody{font-size:10.5pt;font-weight:600;text-align:justify;padding: 0 10px;}
+.kw{margin-top:10px;font-family:'Montserrat',sans-serif;font-size:8.5pt;color:var(--ink-soft);padding: 0 10px;}
+.kw strong{color:var(--accent);}
+/* HEADINGS */
+h1.atitle{font-family:'Playfair Display',serif;font-size:19pt;font-weight:700;text-align:center;color:var(--ink);line-height:1.25;margin-bottom:8px;}
+.abyline{text-align:center;font-style:italic;font-size:11pt;color:var(--ink-soft);margin-bottom:4px;}
+.adate{text-align:center;font-family:'DM Mono',monospace;font-size:8pt;color:var(--ink-faint);margin-bottom:18px;}
+h2.st{font-family:'Montserrat',sans-serif;font-size:10.5pt;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink);border-bottom:1.5px solid var(--border);padding-bottom:5px;margin-top:32px;margin-bottom:12px;scroll-margin-top:62px;}
+h3.sub{font-family:'Montserrat',sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink-soft);margin-top:18px;margin-bottom:8px;}
+p{margin-bottom:13px;text-align:justify;}
+.twocol{column-count:2;column-gap:9mm;text-align:justify;}
+.dc::first-letter{font-family:'Playfair Display',serif;font-size:3.2em;float:left;line-height:.8;margin-right:6px;margin-top:5px;color:var(--accent);font-weight:700;}
+/* FIGURES */
+.fig{margin:22px 0;padding:14px;background:var(--paper2);border:1px solid var(--border);border-radius:4px;transition:background .3s;}
+.cb{position:relative;height:260px;width:100%;}
+.cb.tall{height:320px;} .cb.sh{height:200px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.figcap{font-family:'Montserrat',sans-serif;font-size:8.5pt;color:var(--ink-soft);margin-top:10px;border-left:3px solid var(--accent);padding-left:8px;}
+.mapbox{width:100%;height:360px;border:1px solid var(--border);background:var(--paper2);}
+.netbox{width:100%;height:380px;border:1px solid var(--border);background:var(--paper2);}
+/* QUOTE */
+.qbox{font-family:'Crimson Pro',serif;font-size:12pt;font-style:italic;color:var(--accent2);border-left:4px solid var(--accent2);padding:12px 18px;margin:18px 0;background:rgba(var(--accent2-rgb),.06);}
+
+/* BADGES (Diperbaiki agar tidak keluar tabel) */
+.badge{display:inline-block;font-family:'DM Mono',monospace;font-size:7.5pt;font-weight:500;padding:2px 5px;border-radius:3px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
+.bg{background:rgba(159,18,57,.12);color:var(--accent);}
+.bs{background:rgba(180,83,9,.12);color:var(--accent3);}
+.bi{background:rgba(15,118,110,.12);color:var(--accent2);}
+.bgem{background:rgba(29,78,216,.1);color:#1d4ed8;}
+
+/* RISK PILLS (Diperbaiki CSS warnanya) */
+.rpill{display:inline-block;width:28px;height:18px;border-radius:9px;text-align:center;font-family:'DM Mono',monospace;font-size:8pt;font-weight:700;line-height:18px;color:#fff;}
+.rlow{background:var(--risk-low);} 
+.rmid{background:var(--risk-mid);} 
+.rhi{background:var(--risk-hi);}
+
+/* SPOTLIGHT */
+.spgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0;}
+.sc{background:var(--paper2);border:1px solid var(--border);border-top:3px solid var(--accent);border-radius:3px;padding:12px;transition:transform .15s;}
+.sc:hover{transform:translateY(-2px);}
+.sc.t{border-top-color:var(--accent2);} .sc.a{border-top-color:var(--accent3);}
+.scr{font-family:'Playfair Display',serif;font-size:18pt;font-weight:700;color:var(--accent);line-height:1;}
+.sc.t .scr{color:var(--accent2);} .sc.a .scr{color:var(--accent3);}
+.sct{font-family:'Montserrat',sans-serif;font-size:8.5pt;font-weight:700;color:var(--ink);margin:4px 0;line-height:1.3;}
+.scb{font-family:'Crimson Pro',serif;font-size:9.5pt;color:var(--ink-soft);margin-top:6px;}
+.scm{margin-top:8px;display:flex;gap:4px;flex-wrap:wrap;}
+.scs{font-family:'DM Mono',monospace;font-size:7.5pt;background:var(--accent-pale);color:var(--accent);padding:2px 6px;border-radius:2px;}
+
+/* TABLE (Sistem anti overflow) */
+.tctrl{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center;}
+.sbx,.fsel{padding:7px 11px;font-family:'Montserrat',sans-serif;font-size:11px;border:1.5px solid var(--border);border-radius:4px;outline:none;background:var(--paper);color:var(--ink);transition:border .2s;}
+.sbx{flex:1;min-width:150px;} .sbx:focus,.fsel:focus{border-color:var(--accent2);}
+.fsel{cursor:pointer;}
+.jtable{width:100%;border-collapse:collapse;font-size:9pt;margin-bottom:6px;table-layout:fixed;} 
+.jtable th{background:var(--paper2);font-family:'Montserrat',sans-serif;font-size:7.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ink);padding:8px 9px;border:1px solid var(--border);cursor:pointer;user-select:none;word-wrap:break-word;white-space:normal;}
+.jtable th:hover{color:var(--accent);}
+.jtable th .sa{opacity:.4;font-size:9px;}
+.jtable th.sasc .sa::after{content:' ▲';opacity:1;}
+.jtable th.sdsc .sa::after{content:' ▼';opacity:1;}
+.jtable td{padding:7px 9px;border:1px solid var(--border);vertical-align:top;word-wrap:break-word;overflow-wrap:break-word;}
+.jtable tbody tr:nth-child(even){background:var(--paper2);}
+.jtable tbody tr:hover{background:var(--accent-pale);}
+.ct{font-weight:600;font-family:'Montserrat',sans-serif;font-size:8.5pt;}
+.cm{font-family:'DM Mono',monospace;font-size:8.5pt;}
+
+/* PAGINATION */
+.pag{display:flex;align-items:center;justify-content:flex-end;gap:6px;padding:8px 0;flex-wrap:wrap;}
+.pbtn{padding:4px 10px;border:1px solid var(--border);border-radius:3px;background:var(--paper);color:var(--ink-soft);cursor:pointer;font-family:'DM Mono',monospace;font-size:9pt;transition:all .15s;}
+.pbtn:hover:not(:disabled){border-color:var(--accent2);color:var(--accent2);}
+.pbtn.act{background:var(--accent);color:#fff;border-color:var(--accent);}
+.pbtn:disabled{opacity:.35;cursor:not-allowed;}
+
+/* REFS */
+.refs{font-size:9pt;padding-left:18px;color:var(--ink-soft);}
+.refs li{margin-bottom:7px;word-wrap:break-word;}
+.refs a{color:var(--accent2);text-decoration:none;}
+.refs a:hover{text-decoration:underline;}
+
+/* MODAL */
+.mbd{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:500;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
+.mbd.open{display:flex;}
+.mbox{background:var(--paper);border-radius:8px;box-shadow:0 24px 60px rgba(0,0,0,.3);width:min(680px,95vw);max-height:85vh;overflow-y:auto;padding:28px 30px;position:relative;border-top:4px solid var(--accent);animation:slu .25s ease;}
+@keyframes slu{from{transform:translateY(18px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.mcls{position:absolute;top:13px;right:14px;background:none;border:1.5px solid var(--border);border-radius:50%;width:28px;height:28px;cursor:pointer;color:var(--ink-soft);font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+.mcls:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.mtitle{font-family:'Montserrat',sans-serif;font-size:12pt;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-bottom:18px;}
+.mgrid p{font-family:'Montserrat',sans-serif;font-size:9.5pt;margin-bottom:0;text-align:left;}
+.msec{font-family:'Montserrat',sans-serif;font-size:8.5pt;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);margin:14px 0 8px;padding-top:12px;border-top:1px dashed var(--border);}
+.stags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+.stag{font-family:'DM Mono',monospace;font-size:8pt;padding:3px 9px;border-radius:3px;background:var(--paper2);border:1px solid var(--border);color:var(--ink-soft);}
+.mabtn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:9px 18px;border-radius:4px;text-decoration:none;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;transition:background .2s;}
+.mabtn:hover{background:#7e0e2d;}
+
+/* SCALE BANNER */
+.sbanner{background:rgba(var(--accent2-rgb),.08);border:1px solid rgba(var(--accent2-rgb),.25);border-radius:4px;padding:10px 14px;margin:14px 0;font-family:'Montserrat',sans-serif;font-size:8.5pt;color:var(--ink-soft);display:flex;align-items:flex-start;gap:8px;}
+.sbanner strong{color:var(--accent2);}
+/* MISC */
+.orn{text-align:center;color:var(--accent);font-size:15pt;margin:22px 0 8px;letter-spacing:6px;}
+.pfooter{margin-top:30px;padding-top:10px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:8pt;color:var(--ink-faint);flex-wrap:wrap;gap:4px;}
+
+/* PRINT MODE - Putih Bersih & Anti Tumpang Tindih */
+@media print{
+  @page{size:A4 portrait;margin:15mm;}
+  body, .shell, .a4, html {background: #ffffff !important; color: #000000 !important;}
+  .fig, .sc, .kpi, .sbanner, .qbox, .abswrap, .jtable th, .jtable td, .jtable tbody tr {background: #ffffff !important; border-color: #cccccc !important;}
+  .toc-sidebar,.topbar,.mbd,.tctrl,.pag,.sbanner, .meta-strip {display:none!important;}
+  .a4 {width:100%; box-shadow:none; padding:0;}
+  h2.st,h3,.figcap {page-break-after:avoid; break-after:avoid;}
+  .fig,.sc,.kpi,.qbox, tr {page-break-inside:avoid; break-inside:avoid;}
+  
+  /* PERBAIKAN: Menghindari canvas tumpah saat print */
+  canvas { max-height: 100% !important; max-width: 100% !important; }
+  .cb { margin-bottom: 16px !important; } 
+  
+  * {-webkit-print-color-adjust: exact; print-color-adjust: exact;}
+  .fb {page-break-before:always; break-before:page;}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-brand">GII <span>Bulletin</span></div>
+  <div class="topbar-right">
+    <select class="eslt" id="edition-select" onchange="switchEdition(this.value)">
+      <option value="0">Latest Period</option>
+    </select>
+    <button class="btn btn-m" onclick="openModal()">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      About / Editorial
+    </button>
+    <button class="btn btn-c" onclick="exportCSV()">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Export CSV
+    </button>
+    <button class="btn btn-p" onclick="window.print()">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Print / PDF
+    </button>
+    <button class="thm" onclick="toggleTheme()" id="thmbtn">🌙 Dark</button>
+  </div>
+</nav>
+
+<div class="shell">
+  <aside class="toc-sidebar">
+    <div class="toc-inner">
+      <div class="toc-title">Contents</div>
+      <ul class="toc-list" id="toc-list"></ul>
+      <div class="toc-progress"><div class="toc-bar" id="toc-bar"></div></div>
+    </div>
+  </aside>
+
+  <main class="a4" id="paper">
+
+    <div class="masthead">
+      <div class="mc" id="mh-vol">Vol. 1 &nbsp;·&nbsp; No. 1 &nbsp;·&nbsp; Latest Edition</div>
+      <div class="mc" style="text-align:center;">Grassroots Innovation Intelligence Bulletin</div>
+      <div class="mc" style="text-align:right;"><span class="issn">ISSN: XXXX-XXXX (Online)</span> &nbsp;·&nbsp; DOI: 10.XXXXX/giib.latest</div>
+    </div>
+
+    <div class="jnb">
+      <div class="jseries">A Periodic Bulletin of Community-Led Technical Practices</div>
+      <div class="jwm">Grassroots <em>Innovation</em> Intelligence</div>
+      <div class="jsub">Bulletin of Frugal, Appropriate &amp; Indigenous Technologies</div>
+    </div>
+
+    <h1 class="atitle">Community-Driven Innovations: A Cross-Sectoral AI Synthesis</h1>
+    <div class="abyline">Autonomous Innovation Intelligence Engine — Curation &amp; Analysis Unit</div>
+    <div class="adate" id="j-date">Published: - &nbsp;·&nbsp; Engine: Google Gemini AI</div>
+
+    <div class="meta-strip">
+      <span class="mc2" id="meta-rt">⏱ Calculating…</span>
+      <span class="mc2">📦 <strong id="meta-n">—</strong> entries</span>
+      <span class="mc2">🌍 <strong id="meta-c">—</strong> countries</span>
+      <span class="mc2">📅 <span id="meta-period">Periodic Edition</span></span>
+    </div>
+
+    <div class="sbanner" id="scale-notice" style="display:none;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;margin-top:1px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <div><strong>Large dataset detected.</strong> Charts show aggregated statistics. The map uses marker clustering (handles 100k+ points). The network is capped at the top <strong id="ncap">50</strong> innovations by priority. Table is paginated. Use <em>Export CSV</em> for full-dataset analysis.</div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="kv" id="kv1">0</div><div class="kl">Innovations</div><div class="ks">this edition</div></div>
+      <div class="kpi t"><div class="kv" id="kv2">0</div><div class="kl">Hidden Gems</div><div class="ks">underreported finds</div></div>
+      <div class="kpi a"><div class="kv" id="kv3">0</div><div class="kl">Critical Flags</div><div class="ks">require intervention</div></div>
+      <div class="kpi d"><div class="kv" id="kv4">0</div><div class="kl">Avg Priority</div><div class="ks" id="ks4">out of 100</div></div>
+    </div>
+
+    <div class="abswrap">
+      <div class="abslabel">Abstract</div>
+      <div class="absbody" id="j-abstract">Waiting for data connection...</div>
+      <div class="kw" id="j-kw"></div>
+    </div>
+
+    <h2 class="st" id="sec-intro">1. Introduction &amp; Scope</h2>
+    <div class="twocol">
+      <p class="dc">This bulletin presents the latest survey of community-driven technological innovations curated by the Grassroots Innovation Intelligence Engine. Spanning various documented practices across multiple thematic domains, this edition establishes the analytical baseline for the GII reporting series.</p>
+      <p>Each practice is assessed along six dimensions: process reproducibility, material accessibility, geographic origin, impact scale, safety risk level, and priority score. The engine operates as a <em>computational pre-field layer</em>: surfacing, structuring, and scoring innovations at scale to direct deeper ethnographic, policy, or technical engagement.</p>
+      <p>The innovations surveyed range from ancient pre-Columbian agricultural systems still practiced today, to contemporary grassroots engineering experiments. This diversity reflects both the richness of the human technical imagination and the uneven distribution of documentation, attention, and institutional support across regions and knowledge traditions.</p>
+    </div>
+
+    <h2 class="st" id="sec-analytics">2. Innovation Landscape Analytics</h2>
+    <p>All charts are generated directly from the curated dataset. No values are illustrative or estimated.</p>
+    <h3 class="sub">2.1. Thematic Category Distribution</h3>
+    <div class="fig"><div class="cb tall"><canvas id="barChart"></canvas></div>
+      <div class="figcap" id="fig1-cap"><strong>Figure 1.</strong> Frequency of the Top 10 thematic category tags across documented innovations.</div></div>
+    <div class="chart-row">
+      <div class="fig" style="margin:0;"><div class="cb sh"><canvas id="levelChart"></canvas></div>
+        <div class="figcap"><strong>Figure 2.</strong> Innovation level distribution.</div></div>
+      <div class="fig" style="margin:0;"><div class="cb sh"><canvas id="polarChart"></canvas></div>
+        <div class="figcap"><strong>Figure 3.</strong> Regional origin distribution.</div></div>
+    </div>
+
+    <h2 class="st" id="sec-risk">3. Risk &amp; Safety Assessment</h2>
+    <div class="qbox">"Risk scoring follows a conservative 1–10 scale: 1–3 low; 4–6 medium; 7–10 high. Scores reflect inherent hazard regardless of mitigation measures — to surface innovations requiring the most urgent safety guidance."</div>
+    <h3 class="sub">3.1. Risk Score Distribution</h3>
+    <div class="fig"><div class="cb tall"><canvas id="riskChart"></canvas></div>
+      <div class="figcap" id="fig4-cap"><strong>Figure 4.</strong> Distribution of risk scores across all innovations. Green (1-3) = Low Risk, Amber (4-6) = Moderate, Red (7-10) = High Risk.</div></div>
+    <h3 class="sub">3.2. Risk vs. Priority Matrix</h3>
+    <div class="fig"><div class="cb"><canvas id="scatterChart"></canvas></div>
+      <div class="figcap"><strong>Figure 5.</strong> Risk score (X) vs. priority score (Y). Upper-right = highest urgency for safety-informed scaling.</div></div>
+
+    <h2 class="st" id="sec-map">4. Spatial &amp; Geographic Analysis</h2>
+    <h3 class="sub">4.1. Global Distribution Map</h3>
+    <p>Markers are clustered automatically — safe at any dataset size. Click clusters to expand. Marker color encodes innovation level.</p>
+    <div class="fig"><div class="mapbox" id="distributionMap"></div>
+      <div class="figcap"><strong>Figure 6.</strong> Geo-spatial distribution with Leaflet.markercluster. Handles 100,000+ points without performance degradation.</div></div>
+
+    <h2 class="st" id="sec-network">5. Semantic Similarity Network</h2>
+    <h3 class="sub">5.1. Category Relationship Graph</h3>
+    <p>Edges connect innovations sharing ≥1 category tag. For large datasets, only the top <strong id="ntxt">50</strong> by priority score are shown. Drag nodes to explore.</p>
+    <div class="fig"><div class="netbox" id="nodeNetwork"></div>
+      <div class="figcap"><strong>Figure 7.</strong> Semantic similarity network. Capped at top-N by priority to remain readable at any data scale.</div></div>
+
+    <h2 class="st" id="sec-spot">6. Innovation Spotlight — Top Priority Entries</h2>
+    <p>The three highest-scoring innovations by priority score are featured below.</p>
+    <div class="spgrid" id="spgrid"></div>
+
+    <h2 class="st" id="sec-gems">7. Hidden Gems — Underreported Innovations</h2>
+    <p>Innovations with high replication potential yet low documentation visibility.</p>
+    <div id="gems-wrapper"></div>
+
+
+<h2 class="st fb" id="sec-method">8. Methodology & Analytical Framework</h2>
+    
+    <!-- 8.1 PIPELINE FLOW -->
+    <div style="margin:14px 0;padding:20px;border:1px solid var(--border);border-radius:6px;background:var(--paper2);">
+      <div style="font-family:'Montserrat',sans-serif; font-size:9pt; font-weight:700; text-transform:uppercase; margin-bottom:15px; text-align:center; color:var(--accent);">
+        Figure 8. The 5-Layer Autonomous Intelligence Pipeline
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:10px; text-align:center; font-family:'DM Mono',monospace; font-size:7.5pt;">
+        <div style="padding:10px; background:var(--paper); border:1px solid var(--border); border-radius:4px;">
+          <strong style="color:var(--accent2);">L1: VALIDATION</strong><br>Confidence Check (Min. 60%)
+        </div>
+        <div style="padding:10px; background:var(--paper); border:1px solid var(--border); border-radius:4px;">
+          <strong style="color:var(--accent2);">L2: EXTRACTION</strong><br>NLP Parametric Structuring
+        </div>
+        <div style="padding:10px; background:var(--paper); border:1px solid var(--border); border-radius:4px;">
+          <strong style="color:var(--accent2);">L3: RISK MGMT</strong><br>Safety Hazard Assessment
+        </div>
+        <div style="padding:10px; background:var(--paper); border:1px solid var(--border); border-radius:4px;">
+          <strong style="color:var(--accent2);">L4: LINEAGE</strong><br>Knowledge Origin Tracing
+        </div>
+        <div style="padding:10px; background:var(--paper); border:1px solid var(--border); border-radius:4px;">
+          <strong style="color:var(--accent2);">L5: SYNTHESIS</strong><br>Priority Index Calculation
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub">8.1 Priority Scoring Engine (PSE) Logic</h3>
+    <p>The PSE v1.1 algorithm is engineered to provide a mathematical weight to innovations based on their scalability and safety profile. The final index (0-100) is determined by an <strong>opposing-force logic</strong> involving three primary variables:</p>
+    
+    <div style="overflow-x:auto; margin-bottom:20px;">
+      <table class="jtable" style="font-size:8.5pt;">
+        <thead>
+          <tr style="background:var(--paper2);">
+            <th style="width:25%">Variable</th>
+            <th style="width:15%">Weight</th>
+            <th style="width:60%">Value Mapping (Parametric Scale 1-10)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ct">Impact Scale (I)</td>
+            <td class="cm">40%</td>
+            <td>High: 10 | Medium: 6 | Low: 2 (Quantifies problem-solving capacity)</td>
+          </tr>
+          <tr>
+            <td class="ct">Replicability (R)</td>
+            <td class="cm">20%</td>
+            <td>Easy: 10 | Medium: 5 | Hard: 2 (Based on material accessibility & complexity)</td>
+          </tr>
+          <tr>
+            <td class="ct">Safety Coefficient (10-S)</td>
+            <td class="cm">40%</td>
+            <td>Inverse of Risk Score (S). Higher inherent danger (S) creates a strategic penalty.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:var(--paper2); border-left:4px solid var(--accent); padding:15px; margin-bottom:20px;">
+      <div style="font-family:'DM Mono',monospace; font-size:10pt; font-weight:700; text-align:center;">
+        Formula: <span style="color:var(--accent);">PSE Index = [ (I × 0.4) + (R × 0.2) + ((10 - S) × 0.4) ] × 10</span>
+      </div>
+      <p style="font-size:8pt; margin-top:10px; font-style:italic; text-align:center;">
+        *Note: Innovations with extreme impact (I) but high inherent risk (S) are mathematically penalized, preventing institutional scaling of potentially lethal technologies.
+      </p>
+    </div>
+
+    <div style="margin-top:15px; padding:15px; border:1px solid var(--border); border-radius:6px; font-size:9pt; background:var(--paper);">
+    <strong style="color:var(--ink); text-transform:uppercase; font-size:8pt; display:block; margin-bottom:8px;">Data Provenance & Scoring Logic</strong>
+    <p style="margin-bottom:8px;">
+        <strong>1. How are raw scores generated?</strong> Values are derived via <em>Heuristic NLP Inference</em>. During Pass 2 & 3, the AI evaluates text descriptions against a strict internal rubric (e.g., "Standard Household Materials" = Replicability 10; "Specialized Industrial Materials" = Replicability 2).
+    </p>
+    <p style="margin-bottom:8px;">
+        <strong>2. Why these specific weights?</strong> The weights reflect a <em>Risk-Averse Strategic Framework</em>. Safety and Impact are weighted at 40% each to ensure the Radar filters out high-risk "backyard experiments" regardless of their ingenuity.
+    </p>
+    <p>
+        <strong>3. The "Inverse Risk" Penalty:</strong> By using <code>(10 - S)</code>, the algorithm ensures that the Risk Score acts as an <strong>algorithmic brake</strong>. A high Risk Score (S) mathematically prevents an innovation from achieving "Top Priority" status.
+    </p>
+</div>
+
+    <h3 class="sub">8.2 Classification Heuristics (Trigger Logic)</h3>
+    <p>Beyond linear scoring, the engine utilizes boolean conditional logic to categorize innovations for strategic filtering:</p>
+    
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:20px;">
+      <div style="background:rgba(29,78,216,.05); border:1px solid rgba(29,78,216,.2); padding:12px; border-radius:6px;">
+        <div style="font-weight:700; color:#1d4ed8; font-size:9pt; margin-bottom:5px;">💎 Hidden Gem Trigger</div>
+        <p style="font-size:8.5pt; line-height:1.4;">
+          <code>IF (Innovation_Level == 'grassroots') AND (Cost == 'low') AND (Impact >= 6)</code><br>
+          Identifies highly efficient, cost-effective independent inventions with low visibility.
+        </p>
+      </div>
+      <div style="background:rgba(220,38,38,.05); border:1px solid rgba(220,38,38,.2); padding:12px; border-radius:6px;">
+        <div style="font-weight:700; color:#dc2626; font-size:9pt; margin-bottom:5px;">⚠️ Critical Danger Flag</div>
+        <p style="font-size:8.5pt; line-height:1.4;">
+          <code>IF (Risk_Score >= 8) AND (Keywords IN ['fire', 'explosive', 'chemical', 'toxic'])</code><br>
+          Triggers an emergency intervention alarm due to high-hazard materials without safety protocols.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="sub">8.3 Knowledge Lineage Mapping</h3>
+    <p>The system traces the <strong>Knowledge Source</strong> (provenance) of technical insights to differentiate between various innovation pathways:</p>
+    <ul style="padding-left:18px; font-size:9.5pt; color:var(--ink-soft);">
+      <li style="margin-bottom:5px;"><strong>Traditional:</strong> Ancestral knowledge systems adapted to contemporary technical challenges.</li>
+      <li style="margin-bottom:5px;"><strong>Self-Taught:</strong> Pure empirical results from individual trial-and-error without formal technical background.</li>
+      <li style="margin-bottom:5px;"><strong>Adapted from Existing:</strong> Frugal engineering modifications of modern commercial technologies for localized needs.</li>
+    </ul>
+
+    <h3 class="sub">8.4 Limitations & Constraints</h3>
+    <ul style="padding-left:18px; margin-bottom:14px; font-size:9.5pt;">
+      <li style="margin-bottom:5px;"><strong>Data Latency:</strong> As the system relies on web-crawling, there is a temporal gap between on-the-ground discovery and radar indexing.</li>
+      <li style="margin-bottom:5px;"><strong>Interpretive constraints:</strong> AI-generated narratives may lack contextual depth for tacit, unrecorded communal knowledge.</li>
+      <li style="margin-bottom:5px;"><strong>Digital Shadow:</strong> Communities with zero digital footprint remain invisible to current crawling heuristics.</li>
+    </ul>
+
+
+    <h2 class="st" id="sec-conc">9. Conclusion</h2>
+    <p>This edition documents multiple community-driven practices spanning the globe and various technological domains. The data reveal a consistent pattern: high-impact, low-cost innovations exist in abundance at the grassroots level, yet many carry unaddressed safety risks and remain invisible to formal dissemination channels. Future editions will deepen geographic and thematic coverage, and track implementation status of innovations highlighted in previous quarters.</p>
+    <div class="orn">❋ &nbsp; ❋ &nbsp; ❋</div>
+
+    <h2 class="st fb" id="sec-appendix">Appendix A: Full Innovation Register</h2>
+    <div class="tctrl">
+      <input type="text" id="ts" class="sbx" placeholder="Search title, country, category…" oninput="applyFilters()"/>
+      <select id="tl" class="fsel" onchange="applyFilters()">
+        <option value="">All Levels</option><option value="grassroots">Grassroots</option>
+        <option value="semi-formal">Semi-Formal</option><option value="institutional">Institutional</option>
+      </select>
+      <select id="tr" class="fsel" onchange="applyFilters()">
+        <option value="">All Risk</option><option value="low">Low (1–3)</option>
+        <option value="mid">Medium (4–6)</option><option value="hi">High (7–10)</option>
+      </select>
+      <select id="tsc" class="fsel" onchange="applyFilters()">
+        <option value="">All Scales</option><option value="high">High Impact</option>
+        <option value="medium">Medium Impact</option><option value="low">Low Impact</option>
+      </select>
+      <select id="tps" class="fsel" onchange="changePS(this.value)">
+        <option value="25">25/page</option><option value="50" selected>50/page</option><option value="100">100/page</option>
+      </select>
+    </div>
+    <table class="jtable" id="dtable">
+      <!-- Diperlebar persentase agar badges muat dengan baik -->
+      <thead><tr>
+        <th onclick="sortT('title')" style="width:26%">Title <span class="sa"></span></th>
+        <th onclick="sortT('country')" style="width:14%">Country <span class="sa"></span></th>
+        <th style="width:17%">Categories</th>
+        <th onclick="sortT('level')" style="width:15%">Level <span class="sa"></span></th>
+        <th onclick="sortT('risk')" style="width:9%">Risk <span class="sa"></span></th>
+        <th onclick="sortT('priority')" style="width:9%">Priority <span class="sa"></span></th>
+        <th style="width:10%">Flags</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="pag" id="pag"></div>
+    <p style="font-family:'DM Mono',monospace;font-size:8pt;color:var(--ink-faint);text-align:right;margin-top:4px;" id="tinfo"></p>
+
+    <h2 class="st" id="sec-refs">References &amp; Source Citations</h2>
+    <ol class="refs" id="reflist"></ol>
+
+    <div class="pfooter">
+      <span id="f-period">GII Bulletin &nbsp;|&nbsp; Latest Edition</span>
+      <span>ISSN: XXXX-XXXX &nbsp;|&nbsp; © 2026 Angga Conni Saputra</span>
+    </div>
+  </main>
+</div>
+
+<!-- MODAL -->
+<div class="mbd" id="modal" onclick="closeOuter(event)">
+  <div class="mbox">
+    <button class="mcls" onclick="closeModal()">✕</button>
+    <div class="mtitle">📋 Journal Information &amp; Editorial Board</div>
+    <div class="mgrid">
+      <p><strong>Publisher:</strong> Angga Conni Saputra</p>
+      <p><strong>Frequency:</strong> Quarterly (March, June, September, December)</p>
+      <p><strong>Editor-in-Chief:</strong> Angga Conni Saputra</p>
+      <p><strong>Contact:</strong> [conniezz.cool@gmail.com]</p>
+      <p><strong>Data Curation:</strong> GII Intelligence Engine (AI-Assisted)</p>
+      <p><strong>Address:</strong> [Jakarta, Indonesia]</p>
+      <p><strong>ISSN (Online):</strong> XXXX-XXXX</p>
+      <p><strong>DOI Prefix:</strong> 10.XXXXX/giib</p>
+    </div>
+    <div class="msec">Scope &amp; Subject Areas</div>
+    <div class="stags">
+      <span class="stag">Grassroots Innovation</span><span class="stag">Frugal Technology</span>
+      <span class="stag">Appropriate Technology</span><span class="stag">Ecological Sanitation</span>
+      <span class="stag">Organic Agriculture</span><span class="stag">Traditional Knowledge</span>
+      <span class="stag">Community-Led Development</span><span class="stag">Risk Assessment</span>
+      <span class="stag">Biochar &amp; Soil Science</span><span class="stag">Sustainable Engineering</span>
+    </div>
+    <div class="msec">Peer Review &amp; Ethics</div>
+    <p style="font-family:'Crimson Pro',serif;font-size:10.5pt;text-align:left;margin-bottom:10px;">All submissions undergo single-blind peer review. The bulletin adheres to COPE guidelines. AI-assisted data curation is disclosed in the methodology section of each edition.</p>
+    <div class="msec">Archive &amp; Back Issues</div>
+    <p style="font-family:'Crimson Pro',serif;font-size:10.5pt;text-align:left;margin-bottom:14px;">Download static PDF editions for offline citation, archival use, and institutional repository deposit.</p>
+    <a href="javascript:window.print()" class="mabtn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Print Current Edition to PDF
+    </a>
+  </div>
+</div>
+
+<script>
+// ─── DYNAMIC DATA INITIALIZATION ──────────────────
+let INNOVATIONS =[];
+let RESUME_DATA =[];
+
+const NET_CAP = 50;
+const LARGE_THRESHOLD = 200;
+
+// Chart globals
+Chart.defaults.animation=false;
+Chart.defaults.font.family="'Montserrat',sans-serif";
+Chart.defaults.color="#4a5568";
+const CH={};
+let leafletMap=null,mcluster=null;
+let filteredData=[],curPage=1,pgSize=50,sortKey=null,sortDir=1;
+
+// ─── HELPERS ───
+const trunc=(s,n)=>!s?'—':s.length>n?s.slice(0,n-1)+'…':s;
+const rc=s=>s<=3?'low':s<=6?'mid':'hi';
+const lvBadge=lv=>{const m={grassroots:'bg','semi-formal':'bs',institutional:'bi'};const l=(lv||'').toLowerCase().replace(/[\s_]/g,'-');return`<span class="badge ${m[l]||'bg'}">${lv||'—'}</span>`;};
+function getRegion(c){if(!c)return'Global/Other';const s=String(c).toLowerCase();if(/\b(japan|china|korea|vietnam|philippines|indonesia|malaysia|myanmar|thailand|india|pakistan|iran|bangladesh)\b/.test(s))return'Asia & Pacific';if(/\b(mexico|peru|brazil|usa|canada|colombia|argentina|chile|ecuador|bolivia|venezuela|haiti|guatemala)\b/.test(s))return'Americas';if(/\b(france|greece|italy|spain|russia|ukraine|germany|united kingdom|uk|poland|belgium|switzerland)\b/.test(s))return'Europe';if(/\b(nigeria|tanzania|mali|morocco|algeria|tunisia|uganda|kenya|ethiopia|ghana)\b/.test(s))return'Africa';if(/\b(australia|new zealand|vanuatu|fiji)\b/.test(s))return'Oceania';return'Global/Other';}
+function animN(el,target,ms=900){if(target===0){el.textContent="0";return;}const start=performance.now();const isF=target%1!==0;function step(now){const t=Math.min((now-start)/ms,1);const e=t<.5?2*t*t:-1+(4-2*t)*t;const v=e*target;el.textContent=isF?v.toFixed(1):Math.round(v);if(t<1)requestAnimationFrame(step);else el.textContent=isF?target.toFixed(1):target;}requestAnimationFrame(step);}
+function getLink(item){return (item.sources && item.sources.length > 0) ? item.sources[0] : null;}
+
+// ─── DATA FETCHING (WITH CACHE-BUSTER) ───
+async function loadData() {
+    // Menghindari Cache GitHub Pages
+    const cb = '?v=' + new Date().getTime();
+    
+    try {
+        const r1 = await fetch('data.json' + cb);
+        if(r1.ok) {
+            const d = await r1.json();
+            INNOVATIONS = Array.isArray(d) ? d : (d.inventory ||[]);
+        }
+    } catch(e) { console.warn("data.json not found or error parsing."); }
+
+    try {
+        const r2 = await fetch('resume.json' + cb);
+        if(r2.ok) {
+            const d = await r2.json();
+            RESUME_DATA = Array.isArray(d) ? d :[];
+        }
+    } catch(e) { console.warn("resume.json not found or error parsing."); }
+    
+    if(!INNOVATIONS || INNOVATIONS.length === 0) {
+        document.getElementById('j-abstract').innerHTML = "<span style='color:var(--accent);font-style:italic;'>Waiting for AI Intelligence Engine to push data... Refresh later.</span>";
+    }
+}
+
+// ─── DROPDOWN & CONTENT SWITCHER ───
+function populateDropdown() {
+    const sel = document.getElementById('edition-select');
+    sel.innerHTML = '';
+    
+    if (!RESUME_DATA || RESUME_DATA.length === 0) {
+        sel.innerHTML = `<option value="0">Latest Period</option>`;
+        return;
+    }
+
+    // Masukkan semua riwayat resume ke dalam opsi dropdown
+    [...RESUME_DATA].reverse().forEach((r, reversedIdx) => {
+        const actualIdx = RESUME_DATA.length - 1 - reversedIdx;
+        const isCurrent = r.report_metadata?.report_id === 'gsi-current';
+        const periodStr = r.report_metadata?.period || `Report ${actualIdx + 1}`;
+        const dateStr = r.report_metadata?.generated_at ? new Date(r.report_metadata.generated_at).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}) : 'Unknown';
+        
+        const opt = document.createElement('option');
+        opt.value = actualIdx;
+        opt.textContent = `${isCurrent ? '⭐ ' : ''}${periodStr} — ${dateStr}`;
+        if (isCurrent) opt.selected = true;
+        sel.appendChild(opt);
+    });
+    
+    // Tampilkan data yang terpilih (biasanya yang terbaru/current)
+    const selectedVal = sel.value || (RESUME_DATA.length - 1);
+    switchEdition(selectedVal);
+}
+
+function switchEdition(idx) {
+    const report = RESUME_DATA[idx];
+    let periodStr = "Latest Edition";
+    let dateStr = new Date().toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'});
+    
+    if (report && report.report_metadata) {
+        periodStr = report.report_metadata.period || periodStr;
+        if(report.report_metadata.generated_at) {
+            dateStr = new Date(report.report_metadata.generated_at).toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'});
+        }
+    }
+    
+    document.getElementById('mh-vol').innerHTML = `Vol. 1 &nbsp;·&nbsp; No. 1 &nbsp;·&nbsp; ${periodStr}`;
+    document.getElementById('meta-period').textContent = periodStr;
+    document.getElementById('j-date').innerHTML = `Published: ${dateStr} &nbsp;·&nbsp; Engine: Google Gemini 2.5 Flash`;
+    document.getElementById('f-period').innerHTML = `GII Bulletin &nbsp;|&nbsp; ${periodStr}`;
+
+    // Update Abstract AI
+    const d = INNOVATIONS;
+    if(!d || d.length === 0) return;
+    
+    const cntries = new Set(d.map(x=>x.location?.country).filter(Boolean)).size;
+    const hi = d.filter(x=>x.impact?.scale==='high').length;
+    const gems = d.filter(x=>x.hidden_gem).length;
+    const crits = d.filter(x=>x.critical_flag).length;
+    const top3 = Object.entries(d.reduce((acc, x) => { (x.category||[]).forEach(c => acc[c] = (acc[c]||0)+1); return acc; }, {})).sort((a,b)=>b[1]-a[1]).slice(0,3).map(e=>e[0]);
+
+    let abstractText = "";
+    if (report && report.knowledge_insights) {
+        const patterns = (report.innovation_patterns ||[]).map(p => p.pattern_name).join(', ');
+        const obs = report.knowledge_insights.observation || '';
+        const recs = (report.recommendations && report.recommendations.length > 0) ? report.recommendations[0] : "";
+        
+        abstractText = `This edition analyzes ${report.report_metadata?.total_records_analyzed || d.length} community-driven practices spanning ${cntries} geographic contexts. AI Synthesis highlights strong patterns in ${patterns || top3.join(', ')}. ${obs} Of the catalogued practices, ${hi} exhibit high impact scale, ${gems} are hidden gems, and ${crits} carry critical safety flags. ${recs}`;
+    } else {
+        abstractText = `This edition documents ${d.length} community-driven technological practices from ${cntries} geographic contexts. Of the catalogued practices, ${hi} exhibit high impact scale, ${gems} are hidden gems with low visibility, and ${crits} carry critical flags requiring safety intervention. Most represented domains: ${top3.join(', ')}.`;
+    }
+
+    document.getElementById('j-abstract').textContent = abstractText;
+    document.getElementById('j-kw').innerHTML=`<strong>Keywords:</strong> grassroots innovation, frugal technology, appropriate technology, ${top3.join(', ').toLowerCase()}, risk assessment, community-led development`;
+}
+
+// ─── THEME ───
+function toggleTheme(){const d=document.documentElement;const dk=d.getAttribute('data-theme')==='dark';d.setAttribute('data-theme',dk?'light':'dark');document.getElementById('thmbtn').textContent=dk?'🌙 Dark':'☀️ Light';setTimeout(()=>{renderCat();renderLvl();renderReg();renderRisk();renderSct();},50);localStorage.setItem('gii-theme',dk?'light':'dark');}
+
+// ─── MODAL ───
+function openModal(){document.getElementById('modal').classList.add('open');}
+function closeModal(){document.getElementById('modal').classList.remove('open');}
+function closeOuter(e){if(e.target===document.getElementById('modal'))closeModal();}
+
+// ─── TOC ───
+function buildTOC(){const secs=document.querySelectorAll('h2.st[id]');const list=document.getElementById('toc-list');list.innerHTML='';secs.forEach(sec=>{const li=document.createElement('li');const a=document.createElement('a');a.href='#'+sec.id;a.textContent=sec.textContent.trim();a.onclick=e=>{e.preventDefault();sec.scrollIntoView({behavior:'smooth',block:'start'});};li.appendChild(a);list.appendChild(li);});const bar=document.getElementById('toc-bar');function onSc(){const paper=document.getElementById('paper');const total=paper.offsetHeight;const scrolled=Math.max(0,-paper.getBoundingClientRect().top);const pct=Math.min(100,(scrolled/(total-window.innerHeight))*100);bar.style.width=pct+'%';let active=null;secs.forEach(s=>{if(s.getBoundingClientRect().top<80)active=s.id;});document.querySelectorAll('.toc-list a').forEach(a=>{a.classList.toggle('active',a.href.endsWith('#'+active));});}window.addEventListener('scroll',onSc,{passive:true});}
+
+// ─── METADATA & KPI ───
+function renderKPI(){
+    const d=INNOVATIONS;
+    if(!d || d.length === 0) return;
+    const n=d.length,gems=d.filter(x=>x.hidden_gem).length,crits=d.filter(x=>x.critical_flag).length;
+    const avgP=d.reduce((a,b)=>a+(b.priority_score||0),0)/n;
+    const avgR=d.reduce((a,b)=>a+(b.risk_assessment?.risk_score||0),0)/n;
+    const cntries=new Set(d.map(x=>x.location?.country).filter(Boolean)).size;
+    
+    animN(document.getElementById('kv1'),n);
+    animN(document.getElementById('kv2'),gems);
+    animN(document.getElementById('kv3'),crits);
+    animN(document.getElementById('kv4'),Math.round(avgP));
+    
+    document.getElementById('ks4').textContent=`avg risk ${avgR.toFixed(1)}/10`;
+    document.getElementById('meta-n').textContent=n;
+    document.getElementById('meta-c').textContent=cntries;
+    
+    const mins=Math.max(5,Math.round((n*80+2500)/250));
+    document.getElementById('meta-rt').innerHTML=`⏱ ~${mins} min read`;
+    
+    if(n>LARGE_THRESHOLD){
+        document.getElementById('scale-notice').style.display='flex';
+        document.getElementById('ncap').textContent=NET_CAP;
+    }
+}
+
+// ─── CHARTS ───
+function renderCat(){
+    if(!INNOVATIONS.length)return;
+    try{
+        const freq={};
+        INNOVATIONS.forEach(d=>(d.category||[]).forEach(c=>{freq[c]=(freq[c]||0)+1;}));
+        const s=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0, 10); // LIMIT TO TOP 10
+        if(CH.bar){CH.bar.destroy();delete CH.bar;}
+        CH.bar=new Chart(document.getElementById('barChart').getContext('2d'),{
+            type:'bar',
+            data:{
+                labels:s.map(e=>trunc(e[0],25)),
+                datasets:[{label:'Count',data:s.map(e=>e[1]),backgroundColor:'rgba(159,18,57,0.78)',borderRadius:3}]
+            },
+            options:{
+                indexAxis:'y',responsive:true,maintainAspectRatio:false,
+                plugins:{legend:{display:false},title:{display:true,text:'Top 10 Category Tags',font:{size:11}}},
+                scales:{x:{beginAtZero:true,ticks:{stepSize:1}},y:{ticks:{font:{size:9}}}}
+            }
+        });
+    }catch(e){console.error("Error renderCat", e);}
+}
+
+function renderLvl(){if(!INNOVATIONS.length)return;try{const c={};INNOVATIONS.forEach(d=>{const l=d.innovation_level||'unknown';c[l]=(c[l]||0)+1;});const col={grassroots:'#9f1239','semi-formal':'#b45309',institutional:'#0f766e',unknown:'#94a3b8'};const labs=Object.keys(c);if(CH.lvl){CH.lvl.destroy();delete CH.lvl;}CH.lvl=new Chart(document.getElementById('levelChart').getContext('2d'),{type:'doughnut',data:{labels:labs,datasets:[{data:Object.values(c),backgroundColor:labs.map(l=>col[l]||'#aaa'),borderWidth:2,borderColor:document.documentElement.getAttribute('data-theme')==='dark'?'#22263a':'#faf8f3'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{boxWidth:11,font:{size:9}}},title:{display:true,text:'Innovation Level',font:{size:11}}}}});}catch(e){console.error("Error renderLvl", e);}}
+
+function renderReg() {
+    if(!INNOVATIONS.length) return;
+    try {
+        const r = {};
+        // Hitung jumlah data per region
+        INNOVATIONS.forEach(d => {
+            const x = getRegion(d.location?.country || '');
+            r[x] = (r[x] || 0) + 1;
+        });
+
+        // Urutkan data otomatis dari yang terbesar ke terkecil
+        const sortedData = Object.entries(r).sort((a,b) => b[1] - a[1]);
+        const labs = sortedData.map(item => item[0]);
+        const vals = sortedData.map(item => item[1]);
+
+        if(CH.pol){ CH.pol.destroy(); delete CH.pol; }
+        
+        // Render Horizontal Bar Chart sebagai pengganti Pie Chart
+        CH.pol = new Chart(document.getElementById('polarChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: labs,
+                datasets: [{
+                    data: vals,
+                    backgroundColor: 'rgba(15,118,110,0.75)', // Menggunakan warna var(--accent2)
+                    borderRadius: 3
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Memutar bar menjadi horizontal
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }, // Sembunyikan legend untuk menghemat tempat
+                    title: { display: true, text: 'Regional Distribution', font: { size: 11 } }
+                },
+                scales: {
+                    x: { beginAtZero: true, ticks: { stepSize: 1, font: { size: 9 } } },
+                    y: { ticks: { font: { size: 9 } } }
+                }
+            }
+        });
+    } catch(e) {
+        console.error("Error renderReg", e);
+    }
+}
+
+function renderRisk(){
+    if(!INNOVATIONS.length)return;
+    try{
+        // HISTOGRAM: Count innovations per risk score (1-10)
+        const counts = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0};
+        INNOVATIONS.forEach(d => {
+            let score = Math.round(d.risk_assessment?.risk_score || 0);
+            if(score < 1) score = 1; if(score > 10) score = 10;
+            counts[score]++;
+        });
+        const labels = Object.keys(counts);
+        const data = Object.values(counts);
+        const cols = labels.map(l => {
+            const score = parseInt(l);
+            return score >= 7 ? 'rgba(220,38,38,.82)' : score >= 4 ? 'rgba(217,119,6,.82)' : 'rgba(5,150,105,.82)';
+        });
+
+        if(CH.risk){CH.risk.destroy();delete CH.risk;}
+        CH.risk=new Chart(document.getElementById('riskChart').getContext('2d'),{
+            type:'bar', // VERTICAL BAR
+            data:{
+                labels: labels,
+                datasets:[{label:'Innovations',data:data,backgroundColor:cols,borderRadius:3}]
+            },
+            options:{
+                responsive:true,maintainAspectRatio:false,
+                plugins:{legend:{display:false},title:{display:true,text:'Distribution of Risk Scores (1-10)',font:{size:11}}},
+                scales:{
+                    x:{title:{display:true,text:'Risk Score'}, ticks:{font:{size:9}}},
+                    y:{title:{display:true,text:'Count'}, beginAtZero:true,ticks:{stepSize:1,font:{size:9}}}
+                }
+            }
+        });
+    }catch(e){console.error("Error renderRisk", e);}
+}
+
+function renderSct(){if(!INNOVATIONS.length)return;try{const sets=[{label:'Grassroots',data:[],backgroundColor:'rgba(159,18,57,.72)',pointRadius:6},{label:'Semi-formal',data:[],backgroundColor:'rgba(180,83,9,.72)',pointRadius:6},{label:'Institutional',data:[],backgroundColor:'rgba(15,118,110,.72)',pointRadius:6}];const lmap={grassroots:0,'semi-formal':1,institutional:2};INNOVATIONS.forEach(d=>{const i=lmap[d.innovation_level]??0;sets[i].data.push({x:(d.risk_assessment?.risk_score||0),y:(d.priority_score||0),label:trunc(d.title,22)});});if(CH.sct){CH.sct.destroy();delete CH.sct;}CH.sct=new Chart(document.getElementById('scatterChart').getContext('2d'),{type:'scatter',data:{datasets:sets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{boxWidth:11,font:{size:9}}},title:{display:true,text:'Risk vs. Priority Matrix',font:{size:11}},tooltip:{callbacks:{label:ctx=>`${ctx.raw.label} — Risk:${ctx.raw.x} Priority:${ctx.raw.y}`}}},scales:{x:{title:{display:true,text:'Risk Score'},min:0,max:10,ticks:{stepSize:1}},y:{title:{display:true,text:'Priority Score'},min:0,max:100}}}});}catch(e){console.error("Error renderSct", e);}}
+
+// ─── MAP (clustered) ───
+function renderMap(){if(!INNOVATIONS.length)return;try{if(!leafletMap){leafletMap=L.map('distributionMap',{zoomControl:true}).setView([20,10],2);L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO',maxZoom:18}).addTo(leafletMap);}if(mcluster){leafletMap.removeLayer(mcluster);}mcluster=L.markerClusterGroup({maxClusterRadius:50,iconCreateFunction:cluster=>L.divIcon({html:`<div style="background:#9f1239;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:700;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);">${cluster.getChildCount()}</div>`,className:'',iconSize:[32,32],iconAnchor:[16,16]})});const lc={grassroots:'#9f1239','semi-formal':'#b45309',institutional:'#0f766e'};const rcol={low:'#059669',mid:'#d97706',hi:'#dc2626'};let bounds=L.latLngBounds(),n=0;INNOVATIONS.forEach(item=>{if(item.location?.lat!=null&&item.location?.lon!=null){const col=lc[item.innovation_level]||'#4a5568';const icon=L.divIcon({className:'',html:`<div style="background:${col};width:11px;height:11px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 5px rgba(0,0,0,.3);"></div>`,iconSize:[15,15],iconAnchor:[7,7]});const r=rc(item.risk_assessment?.risk_score||0);const s_link = getLink(item);const m=L.marker([item.location.lat,item.location.lon],{icon}).bindPopup(`<strong style="font-size:12px;">${item.title}</strong><br><em style="font-size:10px;color:#555;">${item.location.region||item.location.country||'Unknown'}</em><br><span style="font-size:10px;">Level: ${item.innovation_level||'-'}</span> &nbsp; <span style="font-size:10px;color:${rcol[r]};">Risk: ${item.risk_assessment?.risk_score||0}/10</span><br><span style="font-size:10px;">Priority: ${item.priority_score||0}</span>${s_link?`<br><a href="${s_link}" target="_blank" style="font-size:10px;color:#0f766e;">→ Source</a>`:''}`);mcluster.addLayer(m);bounds.extend([item.location.lat,item.location.lon]);n++;}});leafletMap.addLayer(mcluster);if(n>0)leafletMap.fitBounds(bounds,{padding:[30,30],maxZoom:5});}catch(e){console.error("Error renderMap", e);}}
+
+// ─── NETWORK (capped) ───
+function renderNet(){if(!INNOVATIONS.length)return;try{const dataset=[...INNOVATIONS].sort((a,b)=>(b.priority_score||0)-(a.priority_score||0)).slice(0,NET_CAP);const lc={grassroots:{background:'#9f1239',border:'#7e0e2d',font:{color:'#fff'}},'semi-formal':{background:'#b45309',border:'#92400e',font:{color:'#fff'}},institutional:{background:'#0f766e',border:'#0d5c56',font:{color:'#fff'}}};const nArr=dataset.map(item=>({id:item.id,label:trunc(item.title,22),title:`${item.title}\nPriority:${item.priority_score||0} Risk:${item.risk_assessment?.risk_score||0}`,color:lc[item.innovation_level]||lc.grassroots,shape:'box',font:{size:9,...(lc[item.innovation_level]||lc.grassroots).font}}));const eArr=[];const seen=new Set();for(let i=0;i<dataset.length;i++){for(let j=i+1;j<dataset.length;j++){const a=dataset[i],b=dataset[j];const sh=(a.category||[]).filter(c=>(b.category||[]).includes(c));if(sh.length){const k=[a.id,b.id].sort().join('|');if(!seen.has(k)){seen.add(k);eArr.push({from:a.id,to:b.id,label:trunc(sh[0],12),title:'Shared: '+sh.join(', '),color:'#cbd5e1',width:1,font:{size:8,align:'middle'}});}}}}const net=new vis.Network(document.getElementById('nodeNetwork'),{nodes:new vis.DataSet(nArr),edges:new vis.DataSet(eArr)},{physics:{enabled:true,solver:'forceAtlas2Based',forceAtlas2Based:{gravitationalConstant:-40,centralGravity:.005,springLength:180,springConstant:.15},stabilization:{iterations:200}},interaction:{dragNodes:true,zoomView:true,dragView:true}});net.on('stabilizationIterationsDone',()=>net.setOptions({physics:false}));}catch(e){console.error("Error renderNet", e);}}
+
+// ─── SPOTLIGHT ───
+function renderSpot(){if(!INNOVATIONS.length)return;const top3=[...INNOVATIONS].sort((a,b)=>(b.priority_score||0)-(a.priority_score||0)).slice(0,3);const cls=['','t','a'];const med=['#1','#2','#3'];document.getElementById('spgrid').innerHTML=top3.map((item,i)=>`<div class="sc ${cls[i]}"><div class="scr">${med[i]}</div><div class="sct">${item.title}</div><div class="scb">${trunc(item.summary,115)}</div><div class="scm">${lvBadge(item.innovation_level)}<span class="scs">Priority ${item.priority_score||0}</span><span class="badge b${rc(item.risk_assessment?.risk_score||0)==='hi'?'crit':rc(item.risk_assessment?.risk_score||0)==='mid'?'s':'g'}">Risk ${item.risk_assessment?.risk_score||0}</span>${item.hidden_gem?'<span class="badge bgem">💎</span>':''}</div></div>`).join('');}
+
+// ─── GEMS ───
+function renderGems(){if(!INNOVATIONS.length)return;const gems=INNOVATIONS.filter(d=>d.hidden_gem).sort((a,b)=>(b.priority_score||0)-(a.priority_score||0));const w=document.getElementById('gems-wrapper');if(!gems.length){w.innerHTML='<p><em>No hidden gems flagged in this edition.</em></p>';return;}w.innerHTML=`<table class="jtable"><thead><tr><th style="width:30%">Title</th><th style="width:15%">Country</th><th style="width:33%">Summary</th><th style="width:10%">Priority</th><th style="width:12%">Risk</th></tr></thead><tbody>${gems.map(d=>`<tr><td class="ct">💎 ${d.title}</td><td style="font-size:8.5pt;">${d.location?.country||'—'}</td><td style="font-size:8.5pt;">${trunc(d.summary,90)}</td><td class="cm">${d.priority_score||0}</td><td><span class="rpill r${rc(d.risk_assessment?.risk_score||0)}">${d.risk_assessment?.risk_score||0}</span></td></tr>`).join('')}</tbody></table>`;}
+
+// ─── TABLE ───
+function applyFilters(){const q=(document.getElementById('ts').value||'').toLowerCase().trim();const lv=(document.getElementById('tl').value||'').toLowerCase().replace(/\s/g,'-');const r=document.getElementById('tr').value;const sc=document.getElementById('tsc').value;filteredData=INNOVATIONS.filter(d=>{const txt=[d.title,d.location?.country||'',...(d.category||[]),d.innovation_level||'',d.summary].join(' ').toLowerCase();return(!q||txt.includes(q))&&(!lv||(d.innovation_level||'').toLowerCase().replace(/\s/g,'-').includes(lv))&&(!r||rc(d.risk_assessment?.risk_score||0)===r)&&(!sc||(d.impact?.scale||'')===sc);});if(sortKey)sortFD();curPage=1;renderPage();}
+
+function sortT(key){if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=1;}document.querySelectorAll('.jtable th').forEach(th=>{th.classList.remove('sasc','sdsc');});const map={title:0,country:1,level:3,risk:4,priority:5};const ths=document.querySelectorAll('#dtable thead th');if(map[key]!==undefined)ths[map[key]].classList.add(sortDir===1?'sasc':'sdsc');sortFD();renderPage();}
+
+function sortFD(){filteredData.sort((a,b)=>{if(sortKey==='title'){const v=(s)=>s.title||'';return sortDir*(v(a)<v(b)?-1:v(a)>v(b)?1:0);}if(sortKey==='country'){const v=(s)=>s.location?.country||'';return sortDir*(v(a)<v(b)?-1:v(a)>v(b)?1:0);}if(sortKey==='level'){const v=(s)=>s.innovation_level||'';return sortDir*(v(a)<v(b)?-1:v(a)>v(b)?1:0);}if(sortKey==='risk')return sortDir*((a.risk_assessment?.risk_score||0)-(b.risk_assessment?.risk_score||0));if(sortKey==='priority')return sortDir*((a.priority_score||0)-(b.priority_score||0));return 0;});}
+
+function changePS(v){pgSize=parseInt(v);curPage=1;renderPage();}
+
+function renderPage(){const total=filteredData.length;const totalPg=Math.max(1,Math.ceil(total/pgSize));if(curPage>totalPg)curPage=totalPg;const start=(curPage-1)*pgSize;const page=filteredData.slice(start,start+pgSize);const tbody=document.getElementById('tbody');tbody.innerHTML='';if(!page.length){tbody.innerHTML=`<tr><td colspan="7" style="text-align:center;color:var(--ink-faint);font-family:'DM Mono',monospace;font-size:9pt;padding:20px;">No results match the current filters.</td></tr>`;}else{page.forEach(item=>{const cats=(item.category||[]).slice(0,2).join(', ');const r=rc(item.risk_assessment?.risk_score||0);const flags=[item.hidden_gem?'💎':'',item.critical_flag?'⚠️':''].filter(Boolean).join(' ');const tr=document.createElement('tr');tr.innerHTML=`<td><span class="ct">${item.title}</span></td><td style="font-size:8.5pt;">${item.location?.country||'—'}</td><td style="font-size:8.5pt;">${cats}</td><td>${lvBadge(item.innovation_level)}</td><td><span class="rpill r${r}">${item.risk_assessment?.risk_score||0}</span></td><td class="cm" style="text-align:center;">${item.priority_score||0}</td><td style="font-size:11pt;text-align:center;">${flags||'—'}</td>`;tbody.appendChild(tr);});}
+const pag=document.getElementById('pag');pag.innerHTML='';const mkBtn=(label,pg,cls='')=>{const b=document.createElement('button');b.className='pbtn'+(cls?' '+cls:'');b.textContent=label;if(pg===null)b.disabled=true;else b.onclick=()=>{curPage=pg;renderPage();};return b;};pag.appendChild(mkBtn('‹ Prev',curPage>1?curPage-1:null));const delta=2;let pages=new Set([1,totalPg]);for(let i=Math.max(1,curPage-delta);i<=Math.min(totalPg,curPage+delta);i++)pages.add(i);let prev=0;[...pages].sort((a,b)=>a-b).forEach(p=>{if(p-prev>1){const el=document.createElement('span');el.className='pbtn';el.textContent='…';el.style.cursor='default';pag.appendChild(el);}pag.appendChild(mkBtn(p,p,p===curPage?'act':''));prev=p;});pag.appendChild(mkBtn('Next ›',curPage<totalPg?curPage+1:null));document.getElementById('tinfo').textContent=`Showing ${start+1}–${Math.min(start+pgSize,total)} of ${total} entries`;}
+
+// ─── CSV EXPORT ───
+function exportCSV(){const fields=['title','country','region','innovation_level','categories','cost_level','difficulty','impact_scale','risk_score','risk_types','needs_intervention','priority_score','hidden_gem','critical_flag','source_url'];const header=fields.join(',');const rows=filteredData.map(d=>[`"${(d.title||'').replace(/"/g,'""')}"`,`"${(d.location?.country||'').replace(/"/g,'""')}"`,`"${(d.location?.region||'').replace(/"/g,'""')}"`,d.innovation_level||'',`"${(d.category||[]).join('; ').replace(/"/g,'""')}"`,d.replicability?.cost_level||'',d.replicability?.difficulty||'',d.impact?.scale||'',d.risk_assessment?.risk_score||'',`"${(d.risk_assessment?.risk_type||[]).join('; ')}"`,d.risk_assessment?.needs_intervention?'yes':'no',d.priority_score||'',d.hidden_gem?'yes':'no',d.critical_flag?'yes':'no',`"${(getLink(d)||'').replace(/"/g,'""')}"`].join(','));const csv=[header,...rows].join('\n');const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download=`GII_Bulletin_${filteredData.length}entries.csv`;a.click();}
+
+// ─── REFS ───
+function renderRefs(){if(!INNOVATIONS.length)return;const list=document.getElementById('reflist');list.innerHTML='';INNOVATIONS.forEach(item=>{const li=document.createElement('li');const s_link = getLink(item);li.innerHTML=`<b>${item.title}</b>. (2026). ${(item.innovation_level||'').charAt(0).toUpperCase()+(item.innovation_level||'').slice(1)} innovation. ${item.location?.country||'Global'}. `+(s_link?`Source: <a href="${s_link}" target="_blank">${trunc(s_link,65)}</a>`:'Source: unpublished / field documentation');list.appendChild(li);});}
+
+// ─── INIT ───
+window.addEventListener('DOMContentLoaded', async () => {
+    // 1. Theme Check
+    const t=localStorage.getItem('gii-theme');
+    if(t==='dark'){
+        document.documentElement.setAttribute('data-theme','dark');
+        document.getElementById('thmbtn').textContent='☀️ Light';
+    }
+    
+    // 2. Fetch Data Dynamically with Cache-Buster 
+    await loadData();
+    
+    // 3. Dropdown Population
+    populateDropdown();
+    
+    // 4. Render Everything
+    renderKPI();
+    renderCat();
+    renderLvl();
+    renderReg();
+    renderRisk();
+    renderSct();
+    renderMap();
+    renderNet();
+    renderSpot();
+    renderGems();
+    
+    // Pagination & Refs
+    filteredData=[...INNOVATIONS];
+    renderPage();
+    renderRefs();
+    buildTOC();
+    
+    console.log('GII Bulletin loaded dynamically:', INNOVATIONS.length, 'innovations.');
+});
+</script>
+</body>
+</html>
