@@ -180,6 +180,9 @@
               <option value="informal">Informal</option>
               <option value="non-formal">Non-Formal</option>
             </select>
+            <select id="filter-country" class="flex-1 min-w-[140px] bg-slate-50 border border-slate-200 text-sm rounded-lg px-3 py-2 text-slate-700 focus:ring-1 focus:ring-unesco-blue transition-all">
+            <option value="all">All Countries</option>
+            </select>
             <select id="filter-category" class="flex-1 min-w-[140px] bg-slate-50 border border-slate-200 text-sm rounded-lg px-3 py-2 text-slate-700 focus:ring-1 focus:ring-unesco-blue transition-all">
               <option value="all">All Categories</option>
             </select>
@@ -191,11 +194,35 @@
             </select>
           </div>
         </div>
+
+                <div class="p-3 px-4 bg-slate-50 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div class="flex items-center gap-2 text-slate-600 shrink-0 lg:w-32">
+                    <i class="ph-fill ph-sort-ascending text-xl"></i>
+                    <span class="font-semibold text-sm">Sort By</span>
+                </div>
+                <div class="flex w-full sm:w-auto">
+                    <select id="sort-order" class="w-full sm:w-64 bg-white border border-slate-200 text-sm rounded-lg px-3 py-2 text-slate-700 focus:outline-none focus:ring-1 focus:ring-unesco-blue shadow-sm cursor-pointer transition-all">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="priority">Highest Impact Score</option>
+                    </select>
+                </div>
+                </div>
+
       </div>
       <div id="inventory-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-      <div id="pagination-container" class="w-full flex justify-between gap-4 pt-4 pb-8 hidden">
-        <!-- Pagination controls here -->
-      </div>
+        <div id="pagination-container" class="w-full flex flex-col md:flex-row items-center justify-between gap-4 pt-4 pb-8 hidden">
+        <div class="flex items-center gap-2 w-full md:w-auto justify-center md:justify-start bg-white p-2 rounded-lg border border-slate-200 shadow-sm">
+            <label for="page-size" class="text-xs text-slate-500 font-bold ml-1">SHOW:</label>
+            <select id="page-size" class="bg-slate-50 border border-slate-200 text-xs rounded-md px-2 py-1 outline-none font-medium" onchange="changePageSize(this.value)">
+            <option value="9">9 per page</option><option value="18">18 per page</option><option value="36">36 per page</option>
+            </select>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full md:w-auto gap-2">
+            <div class="text-xs text-slate-500 font-medium text-center" id="pagination-info"></div>
+            <div id="pagination-buttons" class="flex gap-1 bg-white border border-slate-200 rounded-lg p-1 shadow-sm"></div>
+        </div>
+        </div>
     </div>
 
     <!-- TAB 2: INNOVATION NEXUS -->
@@ -578,7 +605,7 @@
     
     globalData.sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
     
-    populateFilters(); setupFilters(); applyFilters(); renderStats(); populateReportSelector(); 
+    populateFilters(); populateCountryFilter(); setupFilters(); applyFilters(); renderStats(); populateReportSelector(); 
     lucide.createIcons(); switchTab('directory');
   }
 
@@ -634,26 +661,69 @@
 
   const getHashColor = str => Math.abs([...str].reduce((h,c)=>c.charCodeAt(0)+((h<<5)-h),0));
 
-  function populateFilters() {
+function populateFilters() {
     const catSel = document.getElementById('filter-category');
     const cats = [...new Set(globalData.flatMap(i=>i.category||[]))].sort();
     cats.forEach(c => catSel.add(new Option(c, c)));
   }
 
-  function setupFilters() {
-    ['filter-type','filter-category','filter-level'].forEach(id => document.getElementById(id).addEventListener('change', () => { currentPage=1; applyFilters(); }));
+  function populateCountryFilter() {
+    const select = document.getElementById('filter-country');
+    const countries = [...new Set(globalData.map(item => item.location?.country).filter(Boolean))].sort();
+    countries.forEach(country => select.add(new Option(country, country)));
   }
 
-  function applyFilters() {
-    const t = document.getElementById('filter-type').value, c = document.getElementById('filter-category').value, l = document.getElementById('filter-level').value;
-    filteredData = globalData.filter(i => 
-      (t==='all' || i.education_details?.education_type === t) &&
-      (c==='all' || (i.category||[]).includes(c)) &&
-      (l==='all' || i.innovation_level === l)
+function setupFilters() {
+    ['filter-type', 'filter-category', 'filter-level', 'filter-country', 'sort-order'].forEach(id => {
+      document.getElementById(id).addEventListener('change', () => { currentPage = 1; applyFilters(); });
+    });
+  }
+
+function applyFilters() {
+    const t = document.getElementById('filter-type').value;
+    const c = document.getElementById('filter-category').value;
+    const l = document.getElementById('filter-level').value;
+    const loc = document.getElementById('filter-country').value;
+    const sort = document.getElementById('sort-order').value; // Ambil nilai Sort
+    
+    // 1. Lakukan Filter Data
+    let res = globalData.filter(i => 
+      (t === 'all' || i.education_details?.education_type === t) &&
+      (c === 'all' || (i.category||[]).includes(c)) &&
+      (l === 'all' || i.innovation_level === l) &&
+      (loc === 'all' || i.location?.country === loc)
     );
+
+    // 2. Lakukan Pengurutan Data (Sorting)
+    if (sort === 'newest') {
+      res.sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
+    } else if (sort === 'oldest') {
+      res.sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
+    } else if (sort === 'priority') {
+      // Mengurutkan dari Impact Score tertinggi ke terendah
+      res.sort((a,b) => (b.impact?.impact_score || 0) - (a.impact?.impact_score || 0));
+    }
+
+    filteredData = res;
     renderGrid(filteredData);
     if(map) { drawMapElements(); }
   }
+
+  // LOGIKA PAGINATION
+  function renderPagination(total) {
+    const cont = document.getElementById('pagination-container'), info = document.getElementById('pagination-info'), btns = document.getElementById('pagination-buttons');
+    const totalPages = Math.ceil(total / itemsPerPage);
+    if (total <= itemsPerPage) { cont.classList.add('hidden'); return; }
+    cont.classList.remove('hidden');
+    const start = (currentPage-1)*itemsPerPage+1, end = Math.min(currentPage*itemsPerPage, total);
+    info.innerHTML = `Showing <b class="text-slate-800">${start}-${end}</b> of <b class="text-slate-800">${total}</b>`;
+    btns.innerHTML = `
+      <button onclick="changePage(-1)" ${currentPage===1?'disabled':''} class="p-1.5 rounded-md ${currentPage===1?'text-slate-300':'text-slate-600 hover:bg-slate-100'}"><i class="ph ph-caret-left"></i></button>
+      <div class="px-3 text-sm font-medium text-slate-600 self-center">Page ${currentPage} of ${totalPages}</div>
+      <button onclick="changePage(1)" ${currentPage===totalPages?'disabled':''} class="p-1.5 rounded-md ${currentPage===totalPages?'text-slate-300':'text-slate-600 hover:bg-slate-100'}"><i class="ph ph-caret-right"></i></button>`;
+  }
+  function changePage(dir) { currentPage += dir; renderGrid(filteredData); document.getElementById('view-directory').scrollIntoView({behavior:'smooth',block:'start'}); }
+  function changePageSize(size) { itemsPerPage = parseInt(size,10); currentPage = 1; renderGrid(filteredData); }
 
   function renderGrid(data) {
     const grid = document.getElementById('inventory-grid'); grid.innerHTML = '';
@@ -688,6 +758,7 @@
         </div>`;
       grid.appendChild(card);
     });
+    renderPagination(data.length); 
   }
 
   // ═══════════════════════════════════════════════════════
