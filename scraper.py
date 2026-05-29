@@ -298,11 +298,13 @@ def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_js
     if not isinstance(prompt, str):
         prompt = json.dumps(prompt)
         
-    # --- KODE BARU (Penerapan No. 6) ---
-    # Mengambil nama model dari Environment Variable, default-nya tetap pakai 3-flash-preview
-    # Jika besok Google rilis gemini-4, Anda tinggal set env var GEMINI_MODEL="gemini-4"
-    model_name = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
+    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash") # Atau menyesuaikan
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
+    
+    # PERBAIKAN LOGIKA: Jika pakai Search, HARUS text/plain.
+    mime_type = "text/plain"
+    if expect_json and not use_search:
+        mime_type = "application/json"
     
     # Konfigurasi payload
     payload = {
@@ -311,19 +313,12 @@ def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_js
         "generationConfig": {
             "temperature": 0.5,
             "maxOutputTokens": 8192,
-            # Menghasilkan output dalam format JSON jika diminta
-            "responseMimeType": "application/json" if expect_json else "text/plain"
+            "responseMimeType": mime_type
         }
     }
-    
-    if expect_json and not use_search:
-        payload["generationConfig"]["responseMimeType"] = "application/json"
         
     if use_search:
-        # --- KODE YANG DIPERBAIKI ---
-        # Mengikuti format API terbaru Google
         payload["tools"] = [{"googleSearch": {}}]
-        # ----------------------------
         
     headers = {
         'Content-Type': 'application/json',
@@ -336,6 +331,7 @@ def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_js
         data = response.json()
         raw_text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
         
+        # Meskipun dari LLM text/plain, Python kita (extract_json_safe) akan mengubahnya ke JSON
         if expect_json:
             return extract_json_safe(raw_text)
         return raw_text
