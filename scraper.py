@@ -294,19 +294,15 @@ def get_current_quarter():
 # =====================================================================
 
 def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_json=True):
-    # Pastikan prompt adalah string. Jika berupa objek/dict, ubah jadi teks JSON.
     if not isinstance(prompt, str):
         prompt = json.dumps(prompt)
         
-    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash") # Atau menyesuaikan
+    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
     
-    # PERBAIKAN LOGIKA: Jika pakai Search, HARUS text/plain.
-    mime_type = "text/plain"
-    if expect_json and not use_search:
-        mime_type = "application/json"
+    # Otomatis menyesuaikan tipe data
+    mime_type = "text/plain" if (use_search or not expect_json) else "application/json"
     
-    # Konfigurasi payload
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "systemInstruction": {"parts": [{"text": system_instruction}]},
@@ -316,50 +312,41 @@ def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_js
             "responseMimeType": mime_type
         }
     }
+    if use_search: payload["tools"] = [{"googleSearch": {}}]
         
-    if use_search:
-        payload["tools"] = [{"googleSearch": {}}]
-        
-    headers = {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': api_key
-    }
+    headers = {'Content-Type': 'application/json', 'x-goog-api-key': api_key}
     
-    try:
-        response = requests.post(url, json=payload, headers=headers, timeout=120)
-        response.raise_for_status()
-        data = response.json()
-        raw_text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
-        
-        # Meskipun dari LLM text/plain, Python kita (extract_json_safe) akan mengubahnya ke JSON
-        if expect_json:
-            return extract_json_safe(raw_text)
-        return raw_text
-    except Exception as e:
-        error_details = e.response.text if hasattr(e, 'response') and e.response is not None else str(e)
-        log.error(f"Gemini API Error: {error_details}")
-        return None
+    # Biarkan error "meledak" di sini agar bisa ditangkap oleh fungsi Retry di bawah
+    response = requests.post(url, json=payload, headers=headers, timeout=120)
+    response.raise_for_status() 
+    
+    data = response.json()
+    raw_text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
+    
+    if expect_json:
+        return extract_json_safe(raw_text)
+    return raw_text
 
-# ✅ NEW: Retry wrapper around call_gemini.
-# If Gemini fails (network glitch, timeout, empty response),
-# it will automatically try again up to `retries` times.
-# Each retry waits longer: 1s, 2s, 4s (exponential backoff).
-def call_gemini_with_retry(api_key, prompt, system_instruction, retries=3, **kwargs):
+def call_gemini_with_retry(api_key, prompt, system_instruction, retries=4, **kwargs):
     for attempt in range(retries):
         try:
             result = call_gemini(api_key, prompt, system_instruction, **kwargs)
             if result:
                 return result
+            else:
+                log.warning(f"AI returned empty output (attempt {attempt+1}/{retries}).")
         except requests.exceptions.HTTPError as e:
             status_code = e.response.status_code
-            if status_code in [400, 403, 404]: # Error fatal yang tidak akan sembuh dengan retry
-                log.error(f"Fatal HTTP Error {status_code}. Aborting retry.")
-                break
-            elif status_code == 429: # Too many requests
-                log.warning("Rate limit hit. Retrying...")
-                
-        wait_time = 2 ** attempt
-        log.warning(f"Gemini call failed (attempt {attempt + 1}/{retries}). Retrying in {wait_time}s...")
+            if status_code in [400, 403, 404]: 
+                log.error(f"Fatal API Error {status_code}: {e.response.text}")
+                return None # Error fatal, jangan buang waktu retry
+            log.warning(f"Google Server Error {status_code}. Retrying...")
+        except Exception as e:
+            log.warning(f"Unexpected Error: {e}. Retrying...")
+            
+        # Jeda nafas untuk server (5 detik, 10 detik, 20 detik)
+        wait_time = 5 * (2 ** attempt)
+        log.warning(f"Waiting {wait_time}s before next attempt...")
         time.sleep(wait_time)
         
     return None
@@ -465,113 +452,104 @@ def calculate_advanced_metrics(data):
 # =====================================================================
 
 def run_discovery_pipeline(api_key, database, max_items=3):
-    """Mencari data baru dan menambahkannya ke database dengan Anti-Redundansi."""
-    keyword = random.choice(KEYWORDS)
-    log.info(f"Initiating radar ping with keyword: '{keyword}'")
-
-    # ==========================================
-    # ANTI-REDUNDANSI 1: Beritahu AI apa yang sudah kita punya
-    # ==========================================
+    """Mencari data baru dengan sistem Fallback (coba keyword lain jika gagal)."""
+    
     existing_titles = [item.get("title", "") for item in database if item.get("title")]
-    
-    # Ambil maksimal 50 judul secara acak agar Prompt tidak kepanjangan (hemat token)
-    avoid_sample = random.sample(existing_titles, min(len(existing_titles), 50))
+    avoid_sample = random.sample(existing_titles, min(len(existing_titles), 40))
     avoid_str = ", ".join(avoid_sample) if avoid_sample else "None"
-
-    # Modifikasi Prompt: Larang AI mencari inovasi yang sudah ada, dan minta format 'title' eksplisit.
-    seed_prompt = f"""Search the web for 5 distinct, real-world examples of: {keyword}. 
-CRITICAL RULE: DO NOT return any of these known examples: {avoid_str}.
-Provide a detailed paragraph for each, AND include a list of all relevant source URLs found. 
-Return a JSON object with an array 'innovations' where each item contains exactly: "title" (string), "description" (string), and "urls" (array of strings)."""
     
-    seed_sys = "You are an OSINT web scraper. Use google search. IMPORTANT: Always return the direct, original source URLs. Return pure JSON."
-
-    seed_data = call_gemini_with_retry(api_key, seed_prompt, seed_sys, use_search=True)
-    if not seed_data or "innovations" not in seed_data:
-        log.warning("No raw material found on this run.")
-        return 0
-
-    raw_descriptions = seed_data["innovations"]
     success_count = 0
+    
+    # 💥 PERUBAHAN UTAMA: Jika gagal, JANGAN STOP. Coba hingga 3 Keyword Berbeda!
+    for attempt_kw in range(3):
+        if success_count >= max_items:
+            break
+            
+        keyword = random.choice(KEYWORDS)
+        log.info(f"🚀 Initiating radar ping: '{keyword}' (Try {attempt_kw+1}/3)")
 
-    for idx, item in enumerate(raw_descriptions):
-        if success_count >= max_items: break
-
-        # Ambil data awal
-        if isinstance(item, dict):
-            raw_title = item.get("title", "Unknown Title")
-            raw_text = item.get("description", str(item))
-            discovered_urls = item.get("urls", [])
-        else:
-            raw_title = "Unknown Title"
-            raw_text = str(item)
-            discovered_urls = []
-
-        # ==========================================
-        # ANTI-REDUNDANSI 2: Early Check (Hemat API)
-        # ==========================================
-        norm_raw_title = normalize_title(raw_title)
-        # Cek apakah judul mentah dari AI mirip dengan judul yang sudah ada di database kita
-        is_duplicate = any(normalize_title(ext_t) in norm_raw_title or norm_raw_title in normalize_title(ext_t) for ext_t in existing_titles if ext_t)
+        # Prompt diperlembut agar AI tidak ngambek/error
+        seed_prompt = f"""Search the web for distinct, real-world examples of: {keyword}. 
+        Please try not to use these known examples if possible: {avoid_str}.
+        Provide a detailed paragraph for each, AND include a list of all relevant source URLs found. 
+        Return a JSON object with an array 'innovations' where each item contains exactly: "title" (string), "description" (string), and "urls" (array of strings)."""
         
-        if is_duplicate and norm_raw_title != "unknown title":
-            log.info(f"⏭️ AI suggested a known item. Skipping early to save API quota: {raw_title}")
-            continue
+        seed_sys = "You are an OSINT web scraper. Use google search. Return pure JSON format."
 
-        # --------------------------------------------------
-        # Masuk ke Pipeline Validasi jika Lolos Pengecekan
-        # --------------------------------------------------
-        validation = pass_1_validate(api_key, raw_text)
-        if not validation.get("is_innovation") or validation.get("confidence", 0) < 0.6:
-            continue
+        seed_data = call_gemini_with_retry(api_key, seed_prompt, seed_sys, use_search=True)
+        if not seed_data or "innovations" not in seed_data:
+            log.warning(f"⚠️ No valid data for '{keyword}'. Moving to next keyword...")
+            continue # <-- Langsung lanjut coba keyword lain, BUKAN berhenti (return)
 
-        base_data = pass_2_extract(api_key, raw_text)
-        if not base_data or not base_data.get("title"):
-            continue
+        raw_descriptions = seed_data["innovations"]
 
-        # Hash Final Validation
-        normalized_title = normalize_title(base_data["title"])
-        country = base_data.get("location", {}).get("country", "unknown").lower()
+        for idx, item in enumerate(raw_descriptions):
+            if success_count >= max_items: break
+
+            if isinstance(item, dict):
+                raw_title = item.get("title", "Unknown Title")
+                raw_text = item.get("description", str(item))
+                discovered_urls = item.get("urls", [])
+            else:
+                raw_title = "Unknown Title"
+                raw_text = str(item)
+                discovered_urls = []
+
+            # Anti-Redundancy Check (Bypass jika AI membandel memberi data lama)
+            norm_raw_title = normalize_title(raw_title)
+            is_duplicate = any(normalize_title(ext_t) in norm_raw_title or norm_raw_title in normalize_title(ext_t) for ext_t in existing_titles if ext_t)
+            
+            if is_duplicate and norm_raw_title != "unknown title":
+                log.info(f"⏭️ Skipping known item early: {raw_title}")
+                continue
+
+            # Layer Validasi
+            validation = pass_1_validate(api_key, raw_text)
+            if not validation or not validation.get("is_innovation") or validation.get("confidence", 0) < 0.6:
+                continue
+
+            base_data = pass_2_extract(api_key, raw_text)
+            if not base_data or not base_data.get("title"):
+                continue
+
+            # Final Hash Check
+            normalized_title = normalize_title(base_data["title"])
+            country = base_data.get("location", {}).get("country", "unknown").lower()
+            title_hash = hashlib.md5(f"{normalized_title}-{country}".encode('utf-8')).hexdigest()
+
+            if any(db_item.get("id") == title_hash for db_item in database):
+                continue
+
+            risk_data = pass_3_risk(api_key, raw_text)
+            lineage_data = pass_4_lineage(api_key, raw_text)
+
+            final_item = {
+                "id": title_hash, 
+                "timestamp": datetime.now().isoformat(),
+                **base_data,
+                "origin": lineage_data if lineage_data else {"knowledge_source": []},
+                "risk_assessment": risk_data if risk_data else {}
+            }
+
+            if "sources" not in final_item: final_item["sources"] = []
+            final_item["sources"] = list(set(final_item.get("sources", []) + discovered_urls))
+
+            # Geocoding
+            loc_data = final_item.get("location", {})
+            search_parts = [p for p in [loc_data.get("city_or_village", ""), loc_data.get("region", ""), loc_data.get("country", "")] if p and p.lower() != "unknown"]
+            lat, lon = get_coordinates(", ".join(search_parts))
+            final_item["location"]["lat"], final_item["location"]["lon"] = lat, lon
+
+            # Save
+            database.append(calculate_advanced_metrics(final_item))
+            existing_titles.append(base_data["title"]) # Cegah duplikat dalam satu sesi
+            success_count += 1
+            
+            log.info(f"🔥 New Innovation Added: {final_item['title']}")
+            
+    if success_count == 0:
+        log.warning("All attempts failed to find new innovations in this run.")
         
-        unique_string = f"{normalized_title}-{country}"
-        title_hash = hashlib.md5(unique_string.encode('utf-8')).hexdigest()
-
-        if any(db_item.get("id") == title_hash for db_item in database):
-            log.info(f"⏭️ Skipping duplicate after extraction: {base_data['title']}")
-            continue
-
-        risk_data = pass_3_risk(api_key, raw_text)
-        lineage_data = pass_4_lineage(api_key, raw_text)
-
-        final_item = {
-            "id": title_hash, 
-            "timestamp": datetime.now().isoformat(),
-            **base_data,
-            "origin": lineage_data if lineage_data else {"knowledge_source": []},
-            "risk_assessment": risk_data if risk_data else {}
-        }
-
-        if "sources" not in final_item: final_item["sources"] = []
-        final_item["sources"] = list(set(final_item.get("sources", []) + discovered_urls))
-
-        # Geocoding Akurat
-        loc_data = final_item.get("location", {})
-        country = loc_data.get("country", "")
-        region = loc_data.get("region", "")
-        city = loc_data.get("city_or_village", "")
-        
-        search_parts = [p for p in [city, region, country] if p and p.lower() != "unknown"]
-        location_query = ", ".join(search_parts)
-        
-        lat, lon = get_coordinates(location_query)
-        final_item["location"]["lat"], final_item["location"]["lon"] = lat, lon
-
-        final_item = calculate_advanced_metrics(final_item)
-        database.append(final_item)
-        success_count += 1
-        
-        log.info(f"🔥 New Innovation Added: {final_item['title']}")
-
     return success_count
     
 def generate_intelligence_report(api_key, database):
