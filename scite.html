@@ -419,7 +419,7 @@
         }
 
         // --- Gemini API Call ---
-        async function sendMessage() {
+async function sendMessage() {
     const inputEl = document.getElementById('chat-input');
     const message = inputEl.value.trim();
     const apiKey = document.getElementById('api-key').value.trim();
@@ -447,20 +447,22 @@
         S: item.summary
     })));
 
-    // 2. Prompt 
+    // 2. Prompt yang Diperbaiki agar AI tidak halusinasi kode (thought/tool_code)
     const systemPrompt = `You are Edu-Scite, an elite academic research assistant. 
     Respond in ${currentLang === 'id' ? 'Indonesian' : 'English'}.
     
     CRITICAL INSTRUCTIONS: 
-    1. Answer by synthesizing the "INTERNAL SEARCH RESULTS" below.
-    2. YOU MUST USE YOUR GOOGLE SEARCH TOOL to find additional scientific literature (Springer, Nature, PubMed, Google Scholar, etc.) to heavily support or contrast the internal data.
-    3. Every claim MUST be cited using THIS EXACT FORMAT: [[Type: Title]]
+    1. Synthesize the "INTERNAL SEARCH RESULTS" below.
+    2. You have native access to Google Search. You MUST incorporate information from external scientific publications (e.g., Springer, Nature, PubMed) to support or contrast the internal data.
+    3. Every claim MUST be cited using THIS EXACT FORMAT: [[Type: Exact Title]]
     
     TYPES OF CITATIONS:
-    - [[Supporting: Title]] -> For internal dataset claims that support the argument.
-    - [[Contrasting: Title]] -> For internal dataset claims that offer alternatives.
-    - [[Mentioning: Title]] -> For internal dataset neutral mentions.
-    - [[External: Journal/Author - Title]] -> For claims backed by external web/journal publications you just found via Google Search.
+    - [[Supporting: Title]] -> For internal data.
+    - [[Contrasting: Title]] -> For internal data.
+    - [[Mentioning: Title]] -> For internal data.
+    - [[External: Journal/Author - Title]] -> For claims backed by external web/journal publications. YOU MUST INCLUDE AT LEAST ONE EXTERNAL CITATION.
+
+    IMPORTANT: Write naturally as an academic. Do NOT output any internal thoughts, python code, or tool call commands. Give the final response directly.
 
     INTERNAL SEARCH RESULTS:
     ---
@@ -477,11 +479,11 @@
     try {
         const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
         
-        // 3. Payload dengan Tools (Menggunakan let agar bisa diubah saat Auto-Fallback)
+        // 3. Payload
         let payload = {
             contents: contents,
             systemInstruction: { parts: [{ text: systemPrompt }] },
-            tools: [{ google_search: {} }], // <-- Sintaks aman untuk REST API
+            tools: [{ googleSearch: {} }], 
             generationConfig: { temperature: 0.3, maxOutputTokens: 3000 }
         };
 
@@ -491,22 +493,17 @@
             body: JSON.stringify(payload)
         });
 
-        // =========================================================
-        // 🚀 SMART AUTO-FALLBACK JIKA SERVER GOOGLE DOWN/SIBUK
-        // =========================================================
         if (response.status === 503 || response.status === 500) {
-            console.warn("⚠️ Server Google Search sibuk (503). Mengalihkan ke mode Lokal...");
+            console.warn("⚠️ Server Google Search sibuk (503/500). Mengalihkan ke mode Lokal...");
             
-            // Munculkan notifikasi error yang rapi di panel kanan
             document.getElementById('external-evidence-section').classList.remove('hidden');
             document.getElementById('external-evidence-list').innerHTML = `
                 <div class="bg-rose-50 p-3 rounded-lg border border-rose-200 shadow-sm text-rose-600 text-xs font-medium">
                     <i class="ph-bold ph-warning-circle mb-1 text-base"></i><br>
-                    Google Web Search is currently overloaded (503). Generating response based on local data only.
+                    Google Web Search is currently overloaded (503). Generated response is based on local data only.
                 </div>
             `;
             
-            // Hapus tool web search agar API tidak keberatan, dan panggil API ulang
             delete payload.tools; 
             response = await fetch(url, {
                 method: 'POST',
@@ -514,12 +511,22 @@
                 body: JSON.stringify(payload)
             });
         }
-        // =========================================================
 
         if (!response.ok) throw new Error(`API Error: ${response.status}`);
 
         const data = await response.json();
-        const aiResponseText = data.candidates[0]?.content?.parts[0]?.text;
+        let aiResponseText = data.candidates[0]?.content?.parts[0]?.text || "";
+        
+        // 🧹 PEMBERSIH HALUSINASI KODE: Jika AI masih membocorkan "thought" atau "tool_code"
+        if (aiResponseText.includes("tool_code") || aiResponseText.includes("thought")) {
+            // Membuang bagian teks yang mengandung proses berpikir AI
+            aiResponseText = aiResponseText.replace(/tool_code[\s\S]*?thought/g, "").replace(/thought[\s\S]*?I will formulate/g, "").trim();
+            
+            // Fallback darurat jika seluruh teks ternyata berisi kode
+            if (aiResponseText.length < 50 || aiResponseText.startsWith("tool_code") || aiResponseText.startsWith("thought")) {
+                aiResponseText = "⚠️ *AI encountered a formatting issue while fetching external journals. However, the data has been processed.* \n\nSilakan ajukan pertanyaan yang sama sekali lagi atau dengan kalimat berbeda.";
+            }
+        }
         
         // 4. MENGAMBIL DATA WEB DARI GEMINI (Grounding Metadata)
         const grounding = data.candidates[0]?.groundingMetadata;
