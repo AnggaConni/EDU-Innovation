@@ -1,6 +1,6 @@
 """
 =======================================================================
-  INNOVATION RADAR v1.3 — Global Intelligence Engine
+  EDU INNOVATION RADAR v0.3 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash
   Mode      : Multi-Schedule Tracker (Data = 2 Days, Resume = 3 Months)
   Feature   : Append-Only DB, Smart Execution, Independent Force Crawl
@@ -45,94 +45,181 @@ MAX_ITEMS_PER_RUN    = int(os.environ.get("MAX_ITEMS_PER_RUN", 3))
 # ✅ EXPANDED: From 7 → 60 keywords across 10 thematic categories
 KEYWORDS = [
 
-    # --- Agriculture & Food Security ---
-    "grassroots innovation developing country",
-    "DIY farming tools self-taught farmer",
-    "improvised irrigation system smallholder",
-    "low cost drip irrigation rural farmer",
-    "homemade pesticide organic village",
-    "traditional seed preservation technique",
-    "community grain storage innovation Africa",
-    "fish farming backyard low cost method",
-    "vertical garden urban poor neighborhood",
-    "soil improvement technique indigenous farmer",
-    "DIY greenhouse plastic bottle rural",
-    "hand-powered thresher local invention",
+    # --- Digital Learning & Access ---
+    "offline education innovation rural school",
+    "low cost digital classroom developing country",
+    "community built e-learning platform local language",
+    "solar powered learning station rural village",
+    "DIY educational technology grassroots innovation",
+    "offline first learning app remote area",
+    "repurposed smartphones for education community project",
+    "digital literacy training underserved youth",
+    "portable classroom technology low infrastructure",
+    "micro learning via feature phone developing country",
+    "local server offline wikipedia school",
+    "community wifi learning hub rural",
+    "LMS innovation for low bandwidth environment",
+    "Immersive learning with low cost VR cardboard",
+    "Augmented reality for learning education",
+    "IFP technology for interactive learning low resource setting",
 
-    # --- Water & Sanitation ---
-    "improvised water filter rural village",
-    "homemade biosand water filter community",
-    "rainwater harvesting DIY rooftop system",
-    "clay pot water purification traditional",
-    "low cost latrine sanitation rural innovation",
-    "solar water disinfection SODIS village",
-    "community-built well innovation developing world",
-    "greywater recycling homemade system",
+    # --- Teaching Innovation ---
+    "grassroots teacher innovation classroom",
+    "self taught educator creative learning method",
+    "project based learning low resource school",
+    "peer to peer education village community",
+    "interactive storytelling education local culture",
+    "gamified learning low tech classroom",
+    "community driven curriculum innovation",
+    "multilingual teaching innovation indigenous language",
+    "creative science experiment low cost materials",
+    "teacher made learning aids recycled materials",
+    "student centered learning rural school",
+    "informal education innovation developing world",
+    "Gamification in low resource educational settings",
+    "Deep learning for teacher training in underserved areas",
+    "Social emotional learning innovation grassroots initiative",
+    "Pedagogy of care community education project",
+    "Mental recreation for learning innovation low resource school",
+    "Experiential learning through local environment project",
+    "Immagination based learning innovation rural classroom",
 
-    # --- Energy & Electricity ---
-    "homemade energy generator rural village",
-    "DIY micro hydro turbine local inventor",
-    "homemade biogas digester cow dung",
-    "improvised solar panel cheap rural electrification",
-    "wind turbine scrap metal village maker",
-    "charcoal briquette homemade waste",
-    "rocket stove low cost fuel efficient cooking",
-    "pedal powered electricity generator community",
+    # --- Inclusive Education ---
+    "inclusive education innovation disability low resource",
+    "DIY assistive learning tools special needs",
+    "braille learning innovation local materials",
+    "sign language education community initiative",
+    "accessible classroom technology developing country",
+    "community learning support for disabled students",
+    "low cost hearing aid classroom adaptation",
+    "education for remote indigenous communities",
+    "girls education grassroots initiative rural",
+    "education innovation refugee camp learning",
+    "UDL principles applied in low resource classroom",
+    "Special needs education innovation grassroots",
+    "LRE innovation for inclusive education developing world",
+    "NCLB innovation for inclusive education low resource setting",
+    "DSM 5 based learning support innovation grassroots initiative",
+    "Pedagogy of inclusion community education project",
+    "Paraeducator training innovation for inclusive education rural school",
+    "Co-teaching model innovation for inclusive education low resource setting",
+    "Neurodivergent friendly learning environment innovation grassroots initiative",
+    "Typical development milestones based learning support innovation grassroots initiative",
+    "Personalized learning plan innovation for inclusive education developing world",
+    "PEER support network innovation for inclusive education rural community",
+    "Assistive technology innovation for inclusive education low resource setting",
+    "ICD 11 based learning support innovation grassroots initiative",
+    "Multiple Intelligence theory based learning support innovation grassroots initiative",
+    "Gifted education innovation grassroots initiative low resource setting",
+    "Talented education innovation grassroots initiative developing world",
+    "Neuroscience informed learning support innovation grassroots initiative",
+    "Neurodiversity acceptance education innovation grassroots initiative",
+    "ABA based learning support innovation for inclusive education grassroots initiative",
+    "CBT based mental health support innovation for inclusive education grassroots initiative",
+    "Therapy informed learning support innovation for inclusive education grassroots initiative",
+    "Assessment accommodation innovation for inclusive education grassroots initiative",
+    "Intervention accommodation innovation for inclusive education grassroots initiative",
+    "RTI based learning support innovation for inclusive education grassroots initiative",
+    "MTSS based learning support innovation for inclusive education grassroots initiative",
+    "Collaboration between general and special education innovation grassroots initiative",
+    "Parents as partners in inclusive education innovation grassroots initiative",
+    "IEP development innovation for inclusive education grassroots initiative",
 
-    # --- Health & Medicine ---
-    "low cost medical device rural clinic innovation",
-    "traditional herbal remedy documented local knowledge",
-    "improvised stretcher ambulance rural community",
-    "homemade incubator premature baby low income",
-    "DIY wheelchair developing country local materials",
-    "community health innovation grassroots Africa Asia",
-    "low cost prosthetic limb local maker",
-    "village midwife tool improvised birth kit",
+    # --- STEAM & Maker Culture ---
+    "makerspace rural school grassroots innovation",
+    "DIY robotics education low cost",
+    "community science lab developing country",
+    "local materials engineering education project",
+    "student innovation challenge village school",
+    "homemade science kit rural classroom",
+    "coding education offline community center",
+    "low cost STEAM education education toolkit",
+    "low cost STEM education education toolkit",
+    "youth innovation hub underserved area",
+    "recycled electronics for STEAM learning",
+    "Battery free science experiment innovation grassroots initiative",
+    "Electrolysis based energy learning innovation grassroots initiative",
+    "Plastic to fuel science experiment innovation grassroots initiative",
+    "Olive oil lamp science experiment innovation grassroots initiative",
+    "River turbine energy learning innovation grassroots initiative",
+    "Nuclear literacy education innovation grassroots initiative",
+    "Quantum computing education innovation grassroots initiative",
+    "Artificial Sun science experiment innovation grassroots initiative",
+    "Basic Radiation for School Education",
 
-    # --- Construction & Shelter ---
-    "low cost housing innovation local material",
-    "earthbag construction community self-built",
-    "bamboo reinforced concrete rural building",
-    "plastic bottle brick house slum innovation",
-    "rammed earth construction self-taught builder",
-    "DIY composting toilet rural sanitation",
-    "recycled material roof waterproofing village",
+    # --- Libraries & Knowledge Sharing ---
+    "mobile library innovation rural community",
+    "community reading movement grassroots",
+    "book sharing initiative underserved neighborhoods",
+    "village learning center local innovation",
+    "open educational resources local adaptation",
+    "homemade classroom library low income school",
+    "community storytelling and literacy project",
+    "digital archive indigenous knowledge education",
+    "DEWEY system adaptation local library",
 
-    # --- Education & Communication ---
-    "local community tech adaptation",
-    "offline education tool rural school DIY",
-    "repurposed device learning tool developing country",
-    "community radio homemade transmitter village",
-    "DIY projector school rural innovation",
-    "solar powered tablet charging station village",
+    # --- Alternative & Informal Education ---
+    "informal learning space community innovation",
+    "street children education grassroots project",
+    "education through local crafts tradition",
+    "village apprenticeship learning model",
+    "community mentorship education initiative",
+    "youth empowerment through education innovation",
+    "alternative school low cost community driven",
+    "learning through farming and local practice",
+    "education through environmental conservation project",
+    "Refugee education innovation grassroots initiative",
+    "Rural education innovation grassroots initiative",
+    "CLC innovation for informal education developing world",
+    "NGO based education innovation grassroots initiative",
+    "Boarding school alternative education innovation grassroots initiative",
+    "Home Schooling innovation grassroots initiative",
+    "Unschooling innovation grassroots initiative",
+    "Deschooling innovation grassroots initiative",
+    
+    # --- Educational Infrastructure ---
+    "low cost classroom construction innovation",
+    "DIY school furniture local materials",
+    "recycled material classroom design",
+    "portable school kit disaster area",
+    "solar powered computer lab rural school",
+    "rainproof outdoor classroom innovation",
+    "community built school developing world",
+    "eco friendly school infrastructure grassroots",
+    "RAMP innovation for school accessibility developing world",
+    "LIFT innovation for school infrastructure low resource setting",
+    "Escalator innovation for school infrastructure developing world",
+    "Guiding block innovation for school infrastructure low resource setting",
+    "Automatic door innovation for school infrastructure developing world",
+    "Trampoline innovation for school infrastructure low resource setting",
+    "Garden classroom innovation for school infrastructure grassroots initiative",
+    "Field classroom innovation for school infrastructure grassroots initiative",
+    "Development of inclusive playground innovation for school infrastructure grassroots initiative",
+    "Table and chair innovation for inclusive classroom innovation for school infrastructure grassroots initiative",
+    "Foundry/workbench innovation for school infrastructure grassroots initiative",
+    "Gallery space innovation for school infrastructure grassroots initiative",
+    "Ballroom space innovation for school infrastructure grassroots initiative",
 
-    # --- Tools & Manufacturing ---
-    "traditional knowledge modified modern tools",
-    "blacksmith innovation local tool adaptation Africa",
-    "repurposed engine machine local inventor",
-    "scrap metal workshop village innovation",
-    "3D printing low cost prosthetic developing country",
-    "local foundry casting innovation informal sector",
+    # --- Educational Media & Communication ---
+    "community radio for education rural",
+    "podcast learning initiative local language",
+    "educational comic innovation developing country",
+    "DIY projector for classroom learning",
+    "low bandwidth education content delivery",
+    "SMS based learning system rural students",
+    "educational animation grassroots creators",
+    "open source education platform community adaptation",
 
-    # --- Environment & Waste ---
-    "slum innovation low cost solution recycling",
-    "plastic waste upcycling community enterprise",
-    "informal waste picker innovation tool",
-    "homemade oil press seed local village",
-    "community composting system urban poor",
-    "river cleanup tool homemade community",
-
-    # --- Transportation & Mobility ---
-    "improvised transport solution rural community",
-    "cargo bicycle modification local welder",
-    "low cost boat motor adaptation fisher community",
-    "donkey cart innovation rural logistics",
-
-    # --- Finance & Social Innovation ---
-    "community savings innovation rotating fund village",
-    "local barter system informal economy adaptation",
-    "grassroots cooperative innovation developing world",
-    "mobile money workaround rural community unbanked",
+    # --- Social & Cultural Learning ---
+    "cultural heritage education innovation community",
+    "traditional knowledge integration school curriculum",
+    "intergenerational learning local wisdom",
+    "local language preservation through education",
+    "arts based education grassroots initiative",
+    "community theater for education awareness",
+    "education for peacebuilding local initiative",
+    "environmental education grassroots movement",
+    "Narrative based learning innovation grassroots initiative",
 ]
 
 # =====================================================================
@@ -287,21 +374,61 @@ def call_gemini_with_retry(api_key, prompt, system_instruction, retries=3, **kwa
 # =====================================================================
 
 def pass_1_validate(api_key, raw_content):
-    sys_prompt = """Determine whether the following content represents a real-world grassroots or local innovation. Criteria: Must solve a clear problem, involve a tangible method/tool. Return exactly: {"is_innovation": true/false, "confidence": 0.0-1.0}"""
-    res = call_gemini_with_retry(api_key, raw_content, sys_prompt)   # ✅ changed
-    return res if res else {"is_innovation": False, "confidence": 0}
+    sys_prompt = """Determine whether the following content represents a real-world grassroots or local innovation SPECIFICALLY IN EDUCATION OR LEARNING. Criteria: Must solve a clear educational problem, involve teaching/learning methods, literacy, STEAM, or schooling tools. Return exactly: {"is_innovation": true/false, "confidence": 0.0-1.0}"""
+    return call_gemini_with_retry(api_key, raw_content, sys_prompt)   # ✅ changed
 
 def pass_2_extract(api_key, raw_content):
-    # Kita tambahkan instruksi "DIRECT, ORIGINAL links"
-    sys_prompt = """Extract structured data about this innovation. 
-    IMPORTANT: For 'sources', provide only DIRECT, ORIGINAL website links (e.g., youtube.com, bbc.com) and NOT the google search grounding redirect links.
+    sys_prompt = """You are an expert Educational Curriculum Designer and OSINT Analyst. 
+    Extract structured data about this educational innovation. 
+    
+    CRITICAL RULES FOR SOURCES:
+    - Provide ONLY direct, original website URLs (e.g., https://www.bbc.com/..., https://en.unesco.org/...).
+    - STRIP OUT any Google Search redirect wrappers (DO NOT output links starting with google.com/url?q=).
+    - If no direct link is available, leave the array empty [].
+    
     Return EXACTLY this JSON structure:
-{"title": "", "sources": [], "summary": "", "category": [], "innovation_level": "grassroots | semi-formal | institutional", "location": {"country": "", "region": ""}, "process": {"how_it_works": "", "materials_used": [], "step_by_step": []}, "impact": {"problem_solved": "", "scale": "low | medium | high"}, "replicability": {"cost_level": "low | medium | high", "difficulty": "easy | medium | hard"}}"""
+{
+  "title": "",
+  "sources": [],
+  "summary": "",
+  "category": ["category1", "category2"],
+  "innovation_level": "grassroots | semi-formal | institutional", 
+  "location": {
+    "country": "", 
+    "region": "", 
+    "city_or_village": "", 
+    "institution_name": ""
+  }, 
+  "education_details": {
+    "education_type": "formal | informal | non-formal | alternative | special_needs",
+    "related_fields": ["STEM", "Arts", "Literacy", "Vocational", "Environment", "Health", "Civics", "Other"],
+    "target_learners": "", 
+    "learning_outcomes": [], 
+    "pedagogical_approach": ""
+  }, 
+  "tutorial_how_to": {
+    "materials_required": [], 
+    "preparation_steps": [], 
+    "execution_steps": [],
+    "tips_for_success": ""
+  }, 
+  "impact": {
+    "problem_solved": "", 
+    "evidence_of_success": "", 
+    "beneficiaries_reach": "", 
+    "scale": "low | medium | high", 
+    "impact_score": <int 1-10>
+  }, 
+  "replicability": {
+    "cost_level": "low | medium | high", 
+    "difficulty": "easy | medium | hard"
+  }
+}"""
     return call_gemini_with_retry(api_key, raw_content, sys_prompt)   # ✅ changed
 
 def pass_3_risk(api_key, raw_content):
-    sys_prompt = """Analyze the innovation and assess potential risks (fire hazard, explosion, toxic, environment, safety gear). Rules: Be conservative. Grassroots + chemical/energy -> higher risk. Return EXACTLY this JSON:
-{"risk_score": <int 1-10>, "risk_type": ["type1"], "safety_level": "low|medium|high", "needs_intervention": true/false, "explanation": ""}"""
+    sys_prompt = """Analyze the educational innovation and assess potential risks. Focus on: data privacy, child safety, cognitive overload, exclusion/accessibility barriers, cultural friction, or physical safety (only for STEAM/hardware). Return EXACTLY this JSON:
+{"risk_score": <int 1-10>, "risk_type": ["data_privacy", "exclusion", "cultural", "physical", "other"], "safety_level": "low|medium|high", "needs_intervention": true/false, "explanation": ""}"""
     return call_gemini_with_retry(api_key, raw_content, sys_prompt)   # ✅ changed
 
 def pass_4_lineage(api_key, raw_content):
@@ -310,24 +437,31 @@ def pass_4_lineage(api_key, raw_content):
 
 def calculate_advanced_metrics(data):
     try:
-        impact_map = {"high": 10, "medium": 6, "low": 2, "unknown": 0}
         repl_map = {"easy": 10, "medium": 5, "hard": 2, "unknown": 0}
-        impact_val = impact_map.get(str(data.get("impact", {}).get("scale", "")).lower(), 0)
+        
+        # Ambil score langsung dari pass 2, default ke 5 jika gagal
+        impact_val = data.get("impact", {}).get("impact_score", 5) 
         repl_val = repl_map.get(str(data.get("replicability", {}).get("difficulty", "")).lower(), 0)
         risk_val = data.get("risk_assessment", {}).get("risk_score", 1)
 
-        priority_score = int(((impact_val * 0.4) + (risk_val * 0.4) + (repl_val * 0.2)) * 10)
+        # Risiko tinggi justru MENGURANGI prioritas (safety = 10 - risk)
+        safety_val = 10 - risk_val 
+        priority_score = int(((impact_val * 0.4) + (repl_val * 0.4) + (safety_val * 0.2)) * 10)
         data["priority_score"] = min(100, max(0, priority_score))
 
         is_grassroots = data.get("innovation_level", "").lower() == "grassroots"
         is_low_cost = data.get("replicability", {}).get("cost_level", "").lower() == "low"
-        data["hidden_gem"] = bool(is_grassroots and is_low_cost and impact_val >= 6)
+        data["hidden_gem"] = bool(is_grassroots and is_low_cost and impact_val >= 7)
 
+        # Flag Kritis
         risk_types = [str(x).lower() for x in data.get("risk_assessment", {}).get("risk_type", [])]
-        has_critical = any(k in t for t in risk_types for k in ["fire", "chemical", "explosion", "energy", "toxic"])
-        data["critical_flag"] = bool(risk_val >= 8 and has_critical)
+        edu_critical_risks = ["privacy", "exclusion", "safety", "harm", "abuse"]
+        has_critical = any(k in t for t in risk_types for k in edu_critical_risks)
+        data["critical_flag"] = bool(risk_val >= 7 and has_critical)
+        
         return data
-    except Exception:
+    except Exception as e:
+        log.warning(f"Failed calculating metrics: {e}")
         return data
 
 # =====================================================================
@@ -335,11 +469,25 @@ def calculate_advanced_metrics(data):
 # =====================================================================
 
 def run_discovery_pipeline(api_key, database, max_items=3):
-    """Mencari data baru dan menambahkannya ke database."""
+    """Mencari data baru dan menambahkannya ke database dengan Anti-Redundansi."""
     keyword = random.choice(KEYWORDS)
     log.info(f"Initiating radar ping with keyword: '{keyword}'")
 
-    seed_prompt = f"Search the web for 5 distinct, real-world examples of: {keyword}. Provide a detailed paragraph for each, AND include a list of all relevant source URLs found. Return a JSON object with an array 'innovations' containing these descriptions and their associated URLs."
+    # ==========================================
+    # ANTI-REDUNDANSI 1: Beritahu AI apa yang sudah kita punya
+    # ==========================================
+    existing_titles = [item.get("title", "") for item in database if item.get("title")]
+    
+    # Ambil maksimal 50 judul secara acak agar Prompt tidak kepanjangan (hemat token)
+    avoid_sample = random.sample(existing_titles, min(len(existing_titles), 50))
+    avoid_str = ", ".join(avoid_sample) if avoid_sample else "None"
+
+    # Modifikasi Prompt: Larang AI mencari inovasi yang sudah ada, dan minta format 'title' eksplisit.
+    seed_prompt = f"""Search the web for 5 distinct, real-world examples of: {keyword}. 
+CRITICAL RULE: DO NOT return any of these known examples: {avoid_str}.
+Provide a detailed paragraph for each, AND include a list of all relevant source URLs found. 
+Return a JSON object with an array 'innovations' where each item contains exactly: "title" (string), "description" (string), and "urls" (array of strings)."""
+    
     seed_sys = "You are an OSINT web scraper. Use google search. IMPORTANT: Always return the direct, original source URLs. Return pure JSON."
 
     seed_data = call_gemini_with_retry(api_key, seed_prompt, seed_sys, use_search=True)
@@ -353,13 +501,30 @@ def run_discovery_pipeline(api_key, database, max_items=3):
     for idx, item in enumerate(raw_descriptions):
         if success_count >= max_items: break
 
+        # Ambil data awal
         if isinstance(item, dict):
+            raw_title = item.get("title", "Unknown Title")
             raw_text = item.get("description", str(item))
             discovered_urls = item.get("urls", [])
         else:
+            raw_title = "Unknown Title"
             raw_text = str(item)
             discovered_urls = []
 
+        # ==========================================
+        # ANTI-REDUNDANSI 2: Early Check (Hemat API)
+        # ==========================================
+        norm_raw_title = normalize_title(raw_title)
+        # Cek apakah judul mentah dari AI mirip dengan judul yang sudah ada di database kita
+        is_duplicate = any(normalize_title(ext_t) in norm_raw_title or norm_raw_title in normalize_title(ext_t) for ext_t in existing_titles if ext_t)
+        
+        if is_duplicate and norm_raw_title != "unknown title":
+            log.info(f"⏭️ AI suggested a known item. Skipping early to save API quota: {raw_title}")
+            continue
+
+        # --------------------------------------------------
+        # Masuk ke Pipeline Validasi jika Lolos Pengecekan
+        # --------------------------------------------------
         validation = pass_1_validate(api_key, raw_text)
         if not validation.get("is_innovation") or validation.get("confidence", 0) < 0.6:
             continue
@@ -368,16 +533,15 @@ def run_discovery_pipeline(api_key, database, max_items=3):
         if not base_data or not base_data.get("title"):
             continue
 
-        # --- KODE BARU (Penerapan No. 5) ---
+        # Hash Final Validation
         normalized_title = normalize_title(base_data["title"])
         country = base_data.get("location", {}).get("country", "unknown").lower()
         
-        # Gabungkan title dan negara agar ID unik per lokasi
         unique_string = f"{normalized_title}-{country}"
         title_hash = hashlib.md5(unique_string.encode('utf-8')).hexdigest()
-        # -----------------------------------
 
         if any(db_item.get("id") == title_hash for db_item in database):
+            log.info(f"⏭️ Skipping duplicate after extraction: {base_data['title']}")
             continue
 
         risk_data = pass_3_risk(api_key, raw_text)
@@ -394,15 +558,23 @@ def run_discovery_pipeline(api_key, database, max_items=3):
         if "sources" not in final_item: final_item["sources"] = []
         final_item["sources"] = list(set(final_item.get("sources", []) + discovered_urls))
 
-        country = final_item.get("location", {}).get("country", "")
-        region = final_item.get("location", {}).get("region", "")
-        lat, lon = get_coordinates(f"{region}, {country}".strip(", "))
+        # Geocoding Akurat
+        loc_data = final_item.get("location", {})
+        country = loc_data.get("country", "")
+        region = loc_data.get("region", "")
+        city = loc_data.get("city_or_village", "")
+        
+        search_parts = [p for p in [city, region, country] if p and p.lower() != "unknown"]
+        location_query = ", ".join(search_parts)
+        
+        lat, lon = get_coordinates(location_query)
         final_item["location"]["lat"], final_item["location"]["lon"] = lat, lon
 
         final_item = calculate_advanced_metrics(final_item)
         database.append(final_item)
         success_count += 1
-        log.info(f"🔥 Processed: {final_item['title']}")
+        
+        log.info(f"🔥 New Innovation Added: {final_item['title']}")
 
     return success_count
     
@@ -417,7 +589,7 @@ def generate_intelligence_report(api_key, database):
     db_string = json.dumps(database, ensure_ascii=False)
 
     sys_prompt = """
-                You are an elite AI Intelligence Analyst generating a quarterly global report on grassroots and institutional innovation.
+                You are an elite AI Educator Intelligence Analyst generating a quarterly global report on education innovation.
 
                 You will be given a JSON array containing structured innovation records.
 
@@ -440,17 +612,18 @@ def generate_intelligence_report(api_key, database):
 
                 {
                 "report_metadata": {
-                    "report_id": "gsi-current",
+                    "report_id": "edu-current",
                     "generated_at": "YYYY-MM-DD",
                     "period": "Q_ YYYY",
                     "total_records_analyzed": 0
                 },
 
                 "global_summary": {
-                    "total_innovations": 0,
+                    "total_education_innovations": 0,
                     "grassroots_percentage": 0,
                     "institutional_percentage": 0,
-                    "semi_formal_percentage": 0
+                    "formal_percentage": 0,
+                    "informal_percentage": 0
                 },
 
                 "top_categories": [
@@ -465,15 +638,15 @@ def generate_intelligence_report(api_key, database):
                     {
                     "region": "",
                     "key_pattern": "",
-                    "risk_level": "low | medium | high"
+                    "impact_level": "low | medium | high"
                     }
                 ],
 
-                "risk_analysis": {
-                    "high_risk_cases": 0,
+                "impact_analysis": {
+                    "high_impact_cases": 0,
                     "critical_cases": 0,
-                    "top_risk_types": [],
-                    "emerging_risks": []
+                    "top_impact_types": [],
+                    "emerging_impacts": []
                 },
 
                 "innovation_patterns": [
@@ -481,7 +654,7 @@ def generate_intelligence_report(api_key, database):
                     "pattern_name": "",
                     "description": "",
                     "regions": [],
-                    "risk_level": "low | medium | high"
+                    "impact_level": "low | medium | high"
                     }
                 ],
 
@@ -495,7 +668,7 @@ def generate_intelligence_report(api_key, database):
 
                 "intervention_opportunities": [
                     {
-                    "type": "training | funding | regulation | research",
+                    "type": "training | funding | regulation | research | collaboration | perception | evaluation | criticism",
                     "target": "",
                     "priority_level": "low | medium | high",
                     "justification": ""
@@ -504,7 +677,7 @@ def generate_intelligence_report(api_key, database):
 
                 "knowledge_insights": {
                     "most_common_source": "",
-                    "trend": "increasing | decreasing | shifting",
+                    "trend": "increasing | decreasing | shifting | fostering | promoting",
                     "observation": ""
                 },
 
@@ -516,11 +689,14 @@ def generate_intelligence_report(api_key, database):
                     "innovation_by_region": [
                     { "region": "", "count": 0 }
                     ],
-                    "risk_distribution": [
+                    "impact_distribution": [
                     { "level": "low | medium | high", "count": 0 }
                     ],
                     "knowledge_source_trend": [
                     { "source": "", "count": 0 }
+                    ],
+                    "learning_outcomes": [
+                    { "level": "low | medium | high", "count": 0 }
                     ]
                 }
                 }
@@ -541,25 +717,26 @@ def generate_intelligence_report(api_key, database):
                 - Identify regional clusters
                 - Highlight dominant innovation type or issue per region
 
-                4. RISK ANALYSIS
-                - High risk = risk_score >= 6
-                - Critical = risk_score >= 8
-                - Identify repeated dangerous patterns
+                4. IMPACT ANALYSIS (Dropouts, Impacts)
+                - High impact = impact_score >= 6
+                - Critical = impact_score >= 8
+                - Identify repeated regressed patterns
 
-                5. INNOVATION PATTERNS
+                5. EDUCATION INNOVATION PATTERNS
                 - Group similar innovations into themes
-                - Example: "DIY energy systems", "low-cost medical tools"
+                - Example: "DIY energy generator systems learning", "low-cost educational tools"
 
                 6. HIDDEN GEMS
                 - Must meet ALL:
                 - grassroots
                 - low cost
                 - high impact
+                - High Collaboration Potential (based on replicability and risk)
                 - Select top 5–10 only
 
                 7. INTERVENTION OPPORTUNITIES
                 - Focus on:
-                - high risk + high impact
+                - high impact + high priority
                 - scalable innovations needing support
 
                 8. KNOWLEDGE INSIGHTS
@@ -610,26 +787,26 @@ def generate_intelligence_report(api_key, database):
         new_report["report_metadata"]["period"] = quarter
 
         # ==========================================
-        # PERBAIKAN 2: PAKSA HITUNGAN RISK ANALYSIS
+        # PERBAIKAN 2: PAKSA HITUNGAN IMPACT ANALYSIS
         # ==========================================
-        high_risk_count = sum(1 for x in database if x.get("risk_assessment", {}).get("risk_score", 0) >= 8)
-        medium_risk_count = sum(1 for x in database if 4 <= x.get("risk_assessment", {}).get("risk_score", 0) <= 7)
-        low_risk_count = sum(1 for x in database if x.get("risk_assessment", {}).get("risk_score", 0) <= 3)
+        high_impact_count = sum(1 for x in database if x.get("impact", {}).get("impact_score", 0) >= 8)
+        medium_impact_count = sum(1 for x in database if 4 <= x.get("impact", {}).get("impact_score", 0) <= 7)
+        low_impact_count = sum(1 for x in database if x.get("impact", {}).get("impact_score", 0) <= 3)
         critical_count = sum(1 for x in database if x.get("critical_flag") == True)
 
-        # Timpa angka di panel atas Risk Analysis
-        if "risk_analysis" not in new_report:
-            new_report["risk_analysis"] = {}
-        new_report["risk_analysis"]["high_risk_cases"] = high_risk_count
-        new_report["risk_analysis"]["critical_cases"] = critical_count
+        # Timpa angka di panel atas Impact Analysis
+        if "impact_analysis" not in new_report:
+            new_report["impact_analysis"] = {}
+        new_report["impact_analysis"]["high_impact_cases"] = high_impact_count
+        new_report["impact_analysis"]["critical_cases"] = critical_count
 
         # Timpa angka di diagram batang (Bar Chart)
         if "charts" not in new_report:
             new_report["charts"] = {}
-        new_report["charts"]["risk_distribution"] =[
-            {"level": "High", "count": high_risk_count},
-            {"level": "Medium", "count": medium_risk_count},
-            {"level": "Low", "count": low_risk_count}
+        new_report["charts"]["impact_distribution"] =[
+            {"level": "High", "count": high_impact_count},
+            {"level": "Medium", "count": medium_impact_count},
+            {"level": "Low", "count": low_impact_count}
         ]
         
         # Load data lama
@@ -637,16 +814,16 @@ def generate_intelligence_report(api_key, database):
         if not isinstance(resume_db, list): 
             resume_db = []
 
-        # ✅ ROTASI ID: Ubah semua 'gsi-current' lama menjadi 'gsi-older'
+        # ✅ ROTASI ID: Ubah semua 'edu-current' lama menjadi 'edu-older'
         for report in resume_db:
             if isinstance(report, dict):
                 if "report_metadata" not in report: report["report_metadata"] = {}
-                report["report_metadata"]["report_id"] = "gsi-older"
+                report["report_metadata"]["report_id"] = "edu-older"
 
         # Setup metadata laporan baru
         new_report["report_metadata"]["generated_at"] = datetime.now().isoformat()
         new_report["report_metadata"]["period"] = quarter
-        new_report["report_metadata"]["report_id"] = "gsi-current"
+        new_report["report_metadata"]["report_id"] = "edu-current"
         
         # ✅ SIMPAN HANYA SEKALI
         resume_db.append(new_report)
@@ -656,14 +833,14 @@ def generate_intelligence_report(api_key, database):
         md_content = convert_report_to_markdown(new_report)
         save_text_file(REPORT_MD_FILE, md_content)
 
-        log.info(f"✅ Resume successfully generated and rotated. ID: gsi-current")
+        log.info(f"✅ Resume successfully generated and rotated. ID: edu-current")
     else:
         log.error("Failed to generate intelligence report.")
 
 def convert_report_to_markdown(report_data):
     meta = report_data.get("report_metadata", {})
     global_sum = report_data.get("global_summary", {})
-    risk = report_data.get("risk_analysis", {})
+    impact = report_data.get("impact_analysis", {})
 
     md = f"""# Global Innovation Intelligence Report
 **Period:** {meta.get('period', 'N/A')} | **Generated:** {meta.get('generated_at', 'N/A')} | **Records Analyzed:** {meta.get('total_records_analyzed', 0)}
@@ -672,12 +849,13 @@ def convert_report_to_markdown(report_data):
 ## 🌍 Executive Summary
 Out of {global_sum.get('total_innovations', 0)} innovations tracked:
 - **{global_sum.get('grassroots_percentage', 0)}%** Grassroots
-- **{global_sum.get('semi_formal_percentage', 0)}%** Semi-Formal
+- **{global_sum.get('formal_percentage', 0)}%** Formal
+- **{global_sum.get('informal_percentage', 0)}%** Informal
 - **{global_sum.get('institutional_percentage', 0)}%** Institutional
 
-## ⚠️ Emerging Risks
-- **High-Risk Cases:** {risk.get('high_risk_cases', 0)} | **Critical:** {risk.get('critical_cases', 0)}
-- **Top Risks:** {', '.join(risk.get('top_risk_types', []))}
+## ⚠️ Emerging Impacts
+- **High-Impact Cases:** {impact.get('high_impact_cases', 0)} | **Critical:** {impact.get('critical_cases', 0)}
+- **Top Impacts:** {', '.join(impact.get('top_impact_types', []))}
 
 ## 💎 Hidden Gems\n"""
     for gem in report_data.get("hidden_gems", []):
