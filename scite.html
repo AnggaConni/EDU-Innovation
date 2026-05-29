@@ -249,35 +249,59 @@
             updateDbStatusUI();
         }
 
-        // --- Data Loading ---
+// --- Data Loading ---
         async function loadDataset() {
             const dbStatus = document.getElementById('db-status');
             const dbIndicator = document.getElementById('db-indicator');
             const dbCount = document.getElementById('db-count');
 
+            // Daftar semua sumber dataset
+            const datasetUrls = [
+                'https://raw.githubusercontent.com/AnggaConni/GSI-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/EDU-Innovation/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/ICH-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/Nexus-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/artifact-radar/refs/heads/main/data.json'
+            ];
+
             try {
-                // Menggunakan URL absolut GitHub agar dapat diakses dari lingkungan preview/blob
-                const datasetUrl = 'https://raw.githubusercontent.com/AnggaConni/GSI-Radar/refs/heads/main/data.json';
-                const response = await fetch(datasetUrl + '?v=' + new Date().getTime());
-                if (!response.ok) throw new Error('Network response was not ok');
+                // Melakukan fetch ke semua URL secara paralel
+                const fetchPromises = datasetUrls.map(async (url) => {
+                    try {
+                        const response = await fetch(url + '?v=' + new Date().getTime());
+                        if (!response.ok) {
+                            console.warn(`Gagal memuat data dari ${url}: ${response.statusText}`);
+                            return []; // Mengembalikan array kosong agar tidak merusak data lain
+                        }
+                        
+                        let rawData = await response.json();
+                        // Handle struktur data.json
+                        return Array.isArray(rawData) ? rawData : (rawData.inventory || []);
+                    } catch (err) {
+                        console.error(`Error pada ${url}:`, err);
+                        return []; 
+                    }
+                });
+
+                // Menunggu semua proses fetch selesai
+                const results = await Promise.all(fetchPromises);
                 
-                let rawData = await response.json();
-                
-                // Handle struktur data.json (apakah array langsung atau di dalam 'inventory')
-                innovationData = Array.isArray(rawData) ? rawData : (rawData.inventory || []);
+                // Menggabungkan (flatten) semua array dari berbagai sumber menjadi satu array utama
+                innovationData = results.flat();
 
                 if (innovationData.length > 0) {
                     dbIndicator.className = "w-2.5 h-2.5 rounded-full bg-emerald-500";
                     dbStatus.innerText = i18n[currentLang].dbSuccess;
-                    dbCount.innerText = `${innovationData.length} records loaded.`;
+                    // Menampilkan total data dan jumlah sumber yang digabungkan
+                    dbCount.innerText = `${innovationData.length} records loaded from ${datasetUrls.length} sources.`;
                     
                     // Prepare minimized context string to save tokens
                     prepareContextString();
                 } else {
-                    throw new Error("Empty array");
+                    throw new Error("Semua dataset kosong atau gagal dimuat");
                 }
             } catch (error) {
-                console.error("Failed to load data.json:", error);
+                console.error("Gagal melakukan load data utama:", error);
                 dbIndicator.className = "w-2.5 h-2.5 rounded-full bg-rose-500";
                 dbStatus.innerText = i18n[currentLang].dbFail;
                 dbCount.innerText = "Check file path / CORS.";
