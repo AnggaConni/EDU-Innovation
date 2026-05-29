@@ -2,9 +2,9 @@ name: Innovation Radar Auto-Crawler
 
 on:
   schedule:
-    # Memeriksa setiap 2 hari. Script Python yang akan menentukan 
-    # apakah hanya data.json yang dicrawl, atau sekalian resume.json
-    - cron: "0 0 */1 * *"
+    # Menjalankan trigger setiap hari jam 00:00 UTC
+    # (Logika Python yang akan memutuskan apakah ini waktunya crawl atau skip)
+    - cron: "0 0 * * *"
   workflow_dispatch: 
     inputs:
       run_type:
@@ -13,10 +13,16 @@ on:
         default: 'auto'
         type: choice
         options:
-          - 'auto'          # Mengikuti jadwal history (Data 2 hari, Resume 3 bulan)
-          - 'force_data'    # Hanya mencari 3 data.json baru secara paksa
+          - 'auto'          # Mengikuti jadwal history
+          - 'force_data'    # Hanya mencari data.json baru secara paksa
           - 'force_resume'  # Hanya men-generate resume.json baru secara paksa
           - 'force_both'    # Mencari data sekaligus men-generate resume
+
+# 👇 TAMBAHAN: Mencegah tabrakan (race condition)
+# Jika proses sedang jalan, dan Anda tekan Run manual, proses akan masuk antrean (tidak jalan berbarengan)
+concurrency:
+  group: radar-crawler
+  cancel-in-progress: false
 
 jobs:
   run-scraper-and-ai:
@@ -44,12 +50,14 @@ jobs:
       - name: Run Intelligent Scheduler & AI
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Ambil input dari dropdown jika di-trigger manual, jika tidak (cron) gunakan 'auto'
-
-          # 👇 TAMBAHKAN BARIS INI 👇
-          GEMINI_MODEL: "gemini-3-flash-preview" # Default model, bisa diubah lewat env var jika ingin coba model lain
-          # Ambil input dari dropdown jika di-trigger manual, jika tidak (cron) gunakan 'auto'
+          # Nama Model bisa diubah di sini tanpa sentuh Python (Cek banner: Gemini 2.5 Flash)
+          GEMINI_MODEL: "gemini-2.5-flash" 
           RUN_TYPE: ${{ github.event.inputs.run_type || 'auto' }}
+          
+          # 👇 TAMBAHAN: Konfigurasi sistem (Bebas Anda ubah angkanya di sini kapan saja)
+          DATA_INTERVAL_DAYS: 2
+          RESUME_INTERVAL_DAYS: 90
+          MAX_ITEMS_PER_RUN: 3
         run: python scraper.py
 
       - name: Commit and Push changes
