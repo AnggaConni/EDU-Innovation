@@ -18,6 +18,17 @@ on:
           - 'force_resume'  # Hanya men-generate resume.json baru secara paksa
           - 'force_both'    # Mencari data sekaligus men-generate resume
 
+      # 👇 PERBAIKAN: Spasi dimajukan agar sejajar dengan run_type (masuk ke dalam inputs)
+      fetch_limit:
+        description: 'Jumlah data yang dicari (Berlaku untuk force data):'
+        required: true
+        default: '3'
+        type: choice
+        options:
+          - '3'   # Normal
+          - '10'  # Medium
+          - '20'  # Super Banyak sekaligus!
+
 # 👇 TAMBAHAN: Mencegah tabrakan (race condition)
 # Jika proses sedang jalan, dan Anda tekan Run manual, proses akan masuk antrean (tidak jalan berbarengan)
 concurrency:
@@ -50,14 +61,12 @@ jobs:
       - name: Run Intelligent Scheduler & AI
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Nama Model bisa diubah di sini tanpa sentuh Python (Cek banner: Gemini 2.5 Flash)
           GEMINI_MODEL: "gemini-2.5-flash" 
           RUN_TYPE: ${{ github.event.inputs.run_type || 'auto' }}
-          
-          # 👇 TAMBAHAN: Konfigurasi sistem (Bebas Anda ubah angkanya di sini kapan saja)
           DATA_INTERVAL_DAYS: 2
           RESUME_INTERVAL_DAYS: 90
-          MAX_ITEMS_PER_RUN: 3
+          # 👇 MENERIMA INPUT DARI DROPDOWN (Jika jalan otomatis/cron, default ke 3)
+          MAX_ITEMS_PER_RUN: ${{ github.event.inputs.fetch_limit || '3' }}
         run: python scraper.py
 
       - name: Commit and Push changes
@@ -65,16 +74,20 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 👇 TAMBAHAN: Tarik/Sinkronkan data terbaru dari repo sebelum menyimpan
-          git pull --rebase origin main
-          
-          # Daftarkan semua file yang berpotensi berubah
+          # 1. Masukkan semua perubahan yang baru saja dilakukan oleh Python
           git add data.json resume.json history.json report.md || true
           
+          # 2. Cek apakah ada data baru?
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
+            # 3. SIMPAN/COMMIT dulu secara lokal agar Git tidak panik
             git commit -m "🤖 Auto-update: Synchronized Radar Data & Resumes [skip ci]"
+            
+            # 4. Baru sekarang AMAN untuk menarik (pull) perubahan dari server Github
+            git pull --rebase origin main
+            
+            # 5. Terakhir, dorong (push) ke repositori Anda
             git push origin main
           fi
 
