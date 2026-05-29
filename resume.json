@@ -1,0 +1,162 @@
+[
+    {
+        "report_metadata": {
+            "report_id": "edu-current",
+            "generated_at": "2026-05-29T05:47:22.357352",
+            "period": "Q2 2026",
+            "total_records_analyzed": 3
+        },
+        "global_summary": {
+            "total_education_innovations": 3,
+            "grassroots_percentage": 66.67,
+            "institutional_percentage": 33.33,
+            "formal_percentage": 100,
+            "informal_percentage": 0,
+            "total_innovations": 3,
+            "semi_formal_percentage": 0.0
+        },
+        "top_categories": [
+            {
+                "category": "Literacy",
+                "count": 2,
+                "trend": "stable"
+            },
+            {
+                "category": "Pedagogy",
+                "count": 1,
+                "trend": "stable"
+            },
+            {
+                "category": "Classroom Management",
+                "count": 1,
+                "trend": "stable"
+            },
+            {
+                "category": "Student Engagement",
+                "count": 1,
+                "trend": "stable"
+            },
+            {
+                "category": "Technology in Education",
+                "count": 1,
+                "trend": "stable"
+            }
+        ],
+        "geographic_insights": [],
+        "impact_analysis": {
+            "high_impact_cases": 1,
+            "critical_cases": 2,
+            "top_impact_types": [
+                "Student engagement and ownership",
+                "Practical skill development (business, teamwork)",
+                "Literacy and critical thinking skills",
+                "Real-world application of academic knowledge"
+            ],
+            "emerging_impacts": [
+                "Fostering student autonomy in learning environments",
+                "Digital literacy and collaborative online interaction",
+                "Early entrepreneurial exposure and vocational readiness"
+            ]
+        },
+        "innovation_patterns": [
+            {
+                "pattern_name": "Student-Centered Learning Environments",
+                "description": "Innovations focused on empowering students to customize their learning spaces and approaches, enhancing engagement and concentration.",
+                "regions": [],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Technology-Enhanced Collaborative Literacy",
+                "description": "Leveraging digital tools to create interactive platforms for reading, review, and peer-to-peer literary discussion.",
+                "regions": [],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Experiential Vocational and Entrepreneurial Learning",
+                "description": "Integrating real-world business operations into the curriculum to provide hands-on experience in management, teamwork, and practical application of academic skills.",
+                "regions": [],
+                "impact_level": "high"
+            }
+        ],
+        "hidden_gems": [],
+        "intervention_opportunities": [
+            {
+                "type": "regulation",
+                "target": "Classroom design and pedagogical practices",
+                "priority_level": "high",
+                "justification": "Implement universal design principles and accessibility guidelines for flexible seating to prevent exclusion of students with physical or sensory disabilities. Provide training on inclusive classroom management."
+            },
+            {
+                "type": "regulation",
+                "target": "Digital learning platforms for elementary students",
+                "priority_level": "high",
+                "justification": "Establish stringent data privacy (e.g., COPPA compliance) and child safety protocols, including robust content moderation and cyberbullying prevention, for online peer interaction platforms."
+            },
+            {
+                "type": "training",
+                "target": "Experiential learning programs involving physical operations",
+                "priority_level": "high",
+                "justification": "Mandate comprehensive safety and hygiene training for students and staff involved in operating businesses with physical risks (e.g., hot liquids, electrical equipment). Ensure equitable access and roles for all students."
+            },
+            {
+                "type": "evaluation",
+                "target": "All new education innovations",
+                "priority_level": "medium",
+                "justification": "Systematically evaluate all innovations, especially those with high impact potential, for scalability, long-term sustainability, and unintended negative consequences, particularly regarding equity and safety."
+            }
+        ],
+        "knowledge_insights": {
+            "most_common_source": "formal_education",
+            "trend": "promoting",
+            "observation": "Formal education settings are a significant source for developing and implementing innovations, often adapting existing concepts or creating new ones within their frameworks, indicating a proactive internal development approach."
+        },
+        "recommendations": [
+            "Prioritize the development and adoption of universal design principles in all new educational innovations to ensure inclusivity from conception.",
+            "Invest in robust digital safety infrastructure and comprehensive digital literacy education for both students and educators, particularly for initiatives involving online interaction among young learners.",
+            "Establish clear safety, hygiene, and accessibility guidelines for experiential learning programs that involve practical, real-world operations.",
+            "Foster greater collaboration between grassroots innovators and institutional bodies to scale high-impact, low-risk solutions effectively.",
+            "Develop frameworks for assessing and mitigating risks (e.g., data privacy, physical safety, exclusion) early in the innovation lifecycle, rather than as an afterthought."
+        ],
+        "charts": {
+            "innovation_by_region": [],
+            "impact_distribution": [
+                {
+                    "level": "High",
+                    "count": 1
+                },
+                {
+                    "level": "Medium",
+                    "count": 2
+                },
+                {
+                    "level": "Low",
+                    "count": 0
+                }
+            ],
+            "knowledge_source_trend": [
+                {
+                    "source": "adapted_from_existing",
+                    "count": 1
+                },
+                {
+                    "source": "formal_education",
+                    "count": 2
+                }
+            ],
+            "learning_outcomes": [
+                {
+                    "level": "low",
+                    "count": 0
+                },
+                {
+                    "level": "medium",
+                    "count": 0
+                },
+                {
+                    "level": "high",
+                    "count": 3
+                }
+            ]
+        }
+    }
+]
