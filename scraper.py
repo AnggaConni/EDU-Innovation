@@ -344,7 +344,7 @@ def call_gemini(api_key, prompt, system_instruction, use_search=False, expect_js
 # If Gemini fails (network glitch, timeout, empty response),
 # it will automatically try again up to `retries` times.
 # Each retry waits longer: 1s, 2s, 4s (exponential backoff).
-def call_gemini_with_retry(api_key, prompt, system_instruction, retries=4, **kwargs):
+def call_gemini_with_retry(api_key, prompt, system_instruction, retries=3, **kwargs):
     for attempt in range(retries):
         try:
             result = call_gemini(api_key, prompt, system_instruction, **kwargs)
@@ -356,12 +356,9 @@ def call_gemini_with_retry(api_key, prompt, system_instruction, retries=4, **kwa
                 log.error(f"Fatal HTTP Error {status_code}. Aborting retry.")
                 break
             elif status_code == 429: # Too many requests
-                log.warning("Rate limit hit (429). Retrying...")
-            elif status_code == 503: # Server Overload
-                log.warning("Google Server Overloaded (503). This is on Google's end.")
+                log.warning("Rate limit hit. Retrying...")
                 
-        # Perpanjang waktu tunggu (Exponential Backoff: 5s, 10s, 20s, 40s)
-        wait_time = 5 * (2 ** attempt)
+        wait_time = 2 ** attempt
         log.warning(f"Gemini call failed (attempt {attempt + 1}/{retries}). Retrying in {wait_time}s...")
         time.sleep(wait_time)
         
