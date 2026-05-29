@@ -18,25 +18,37 @@
     <!-- Marked.js (Markdown Parser) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
                     colors: {
+                        brand: {
+                            orange: '#f97316',
+                            teal: '#14b8a6',
+                            purple: '#a855f7',
+                        },
                         book: {
-                            paper: '#fcfcfc',
-                            darkPaper: '#1e293b',
+                            paper: '#ffffff',
                             cover: '#0f172a',
                         }
                     },
                     boxShadow: {
-                        'book-left': '-10px 10px 30px rgba(0,0,0,0.1), inset -2px 0 10px rgba(0,0,0,0.05)',
-                        'book-right': '10px 10px 30px rgba(0,0,0,0.1), inset 2px 0 10px rgba(0,0,0,0.05)',
-                        'book-mobile': '0 10px 30px rgba(0,0,0,0.1)',
+                        'book-left': '-10px 10px 30px rgba(0,0,0,0.08), inset -2px 0 10px rgba(0,0,0,0.03)',
+                        'book-right': '10px 10px 30px rgba(0,0,0,0.08), inset 2px 0 10px rgba(0,0,0,0.03)',
+                        'book-mobile': '0 10px 30px rgba(20, 184, 166, 0.1)',
                     }
                 }
             }
@@ -44,43 +56,60 @@
     </script>
 
     <style>
+        body {
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        /* Light Grid Pattern */
+        .bg-grid-light {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-glow-orange {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+            transition: all 0.3s ease;
+            color: white !important;
+        }
+        .btn-glow-orange:hover {
+            box-shadow: 0 0 30px rgba(249, 115, 22, 0.5);
+            transform: translateY(-2px);
+        }
+
         /* A4 Aspect Ratio 1 : 1.414 */
         .a4-page {
             aspect-ratio: 1 / 1.414;
             overflow-y: auto;
             overflow-x: hidden;
             scrollbar-width: thin;
-            background-color: var(--tw-bg-opacity, 1);
         }
         
-        .a4-page::-webkit-scrollbar {
-            width: 4px;
-        }
-        .a4-page::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .a4-page::-webkit-scrollbar-thumb {
-            background-color: #cbd5e1;
-            border-radius: 10px;
-        }
-        .dark .a4-page::-webkit-scrollbar-thumb {
-            background-color: #475569;
-        }
+        .a4-page::-webkit-scrollbar { width: 4px; }
+        .a4-page::-webkit-scrollbar-track { background: transparent; }
+        .a4-page::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
 
         /* Book Binding Effect */
-        .binding-left { background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.05) 90%, rgba(0,0,0,0.1) 100%); }
-        .dark .binding-left { background: linear-gradient(to right, rgba(30,41,59,0) 0%, rgba(0,0,0,0.2) 90%, rgba(0,0,0,0.4) 100%); }
-        .binding-right { background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.05) 90%, rgba(0,0,0,0.1) 100%); }
-        .dark .binding-right { background: linear-gradient(to left, rgba(30,41,59,0) 0%, rgba(0,0,0,0.2) 90%, rgba(0,0,0,0.4) 100%); }
+        .binding-left { background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.03) 90%, rgba(0,0,0,0.08) 100%); }
+        .binding-right { background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.03) 90%, rgba(0,0,0,0.08) 100%); }
 
         /* Markdown Styles */
-        .prose h1 { font-size: 1.875rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a; }
-        .prose h2 { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.25rem; color: #1e293b; }
+        .prose h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.875rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a; }
+        .prose h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.25rem; color: #1e293b; }
         .prose p { margin-bottom: 1rem; line-height: 1.6; }
         .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
         .prose li { margin-bottom: 0.25rem; }
-        .dark .prose h1, .dark .prose h2 { color: #f8fafc; border-color: #334155; }
-        .dark .prose p, .dark .prose li { color: #cbd5e1; }
         
         .page-transition { transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; }
 
@@ -88,7 +117,7 @@
         @media print {
             @page {
                 size: A4 portrait;
-                margin: 15mm 20mm; /* Margin buku profesional */
+                margin: 15mm 20mm;
             }
             body {
                 background: white !important;
@@ -125,7 +154,6 @@
                 break-after: page;
             }
 
-            /* Perlindungan agar seluruh data 1 Inovasi tidak terpotong ke 2 halaman */
             .break-avoid {
                 page-break-inside: avoid;
                 break-inside: avoid;
@@ -154,99 +182,102 @@
             background-color: #f8fafc; color: #334155; cursor: pointer;
             transition: all 0.2s ease-in-out; font-size: 0.75rem; font-weight: 600; margin-right: 1rem;
         }
-        .dark input[type="file"]::file-selector-button { border-color: #475569; background-color: #1e293b; color: #cbd5e1; }
         input[type="file"]::file-selector-button:hover { background-color: #e2e8f0; }
-        .dark input[type="file"]::file-selector-button:hover { background-color: #334155; }
     </style>
 </head>
-<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-grid-light antialiased min-h-screen flex flex-col selection:bg-brand-teal selection:text-white">
 
     <!-- Manual Data Upload Modal -->
-    <div id="data-upload-modal" class="fixed inset-0 bg-slate-900/90 z-[10000] hidden flex-col items-center justify-center p-4 backdrop-blur-md">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 dark:border-slate-700">
-            <div class="flex items-center gap-3 mb-6 text-blue-600 dark:text-blue-400">
-                <i data-lucide="folder-open" class="w-8 h-8"></i>
-                <h2 class="text-xl font-bold text-slate-800 dark:text-white">Pemuat Data Lokal</h2>
+    <div id="data-upload-modal" class="fixed inset-0 bg-slate-900/40 z-[10000] hidden flex-col items-center justify-center p-4 backdrop-blur-md">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 relative overflow-hidden">
+            <div class="absolute top-[-50px] right-[-50px] w-32 h-32 bg-brand-orange/10 rounded-full blur-2xl"></div>
+            
+            <div class="flex items-center gap-3 mb-6 text-brand-teal relative z-10">
+                <i class="ph-fill ph-folder-open text-4xl"></i>
+                <h2 class="text-2xl font-display font-bold text-slate-900">Pemuat Data Lokal</h2>
             </div>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-                Sistem tidak dapat membaca file secara otomatis. <br/><strong>Silakan masukkan file Anda secara manual untuk melanjutkan.</strong>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed font-medium relative z-10">
+                Sistem tidak dapat membaca file secara otomatis. <br/><strong class="text-slate-900">Silakan masukkan file Anda secara manual untuk melanjutkan.</strong>
             </p>
             
-            <div class="space-y-4 mb-8">
-                <div>
-                    <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">1. Pilih data.json (Wajib)</label>
-                    <input type="file" id="upload-data" accept=".json" class="w-full text-sm text-slate-500 dark:text-slate-400">
+            <div class="space-y-5 mb-8 relative z-10">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <label class="block text-xs font-bold text-brand-teal uppercase tracking-wider mb-2">1. Pilih data.json (Wajib)</label>
+                    <input type="file" id="upload-data" accept=".json" class="w-full text-sm text-slate-500 font-medium">
                 </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">2. Pilih resume.json (Wajib)</label>
-                    <input type="file" id="upload-resume" accept=".json" class="w-full text-sm text-slate-500 dark:text-slate-400">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <label class="block text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">2. Pilih resume.json (Wajib)</label>
+                    <input type="file" id="upload-resume" accept=".json" class="w-full text-sm text-slate-500 font-medium">
                 </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">3. Pilih report.md (Opsional)</label>
-                    <input type="file" id="upload-report" accept=".md,.txt" class="w-full text-sm text-slate-500 dark:text-slate-400">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <label class="block text-xs font-bold text-brand-orange uppercase tracking-wider mb-2">3. Pilih report.md (Opsional)</label>
+                    <input type="file" id="upload-report" accept=".md,.txt" class="w-full text-sm text-slate-500 font-medium">
                 </div>
             </div>
 
-            <button onclick="processLocalUploads()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
-                <i data-lucide="play" class="w-4 h-4"></i> Susun Buku Sekarang
+            <button onclick="processLocalUploads()" class="w-full py-3.5 btn-glow-orange rounded-xl font-bold flex items-center justify-center gap-2 text-base relative z-10">
+                <i class="ph-bold ph-play text-lg"></i> Susun Buku Sekarang
             </button>
         </div>
     </div>
 
     <!-- Print Loading Overlay -->
-    <div id="print-loading" class="fixed inset-0 bg-slate-900/95 z-[9999] hidden flex-col items-center justify-center text-white backdrop-blur-sm">
-        <i data-lucide="loader-2" class="w-12 h-12 animate-spin mb-4 text-blue-400"></i>
-        <h2 class="text-2xl font-bold mb-2">Menyiapkan Dokumen PDF...</h2>
-        <p class="text-slate-300 text-center max-w-md">Menyusun tata letak 2-Kolom, merender peta spasial,<br/>dan menyesuaikan batas kertas presisi. Mohon tunggu...</p>
+    <div id="print-loading" class="fixed inset-0 bg-white/95 z-[9999] hidden flex-col items-center justify-center text-slate-900 backdrop-blur-sm">
+        <i class="ph-bold ph-spinner animate-spin text-5xl mb-4 text-brand-teal"></i>
+        <h2 class="text-3xl font-display font-bold mb-2">Menyiapkan Dokumen PDF...</h2>
+        <p class="text-slate-500 text-center max-w-md font-medium">Menyusun tata letak 2-Kolom, merender peta spasial,<br/>dan menyesuaikan batas kertas presisi. Mohon tunggu...</p>
     </div>
 
     <!-- Container Khusus Untuk Print Semua Halaman -->
     <div id="print-wrapper" class="hidden absolute top-0 left-0 w-full bg-white z-0 opacity-0 print:opacity-100 print:relative"></div>
 
     <!-- Navbar & Controls -->
-    <nav id="main-nav" class="fixed top-0 w-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 z-50 transition-colors no-print shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <i data-lucide="book-open" class="text-blue-600 dark:text-blue-400 w-6 h-6"></i>
-                <span class="font-bold text-lg tracking-tight hidden sm:block">Intelligence Book</span>
+    <nav id="main-nav" class="fixed top-0 w-full glass-card z-50 transition-all no-print">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 group">
+                <div class="w-10 h-10 relative flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-teal to-blue-500 border border-teal-200 shadow-lg shadow-teal-500/30">
+                    <i class="ph-bold ph-book-open text-xl text-white relative z-10"></i>
+                </div>
+                <div class="hidden sm:block">
+                    <span class="font-display font-bold text-lg tracking-tight text-slate-900 leading-none block">Intelligence Book</span>
+                    <span class="text-[9px] font-bold text-teal-600 uppercase tracking-widest">EduRadar Reporting</span>
+                </div>
                 
-                <select id="toc-dropdown" onchange="jumpToPage(this.value)" class="ml-2 text-xs border rounded p-1.5 min-w-[140px] max-w-[150px] md:max-w-[200px] truncate bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 outline-none text-slate-700 dark:text-slate-200 cursor-pointer hover:border-blue-400 transition-colors shadow-inner">
+                <select id="toc-dropdown" onchange="jumpToPage(this.value)" class="ml-2 sm:ml-4 text-sm font-semibold border-2 rounded-xl px-3 py-1.5 min-w-[140px] max-w-[150px] md:max-w-[220px] truncate bg-white border-slate-200 outline-none text-slate-700 cursor-pointer hover:border-brand-teal focus:border-brand-teal transition-colors shadow-sm">
                     <option value="" disabled selected>Daftar Isi...</option>
                 </select>
             </div>
             
-            <div class="flex items-center gap-2 sm:gap-4">
-                <span id="page-indicator" class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 font-mono hidden md:inline-block w-24 text-right">Page 1 / ?</span>
+            <div class="flex items-center gap-3 sm:gap-4">
+                <span id="page-indicator" class="text-xs sm:text-sm font-bold text-slate-400 font-mono hidden md:inline-block w-24 text-right uppercase tracking-wider">Page 1 / ?</span>
                 
-                <button onclick="printAllAsPDF()" class="p-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all flex items-center gap-2 border border-indigo-200 dark:border-indigo-800 shadow-sm" title="Cetak Seluruh Buku ke PDF">
-                    <i data-lucide="printer" class="w-4 h-4"></i>
-                    <span class="text-xs font-bold uppercase hidden md:inline-block">Cetak PDF Laporan</span>
+                <button onclick="printAllAsPDF()" class="px-4 py-2 rounded-xl bg-white text-slate-700 hover:text-brand-orange hover:bg-orange-50 border border-slate-200 transition-all flex items-center gap-2 shadow-sm font-bold" title="Cetak Seluruh Buku ke PDF">
+                    <i class="ph-bold ph-printer text-lg"></i>
+                    <span class="text-sm hidden md:inline-block">Cetak PDF</span>
                 </button>
 
-                <div class="flex bg-slate-100 dark:bg-slate-900 rounded-lg p-1">
-                    <button onclick="prevPage()" class="p-2 rounded hover:bg-white dark:hover:bg-slate-700 shadow-sm transition-all">
-                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                <div class="flex bg-slate-100 border border-slate-200 rounded-xl p-1 shadow-inner">
+                    <button onclick="prevPage()" class="p-2 rounded-lg hover:bg-white text-slate-600 hover:text-brand-teal shadow-sm transition-all">
+                        <i class="ph-bold ph-caret-left text-lg"></i>
                     </button>
-                    <button onclick="nextPage()" class="p-2 rounded hover:bg-white dark:hover:bg-slate-700 shadow-sm transition-all">
-                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    <button onclick="nextPage()" class="p-2 rounded-lg hover:bg-white text-slate-600 hover:text-brand-teal shadow-sm transition-all">
+                        <i class="ph-bold ph-caret-right text-lg"></i>
                     </button>
                 </div>
-
-                <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300">
-                    <i data-lucide="moon" id="theme-icon" class="w-5 h-5"></i>
-                </button>
             </div>
         </div>
     </nav>
 
     <!-- Main Book Container -->
-    <main id="main-content" class="flex-grow flex items-center justify-center p-4 sm:p-8 pt-24 pb-12 w-full no-print hidden">
+    <main id="main-content" class="flex-grow flex items-center justify-center p-4 sm:p-8 pt-28 pb-12 w-full no-print hidden relative z-10">
         <div id="book-wrapper" class="relative flex w-full max-w-6xl justify-center items-stretch perspective-1000 gap-0 sm:gap-1 lg:gap-0">
-            <div id="page-left" class="hidden md:block w-1/2 bg-book-paper dark:bg-book-darkPaper shadow-book-left rounded-l-md relative a4-page page-transition transform origin-right">
+            <!-- Left Page -->
+            <div id="page-left" class="hidden md:block w-1/2 bg-book-paper border border-slate-200 shadow-book-left rounded-l-2xl relative a4-page page-transition transform origin-right">
                 <div class="absolute inset-y-0 right-0 w-12 binding-left pointer-events-none z-10"></div>
                 <div class="p-8 lg:p-12 h-full flex flex-col relative" id="content-left"></div>
             </div>
-            <div id="page-right" class="w-full md:w-1/2 max-w-md md:max-w-none bg-book-paper dark:bg-book-darkPaper shadow-book-mobile md:shadow-book-right rounded-md md:rounded-l-none md:rounded-r-md relative a4-page page-transition transform origin-left">
+            <!-- Right Page -->
+            <div id="page-right" class="w-full md:w-1/2 max-w-md md:max-w-none bg-book-paper border border-slate-200 shadow-book-mobile md:shadow-book-right rounded-2xl md:rounded-l-none md:rounded-r-2xl relative a4-page page-transition transform origin-left">
                 <div class="hidden md:block absolute inset-y-0 left-0 w-12 binding-right pointer-events-none z-10"></div>
                 <div class="p-6 sm:p-8 lg:p-12 h-full flex flex-col relative" id="content-right"></div>
             </div>
@@ -269,9 +300,6 @@
         const TOTAL_STATIC_PAGES = 4;
 
         async function initApp() {
-            lucide.createIcons();
-            checkTheme();
-            
             window.addEventListener('resize', () => {
                 const newIsMobile = window.innerWidth < 768;
                 if (newIsMobile !== isMobile) {
@@ -403,7 +431,7 @@
             let dataIndex = Math.floor((index - TOTAL_STATIC_PAGES) / 2);
             let item = globalDataArr[dataIndex];
             
-            if (!item) return `<div class="flex items-center justify-center h-full"><p class="text-slate-400">Data End</p></div>`;
+            if (!item) return `<div class="flex items-center justify-center h-full"><p class="text-slate-400 font-medium">Data End</p></div>`;
 
             let isLeftPage = (index % 2 === 0);
             return isLeftPage ? buildElementMapPage(item, dataIndex, isPrint) : buildElementChartPage(item, dataIndex, isPrint);
@@ -414,8 +442,8 @@
             if(isPrint) return ''; 
             return `
                 <div class="flex flex-col items-center justify-center h-full opacity-40">
-                    <i data-lucide="shield-check" class="w-12 h-12 mb-4 text-slate-300 dark:text-slate-600"></i>
-                    <p class="text-[10px] font-mono text-slate-400 dark:text-slate-500 uppercase tracking-widest text-center px-8">Halaman ini sengaja<br/>dikosongkan</p>
+                    <i class="ph-fill ph-shield-check text-5xl mb-4 text-slate-300"></i>
+                    <p class="text-[10px] font-mono text-slate-400 uppercase tracking-widest text-center px-8 font-bold">Halaman ini sengaja<br/>dikosongkan</p>
                 </div>
             `;
         }
@@ -423,12 +451,12 @@
         function buildCoverPage(isPrint) {
             if (isPrint) {
                 return `
-                    <div class="flex flex-col items-center justify-center text-center h-full min-h-[250mm] border-[12px] border-double border-slate-200 rounded-3xl p-12 bg-white relative shadow-inner">
-                        <div class="w-28 h-28 bg-blue-600 rounded-3xl flex items-center justify-center shadow-xl shadow-blue-500/20 mb-8 border-4 border-white">
-                            <i data-lucide="globe-2" class="text-white w-14 h-14"></i>
+                    <div class="flex flex-col items-center justify-center text-center h-full min-h-[250mm] border-[8px] border-double border-slate-200 rounded-3xl p-12 bg-white relative shadow-inner">
+                        <div class="w-28 h-28 bg-brand-teal rounded-3xl flex items-center justify-center mb-8 border-4 border-white">
+                            <i class="ph-fill ph-globe-hemisphere-west text-white text-6xl"></i>
                         </div>
-                        <h1 class="text-5xl font-black text-slate-900 uppercase tracking-widest mb-6 leading-tight">Innovation<br/>Intelligence<br/>Radar</h1>
-                        <div class="w-24 h-1.5 bg-blue-600 rounded-full my-8"></div>
+                        <h1 class="text-5xl font-display font-black text-slate-900 uppercase tracking-widest mb-6 leading-tight">Innovation<br/>Intelligence<br/>Radar</h1>
+                        <div class="w-24 h-1.5 bg-brand-orange rounded-full my-8"></div>
                         <p class="text-slate-500 font-bold text-lg uppercase tracking-[0.3em] mb-16">Digital Briefing Book</p>
                         
                         <div class="absolute bottom-16 w-full text-center">
@@ -440,14 +468,17 @@
             }
 
             return `
-                <div class="flex flex-col items-center justify-center h-full text-center space-y-6">
-                    <div class="w-24 h-24 bg-blue-600 rounded-3xl flex items-center justify-center shadow-lg shadow-blue-500/30 mx-auto">
-                        <i data-lucide="globe-2" class="text-white w-12 h-12"></i>
+                <div class="flex flex-col items-center justify-center h-full text-center space-y-6 relative">
+                    <div class="absolute top-10 right-10 w-40 h-40 bg-brand-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute bottom-10 left-10 w-40 h-40 bg-brand-teal/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="w-24 h-24 bg-gradient-to-br from-brand-teal to-blue-500 rounded-3xl flex items-center justify-center shadow-lg shadow-teal-500/30 mx-auto relative z-10 border-2 border-white">
+                        <i class="ph-fill ph-globe-hemisphere-west text-white text-5xl"></i>
                     </div>
-                    <h1 class="text-4xl font-black text-slate-800 dark:text-white uppercase tracking-wider mt-6 leading-tight">Innovation<br/>Intelligence<br/>Radar</h1>
-                    <div class="w-16 h-1 bg-blue-500 rounded-full my-6 mx-auto"></div>
-                    <p class="text-slate-500 dark:text-slate-400 font-mono text-sm uppercase tracking-widest">Digital Briefing Book</p>
-                    <p class="text-xs text-slate-400 mt-12 pt-12">Vol. 1 &mdash; 2026</p>
+                    <h1 class="text-4xl font-display font-black text-slate-900 uppercase tracking-wider mt-6 leading-tight relative z-10">Innovation<br/>Intelligence<br/>Radar</h1>
+                    <div class="w-16 h-1.5 bg-brand-orange rounded-full my-6 mx-auto relative z-10"></div>
+                    <p class="text-brand-purple font-bold font-sans text-sm uppercase tracking-widest relative z-10">Digital Briefing Book</p>
+                    <p class="text-xs text-slate-400 font-bold mt-12 pt-12 relative z-10">Vol. 1 &mdash; 2026</p>
                 </div>
             `;
         }
@@ -456,11 +487,11 @@
             if(isPrint) {
                 return `
                     <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm min-h-[250mm]">
-                        <div class="flex items-center gap-3 mb-8 text-blue-700 pb-4 border-b-2 border-slate-100">
-                            <i data-lucide="file-text" class="w-8 h-8"></i>
-                            <h3 class="font-black uppercase tracking-[0.2em] text-xl">Executive Report</h3>
+                        <div class="flex items-center gap-3 mb-8 text-brand-purple pb-4 border-b-2 border-slate-100">
+                            <i class="ph-fill ph-file-text text-4xl"></i>
+                            <h3 class="font-display font-black uppercase tracking-[0.2em] text-xl text-slate-900">Executive Report</h3>
                         </div>
-                        <div class="prose prose-slate prose-lg max-w-none text-slate-800 leading-relaxed">
+                        <div class="prose prose-slate prose-lg max-w-none text-slate-800 font-medium leading-relaxed">
                             ${precompiled.reportHtml}
                         </div>
                     </div>
@@ -469,11 +500,11 @@
 
             return `
                 <div class="overflow-y-auto scrollbar-thin pr-2 h-full">
-                    <div class="flex items-center gap-2 mb-6 text-blue-600 dark:text-blue-400 pb-4 border-b border-slate-200 dark:border-slate-700">
-                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                    <div class="flex items-center gap-2 mb-6 text-brand-purple pb-4 border-b border-slate-200">
+                        <i class="ph-fill ph-file-text text-2xl"></i>
                         <h3 class="font-bold uppercase tracking-widest text-xs">Executive Report</h3>
                     </div>
-                    <div class="prose dark:prose-invert max-w-none text-sm">
+                    <div class="prose max-w-none text-sm font-medium text-slate-700">
                         ${precompiled.reportHtml}
                     </div>
                 </div>
@@ -483,45 +514,45 @@
         function buildResumeHtml(resumeJson) {
             const resume = Array.isArray(resumeJson) ? resumeJson[0] : resumeJson;
             let catsHtml = (resume.top_categories || []).map(c => `
-                <div class="flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-3 rounded-xl mb-2.5 border border-slate-200 dark:border-slate-700 print:bg-slate-50 print:border-slate-200 print:shadow-sm">
-                    <span class="text-sm font-bold truncate pr-4 text-slate-700 dark:text-slate-300 print:text-slate-800">${c.category}</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300 print:bg-blue-100 print:text-blue-800 px-3 py-1 rounded-md text-xs font-black shadow-sm">${c.count}</span>
+                <div class="flex justify-between items-center bg-white p-3.5 rounded-xl mb-3 border border-slate-100 shadow-sm">
+                    <span class="text-sm font-bold truncate pr-4 text-slate-700">${c.category}</span>
+                    <span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md text-xs font-black shadow-sm">${c.count}</span>
                 </div>
             `).join('');
 
             let riskDistHtml = (resume.risk_distribution || []).map(r => {
-                let color = r.level === 'high' ? 'bg-red-500 print:bg-red-500' : (r.level === 'medium' ? 'bg-amber-500 print:bg-amber-500' : 'bg-emerald-500 print:bg-emerald-500');
+                let color = r.level === 'high' ? 'bg-rose-500' : (r.level === 'medium' ? 'bg-amber-500' : 'bg-emerald-500');
                 let maxRisk = Math.max(...(resume.risk_distribution || []).map(x=>x.count), 60);
                 return `
-                <div class="flex items-center justify-between text-sm mb-2.5">
-                    <span class="capitalize font-bold text-slate-600 dark:text-slate-400 print:text-slate-700 w-20">${r.level}</span>
-                    <div class="flex-1 mx-3 h-2.5 bg-slate-200 dark:bg-slate-700 print:bg-slate-200 rounded-full overflow-hidden shadow-inner">
+                <div class="flex items-center justify-between text-sm mb-3">
+                    <span class="capitalize font-bold text-slate-600 w-20">${r.level}</span>
+                    <div class="flex-1 mx-3 h-2.5 bg-slate-100 rounded-full overflow-hidden shadow-inner">
                         <div class="h-full ${color}" style="width: ${(r.count/maxRisk)*100}%"></div>
                     </div>
-                    <span class="font-black text-slate-800 dark:text-slate-200 print:text-slate-900 w-8 text-right">${r.count}</span>
+                    <span class="font-black text-slate-800 w-8 text-right">${r.count}</span>
                 </div>`;
             }).join('');
 
             return `
-                <div class="space-y-8">
+                <div class="space-y-8 font-sans">
                     <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="bg-slate-50 dark:bg-slate-800 print:bg-slate-50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 print:border-slate-200 print:shadow-sm text-center">
-                            <p class="text-xs text-slate-500 print:text-slate-500 uppercase font-black tracking-widest mb-2">Total Nodes</p>
-                            <p class="text-4xl font-black text-slate-800 dark:text-white print:text-slate-900">${resume.global_summary?.total_innovations || 0}</p>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-2">Total Nodes</p>
+                            <p class="text-4xl font-display font-black text-slate-900">${resume.global_summary?.total_innovations || 0}</p>
                         </div>
-                        <div class="bg-slate-50 dark:bg-slate-800 print:bg-slate-50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 print:border-slate-200 print:shadow-sm text-center">
-                            <p class="text-xs text-slate-500 print:text-slate-500 uppercase font-black tracking-widest mb-2">Grassroots</p>
-                            <p class="text-4xl font-black text-emerald-600 dark:text-emerald-500 print:text-emerald-600">${resume.global_summary?.grassroots_percentage || 0}%</p>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-2">Grassroots</p>
+                            <p class="text-4xl font-display font-black text-brand-orange">${resume.global_summary?.grassroots_percentage || 0}%</p>
                         </div>
                     </div>
                     
-                    <div>
-                        <h4 class="text-xs font-black text-slate-500 print:text-slate-500 uppercase tracking-widest mb-4 border-b-2 border-slate-100 dark:border-slate-700 print:border-slate-200 pb-2">Top Categories</h4>
+                    <div class="bg-slate-50/50 p-6 rounded-2xl border border-slate-100">
+                        <h4 class="text-xs font-black text-brand-teal uppercase tracking-widest mb-4 border-b-2 border-slate-200 pb-2 flex items-center gap-2"><i class="ph-bold ph-list-numbers"></i> Top Categories</h4>
                         ${catsHtml}
                     </div>
 
-                    <div class="bg-slate-50 dark:bg-slate-800/30 print:bg-slate-50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 print:border-slate-200 print:shadow-sm mt-8">
-                        <h4 class="text-xs font-black text-slate-500 print:text-slate-600 uppercase tracking-widest mb-5 flex items-center gap-2"><i data-lucide="shield-alert" class="w-4 h-4"></i> Risk Distribution</h4>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm mt-8">
+                        <h4 class="text-xs font-black text-brand-purple uppercase tracking-widest mb-5 flex items-center gap-2"><i class="ph-fill ph-warning-circle text-lg"></i> Risk Distribution</h4>
                         ${riskDistHtml}
                     </div>
                 </div>
@@ -532,9 +563,9 @@
             if(isPrint) {
                 return `
                     <div>
-                        <div class="flex items-center gap-3 mb-8 text-emerald-600 pb-4 border-b-2 border-slate-100">
-                            <i data-lucide="pie-chart" class="w-8 h-8"></i>
-                            <h3 class="font-black uppercase tracking-[0.2em] text-xl">Global Metrics</h3>
+                        <div class="flex items-center gap-3 mb-8 text-brand-teal pb-4 border-b-2 border-slate-100">
+                            <i class="ph-fill ph-chart-pie-slice text-4xl"></i>
+                            <h3 class="font-display font-black uppercase tracking-[0.2em] text-xl text-slate-900">Global Metrics</h3>
                         </div>
                         ${precompiled.resumeHtml}
                     </div>
@@ -542,8 +573,8 @@
             }
             return `
                 <div class="overflow-y-auto scrollbar-thin pr-2 h-full">
-                    <div class="flex items-center gap-2 mb-6 text-emerald-600 dark:text-emerald-400 pb-4 border-b border-slate-200 dark:border-slate-700">
-                        <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                    <div class="flex items-center gap-2 mb-6 text-brand-teal pb-4 border-b border-slate-200">
+                        <i class="ph-fill ph-chart-pie-slice text-2xl"></i>
                         <h3 class="font-bold uppercase tracking-widest text-xs">Global Metrics</h3>
                     </div>
                     ${precompiled.resumeHtml}
@@ -558,48 +589,47 @@
             const lat = parseFloat(item.location?.lat) || 0;
             const lon = parseFloat(item.location?.lon) || 0;
             
-            const badges = (item.category || []).map(c => `<span class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 print:bg-slate-100 text-slate-600 dark:text-slate-300 print:text-slate-700 rounded text-[9px] font-bold border border-slate-200 dark:border-slate-700 print:border-slate-300 whitespace-nowrap inline-block mt-1">${c}</span>`).join('');
-            const levelBadge = `<span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300 print:bg-indigo-100 print:text-indigo-800 rounded text-[9px] font-black border border-indigo-200 dark:border-indigo-800 print:border-indigo-300 uppercase inline-flex items-center gap-1 mt-1"><i data-lucide="network" class="w-3 h-3"></i> ${item.innovation_level || 'Unknown Level'}</span>`;
-            const gemBadge = item.hidden_gem ? `<span class="px-2 py-0.5 bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300 print:bg-amber-100 print:text-amber-800 rounded inline-flex items-center gap-1 text-[9px] font-black border border-amber-200 dark:border-amber-800 print:border-amber-300 mt-1"><i data-lucide="gem" class="w-3 h-3"></i> Hidden Gem</span>` : '';
+            const badges = (item.category || []).map(c => `<span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md text-[10px] font-bold border border-slate-200 whitespace-nowrap inline-block mt-1">${c}</span>`).join('');
+            const levelBadge = `<span class="px-2.5 py-1 bg-brand-teal/10 text-teal-700 rounded-md text-[10px] font-black border border-teal-200 uppercase inline-flex items-center gap-1 mt-1"><i class="ph-bold ph-graph text-sm"></i> ${item.innovation_level || 'Unknown Level'}</span>`;
+            const gemBadge = item.hidden_gem ? `<span class="px-2.5 py-1 bg-brand-orange/10 text-orange-700 rounded-md inline-flex items-center gap-1 text-[10px] font-black border border-orange-200 mt-1"><i class="ph-fill ph-diamond text-sm"></i> Hidden Gem</span>` : '';
 
             if(isPrint) {
-                // Diperkecil margin agar 1 Inovasi full tersusun pada 1 Halaman
                 return `
                     <div class="mb-4 flex flex-col gap-2 pb-3 border-b-2 border-slate-100">
                         <div class="flex items-center gap-2">${levelBadge} ${gemBadge}</div>
-                        <h2 class="text-2xl font-black text-slate-900 leading-snug">${item.title}</h2>
+                        <h2 class="text-2xl font-display font-black text-slate-900 leading-snug">${item.title}</h2>
                         <div class="flex flex-wrap gap-1.5">${badges}</div>
                     </div>
                     
-                    <div class="w-full rounded-xl bg-slate-100 overflow-hidden mb-5 print-leaflet-target" id="${mapId}" data-lat="${lat}" data-lon="${lon}" style="height: 220px;"></div>
+                    <div class="w-full rounded-xl bg-slate-100 overflow-hidden mb-5 print-leaflet-target border border-slate-200" id="${mapId}" data-lat="${lat}" data-lon="${lon}" style="height: 220px;"></div>
 
                     <div class="grid grid-cols-2 gap-4 mb-5">
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
-                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-3 flex items-center gap-2 border-b border-slate-200 pb-2">
-                                <i data-lucide="git-merge" class="w-4 h-4 text-indigo-500"></i> Nexus & Linkages
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-3 flex items-center gap-2 border-b border-slate-100 pb-2">
+                                <i class="ph-bold ph-git-merge text-base text-brand-purple"></i> Nexus & Linkages
                             </h4>
-                            <div class="flex flex-col gap-3 text-[11px] text-slate-700">
-                                <div><strong class="text-slate-900 block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-500">Source Knowledge</strong> <span class="capitalize font-medium">${(item.origin?.knowledge_source || []).join(', ') || '-'}</span></div>
-                                <div><strong class="text-slate-900 block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-500">Geography Origin</strong> <span class="font-medium">${item.location?.region || '-'}, ${item.location?.country || '-'}</span></div>
+                            <div class="flex flex-col gap-3 text-[11px] text-slate-700 font-medium">
+                                <div><strong class="block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-400">Source Knowledge</strong> <span class="capitalize">${(item.origin?.knowledge_source || []).join(', ') || '-'}</span></div>
+                                <div><strong class="block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-400">Geography Origin</strong> <span>${item.location?.region || '-'}, ${item.location?.country || '-'}</span></div>
                                 <div>
-                                    <strong class="text-slate-900 block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-500">Reference Link</strong> 
+                                    <strong class="block mb-0.5 font-black text-[9px] uppercase tracking-wider text-slate-400">Reference Link</strong> 
                                     <span class="font-mono text-[10px] text-blue-600 break-all">${item.source_url ? `${item.source_url}` : 'N/A'}</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
-                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-3 flex items-center gap-2 border-b border-slate-200 pb-2">
-                                <i data-lucide="copy" class="w-4 h-4 text-emerald-500"></i> Deployment
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-3 flex items-center gap-2 border-b border-slate-100 pb-2">
+                                <i class="ph-bold ph-copy text-base text-brand-teal"></i> Deployment
                             </h4>
                             <div class="flex flex-col gap-3">
-                                <div class="flex items-center gap-3 bg-white p-2 rounded-lg border border-slate-200 shadow-sm">
-                                    <div class="p-1.5 bg-blue-50 rounded-md"><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-blue-600"></i></div>
-                                    <div><p class="text-[8px] text-slate-500 uppercase font-black tracking-widest">Cost Level</p><p class="font-black text-slate-900 text-sm capitalize">${item.replicability?.cost_level || 'N/A'}</p></div>
+                                <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                                    <div class="p-1.5 bg-white rounded-md border border-slate-200"><i class="ph-bold ph-coin text-base text-brand-teal"></i></div>
+                                    <div><p class="text-[9px] text-slate-500 uppercase font-black tracking-widest">Cost Level</p><p class="font-black text-slate-900 text-sm capitalize">${item.replicability?.cost_level || 'N/A'}</p></div>
                                 </div>
-                                <div class="flex items-center gap-3 bg-white p-2 rounded-lg border border-slate-200 shadow-sm">
-                                    <div class="p-1.5 bg-amber-50 rounded-md"><i data-lucide="hammer" class="w-4 h-4 text-amber-600"></i></div>
-                                    <div><p class="text-[8px] text-slate-500 uppercase font-black tracking-widest">Difficulty</p><p class="font-black text-slate-900 text-sm capitalize">${item.replicability?.difficulty || 'N/A'}</p></div>
+                                <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                                    <div class="p-1.5 bg-white rounded-md border border-slate-200"><i class="ph-bold ph-hammer text-base text-brand-orange"></i></div>
+                                    <div><p class="text-[9px] text-slate-500 uppercase font-black tracking-widest">Difficulty</p><p class="font-black text-slate-900 text-sm capitalize">${item.replicability?.difficulty || 'N/A'}</p></div>
                                 </div>
                             </div>
                         </div>
@@ -609,43 +639,43 @@
 
             return `
                 <div class="flex flex-col overflow-y-auto scrollbar-thin pr-2 h-full">
-                    <div class="mb-4 flex-shrink-0">
-                        <div class="flex flex-wrap gap-2 mb-3">${levelBadge} ${gemBadge}</div>
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white leading-tight mb-2 line-clamp-2">${item.title}</h2>
+                    <div class="mb-5 flex-shrink-0">
+                        <div class="flex flex-wrap gap-2 mb-4">${levelBadge} ${gemBadge}</div>
+                        <h2 class="text-xl md:text-3xl font-display font-extrabold text-slate-900 leading-tight mb-3 line-clamp-2">${item.title}</h2>
                         <div class="flex flex-wrap gap-1.5 mb-2">${badges}</div>
                     </div>
                     
-                    <div class="w-full h-36 md:h-44 flex-shrink-0 rounded-xl bg-slate-200 dark:bg-slate-800 overflow-hidden mb-4 border border-slate-200 dark:border-slate-700 relative z-0">
+                    <div class="w-full h-40 md:h-52 flex-shrink-0 rounded-2xl bg-slate-100 overflow-hidden mb-5 border border-slate-200 shadow-inner relative z-0">
                         <div id="${mapId}" class="w-full h-full leaflet-target" data-lat="${lat}" data-lon="${lon}"></div>
                     </div>
 
-                    <div class="flex flex-col gap-3 flex-grow min-h-0">
-                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-                            <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase mb-3 flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-2">
-                                <i data-lucide="git-merge" class="w-4 h-4 text-indigo-500"></i> Nexus & Linkages
+                    <div class="flex flex-col gap-4 flex-grow min-h-0">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                            <h4 class="text-xs font-bold text-slate-800 uppercase mb-4 flex items-center gap-2 border-b border-slate-100 pb-3">
+                                <i class="ph-bold ph-git-merge text-lg text-brand-purple"></i> Nexus & Linkages
                             </h4>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-slate-600 dark:text-slate-400">
-                                <div><strong class="text-slate-800 dark:text-slate-300 block mb-0.5">Source Knowledge:</strong> <span class="capitalize">${(item.origin?.knowledge_source || []).join(', ') || '-'}</span></div>
-                                <div><strong class="text-slate-800 dark:text-slate-300 block mb-0.5">Geography Origin:</strong> ${item.location?.region || '-'}, ${item.location?.country || '-'}</div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-600 font-medium">
+                                <div><strong class="text-slate-400 font-bold uppercase tracking-wider text-[10px] block mb-1">Source Knowledge:</strong> <span class="capitalize text-slate-900">${(item.origin?.knowledge_source || []).join(', ') || '-'}</span></div>
+                                <div><strong class="text-slate-400 font-bold uppercase tracking-wider text-[10px] block mb-1">Geography Origin:</strong> <span class="text-slate-900">${item.location?.region || '-'}, ${item.location?.country || '-'}</span></div>
                                 <div class="md:col-span-2">
-                                    <strong class="text-slate-800 dark:text-slate-300 block mb-0.5">Reference Link:</strong> 
-                                    ${item.source_url ? `<a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline break-all inline-flex items-center gap-1"><i data-lucide="external-link" class="w-3 h-3"></i> ${item.source_url}</a>` : 'No public link available'}
+                                    <strong class="text-slate-400 font-bold uppercase tracking-wider text-[10px] block mb-1">Reference Link:</strong> 
+                                    ${item.source_url ? `<a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="text-brand-teal hover:underline break-all inline-flex items-center gap-1"><i class="ph-bold ph-arrow-square-out text-sm"></i> ${item.source_url}</a>` : 'No public link available'}
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 mt-auto">
-                            <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase mb-3 flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-2">
-                                <i data-lucide="copy" class="w-4 h-4 text-emerald-500"></i> Replicability & Deployment
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 mt-auto">
+                            <h4 class="text-xs font-bold text-slate-800 uppercase mb-4 flex items-center gap-2 border-b border-slate-200 pb-3">
+                                <i class="ph-bold ph-copy text-lg text-brand-teal"></i> Replicability & Deployment
                             </h4>
                             <div class="grid grid-cols-2 gap-4 text-xs">
                                 <div class="flex items-center gap-3">
-                                    <div class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm border border-slate-100 dark:border-slate-600"><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-slate-500"></i></div>
-                                    <div><p class="text-[10px] text-slate-400 uppercase font-bold">Cost Level</p><p class="font-medium text-slate-700 dark:text-slate-300 capitalize">${item.replicability?.cost_level || 'N/A'}</p></div>
+                                    <div class="p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-brand-teal"><i class="ph-bold ph-coin text-lg"></i></div>
+                                    <div><p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Cost Level</p><p class="font-bold text-sm text-slate-900 capitalize">${item.replicability?.cost_level || 'N/A'}</p></div>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <div class="p-2 bg-white dark:bg-slate-700 rounded-lg shadow-sm border border-slate-100 dark:border-slate-600"><i data-lucide="hammer" class="w-4 h-4 text-slate-500"></i></div>
-                                    <div><p class="text-[10px] text-slate-400 uppercase font-bold">Difficulty</p><p class="font-medium text-slate-700 dark:text-slate-300 capitalize">${item.replicability?.difficulty || 'N/A'}</p></div>
+                                    <div class="p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-brand-orange"><i class="ph-bold ph-hammer text-lg"></i></div>
+                                    <div><p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Difficulty</p><p class="font-bold text-sm text-slate-900 capitalize">${item.replicability?.difficulty || 'N/A'}</p></div>
                                 </div>
                             </div>
                         </div>
@@ -672,34 +702,34 @@
                 
                 if (item.process.how_it_works) {
                     if (Array.isArray(item.process.how_it_works)) {
-                        htmlPartsPrint.push(`<ul class="list-disc pl-4 space-y-1 text-[10px] text-slate-800 print:text-slate-800 font-medium">` + item.process.how_it_works.map(p => `<li>${p}</li>`).join('') + `</ul>`);
-                        htmlPartsWeb.push(`<ul class="list-disc pl-4 space-y-1 text-xs text-slate-700 dark:text-slate-300">` + item.process.how_it_works.map(p => `<li>${p}</li>`).join('') + `</ul>`);
+                        htmlPartsPrint.push(`<ul class="list-disc pl-4 space-y-1 text-[10px] text-slate-800 font-medium">` + item.process.how_it_works.map(p => `<li>${p}</li>`).join('') + `</ul>`);
+                        htmlPartsWeb.push(`<ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">` + item.process.how_it_works.map(p => `<li>${p}</li>`).join('') + `</ul>`);
                     } else if (typeof item.process.how_it_works === 'string') {
-                        htmlPartsPrint.push(`<p class="text-[10px] text-slate-800 print:text-slate-800 font-medium leading-relaxed">${item.process.how_it_works}</p>`);
-                        htmlPartsWeb.push(`<p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${item.process.how_it_works}</p>`);
+                        htmlPartsPrint.push(`<p class="text-[10px] text-slate-800 font-medium leading-relaxed">${item.process.how_it_works}</p>`);
+                        htmlPartsWeb.push(`<p class="text-sm text-slate-700 leading-relaxed font-medium">${item.process.how_it_works}</p>`);
                     }
                 }
                 
                 if (item.process.materials_used && Array.isArray(item.process.materials_used) && item.process.materials_used.length > 0) {
                     let badgesPrint = item.process.materials_used.map(m => `<span class="px-1.5 py-0.5 bg-slate-200 text-slate-800 rounded-sm text-[9px] font-bold border border-slate-300">${m}</span>`).join('');
-                    let badgesWeb = item.process.materials_used.map(m => `<span class="px-1.5 py-0.5 bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded text-[10px]">${m}</span>`).join('');
+                    let badgesWeb = item.process.materials_used.map(m => `<span class="px-2 py-1 bg-white border border-slate-200 shadow-sm text-slate-700 rounded-lg text-xs font-semibold">${m}</span>`).join('');
                     
                     htmlPartsPrint.push(`<div class="mt-3"><p class="text-[9px] font-black text-slate-500 uppercase mb-1.5 tracking-widest">Materials:</p><div class="flex flex-wrap gap-1.5">${badgesPrint}</div></div>`);
-                    htmlPartsWeb.push(`<div class="mt-2"><p class="text-[10px] font-bold text-slate-500 uppercase mb-1">Materials Used:</p><div class="flex flex-wrap gap-1">${badgesWeb}</div></div>`);
+                    htmlPartsWeb.push(`<div class="mt-4"><p class="text-xs font-bold text-slate-500 uppercase mb-2">Materials Used:</p><div class="flex flex-wrap gap-2">${badgesWeb}</div></div>`);
                 }
                 
                 if (item.process.step_by_step && Array.isArray(item.process.step_by_step) && item.process.step_by_step.length > 0) {
-                    htmlPartsPrint.push(`<div class="mt-3"><p class="text-[9px] font-black text-slate-500 uppercase mb-1.5 tracking-widest">Steps:</p><ul class="list-decimal pl-4 space-y-1 text-[10px] text-slate-800 print:text-slate-800 font-medium">` + item.process.step_by_step.map(p => `<li>${p}</li>`).join('') + `</ul></div>`);
-                    htmlPartsWeb.push(`<div class="mt-2"><p class="text-[10px] font-bold text-slate-500 uppercase mb-1">Steps:</p><ul class="list-decimal pl-4 space-y-1 text-xs text-slate-700 dark:text-slate-300">` + item.process.step_by_step.map(p => `<li>${p}</li>`).join('') + `</ul></div>`);
+                    htmlPartsPrint.push(`<div class="mt-3"><p class="text-[9px] font-black text-slate-500 uppercase mb-1.5 tracking-widest">Steps:</p><ul class="list-decimal pl-4 space-y-1 text-[10px] text-slate-800 font-medium">` + item.process.step_by_step.map(p => `<li>${p}</li>`).join('') + `</ul></div>`);
+                    htmlPartsWeb.push(`<div class="mt-4"><p class="text-xs font-bold text-slate-500 uppercase mb-2">Steps:</p><ul class="list-decimal pl-5 space-y-2 text-sm text-slate-700 font-medium">` + item.process.step_by_step.map(p => `<li>${p}</li>`).join('') + `</ul></div>`);
                 }
 
                 if (htmlPartsPrint.length === 0) {
                     if (Array.isArray(item.process)) {
-                        htmlPartsPrint.push(`<ul class="list-decimal pl-4 space-y-1 text-[10px] text-slate-800 print:text-slate-800 font-medium">` + item.process.map(p => `<li>${p}</li>`).join('') + `</ul>`);
-                        htmlPartsWeb.push(`<ul class="list-decimal pl-4 space-y-1 text-xs text-slate-700 dark:text-slate-300">` + item.process.map(p => `<li>${p}</li>`).join('') + `</ul>`);
+                        htmlPartsPrint.push(`<ul class="list-decimal pl-4 space-y-1 text-[10px] text-slate-800 font-medium">` + item.process.map(p => `<li>${p}</li>`).join('') + `</ul>`);
+                        htmlPartsWeb.push(`<ul class="list-decimal pl-5 space-y-2 text-sm text-slate-700 font-medium">` + item.process.map(p => `<li>${p}</li>`).join('') + `</ul>`);
                     } else if (typeof item.process === 'string') {
-                        htmlPartsPrint.push(`<p class="text-[10px] text-slate-800 print:text-slate-800 font-medium leading-relaxed">${item.process}</p>`);
-                        htmlPartsWeb.push(`<p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${item.process}</p>`);
+                        htmlPartsPrint.push(`<p class="text-[10px] text-slate-800 font-medium leading-relaxed">${item.process}</p>`);
+                        htmlPartsWeb.push(`<p class="text-sm text-slate-700 font-medium leading-relaxed">${item.process}</p>`);
                     }
                 }
 
@@ -711,18 +741,18 @@
 
             let riskScoreNum = item.risk_assessment?.risk_score || 0;
             let riskTypesStr = (item.risk_assessment?.risk_type || []).map(t => `<span class="capitalize">${t}</span>`).join(' <span class="text-slate-400">&bull;</span> ');
-            let riskBorderColor = riskScoreNum >= 7 ? 'border-red-600' : (riskScoreNum >= 4 ? 'border-amber-500' : 'border-blue-500');
-            let riskTextColor = riskScoreNum >= 7 ? 'text-red-600 dark:text-red-400 print:text-red-700' : (riskScoreNum >= 4 ? 'text-amber-600 dark:text-amber-400 print:text-amber-700' : 'text-blue-600 dark:text-blue-400 print:text-blue-700');
+            let riskBorderColor = riskScoreNum >= 7 ? 'border-rose-500' : (riskScoreNum >= 4 ? 'border-amber-500' : 'border-brand-teal');
+            let riskTextColor = riskScoreNum >= 7 ? 'text-rose-600' : (riskScoreNum >= 4 ? 'text-amber-600' : 'text-teal-600');
+            let riskBg = riskScoreNum >= 7 ? 'bg-rose-50' : (riskScoreNum >= 4 ? 'bg-amber-50' : 'bg-teal-50');
 
             if (isPrint) {
-                // TAMPILAN 2x2 (Dibagi 2 Kolom, 2 Baris) AGAR LEBIH LEGA DAN RAPI
                 return `
                     <div class="flex items-center gap-2 border-b-2 border-slate-100 pb-2 mb-4">
-                        <i data-lucide="cpu" class="w-5 h-5 text-slate-400"></i>
+                        <i class="ph-bold ph-cpu text-xl text-slate-400"></i>
                         <h3 class="text-sm font-black text-slate-800 uppercase tracking-[0.1em]">Operation & Analysis</h3>
                     </div>
                     
-                    <div class="bg-slate-50 border-l-[4px] border-slate-300 p-3 rounded-r-xl mb-4 shadow-sm">
+                    <div class="bg-slate-50 border-l-[4px] border-brand-teal p-3 rounded-r-xl mb-4 shadow-sm">
                         <p class="text-[11px] text-slate-800 font-serif italic leading-relaxed">
                             "${item.summary}"
                         </p>
@@ -733,50 +763,49 @@
                         
                         <!-- Baris 1, Kolom 1: Radar Chart -->
                         <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm flex flex-col">
-                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-2 flex items-center gap-1.5 border-b border-slate-100 pb-1.5"><i data-lucide="pie-chart" class="w-3 h-3 text-blue-600"></i> Metrics</h4>
+                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-2 flex items-center gap-1.5 border-b border-slate-100 pb-1.5"><i class="ph-fill ph-chart-pie-slice text-brand-teal"></i> Metrics</h4>
                             <div id="${chartId}" class="w-full print-echarts-target flex-grow" data-title="${item.title}" data-prio="${item.priority_score || 0}" data-risk="${rRisk}" data-cost="${rCost}" data-diff="${rDiff}" data-impact="${rImpact}" style="height: 160px;"></div>
                         </div>
 
                         <!-- Baris 1, Kolom 2: Impact -->
-                        <div class="bg-emerald-50/50 p-3 rounded-xl border border-emerald-100 shadow-sm flex flex-col">
-                            <div class="flex items-center gap-1.5 text-emerald-700 font-black text-[9px] mb-1.5 uppercase tracking-widest border-b border-emerald-200/50 pb-1">
-                                <i data-lucide="target" class="w-3 h-3"></i> Impact Target
+                        <div class="bg-teal-50/50 p-3 rounded-xl border border-teal-100 shadow-sm flex flex-col">
+                            <div class="flex items-center gap-1.5 text-teal-700 font-black text-[9px] mb-1.5 uppercase tracking-widest border-b border-teal-200/50 pb-1">
+                                <i class="ph-bold ph-crosshair text-sm"></i> Impact Target
                             </div>
-                            <span class="bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded-sm text-[8px] font-black shadow-sm mb-1.5 inline-block uppercase self-start">${item.impact?.scale || 'N/A'} SCALE</span>
+                            <span class="bg-teal-200 text-teal-900 px-1.5 py-0.5 rounded-sm text-[8px] font-black shadow-sm mb-1.5 inline-block uppercase self-start">${item.impact?.scale || 'N/A'} SCALE</span>
                             <p class="text-[10px] text-slate-800 font-medium leading-relaxed flex-grow">${item.impact?.problem_solved || 'No impact data recorded.'}</p>
                         </div>
 
                         <!-- Baris 2, Kolom 1: Process & Methodology -->
                         <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm flex flex-col">
-                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-2 flex items-center gap-1.5 border-b border-slate-100 pb-1.5"><i data-lucide="list-tree" class="w-3 h-3 text-indigo-600"></i> Process</h4>
+                            <h4 class="text-[10px] font-black text-slate-800 uppercase tracking-widest mb-2 flex items-center gap-1.5 border-b border-slate-100 pb-1.5"><i class="ph-bold ph-tree-structure text-brand-orange"></i> Process</h4>
                             <div class="overflow-hidden flex-grow">${processHtml}</div>
                         </div>
 
                         <!-- Baris 2, Kolom 2: Risk -->
-                        <div class="bg-red-50/50 p-3 rounded-xl border border-red-100 shadow-sm flex flex-col">
-                            <h4 class="text-[9px] font-black text-red-700 uppercase tracking-widest mb-1.5 flex items-center gap-1.5 border-b border-red-200/50 pb-1"><i data-lucide="shield-alert" class="w-3 h-3"></i> Risk</h4>
+                        <div class="bg-rose-50/50 p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col">
+                            <h4 class="text-[9px] font-black text-rose-700 uppercase tracking-widest mb-1.5 flex items-center gap-1.5 border-b border-rose-200/50 pb-1"><i class="ph-fill ph-warning-circle text-sm"></i> Risk</h4>
                             <div class="flex flex-wrap items-center gap-1 font-black text-[10px] mb-1.5 ${riskTextColor}">
-                                <span class="bg-white px-1 py-0.5 rounded-sm shadow-sm border border-red-100">${riskScoreNum}/10</span> 
+                                <span class="bg-white px-1.5 py-0.5 rounded-sm shadow-sm border border-rose-100">${riskScoreNum}/10</span> 
                                 ${riskTypesStr ? `<span class="text-slate-300">&bull;</span> <span class="text-[8px]">${riskTypesStr}</span>` : ''}
                             </div>
                             <p class="text-[10px] text-slate-800 font-medium leading-relaxed flex-grow">${item.risk_assessment?.explanation || 'No risk data available.'}</p>
                         </div>
-
                     </div>
                 `;
             }
 
             return `
                 <div class="flex flex-col overflow-y-auto scrollbar-thin pr-2 h-full">
-                    <h3 class="text-sm font-bold text-slate-800 dark:text-white uppercase border-b border-slate-200 dark:border-slate-700 pb-2 mb-3 flex items-center gap-2 flex-shrink-0">
-                        <i data-lucide="cpu" class="w-4 h-4 text-slate-400"></i> Operation & Analysis
+                    <h3 class="text-sm font-bold text-slate-400 uppercase border-b border-slate-200 pb-3 mb-4 flex items-center gap-2 flex-shrink-0 tracking-widest">
+                        <i class="ph-bold ph-cpu text-lg text-slate-400"></i> Operation & Analysis
                     </h3>
                     
-                    <p class="text-xs text-slate-600 dark:text-slate-300 mb-4 leading-relaxed bg-slate-50 dark:bg-slate-800 p-3 rounded-lg border border-slate-100 dark:border-slate-700 italic shadow-inner flex-shrink-0">
+                    <p class="text-sm text-slate-700 mb-5 leading-relaxed bg-brand-teal/5 p-4 rounded-xl border border-teal-100 font-medium shadow-sm flex-shrink-0">
                         "${item.summary}"
                     </p>
 
-                    <div class="w-full h-40 mb-5 flex-shrink-0 relative z-0">
+                    <div class="w-full h-48 md:h-56 mb-6 flex-shrink-0 relative z-0 bg-white border border-slate-200 rounded-2xl shadow-sm p-2">
                         <div id="${chartId}" class="w-full h-full echarts-target" 
                             data-title="${item.title}"
                             data-prio="${item.priority_score || 0}"
@@ -787,31 +816,31 @@
                         </div>
                     </div>
 
-                    <div class="space-y-4 flex-grow min-h-0">
+                    <div class="space-y-6 flex-grow min-h-0">
                         <div>
-                            <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase mb-2 flex items-center gap-2"><i data-lucide="list-tree" class="w-4 h-4 text-blue-500"></i> Process & Methodology</h4>
-                            <div class="bg-slate-50 dark:bg-slate-800/30 p-3 rounded-lg border border-slate-100 dark:border-slate-700">
+                            <h4 class="text-xs font-bold text-slate-800 uppercase mb-3 flex items-center gap-2 tracking-widest"><i class="ph-bold ph-tree-structure text-lg text-brand-orange"></i> Process & Methodology</h4>
+                            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
                                 ${webProcessHtml}
                             </div>
                         </div>
 
-                        <div class="border-l-4 border-emerald-500 pl-3 py-1">
-                            <div class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-bold text-xs mb-1 uppercase">
-                                <i data-lucide="target" class="w-4 h-4"></i> Impact Target &mdash; 
-                                <span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 px-1.5 py-0.5 rounded shadow-sm">${item.impact?.scale || 'N/A'} SCALE</span>
+                        <div class="border-l-[4px] border-brand-teal bg-teal-50/30 p-4 rounded-r-2xl border-y border-r border-slate-100">
+                            <div class="flex items-center gap-2 text-teal-700 font-bold text-xs mb-2 uppercase tracking-wider">
+                                <i class="ph-bold ph-crosshair text-lg"></i> Impact Target &mdash; 
+                                <span class="bg-white border border-teal-200 text-teal-800 px-2 py-1 rounded-md shadow-sm">${item.impact?.scale || 'N/A'} SCALE</span>
                             </div>
-                            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${item.impact?.problem_solved || 'No impact data recorded.'}</p>
+                            <p class="text-sm text-slate-700 leading-relaxed font-medium">${item.impact?.problem_solved || 'No impact data recorded.'}</p>
                         </div>
 
                         <div>
-                            <h4 class="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase mb-2 flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-1"><i data-lucide="shield-alert" class="w-4 h-4 text-red-500"></i> Risk Assessment</h4>
+                            <h4 class="text-xs font-bold text-slate-800 uppercase mb-3 flex items-center gap-2 border-b border-slate-200 pb-2 tracking-widest"><i class="ph-fill ph-warning-circle text-lg text-rose-500"></i> Risk Assessment</h4>
                             
-                            <div class="border-l-[3px] ${riskBorderColor} pl-3 py-0.5">
-                                <div class="flex flex-wrap items-center gap-1.5 ${riskTextColor} font-bold text-sm mb-1">
-                                    <span>${riskScoreNum}/10</span> 
-                                    ${riskTypesStr ? `<span class="text-slate-300 dark:text-slate-600">&bull;</span> ${riskTypesStr}` : ''}
+                            <div class="border-l-[4px] ${riskBorderColor} ${riskBg} p-4 rounded-r-2xl border-y border-r border-slate-100 shadow-sm">
+                                <div class="flex flex-wrap items-center gap-2 ${riskTextColor} font-black text-sm mb-2">
+                                    <span class="bg-white px-2 py-1 rounded-lg border border-current shadow-sm">${riskScoreNum}/10</span> 
+                                    ${riskTypesStr ? `<span class="text-slate-300">&bull;</span> <span class="text-xs uppercase tracking-wider">${riskTypesStr}</span>` : ''}
                                 </div>
-                                <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${item.risk_assessment?.explanation || 'No risk data available.'}</p>
+                                <p class="text-sm text-slate-700 leading-relaxed font-medium">${item.risk_assessment?.explanation || 'No risk data available.'}</p>
                             </div>
                         </div>
                     </div>
@@ -861,11 +890,9 @@
                 leftEl.innerHTML = '';
             } else {
                 const leftIndex = Math.floor(currentPageIndex / 2) * 2;
-                leftEl.innerHTML = getPageHtml(leftIndex, false) || '<div class="flex items-center justify-center h-full text-slate-300"><i data-lucide="book-dashed" class="w-16 h-16 opacity-20"></i></div>';
-                rightEl.innerHTML = getPageHtml(leftIndex + 1, false) || '<div class="flex items-center justify-center h-full text-slate-300"><i data-lucide="book-dashed" class="w-16 h-16 opacity-20"></i></div>';
+                leftEl.innerHTML = getPageHtml(leftIndex, false) || '<div class="flex items-center justify-center h-full text-slate-300"><i class="ph-bold ph-book text-6xl opacity-20"></i></div>';
+                rightEl.innerHTML = getPageHtml(leftIndex + 1, false) || '<div class="flex items-center justify-center h-full text-slate-300"><i class="ph-bold ph-book text-6xl opacity-20"></i></div>';
             }
-
-            lucide.createIcons();
             
             setTimeout(() => {
                 initVisualizations('.leaflet-target', '.echarts-target', mapInstances, chartInstances, false);
@@ -908,8 +935,6 @@
                 // Metrik Global
                 fullHtml += `<div class="print-flow page-break">${getPageHtml(3, true)}</div>`;
                 
-                // SELURUH KOMPONEN 1 INOVASI DIBUNGKUS DENGAN 'break-avoid' 
-                // Agar mereka tidak pernah terbelah 2, dan pas 1 halaman penuh
                 let total = getTotalPages();
                 for(let i = 4; i < total; i+=2) {
                     let leftPart = getPageHtml(i, true);
@@ -924,10 +949,8 @@
                 }
                 
                 printWrapper.innerHTML = fullHtml;
-                lucide.createIcons();
 
                 cleanupInstances(printMapInstances, printChartInstances);
-
                 initVisualizations('.print-leaflet-target', '.print-echarts-target', printMapInstances, printChartInstances, true);
 
                 for (let id in printChartInstances) {
@@ -952,7 +975,6 @@
                 };
 
                 window.addEventListener('afterprint', finishPrint);
-                
                 window.print();
 
                 setTimeout(() => {
@@ -988,7 +1010,6 @@
         function initVisualizations(mapClass, chartClass, mapsObj, chartsObj, isPrint) {
             const mapTargets = document.querySelectorAll(mapClass);
             const sampleBgDots = globalDataArr.length > 100 ? globalDataArr.slice(0, 100) : globalDataArr;
-            const isDark = document.documentElement.classList.contains('dark') && !isPrint; 
 
             mapTargets.forEach(el => {
                 const id = el.id;
@@ -1004,10 +1025,7 @@
                         { zoomControl: false, scrollWheelZoom: false };
 
                     const map = L.map(id, mapOptions).setView([currentLat, currentLon], 4);
-                    
-                    const tileUrl = isDark 
-                        ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-                        : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+                    const tileUrl = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
 
                     L.tileLayer(tileUrl, { attribution: '&copy; OpenStreetMap' }).addTo(map);
 
@@ -1017,12 +1035,12 @@
                         
                         if(!isNaN(lat) && !isNaN(lon) && (lat !== currentLat || lon !== currentLon)) {
                             L.circleMarker([lat, lon], {
-                                radius: 3, color: isDark ? '#475569' : '#cbd5e1', fillColor: isDark ? '#475569' : '#cbd5e1', fillOpacity: 0.8, weight: 1
+                                radius: 3, color: '#cbd5e1', fillColor: '#cbd5e1', fillOpacity: 0.8, weight: 1
                             }).addTo(map);
                         }
                     });
 
-                    const markerHtml = `<div class="w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-[0_0_10px_rgba(59,130,246,0.8)] ${isPrint ? '' : 'animate-pulse'}"></div>`;
+                    const markerHtml = `<div class="w-4 h-4 bg-brand-teal rounded-full border-2 border-white shadow-[0_0_10px_rgba(20,184,166,0.8)] ${isPrint ? '' : 'animate-pulse'}"></div>`;
                     const customIcon = L.divIcon({ className: 'custom-div-icon', html: markerHtml, iconSize: [16, 16], iconAnchor: [8, 8] });
                     L.marker([currentLat, currentLon], {icon: customIcon, zIndexOffset: 1000}).addTo(map);
 
@@ -1035,7 +1053,7 @@
                 const id = el.id;
                 if (id && !chartsObj[id]) {
                     const myChart = echarts.init(el);
-                    const textColor = isDark ? '#cbd5e1' : '#475569';
+                    const textColor = '#475569';
                     
                     const prio = parseFloat(el.getAttribute('data-prio'));
                     const risk = parseFloat(el.getAttribute('data-risk'));
@@ -1054,22 +1072,21 @@
                                 { name: 'Cost', max: 100 },
                                 { name: 'Difficulty', max: 100 }
                             ],
-                            // Sesuaikan agar pas untuk 2 kolom
                             radius: isPrint ? '60%' : '65%',
                             center: ['50%', '50%'],
                             splitNumber: 4,
                             axisName: { color: isPrint ? '#0f172a' : textColor, fontSize: isPrint ? 9 : 10, fontWeight: 'bold' },
-                            splitArea: { areaStyle: { color: isDark ? ['#1e293b', '#0f172a'] : ['#f8fafc', '#f1f5f9'] } },
-                            splitLine: { lineStyle: { color: isDark ? '#334155' : '#e2e8f0', width: isPrint ? 2 : 1 } },
-                            axisLine: { lineStyle: { color: isDark ? '#334155' : '#e2e8f0' } }
+                            splitArea: { areaStyle: { color: ['#f8fafc', '#f1f5f9'] } },
+                            splitLine: { lineStyle: { color: '#e2e8f0', width: isPrint ? 2 : 1 } },
+                            axisLine: { lineStyle: { color: '#e2e8f0' } }
                         },
                         series: [{
                             type: 'radar',
                             data: [{
                                 value: [prio, impact, risk, cost, diff],
                                 name: 'Metrics',
-                                itemStyle: { color: '#3b82f6' },
-                                areaStyle: { color: 'rgba(59, 130, 246, 0.4)' },
+                                itemStyle: { color: '#14b8a6' }, // Teal
+                                areaStyle: { color: 'rgba(20, 184, 166, 0.2)' },
                                 lineStyle: { width: 3 }
                             }]
                         }]
@@ -1079,33 +1096,7 @@
             });
         }
 
-        // --- Theme Management ---
-        function checkTheme() {
-            if (localStorage.theme === 'dark') {
-                document.documentElement.classList.add('dark');
-                document.getElementById('theme-icon').setAttribute('data-lucide', 'sun');
-            } else {
-                document.documentElement.classList.remove('dark');
-                document.getElementById('theme-icon').setAttribute('data-lucide', 'moon');
-            }
-        }
-
-        function toggleTheme() {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.theme = 'light';
-                document.getElementById('theme-icon').setAttribute('data-lucide', 'moon');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.theme = 'dark';
-                document.getElementById('theme-icon').setAttribute('data-lucide', 'sun');
-            }
-            lucide.createIcons();
-            if(globalDataArr.length > 0) renderBook(); 
-        }
-
         document.addEventListener('DOMContentLoaded', initApp);
-
     </script>
 </body>
 </html>
