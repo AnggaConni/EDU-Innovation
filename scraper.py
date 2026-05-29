@@ -289,6 +289,27 @@ def get_current_quarter():
     quarter = (now.month - 1) // 3 + 1
     return f"Q{quarter} {now.year}"
 
+def unwrap_url(url):
+    """Membuka link redirect Google (Vertex/Search) ke URL website aslinya."""
+    if not isinstance(url, str): 
+        return ""
+    url = url.strip()
+    
+    # Jika link-nya normal (bukan vertex/google), langsung kembalikan
+    if "vertexaisearch.cloud.google.com" not in url and "google.com/url" not in url:
+        return url
+        
+    try:
+        # Mengetuk link untuk melihat tujuan aslinya (tanpa mendownload isi webnya)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+        response = requests.get(url, headers=headers, allow_redirects=True, timeout=10, stream=True)
+        real_url = response.url
+        response.close()
+        return real_url
+    except Exception as e:
+        log.warning(f"Gagal mengekstrak URL asli dari Vertex: {e}")
+        return url # Jika gagal, kembalikan apa adanya
+
 # =====================================================================
 # CORE AI ENGINE (GEMINI)
 # =====================================================================
@@ -366,7 +387,7 @@ def pass_2_extract(api_key, raw_content):
     
     CRITICAL RULES FOR SOURCES:
     - Provide ONLY direct, original website URLs (e.g., https://www.bbc.com/..., https://en.unesco.org/...).
-    - STRIP OUT any Google Search redirect wrappers (DO NOT output links starting with google.com/url?q=).
+    - STRIP OUT any Google Search redirect wrappers (DO NOT output links containing vertexaisearch.cloud.google.com or google.com/url).
     - If no direct link is available, leave the array empty [].
     
     Return EXACTLY this JSON structure:
@@ -533,8 +554,19 @@ def run_discovery_pipeline(api_key, database, max_items=3):
                 "risk_assessment": risk_data if risk_data else {}
             }
 
-            if "sources" not in final_item: final_item["sources"] = []
-            final_item["sources"] = list(set(final_item.get("sources", []) + discovered_urls))
+            # ==========================================
+            # PERBAIKAN: UNWRAP & BERSIHKAN URL SOURCES
+            # ==========================================
+            raw_sources = final_item.get("sources", []) + discovered_urls
+            cleaned_urls = []
+            for u in raw_sources:
+                if not u: continue
+                real_u = unwrap_url(u)  # Buka kedok link Vertex AI
+                if real_u and real_u not in cleaned_urls:
+                    cleaned_urls.append(real_u)
+                    
+            final_item["sources"] = cleaned_urls
+            # ==========================================
 
             # Geocoding
             loc_data = final_item.get("location", {})
