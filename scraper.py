@@ -1,6 +1,6 @@
 """
 =======================================================================
-  EDU INNOVATION RADAR v0.3 — Global Intelligence Engine
+  EDU INNOVATION RADAR v0.8 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash
   Mode      : Multi-Schedule Tracker (Data = 2 Days, Resume = 3 Months)
   Feature   : Append-Only DB, Smart Execution, Independent Force Crawl
@@ -594,12 +594,31 @@ def generate_intelligence_report(api_key, database):
 
     log.info("📊 Generating Periodic Intelligence Resume...")
     quarter = get_current_quarter()
-    db_string = json.dumps(database, ensure_ascii=False)
+
+    # ==========================================
+    # PERBAIKAN: MINIFIKASI DATASET
+    # Mencegah JSON Parse Error ketika data mencapai puluhan/ratusan.
+    # Buang tutorial, process, dan sources agar memori AI tidak jebol!
+    # ==========================================
+    lite_db = []
+    for d in database:
+        lite_db.append({
+            "title": d.get("title", ""),
+            "summary": d.get("summary", ""),
+            "category": d.get("category", []),
+            "innovation_level": d.get("innovation_level", ""),
+            "country": d.get("location", {}).get("country", ""),
+            "impact_score": d.get("impact", {}).get("impact_score", 0),
+            "risk_types": d.get("risk_assessment", {}).get("risk_type", []),
+            "knowledge_source": d.get("origin", {}).get("knowledge_source", []),
+            "education_type": d.get("education_details", {}).get("education_type", "")
+        })
+    db_string = json.dumps(lite_db, ensure_ascii=False)
+    # ==========================================
 
     sys_prompt = """
                 You are an elite AI Educator Intelligence Analyst generating a quarterly global report on education innovation.
-
-                You will be given a JSON array containing structured innovation records.
+                You will be given a minified JSON array containing structured innovation records.
 
                 YOUR OBJECTIVE:
                 - Detect patterns (not just summarize)
@@ -608,15 +627,10 @@ def generate_intelligence_report(api_key, database):
                 - Identify intervention opportunities
                 - Analyze knowledge evolution
 
-                CRITICAL THINKING RULES:
-                - Do NOT summarize blindly
-                - Aggregate across multiple records
-                - Identify trends, anomalies, and clusters
-                - If data is insufficient, return empty arrays or zero values (DO NOT hallucinate)
-
                 ----------------------------------------
                 OUTPUT FORMAT (STRICT JSON ONLY)
                 ----------------------------------------
+                Return EXACTLY this JSON structure. Do NOT use markdown.
 
                 {
                 "report_metadata": {
@@ -625,7 +639,6 @@ def generate_intelligence_report(api_key, database):
                     "period": "Q_ YYYY",
                     "total_records_analyzed": 0
                 },
-
                 "global_summary": {
                     "total_education_innovations": 0,
                     "grassroots_percentage": 0,
@@ -633,140 +646,50 @@ def generate_intelligence_report(api_key, database):
                     "formal_percentage": 0,
                     "informal_percentage": 0
                 },
-
                 "top_categories": [
-                    {
-                    "category": "",
-                    "count": 0,
-                    "trend": "increasing | decreasing | stable"
-                    }
+                    { "category": "Category Name", "count": 0, "trend": "increasing | decreasing | stable" }
                 ],
-
                 "geographic_insights": [
-                    {
-                    "region": "",
-                    "key_pattern": "",
-                    "impact_level": "low | medium | high"
-                    }
+                    { "region": "Region Name", "key_pattern": "Description", "impact_level": "high" }
                 ],
-
                 "impact_analysis": {
                     "high_impact_cases": 0,
                     "critical_cases": 0,
-                    "top_impact_types": [],
-                    "emerging_impacts": []
+                    "top_impact_types": ["Type 1", "Type 2"],
+                    "emerging_impacts": ["Impact 1"]
                 },
-
                 "innovation_patterns": [
-                    {
-                    "pattern_name": "",
-                    "description": "",
-                    "regions": [],
-                    "impact_level": "low | medium | high"
-                    }
+                    { "pattern_name": "Name", "description": "Description", "regions": ["Region 1"], "impact_level": "high" }
                 ],
-
                 "hidden_gems": [
-                    {
-                    "title": "",
-                    "country": "",
-                    "reason": ""
-                    }
+                    { "title": "Title", "country": "Country", "reason": "Reason" }
                 ],
-
                 "intervention_opportunities": [
-                    {
-                    "type": "training | funding | regulation | research | collaboration | perception | evaluation | criticism",
-                    "target": "",
-                    "priority_level": "low | medium | high",
-                    "justification": ""
-                    }
+                    { "type": "funding | training | regulation", "target": "Target", "priority_level": "high", "justification": "Reason" }
                 ],
-
                 "knowledge_insights": {
-                    "most_common_source": "",
-                    "trend": "increasing | decreasing | shifting | fostering | promoting",
-                    "observation": ""
+                    "most_common_source": "source",
+                    "trend": "increasing",
+                    "observation": "Insightful observation"
                 },
-
                 "recommendations": [
-                    ""
+                    "Recommendation 1",
+                    "Recommendation 2"
                 ],
-
                 "charts": {
-                    "innovation_by_region": [
-                    { "region": "", "count": 0 }
-                    ],
-                    "impact_distribution": [
-                    { "level": "low | medium | high", "count": 0 }
-                    ],
-                    "knowledge_source_trend": [
-                    { "source": "", "count": 0 }
-                    ],
-                    "learning_outcomes": [
-                    { "level": "low | medium | high", "count": 0 }
-                    ]
+                    "innovation_by_region": [ { "region": "Region", "count": 0 } ],
+                    "impact_distribution": [ { "level": "High", "count": 0 } ],
+                    "knowledge_source_trend": [ { "source": "source", "count": 0 } ],
+                    "learning_outcomes": [ { "level": "high", "count": 0 } ]
                 }
                 }
-
-                ----------------------------------------
-                ANALYSIS GUIDELINES
-                ----------------------------------------
-
-                1. GLOBAL SUMMARY
-                - Calculate percentages from dataset
-                - Ensure total ≈ 100%
-
-                2. TOP CATEGORIES
-                - Rank by frequency
-                - Trend = based on relative dominance in dataset (not time series)
-
-                3. GEOGRAPHIC INSIGHTS
-                - Identify regional clusters
-                - Highlight dominant innovation type or issue per region
-
-                4. IMPACT ANALYSIS (Dropouts, Impacts)
-                - High impact = impact_score >= 6
-                - Critical = impact_score >= 8
-                - Identify repeated regressed patterns
-
-                5. EDUCATION INNOVATION PATTERNS
-                - Group similar innovations into themes
-                - Example: "DIY energy generator systems learning", "low-cost educational tools"
-
-                6. HIDDEN GEMS
-                - Must meet ALL:
-                - grassroots
-                - low cost
-                - high impact
-                - High Collaboration Potential (based on replicability and risk)
-                - Select top 5–10 only
-
-                7. INTERVENTION OPPORTUNITIES
-                - Focus on:
-                - high impact + high priority
-                - scalable innovations needing support
-
-                8. KNOWLEDGE INSIGHTS
-                - Analyze distribution of:
-                - traditional
-                - self-taught
-                - internet
-                - adapted
-                - formal
-
-                9. RECOMMENDATIONS
-                - Must be actionable (not generic)
-                - Max 5–8 items
 
                 ----------------------------------------
                 STRICT RULES
                 ----------------------------------------
-
-                - Output MUST be valid JSON (no markdown, no explanation)
-                - Do NOT include text outside JSON
-                - Do NOT hallucinate missing data
-                - Keep text concise but meaningful
+                - Output MUST be valid JSON. 
+                - DO NOT use placeholders like "..." or "// more items". Write out the full arrays.
+                - Escape all internal quotation marks properly to avoid JSON Parse errors.
                 """
 
     prompt = f"Analyze the following innovation dataset and generate the report.\n\nDATASET:\n{db_string}"
@@ -794,21 +717,17 @@ def generate_intelligence_report(api_key, database):
         new_report["report_metadata"]["generated_at"] = datetime.now().isoformat()
         new_report["report_metadata"]["period"] = quarter
 
-        # ==========================================
-        # PERBAIKAN 2: PAKSA HITUNGAN IMPACT ANALYSIS
-        # ==========================================
+        # 3. Paksa Hitungan Impact Analysis
         high_impact_count = sum(1 for x in database if x.get("impact", {}).get("impact_score", 0) >= 8)
         medium_impact_count = sum(1 for x in database if 4 <= x.get("impact", {}).get("impact_score", 0) <= 7)
         low_impact_count = sum(1 for x in database if x.get("impact", {}).get("impact_score", 0) <= 3)
         critical_count = sum(1 for x in database if x.get("critical_flag") == True)
 
-        # Timpa angka di panel atas Impact Analysis
         if "impact_analysis" not in new_report:
             new_report["impact_analysis"] = {}
         new_report["impact_analysis"]["high_impact_cases"] = high_impact_count
         new_report["impact_analysis"]["critical_cases"] = critical_count
 
-        # Timpa angka di diagram batang (Bar Chart)
         if "charts" not in new_report:
             new_report["charts"] = {}
         new_report["charts"]["impact_distribution"] =[
@@ -822,22 +741,19 @@ def generate_intelligence_report(api_key, database):
         if not isinstance(resume_db, list): 
             resume_db = []
 
-        # ✅ ROTASI ID: Ubah semua 'edu-current' lama menjadi 'edu-older'
+        # ROTASI ID
         for report in resume_db:
             if isinstance(report, dict):
                 if "report_metadata" not in report: report["report_metadata"] = {}
                 report["report_metadata"]["report_id"] = "edu-older"
 
-        # Setup metadata laporan baru
         new_report["report_metadata"]["generated_at"] = datetime.now().isoformat()
         new_report["report_metadata"]["period"] = quarter
         new_report["report_metadata"]["report_id"] = "edu-current"
         
-        # ✅ SIMPAN HANYA SEKALI
         resume_db.append(new_report)
         save_json_file(RESUME_FILE, resume_db)
         
-        # Update file Markdown untuk preview cepat
         md_content = convert_report_to_markdown(new_report)
         save_text_file(REPORT_MD_FILE, md_content)
 
