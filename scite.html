@@ -42,6 +42,10 @@
         .scite-mentioning { background-color: #f1f5f9; color: #475569; border-color: #cbd5e1; }
         .scite-contrasting { background-color: #eff6ff; color: #2563eb; border-color: #bfdbfe; }
 
+        /* Purple - External/Web Publications */
+        .scite-external { background-color: #f3e8ff; color: #7e22ce; border-color: #e9d5ff; }
+        .scite-external:hover { background-color: #e9d5ff; transform: translateY(-1px); box-shadow: 0 2px 4px rgba(126, 34, 206, 0.1); }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
@@ -163,12 +167,25 @@
             <button onclick="toggleEvidencePanel()" class="text-slate-400 hover:text-slate-600"><i class="ph-bold ph-x"></i></button>
         </div>
         
-        <div class="p-4 flex-1 overflow-y-auto space-y-4" id="evidence-list">
-            <div class="text-center py-10 opacity-60">
-                <i class="ph-duotone ph-file-search text-4xl text-slate-400 mb-2"></i>
-                <p class="text-xs font-medium text-slate-500">Ask a question to see which data AI retrieves.</p>
+        <div class="p-4 flex-1 overflow-y-auto space-y-4 h-full">
+            <!-- Internal Data -->
+            <div id="internal-evidence-list" class="space-y-4">
+                <div class="text-center py-10 opacity-60">
+                    <i class="ph-duotone ph-file-search text-4xl text-slate-400 mb-2"></i>
+                    <p class="text-xs font-medium text-slate-500">Ask a question to see data.</p>
+                </div>
+            </div>
+            
+            <!-- External Web Data (Akan Muncul Jika Ada Hasil Web) -->
+            <div id="external-evidence-section" class="hidden mt-6 pt-4 border-t-2 border-dashed border-slate-200 space-y-4 pb-10">
+                <h3 class="text-xs font-bold text-purple-600 uppercase tracking-wider flex items-center gap-2">
+                    <i class="ph-bold ph-globe"></i> Web & Publications
+                </h3>
+                <div id="external-evidence-list" class="space-y-4"></div>
             </div>
         </div>
+
+
     </aside>
 
     <!-- Scripts -->
@@ -302,35 +319,36 @@
         }
 
         function updateEvidencePanel(retrievedData) {
-            const list = document.getElementById('evidence-list');
+            const list = document.getElementById('internal-evidence-list');
+            document.getElementById('external-evidence-section').classList.add('hidden'); // Reset tab eksternal
             list.innerHTML = '';
             
             if(retrievedData.length === 0) {
-                list.innerHTML = `<p class="text-xs text-slate-400 text-center mt-10">No specific evidence found.</p>`;
+                list.innerHTML = `<p class="text-xs text-slate-400 text-center mt-10">No specific internal data found.</p>`;
                 return;
             }
 
             retrievedData.forEach((data, index) => {
                 list.innerHTML += `
-                    <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
-                        <div class="text-[10px] font-bold text-indigo-500 uppercase tracking-wider mb-1">Evd #${index + 1}</div>
-                        <h3 class="text-sm font-bold text-slate-800 leading-tight mb-1">${data.title || 'Untitled'}</h3>
-                        <p class="text-xs text-slate-500 line-clamp-3">${data.summary || 'No description available.'}</p>
-                        <div class="mt-2 text-[10px] text-slate-400 font-medium">📍 ${data.location?.country || 'Unknown'}</div>
+                    <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                        <div class="text-[10px] font-bold text-indigo-500 uppercase tracking-wider mb-1">Local #${index + 1}</div>
+                        <h3 class="text-[13px] font-bold text-slate-800 leading-tight mb-1">${data.title || 'Untitled'}</h3>
+                        <p class="text-[11px] text-slate-500 line-clamp-3">${data.summary || 'No description available.'}</p>
                     </div>
                 `;
             });
             
-            // Otomatis buka panel jika sedang tertutup agar user melihat prosesnya
             if(!evidencePanelOpen) toggleEvidencePanel();
         }
 
         // --- Parsing Chat & Scite ---
         function parseSciteCitations(text) {
-            return text.replace(/\[\[(Supporting|Contrasting|Mentioning):\s*(.+?)\]\]/gi, (match, type, title) => {
+            // Kita tambahkan kata 'External' agar ikut diparsing menjadi badge
+            return text.replace(/\[\[(Supporting|Contrasting|Mentioning|External):\s*(.+?)\]\]/gi, (match, type, title) => {
                 let lowerType = type.toLowerCase();
                 let icon = lowerType === 'supporting' ? '<i class="ph-bold ph-check-circle"></i>' : 
-                           lowerType === 'contrasting' ? '<i class="ph-bold ph-x-circle"></i>' : '<i class="ph-bold ph-quotes"></i>';
+                        lowerType === 'contrasting' ? '<i class="ph-bold ph-x-circle"></i>' : 
+                        lowerType === 'external' ? '<i class="ph-bold ph-globe"></i>' : '<i class="ph-bold ph-quotes"></i>';
                 return `<span class="scite-badge scite-${lowerType}" title="${title} (${type})">${icon} ${title}</span>`;
             });
         }
@@ -402,93 +420,144 @@
 
         // --- Gemini API Call ---
         async function sendMessage() {
-            const inputEl = document.getElementById('chat-input');
-            const message = inputEl.value.trim();
-            const apiKey = document.getElementById('api-key').value.trim();
-            const model = document.getElementById('model-select').value;
+    const inputEl = document.getElementById('chat-input');
+    const message = inputEl.value.trim();
+    const apiKey = document.getElementById('api-key').value.trim();
+    const model = document.getElementById('model-select').value;
 
-            if (!message) return;
-            if (!apiKey) { alert(i18n[currentLang].errorNoKey); return; }
-            if (innovationData.length === 0) { alert(i18n[currentLang].errorDb); return; }
+    if (!message) return;
+    if (!apiKey) { alert(i18n[currentLang].errorNoKey); return; }
+    if (innovationData.length === 0) { alert(i18n[currentLang].errorDb); return; }
 
-            localStorage.setItem('gii_gemini_key', apiKey);
+    localStorage.setItem('gii_gemini_key', apiKey);
 
-            inputEl.value = '';
-            inputEl.style.height = 'auto'; 
-            appendMessage('user', message);
-            showLoading();
+    inputEl.value = '';
+    inputEl.style.height = 'auto'; 
+    appendMessage('user', message);
+    showLoading();
 
-            // 1. CARI DATA RELEVAN DULU (Retrieval)
-            const relevantData = retrieveRelevantData(message);
+    // 1. Cari data internal lokal
+    const relevantData = retrieveRelevantData(message);
+    updateEvidencePanel(relevantData);
+
+    const filteredContext = JSON.stringify(relevantData.map(item => ({
+        T: item.title, 
+        C: item.location?.country, 
+        Cat: Array.isArray(item.category) ? item.category.join(",") : (item.category || ""), 
+        S: item.summary
+    })));
+
+    // 2. Prompt 
+    const systemPrompt = `You are Edu-Scite, an elite academic research assistant. 
+    Respond in ${currentLang === 'id' ? 'Indonesian' : 'English'}.
+    
+    CRITICAL INSTRUCTIONS: 
+    1. Answer by synthesizing the "INTERNAL SEARCH RESULTS" below.
+    2. YOU MUST USE YOUR GOOGLE SEARCH TOOL to find additional scientific literature (Springer, Nature, PubMed, Google Scholar, etc.) to heavily support or contrast the internal data.
+    3. Every claim MUST be cited using THIS EXACT FORMAT: [[Type: Title]]
+    
+    TYPES OF CITATIONS:
+    - [[Supporting: Title]] -> For internal dataset claims that support the argument.
+    - [[Contrasting: Title]] -> For internal dataset claims that offer alternatives.
+    - [[Mentioning: Title]] -> For internal dataset neutral mentions.
+    - [[External: Journal/Author - Title]] -> For claims backed by external web/journal publications you just found via Google Search.
+
+    INTERNAL SEARCH RESULTS:
+    ---
+    ${filteredContext}
+    ---`;
+
+    const contents = chatHistory.map(msg => ({
+        role: msg.role === 'user' ? 'user' : 'model',
+        parts: [{ text: msg.text }]
+    }));
+    
+    contents.push({ role: 'user', parts: [{ text: message }] });
+
+    try {
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+        
+        // 3. Payload dengan Tools (Menggunakan let agar bisa diubah saat Auto-Fallback)
+        let payload = {
+            contents: contents,
+            systemInstruction: { parts: [{ text: systemPrompt }] },
+            tools: [{ google_search: {} }], // <-- Sintaks aman untuk REST API
+            generationConfig: { temperature: 0.3, maxOutputTokens: 3000 }
+        };
+
+        let response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        // =========================================================
+        // 🚀 SMART AUTO-FALLBACK JIKA SERVER GOOGLE DOWN/SIBUK
+        // =========================================================
+        if (response.status === 503 || response.status === 500) {
+            console.warn("⚠️ Server Google Search sibuk (503). Mengalihkan ke mode Lokal...");
             
-            // 2. UPDATE PANEL KANAN
-            updateEvidencePanel(relevantData);
-
-            // 3. SIAPKAN KONTEKS HANYA BERISI DATA RELEVAN (Bukan 500 data lagi)
-            const filteredContext = JSON.stringify(relevantData.map(item => ({
-                T: item.title, 
-                C: item.location?.country, 
-                Cat: Array.isArray(item.category) ? item.category.join(",") : (item.category || ""), 
-                S: item.summary
-            })));
-
-            const systemPrompt = `You are Edu-Scite, an elite academic research assistant. 
-            Respond in ${currentLang === 'id' ? 'Indonesian' : 'English'}.
+            // Munculkan notifikasi error yang rapi di panel kanan
+            document.getElementById('external-evidence-section').classList.remove('hidden');
+            document.getElementById('external-evidence-list').innerHTML = `
+                <div class="bg-rose-50 p-3 rounded-lg border border-rose-200 shadow-sm text-rose-600 text-xs font-medium">
+                    <i class="ph-bold ph-warning-circle mb-1 text-base"></i><br>
+                    Google Web Search is currently overloaded (503). Generating response based on local data only.
+                </div>
+            `;
             
-            CRITICAL INSTRUCTION: 
-            Every time you make a claim, you MUST cite an innovation from the SEARCH RESULTS below using THIS EXACT FORMAT:
-            [[Type: Exact Title of Innovation]]
-            
-            Type = Supporting, Contrasting, or Mentioning. Example: [[Supporting: Kolibri Offline App]]
-
-            RULES:
-            - DO NOT hallucinate. ONLY use the SEARCH RESULTS below to answer.
-            - Write in academic literature-review style.
-
-            SEARCH RESULTS (T=Title, C=Country, Cat=Category, S=Summary):
-            ---
-            ${filteredContext}
-            ---`;
-
-            const contents = chatHistory.map(msg => ({
-                role: msg.role === 'user' ? 'user' : 'model',
-                parts: [{ text: msg.text }]
-            }));
-            
-            contents.push({ role: 'user', parts: [{ text: message }] });
-
-            try {
-                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-                const response = await fetch(url, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: contents,
-                        systemInstruction: { parts: [{ text: systemPrompt }] },
-                        generationConfig: { temperature: 0.2, maxOutputTokens: 2000 }
-                    })
-                });
-
-                if (!response.ok) throw new Error(`API Error: ${response.status}`);
-
-                const data = await response.json();
-                const aiResponseText = data.candidates[0]?.content?.parts[0]?.text;
-
-                document.getElementById('loading-bubble').remove();
-                document.getElementById('send-btn').disabled = false;
-
-                if (aiResponseText) {
-                    appendMessage('ai', aiResponseText);
-                    chatHistory.push({ role: 'user', text: message });
-                    chatHistory.push({ role: 'ai', text: aiResponseText });
-                }
-
-            } catch (error) {
-                document.getElementById('loading-bubble').remove();
-                document.getElementById('send-btn').disabled = false;
-                appendMessage('ai', i18n[currentLang].errorApi);
-            }
+            // Hapus tool web search agar API tidak keberatan, dan panggil API ulang
+            delete payload.tools; 
+            response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
         }
+        // =========================================================
+
+        if (!response.ok) throw new Error(`API Error: ${response.status}`);
+
+        const data = await response.json();
+        const aiResponseText = data.candidates[0]?.content?.parts[0]?.text;
+        
+        // 4. MENGAMBIL DATA WEB DARI GEMINI (Grounding Metadata)
+        const grounding = data.candidates[0]?.groundingMetadata;
+        if (grounding && grounding.groundingChunks) {
+            const extList = document.getElementById('external-evidence-list');
+            extList.innerHTML = '';
+            
+            grounding.groundingChunks.forEach((chunk, idx) => {
+                if (chunk.web) {
+                    document.getElementById('external-evidence-section').classList.remove('hidden');
+                    extList.innerHTML += `
+                        <a href="${chunk.web.uri}" target="_blank" class="block bg-purple-50 p-3 rounded-lg border border-purple-200 shadow-sm hover:border-purple-400 hover:-translate-y-0.5 transition-all cursor-pointer">
+                            <div class="text-[10px] font-bold text-purple-600 uppercase tracking-wider mb-1 flex items-center gap-1"><i class="ph-bold ph-link"></i> Web Source #${idx + 1}</div>
+                            <h3 class="text-[12px] font-bold text-slate-800 leading-tight mb-1 line-clamp-2">${chunk.web.title}</h3>
+                            <div class="text-[9px] text-purple-600 font-medium truncate">${chunk.web.uri}</div>
+                        </a>
+                    `;
+                }
+            });
+        }
+
+        document.getElementById('loading-bubble').remove();
+        document.getElementById('send-btn').disabled = false;
+
+        if (aiResponseText) {
+            appendMessage('ai', aiResponseText);
+            chatHistory.push({ role: 'user', text: message });
+            chatHistory.push({ role: 'ai', text: aiResponseText });
+        }
+
+    } catch (error) {
+        document.getElementById('loading-bubble').remove();
+        document.getElementById('send-btn').disabled = false;
+        appendMessage('ai', i18n[currentLang].errorApi);
+        console.error(error);
+    }
+}
+
     </script>
 </body>
 </html>
