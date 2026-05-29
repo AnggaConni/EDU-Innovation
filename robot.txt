@@ -1,7 +1,8 @@
-# robots.txt for GSI Radar
-# Mengizinkan semua search engine bot untuk merayapi website
+# robots.txt for EDU Innovation
+# Allow all search engine bots to crawl the website
+
 User-agent: *
 Allow: /
 
-# Menunjukkan lokasi peta situs (sitemap) agar indeks lebih cepat
-Sitemap: https://anggaconni.github.io/GSI-Radar/sitemap.xml
+# Sitemap location
+Sitemap: https://anggaconni.github.io/EDU-Innovation/sitemap.xml
