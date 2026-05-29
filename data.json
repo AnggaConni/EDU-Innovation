@@ -824,5 +824,1750 @@
         "priority_score": 58,
         "hidden_gem": true,
         "critical_flag": true
+    },
+    {
+        "id": "76615bb7ce03874de5696c02f6cdc0e1",
+        "timestamp": "2026-05-29T06:31:03.754649",
+        "title": "Gamified Quest-Based Learning Progression",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLor6iFEE4CH1El8d3mTXZN214an00eu8-hfTfjg2h-l_2C5BCaAp4uKd0yAhcAIQOkPbmoj4Yo1FQ4KYOROuBMM3Q28kBQiJBPrtdDlj16rsn2tsU0mubBFockhqpD35NJ1N5WeU5vgaamssKExRX5PFbHNkqP-maRB6vpKXNsw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu8pT6DsjJAWqu3Stwdtee9TTkqvPbffGS3RlJcatVZAZW6Mypm4fxClqUc9FCNitZQtaPjoxIuLgl7axma7rxHB3Y6tHP3omReOTB6LjZE4OG1zHjFKMSUWtvVSwG-jUh4tXm8pz7L_0ADme0oFEYQrXlonN5FA4xQKikRjZ1D5yX-OAjf7HBS_g=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfuj2wja4A2bc4fyofMRXdEbfUmre8N8EB9yYZd4TltIc-FDxWlEM2IhVtJsQnFK1j8UVFz63sj6M8i9KrploDQPbP1ES9IXrd1RCqWcfCwajf9HF2LjDScYd4dLmN9BEZYx4PzGnti4DRIU5S8gJdtlqKTo_wbGJfuE2M7ghi60l3jF9KSZnFP0olHEcwSL6pxxdycm4WWsa1lQUWeGXjWaExRw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8HKLAtytC0GOX3iCSzL-YtOnmvLeGRv56p_Wi6SwRfjAC3dT8zAxt7nXRuUP3rGfJx1qqn3qUWJyxbV65HTJaFMBy9n6sm89qnI1vwmJa2WkQFcidfgmDgXJ9komRQzUI7r7jcxmZcJw-TQr7VFrznUz8-AvnUS3tqH1uRn6BtKQWF9trHXCewRGIWawL_cI=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9S0TrsysrzpribOyZkUL0eM31dp0Pg1h38F81bgxCOv839PLZ0ylFYlRLZDFuBXrDPjxmEXoGvrXOkChk5O6kJ7oAXmHaaLPf2sfRq8kPM5CsjR72lNUjPCQ_bWGwXfLoXTwjoCHg3NgnwKJ-"
+        ],
+        "summary": "This educational innovation transforms traditional learning objectives into a series of 'quests' or 'missions' for students. As learners successfully complete tasks and demonstrate concept mastery, they 'level up' through a predefined progression. Progress is visually tracked using low-tech methods like classroom maps with markers, physical charts, or bulletin boards. Tangible recognition, such as printable badges or hand-drawn certificates, is awarded for quest completion or reaching new levels, fostering a sense of adventure and persistence in the learning journey.",
+        "category": [
+            "Gamification",
+            "Pedagogy",
+            "Motivation",
+            "Classroom Management"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "K-12 students across various subjects",
+            "learning_outcomes": [
+                "Mastery of concepts",
+                "Increased student engagement",
+                "Enhanced motivation for learning",
+                "Development of persistence",
+                "Recognition of achievement"
+            ],
+            "pedagogical_approach": "Gamification, Experiential Learning, Constructivism, Differentiated Instruction"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Large classroom map or chart",
+                "Individual student markers or names",
+                "Bulletin board (optional)",
+                "Paper for printable badges or hand-drawn certificates",
+                "Art supplies (markers, crayons, etc.)"
+            ],
+            "preparation_steps": [
+                "Identify core learning objectives for a unit or subject.",
+                "Reframe each objective or set of objectives as a 'quest' or 'mission'.",
+                "Design a clear progression of 'levels' that students can achieve.",
+                "Create a visual tracking system (e.g., a large classroom map, a progress chart, or a bulletin board) where students can visibly track their progress.",
+                "Design or prepare printable templates for 'badges' or 'certificates' to be awarded upon quest completion or level-ups."
+            ],
+            "execution_steps": [
+                "Introduce the gamified learning system to students, explaining the 'quests', 'levels', and rewards.",
+                "Students undertake the defined learning 'quests', working to achieve the learning objectives.",
+                "Upon successful completion of a quest and demonstration of mastery, students 'level up'.",
+                "Students physically move their markers or names on the classroom tracking system to reflect their new level.",
+                "Award tangible recognition (badges, certificates) for specific achievements, reinforcing their progress and effort."
+            ],
+            "tips_for_success": "Clearly define quests and their associated learning objectives. Make the visual tracking system engaging and easy for students to update. Ensure badges and certificates are meaningful and celebrated. Encourage collaboration on quests where appropriate. Regularly provide feedback and celebrate small wins to maintain student motivation and foster a sense of adventure and persistence."
+        },
+        "impact": {
+            "problem_solved": "Low student engagement, lack of motivation in traditional learning settings, difficulty in tracking individual student progress visibly, and insufficient recognition for student achievements.",
+            "evidence_of_success": "Students actively participate in 'quests', demonstrate mastery to 'level up', visibly track their progress, and receive tangible recognition (badges/certificates), leading to increased persistence and a sense of adventure in learning.",
+            "beneficiaries_reach": "Individual classrooms and potentially entire schools if adopted broadly.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The public display of individual student progress via maps, charts, or bulletin boards can lead to comparison, embarrassment, and demotivation for students who are not 'leveling up' as quickly. This fosters an environment of unhealthy competition rather than collaboration, potentially creating exclusion barriers and negative social-emotional impacts for struggling learners."
+        },
+        "priority_score": 78,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "e74807580cd0cbf7f2d502cbef39af2b",
+        "timestamp": "2026-05-29T06:31:25.671203",
+        "title": "Low-Tech Classroom Gamification Triad (Points, Badges, Leaderboards)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLor6iFEE4CH1El8d3mTXZN214an00eu8-hfTfjg2h-l_2C5BCaAp4uKd0yAhcAIQOkPbmoj4Yo1FQ4KYOROuBMM3Q28kBQiJBPrtdDlj16rsn2tsU0mubBFockhqpD35NJ1N5WeU5vgaamssKExRX5PFbHNkqP-maRB6vpKXNsw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu8pT6DsjJAWqu3Stwdtee9TTkqvPbffGS3RlJcatVZAZW6Mypm4fxClqUc9FCNitZQtaPjoxIuLgl7axma7rxHB3Y6tHP3omReOTB6LjZE4OG1zHjFKMSUWtvVSwG-jUh4tXm8pz7L_0ADme0oFEYQrXlonN5FA4xQKikRjZ1D5yX-OAjf7HBS_g=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfuj2wja4A2bc4fyofMRXdEbfUmre8N8EB9yYZd4TltIc-FDxWlEM2IhVtJsQnFK1j8UVFz63sj6M8i9KrploDQPbP1ES9IXrd1RCqWcfCwajf9HF2LjDScYd4dLmN9BEZYx4PzGnti4DRIU5S8gJdtlqKTo_wbGJfuE2M7ghi60l3jF9KSZnFP0olHEcwSL6pxxdycm4WWsa1lQUWeGXjWaExRw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7lvkeUvDSmXjCf1e8gFlC-sijH3MUZU7b5TycZrGDbLPhl810byLm8ucOD9iOyINFHCwXu-bZS-61JRDBwybE5fitxAlcTwNuxUFBv-8DS2Yh1MaC3SKXnseAf1cfIjMKEv0bmp7c9N_DK4lZYpf0gINtTMxtWAVB8o1zzQ==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9S0TrsysrzpribOyZkUL0eM31dp0Pg1h38F81bgxCOv839PLZ0ylFYlRLZDFuBXrDPjxmEXoGvrXOkChk5O6kJ7oAXmHaaLPf2sfRq8kPM5CsjR72lNUjPCQ_bWGwXfLoXTwjoCHg3NgnwKJ-"
+        ],
+        "summary": "This low-tech implementation of the classic gamification triad involves students earning points for various academic achievements, participation, or positive behaviors, which can be tracked manually on a whiteboard, a large poster, or individual paper 'scorecards'. Badges, representing mastery of specific skills or completion of significant tasks, can be physical items like stickers, printed cut-outs, or even hand-drawn symbols that students collect or display. A prominent, manually updated leaderboard in the classroom can display the progress of individuals or teams, fostering friendly competition and providing clear, immediate feedback on their standing. This system motivates students by making their efforts and achievements visible and rewarding, without relying on digital tools.",
+        "category": [
+            "Gamification",
+            "Classroom Management",
+            "Student Motivation",
+            "Behavioral Management"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "K-12 students, or any learners in a classroom setting",
+            "learning_outcomes": [
+                "Increased student motivation",
+                "Improved academic achievement",
+                "Enhanced participation",
+                "Promotion of positive behaviors",
+                "Mastery of specific skills",
+                "Completion of significant tasks"
+            ],
+            "pedagogical_approach": "Gamification, behaviorism (reward system), formative feedback"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Whiteboard or large poster",
+                "Markers or pens",
+                "Paper 'scorecards' (optional)",
+                "Stickers, printed cut-outs, or art supplies for badges"
+            ],
+            "preparation_steps": [
+                "Define specific academic achievements, participation goals, or positive behaviors that will earn points.",
+                "Design a system for badges, determining what skills or tasks will be recognized.",
+                "Prepare a physical tracking system (whiteboard, poster, or individual scorecards) for points.",
+                "Create or procure physical badges (stickers, cut-outs, etc.).",
+                "Set up a prominent leaderboard display in the classroom."
+            ],
+            "execution_steps": [
+                "Award points to students as they achieve defined goals or exhibit desired behaviors.",
+                "Distribute physical badges to students upon mastery of skills or completion of significant tasks.",
+                "Manually update the classroom leaderboard regularly to reflect current standings of individuals or teams.",
+                "Provide verbal feedback and encouragement based on visible progress."
+            ],
+            "tips_for_success": "Clearly communicate the rules and rewards to students. Ensure consistency in point awarding and badge distribution. Make the leaderboard visible and update it frequently to maintain engagement. Encourage friendly competition and celebrate all achievements, not just the top performers. Adapt the system to fit the age and developmental stage of the learners."
+        },
+        "impact": {
+            "problem_solved": "Lack of student motivation, difficulty in recognizing and rewarding student efforts and achievements, need for immediate and visible feedback on progress.",
+            "evidence_of_success": "Motivates students by making their efforts and achievements visible and rewarding; fosters friendly competition and provides clear, immediate feedback.",
+            "beneficiaries_reach": "Individual students within a classroom or small group setting.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The public display of individual performance on leaderboards raises significant data privacy concerns, as academic achievements (or lack thereof) are made visible to peers, potentially causing embarrassment or demotivation for students who are struggling. This competitive ranking system also carries a high risk of exclusion, as it can negatively impact the self-esteem and engagement of students who consistently rank lower, fostering a sense of failure rather than motivation. Furthermore, the emphasis on individual competition and public display of achievement might create cultural friction in environments that prioritize collaboration or private recognition."
+        },
+        "priority_score": 74,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "4bad81ba04ea61091f1315a4b8e81f42",
+        "timestamp": "2026-05-29T06:31:46.150519",
+        "title": "Low-Tech Board Game Adaptations for Classroom Learning",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfuj2wja4A2bc4fyofMRXdEbfUmre8N8EB9yYZd4TltIc-FDxWlEM2IhVtJsQnFK1j8UVFz63sj6M8i9KrploDQPbP1ES9IXrd1RCqWcfCwajf9HF2LjDScYd4dLmN9BEZYx4PzGnti4DRIU5S8gJdtlqKTo_wbGJfuE2M7ghi60l3jF9KSZnFP0olHEcwSL6pxxdycm4WWsa1lQUWeGXjWaExRw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJhnDG75BBc-5r56b3qgrWsHZqkLHlEt8fCD82B81W34LL12NUg06xIg2T93-a-0kgJ9o8cdp8H1k5x9WsG3s8apLi43B2o9MNyN5GZ3DPh-GxDVBwZMJ7XSOWszi8VVvRhyTs65Dl3aQhMYD5LZ8="
+        ],
+        "summary": "This innovation involves creatively adapting readily available, low-tech board games like Connect Four, Jenga, and Bingo into engaging tools for content review and skill practice. Teachers customize these games by integrating curriculum-related questions or concepts, requiring students to answer correctly before making a move. This approach transforms traditional review sessions into interactive and enjoyable experiences, fostering active recall, critical thinking, and collaborative learning without relying on digital devices.",
+        "category": [
+            "Game-based Learning",
+            "Active Learning",
+            "Low-Tech Solutions",
+            "Content Review",
+            "Skill Practice"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Arts",
+                "Literacy",
+                "Vocational",
+                "Environment",
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "K-12 students across various subjects",
+            "learning_outcomes": [
+                "Active recall of content",
+                "Critical thinking",
+                "Collaborative learning",
+                "Content review",
+                "Skill practice",
+                "Increased engagement in learning"
+            ],
+            "pedagogical_approach": "Game-based learning, active learning, interactive learning, differentiated instruction"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Standard board games (e.g., Connect Four, Jenga, Bingo)",
+                "Curriculum-related questions or concepts",
+                "Writing tools (markers, labels, pens)",
+                "Cards or slips of paper (optional, for questions)"
+            ],
+            "preparation_steps": [
+                "Select a suitable low-tech board game (e.g., Connect Four, Jenga, Bingo).",
+                "Identify specific curriculum content, vocabulary, dates, or concepts for review.",
+                "Develop questions or clues related to the chosen content.",
+                "For Connect Four: Prepare question cards that students draw before placing a disc.",
+                "For Jenga: Write questions directly onto individual Jenga blocks.",
+                "For Bingo: Customize Bingo cards with vocabulary words, historical dates, or scientific concepts, and prepare corresponding definitions or clues."
+            ],
+            "execution_steps": [
+                "Introduce the adapted game to students, explaining the rules and the learning objective.",
+                "Students play the game according to its original rules, with the added requirement of answering a question correctly before making a move.",
+                "For Connect Four: A student answers a question; if correct, they place their disc.",
+                "For Jenga: A student selects a block, answers the question on it; if correct, they carefully remove the block.",
+                "For Bingo: The teacher provides definitions or clues; students mark off squares if they have the corresponding word/concept.",
+                "Facilitate discussion and provide feedback as students play."
+            ],
+            "tips_for_success": "Tailor the difficulty of questions to the learners' level. Encourage teamwork and peer learning for collaborative games. Keep the atmosphere light and fun to maximize engagement. Vary the games used to maintain novelty and cater to different learning styles. Ensure questions are clear and have definitive answers."
+        },
+        "impact": {
+            "problem_solved": "Making content review and skill practice more engaging and interactive, overcoming potential disengagement with traditional review methods, and providing a low-tech alternative to digital learning tools.",
+            "evidence_of_success": "The approach makes review sessions interactive and enjoyable, promoting active recall, critical thinking, and collaborative learning.",
+            "beneficiaries_reach": "Individual classrooms, potentially multiple subjects and grade levels.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "This innovation is generally low-risk, promoting engagement and collaborative learning without digital devices. The primary concern lies in potential exclusion or accessibility barriers. Students with certain physical disabilities (e.g., fine motor skills required for Jenga, visual impairments for small text on cards) or specific learning differences might find participation challenging. While the games themselves are physically safe, teachers need to actively adapt materials and rules to ensure all students can participate meaningfully and equitably, requiring thoughtful intervention for inclusive implementation."
+        },
+        "priority_score": 82,
+        "hidden_gem": true,
+        "critical_flag": false
+    },
+    {
+        "id": "d85c0724de39df6d9887cdde91c938de",
+        "timestamp": "2026-05-29T06:32:06.464244",
+        "title": "Low-Tech Classroom Escape Room/Scavenger Hunt",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFxQdjAjASsrC8bkknssN2KGdcLR9mmZFPdqn9q3DPHWDYXboHiQ8hWiRv_hCqaR3m3Sdk0SodOIhxw0hiSS07eTStYj2bCJDowLMuZpgnvFJuS01nx-qZQ_NCBurVLtZ8k2kdAc-J4F86SPEZHAGj_66YSPkWZCqygq13jXeNrliWBptmTNfJnNAt7fgVxVavuglTPa5xW6cWqDxa7Q==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJhnDG75BBc-5r56b3qgrWsHZqkLHlEt8fCD82B81W34LL12NUg06xIg2T93-a-0kgJ9o8cdp8H1k5x9WsG3s8apLi43B2o9MNyN5GZ3DPh-GxDVBwZMJ7XSOWszi8VVvRhyTs65Dl3aQhMYD5LZ8="
+        ],
+        "summary": "This innovation involves designing a low-tech classroom 'escape room' or scavenger hunt where students engage in collaborative problem-solving. Teachers create a series of physical puzzles, clues, and tasks based on academic content, hidden around the classroom. Students work in teams to solve these challenges, which can include deciphering codes, solving math problems, or identifying scientific elements, all aimed at 'escaping' the room or finding a 'treasure' within a time limit. The method promotes teamwork, communication, critical thinking, and deep engagement with the subject matter.",
+        "category": [
+            "Gamification",
+            "Active Learning",
+            "Collaborative Learning",
+            "Problem-Solving"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Arts",
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "K-12 students, adaptable for various age groups and subjects",
+            "learning_outcomes": [
+                "Enhanced critical thinking skills",
+                "Improved teamwork and communication",
+                "Deeper engagement with academic content",
+                "Problem-solving abilities",
+                "Application of subject-specific knowledge"
+            ],
+            "pedagogical_approach": "Experiential Learning, Collaborative Learning, Gamification, Inquiry-Based Learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Physical puzzles (e.g., jigsaw, logic puzzles)",
+                "Clues (written, visual, auditory)",
+                "Tasks (e.g., math problems, science experiments, historical facts)",
+                "Physical boxes or containers",
+                "Locks (combination, key, directional)",
+                "Pens, paper, whiteboards",
+                "Subject-specific materials (e.g., periodic table, historical documents, literary texts)",
+                "Timer"
+            ],
+            "preparation_steps": [
+                "Identify specific academic content or learning objectives to be covered.",
+                "Design a series of interconnected physical puzzles, clues, and tasks that align with the content.",
+                "Determine the 'ultimate goal' (e.g., 'escape' code, 'treasure' item, new lesson reveal).",
+                "Prepare all physical materials, including clues, locks, and containers.",
+                "Hide the puzzles and clues strategically around the classroom.",
+                "Set a clear time limit for the activity."
+            ],
+            "execution_steps": [
+                "Divide students into small teams.",
+                "Explain the rules, the objective, and the time limit to all teams.",
+                "Provide the first clue or puzzle to each team.",
+                "Students work collaboratively to solve challenges, decipher codes, and complete tasks.",
+                "Successful completion of a challenge leads to the next clue or puzzle.",
+                "Monitor student progress and provide hints if teams get stuck (optional).",
+                "The first team to achieve the ultimate goal wins or completes the 'escape'.",
+                "Debrief the activity, connecting the puzzles back to the academic content and discussing teamwork."
+            ],
+            "tips_for_success": "Ensure puzzles are challenging but solvable, provide clear instructions, encourage collaboration over competition, and tailor content to specific learning objectives. Make the narrative engaging to enhance immersion. Consider varying puzzle types to cater to different learning styles."
+        },
+        "impact": {
+            "problem_solved": "Lack of student engagement and passive learning in traditional classroom settings, difficulty in applying academic content in practical scenarios.",
+            "evidence_of_success": "The method is described as 'highly interactive and memorable', 'encourages teamwork, communication, critical thinking, and deep engagement with the subject matter'.",
+            "beneficiaries_reach": "Classroom students (typically 15-30 students per session).",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "exclusion",
+                "physical"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risks are related to accessibility and potential exclusion. Students with physical disabilities might face barriers in navigating the classroom or interacting with certain physical puzzles. Similarly, students with specific learning differences or social anxieties might struggle with the collaborative, time-pressured nature, leading to exclusion or frustration if not properly supported. Minor physical safety concerns (tripping, bumping) are present due to increased movement within the classroom. However, these are generally low given the low-tech nature, supervised classroom setting, and lack of hazardous materials. Interventions are needed to ensure inclusive design, varied roles within teams, and appropriate accommodations for all students."
+        },
+        "priority_score": 66,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "e35d7dda954c2e1d45759078094381aa",
+        "timestamp": "2026-05-29T06:32:36.226856",
+        "title": "The Skolbäcken Project",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8x9_GRB7yuZSfoW21Xk-sUaOXRi7y-RIAUmPwvsmqTvYjwCWtsPjjG7-CMjaH53cFCFkUNpKre8H7zOiA5xnd7QIfYieNOtdE39zm2zarMVhJqQOI5YgeEf-_oVYBOYfBfKzp39le3fxJuoff_SKt2RxbCUwsVGuoiPJQ0dxzJHaMOSvVfnCW_pBebq4Fy5x53KJAyDPWwpOPyMqgAGWDRVq3UJGEW4iHQU9dARkSg=="
+        ],
+        "summary": "The Skolbäcken Project in Sweden engages students as young as seven in direct environmental conservation through genuine ecosystem restoration. Instead of theoretical learning, children actively participate in hands-on activities like building underwater spawning areas for fish, creating wetlands for pike, and improving stream conditions for trout. These are real restoration efforts contributing to actual habitat recovery, fostering deep ecological literacy and a sense of responsibility for the local environment by connecting scientific principles with tangible ecological outcomes.",
+        "category": [
+            "Environmental Education",
+            "Ecosystem Restoration",
+            "Hands-on Learning",
+            "Outdoor Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Sweden",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 59.6749712,
+            "lon": 14.5208584
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Civics"
+            ],
+            "target_learners": "Children as young as seven, students",
+            "learning_outcomes": [
+                "Develop deep ecological literacy",
+                "Foster a sense of responsibility for the local environment",
+                "Connect abstract scientific principles with tangible ecological outcomes",
+                "Active participation in environmental conservation"
+            ],
+            "pedagogical_approach": "Direct environmental conservation, hands-on activities, genuine ecosystem restoration, experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Materials for building underwater spawning areas (e.g., rocks, gravel)",
+                "Materials for creating wetlands (e.g., native plants, soil, water sources)",
+                "Tools for stream improvement (e.g., shovels, rakes, protective gear)"
+            ],
+            "preparation_steps": [
+                "Identify damaged ecosystems suitable for restoration (e.g., streams, wetlands)",
+                "Plan specific restoration activities (e.g., type of spawning area, wetland design)",
+                "Secure necessary permits and expert guidance for ecological restoration",
+                "Educate students on the ecological principles behind the chosen restoration efforts"
+            ],
+            "execution_steps": [
+                "Engage students in building underwater spawning areas for fish",
+                "Guide students in creating wetlands to support specific populations like pike",
+                "Facilitate activities to improve overall stream conditions for species like trout",
+                "Monitor and evaluate the impact of restoration efforts over time"
+            ],
+            "tips_for_success": "Emphasize the real-world impact of student actions. Connect abstract scientific concepts to the tangible outcomes of their work. Foster collaboration with local environmental experts and community members. Ensure safety protocols are strictly followed during outdoor activities."
+        },
+        "impact": {
+            "problem_solved": "Damaged ecosystems, lack of habitat for fish populations (pike, trout), disconnect between theoretical environmental learning and practical application.",
+            "evidence_of_success": "Real restoration efforts contributing to actual habitat recovery; students developing deep ecological literacy and a sense of responsibility.",
+            "beneficiaries_reach": "Children/students, local fish populations (pike, trout), the broader local environment and community.",
+            "scale": "medium",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "Engaging children as young as seven in real ecosystem restoration involving work in and around water (streams, wetlands) presents significant physical safety risks (e.g., drowning, slips, falls, exposure, tool-related injuries). The natural, uneven terrain and physical demands of the activities also create substantial accessibility barriers for students with physical disabilities, potentially leading to exclusion from the core learning experience."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "523d9e37fbdb6cfbccf446c588222065",
+        "timestamp": "2026-05-29T06:32:56.800822",
+        "title": "The Green Heart Project",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG75InnfEHS_zexJfzudqAZlHagsYj0KYL_ICsc4BmhHnhPURPzhIGzBW7yLgQ-1-WmLBgZ-HpqVk2_Exy9NTd1SPbpw4pmQBZc2w3k6iV-fF6akmtUjXoXmljG8TFqP_FjQQQePUrlIqtDDs2SYddH8IQor3u8s7wZQ6LOyAJOn_EGlbKRsN8PimLNVQzmGkDZnNUQOFNODUKQ"
+        ],
+        "summary": "The Green Heart Project in Charleston, South Carolina, is an initiative that integrates environmental education with sustainable agriculture through a farm-to-school program. Students participate in weekly, hour-long garden sessions throughout the school year, engaging in hands-on activities such as planting, composting, and harvesting. This program aims to impart practical knowledge of eco-friendly farming, foster a deeper connection to nature, promote environmental responsibility, encourage critical thinking about urban food systems and sustainability, and develop healthy eating habits by understanding food origins.",
+        "category": [
+            "Environmental Education",
+            "Sustainable Agriculture",
+            "Community Gardens",
+            "Food Systems"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "South Carolina",
+            "city_or_village": "Charleston",
+            "institution_name": "Schools in Charleston",
+            "lat": 32.7884363,
+            "lon": -79.9399309
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Health",
+                "Other"
+            ],
+            "target_learners": "School students",
+            "learning_outcomes": [
+                "Practical knowledge of eco-friendly farming practices",
+                "Deeper connection to nature",
+                "Environmental responsibility",
+                "Critical thinking about food systems and sustainability",
+                "Healthy eating habits",
+                "Understanding of where food comes from"
+            ],
+            "pedagogical_approach": "Hands-on learning through weekly garden sessions, farm-to-school program"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of practical environmental education, disconnection from food sources, limited understanding of sustainable agriculture, need for promoting healthy eating habits in urban environments.",
+            "evidence_of_success": "Students gain practical knowledge, develop a deeper connection to nature, foster environmental responsibility, and are encouraged to think critically about food systems and sustainability.",
+            "beneficiaries_reach": "Students in participating schools in Charleston, South Carolina.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The hands-on garden activities present moderate physical safety risks, including potential for minor injuries from tools, sun exposure, insect bites, and plant allergies. Adequate supervision and safety protocols are essential. Furthermore, the outdoor garden environment may pose accessibility barriers for students with physical disabilities, necessitating thoughtful design and accommodations to ensure inclusive participation."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "27f6f7dd0e926febe7f3c64558df1991",
+        "timestamp": "2026-05-29T06:33:21.802832",
+        "title": "Student-led Recycling Initiative (SLRI)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcWMxiI0pTn9jasmrfAIhDHtkHmolsf2YfYURk_x6cLq8uaj0ei5ktOA3MAw2oBndByClPiTR9Ty2cZXALKh26qtq_otJLya7eeHQkVNzCtWPlusZiIr8D0moaGmwSYDNNx5SR8hk5suPP5X2NYmbGLhk="
+        ],
+        "summary": "The Student-led Recycling Initiative (SLRI) by The Green Project in New Orleans empowers K-12 students to establish and manage recycling programs within their schools. Students form 'Green Teams' with an adult facilitator, receiving education on environmentalism, sustainability, and effective communication. They then foster a sustainable school culture and implement recycling programs through peer-to-peer education, teaching proper waste reduction and recycling techniques. This initiative cultivates hands-on waste management experience, leadership skills, civic engagement, and environmental stewardship.",
+        "category": [
+            "Environmental Education",
+            "Waste Management",
+            "Civic Engagement",
+            "Leadership Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Louisiana",
+            "city_or_village": "New Orleans",
+            "institution_name": "The Green Project (and K-12 schools)",
+            "lat": 29.9561422,
+            "lon": -90.0733934
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "K-12 students",
+            "learning_outcomes": [
+                "Knowledge of environmentalism and sustainability",
+                "Skills in waste reduction and proper recycling techniques",
+                "Development of leadership skills",
+                "Promotion of civic engagement",
+                "Cultivation of environmental stewardship"
+            ],
+            "pedagogical_approach": "Hands-on learning, peer-to-peer education, team-based learning, experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Recycling bins",
+                "Educational materials on environmentalism and sustainability",
+                "Communication tools for peer education"
+            ],
+            "preparation_steps": [
+                "Form 'Green Teams' within schools",
+                "Identify and assign an adult facilitator for each team",
+                "Provide comprehensive education to 'Green Teams' on environmentalism, sustainability, and effective messaging"
+            ],
+            "execution_steps": [
+                "Empower 'Green Teams' to craft a sustainable school culture",
+                "Establish and manage a school-wide recycling program",
+                "Implement peer-to-peer education to teach fellow students about waste reduction and proper recycling techniques"
+            ],
+            "tips_for_success": "Ensure strong student empowerment and ownership, provide thorough foundational education to student leaders, foster a supportive environment for peer-to-peer learning, and maintain consistent adult facilitation."
+        },
+        "impact": {
+            "problem_solved": "Lack of effective waste management and recycling programs in schools, limited environmental awareness and leadership opportunities for youth.",
+            "evidence_of_success": "Students successfully implement and manage school recycling programs, develop leadership skills, and demonstrate increased civic engagement and environmental stewardship.",
+            "beneficiaries_reach": "K-12 students in participating schools and the wider school community.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The initiative involves K-12 students in hands-on waste management, which presents a moderate physical safety risk from handling potentially sharp objects (e.g., broken glass, cans) or unsanitary materials. While an adult facilitator is present, clear protocols for waste handling, protective gear, and hygiene are crucial. There's also a risk of exclusion or accessibility barriers for students with physical disabilities who might struggle with certain tasks, or for those who are less inclined towards leadership or peer-to-peer education roles. Finally, for younger K-12 students, the comprehensive education and responsibility for 'crafting a sustainable school culture' could lead to cognitive overload if not adequately scaffolded and supported by the adult facilitator."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "37c130865121d8a23c300aab4a13e9fd",
+        "timestamp": "2026-05-29T06:33:43.937849",
+        "title": "Green Steps Schools (GSS) Initiative",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcxkMixs3HRsvbTkapdEK3tUI1oZH_rZhRdjOebtGIWBfPgBhC3nxyTtPEbkqaqnqZSU7KXOP4wNZIlKeixiC6wlyl5a9seost_ADbrfbQru-zdnzbgtc-7WOgqxyDt5UHSgL9Lp9joqhIZPfC8R1FVNqy8Yc-"
+        ],
+        "summary": "The Green Steps Schools (GSS) initiative, supported by the South Carolina Department of Natural Resources (SCDNR), encourages K-12 schools to implement annual sustainability projects, particularly focusing on wildlife habitat restoration. Under the 'Restore: Habitat' category, schools can engage in activities such as creating or maintaining habitat gardens and installing nesting boxes on school grounds. The SCDNR Conservation Education team provides guidance and resources, enabling students to actively participate in local wildlife and ecosystem conservation. This hands-on approach aims to cultivate students' understanding of biodiversity and habitat preservation, fostering environmental stewardship and practical ecological restoration skills.",
+        "category": [
+            "Environment",
+            "Conservation",
+            "Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "South Carolina",
+            "city_or_village": "",
+            "institution_name": "South Carolina Department of Natural Resources (SCDNR)",
+            "lat": 33.6874388,
+            "lon": -80.4363743
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Civics"
+            ],
+            "target_learners": "K-12 students",
+            "learning_outcomes": [
+                "Understand the importance of biodiversity and habitat preservation",
+                "Foster a sense of environmental stewardship",
+                "Gain practical experience in ecological restoration",
+                "Engage directly in conserving local wildlife and ecosystems"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Plants for habitat gardens",
+                "Nesting boxes",
+                "Tools for gardening and installation"
+            ],
+            "preparation_steps": [
+                "Schools register to undertake annual sustainability projects",
+                "Schools select projects from categories like 'Restore: Habitat'",
+                "SCDNR Conservation Education team offers guidance and resources"
+            ],
+            "execution_steps": [
+                "Create new habitat gardens on school grounds",
+                "Maintain existing habitat gardens",
+                "Add elements such as nesting boxes to school grounds"
+            ],
+            "tips_for_success": "Focus on local wildlife habitat needs and utilize resources provided by the SCDNR for effective implementation."
+        },
+        "impact": {
+            "problem_solved": "Lack of direct engagement and understanding among K-12 students regarding biodiversity and habitat preservation, contributing to environmental degradation.",
+            "evidence_of_success": "Students engage directly in conserving local wildlife and ecosystems, leading to improved understanding of biodiversity, fostering environmental stewardship, and providing practical experience in ecological restoration.",
+            "beneficiaries_reach": "K-12 schools and their students across South Carolina.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks are related to physical safety due to hands-on outdoor work, including potential for minor injuries from tools, exposure to allergens (plants, pollen), insect bites, sun exposure, and encounters with local wildlife. Additionally, there is a potential for exclusion or accessibility barriers for students with physical disabilities or severe allergies, as the projects involve outdoor physical activity and interaction with natural elements. Proper supervision, safety training, and accommodations are crucial to mitigate these risks."
+        },
+        "priority_score": 76,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "166ff756156b2d9af30d3a298c01d4e9",
+        "timestamp": "2026-05-29T06:34:32.586346",
+        "title": "Modular and Prefabricated Classrooms",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL_WpZ6xzZOao6RXvGPjhxoR8KSMl1VzvCTfZWUya1sSms5fODVR7jtGjWTqhwPFmCVQtFqK0-vLosaZqlr7EmIHr64VMy4V1Ks85Vl0XZy00G9Tw72lDbymPyL-Z6tH43xSaq59KXebVpoBLkKcifo4tb1SJ7en5DRk3niRvu6RNPZLvEnQn08nSuUEk=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ2Uy26Ke5QTk-dU8QWy8d1DN42dkyPgkgq9j4JBII-CsViosOE44rHzMZHn6MDH3Uhg9Wr0itOC_IT00diCIpv7BYHJY1-v9Ae0fT19zUj7GWDAZiXTLhONbdNFuGHiq6PVO4MRiWXB_bVUrLElW50OlrhvGyOtngqVNeg_JLNIjWHoqKHE0UV7LOIxstneFHAOhaDvzFNhhIe0McWvB11BRN2H9BIGm5Z5flXNIBmwlN",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn0EjVoMfYjTTHegqZoeaig05DILCVViF3nKbrIfuh7N7rBpPNju9L62N-8f2UriQmfYozG_3A0eFNdS9E7IyZll122jKWt8G4XBK-cebisMhmXbD-QyL0GG03vgKBictovE3_n3ifNcgoY9HLTh706FA4GBe9z7Np_5dT6CdW",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiKEUt5gwqoo8p3uguHG5yYENC-e_OIUS7CnNp6rv-0u7WHUbMseXy4oHM9NlrulSPIV303E8aodmUNyMKzJGwb5KenwKXafKiP2LUFKq4jqh0_jULnsQMGMBKMpGlW4b_taTH4kFTYR1gh-kKc3Oo8vTPNRvNq93-WKyTAkIZAH0-gPzqc2NZ1YNSJfIreJWYWZREH6Kz",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg1JliWWDgQ3tiYM9NHYLgSqcksauZGo5CKclkBQzmi1Y4di4Sdjo6UzirTihC1uUh5IKW9px_CWbXeHenQs4MSZA8QOPhZ3s5hv3eKy8ite-shvm65xks-B-Fix3ipZn3mDtQOMfDK1sX9-BxUjTU5z-BJKQQeaHSycu2KiCf2XFNGWV4q4Xudj0dow25BlI=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQmWDqTd9GqPs_L3xMSktyErI-2YE7cGHKbI-VxDmpDpl1br0IUGL7NWd7nEkq9vB-_1MkuI0cYUDTfEZDItSSTegn-Ev8mkpV2O0rIm7zmzjAbdoSl1LnMmf9pE0Zu3ObLNUJg8zP9kD39ED_vQ2wGNs7lsA5dLg57ECZCd39uEYPwUj4cw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfinTAdDy3bERvE1AeaDUF5ZXw4eOsuTykPrb0TjSTFMUZ1sPj_4YN6Bcs6Di_Vjbw3tUB_BsfmMDUlR7oD7pPKzA4LLOnpaoUJPGMnFEhFzTGsWeo91hfPF9hw14R0Zm-CENjjDao-PsSmp5u",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRUfoXqcbpJXeTHu2qqRTgJNOlNYK8i6_p08rn-DdSMsnQ6Ym-qzYgfZ7-8n7RUZLLUVWWqk1XrbOo1uknBa1tNt2vZbuLG-Kjp9YN5pdcKbP7QwWcvalsNSpNnCeOMNsSLwicdEDOB_TI0HIB_ngdbPUXXeE8JPMN4dc=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgx-VGYlAkolq_2h6L39g6qepvlU8ijdAfOnpEsdsCAIxPwOiWG83trXN_eY8GYhyk5-J5Y7IGaBiLKWPFEMStbnbSmQIFD8-EFCs60V3Fm48xDxELSqgcuYH-PiE6Z2sQ-2pRZ1qpW5Lke4DOe07V7wrMnnU_kjBoRw==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3OfY6OGXsIY_ZzW1Ay6B_oTDLkUyeqAzhCYK7MUGeoiBItCQvMAw6PeP6oPjJj_HzVXemc33PuZvLndcB9QBgH8CzXcdNN7cFaDRIznDxB3eN6rt1_5Y_kLLxIpIBKEyR47N0a0x58WcMST829Iw="
+        ],
+        "summary": "Modular and prefabricated classrooms offer an innovative approach to school construction by shifting the majority of the building process off-site to a factory. This method significantly reduces construction costs, on-site labor, and material waste, while accelerating project completion times by 30-50%. These units are transported in sections for quick assembly on location, providing flexible, customizable, and energy-efficient educational spaces that minimize disruption to existing school operations.",
+        "category": [
+            "Infrastructure",
+            "Construction",
+            "Cost-Efficiency",
+            "Sustainable Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students of all ages, educators, school administrators, and communities needing adaptable learning spaces.",
+            "learning_outcomes": [
+                "Improved access to safe and modern learning environments",
+                "Enhanced comfort and focus due to better natural lighting and ventilation",
+                "Reduced operational costs for schools through energy-efficient designs"
+            ],
+            "pedagogical_approach": "Supports diverse pedagogical approaches by providing adaptable, purpose-built learning spaces that can be configured for various educational needs and activities."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Prefabricated modular units (walls, roof, floor sections)",
+                "Foundation materials",
+                "Utility connections (electrical, plumbing, HVAC)",
+                "Interior finishes (flooring, paint, fixtures)",
+                "Transportation equipment (cranes, trucks)"
+            ],
+            "preparation_steps": [
+                "Conduct site assessment and feasibility study.",
+                "Develop architectural plans and customize classroom features (lighting, ventilation, energy efficiency).",
+                "Secure necessary permits and funding.",
+                "Initiate off-site manufacturing of modular components in a factory setting."
+            ],
+            "execution_steps": [
+                "Prepare the on-site foundation and utility connections.",
+                "Transport prefabricated modules to the construction site.",
+                "Assemble the modules on the prepared foundation using cranes and skilled labor.",
+                "Connect utilities and complete interior and exterior finishes.",
+                "Conduct final inspections and prepare for occupancy."
+            ],
+            "tips_for_success": "Prioritize detailed planning and design customization to meet specific educational needs and local building codes. Ensure rigorous quality control during off-site manufacturing. Optimize logistics for transportation and on-site assembly to maximize efficiency. Consider long-term energy efficiency and maintenance in the design phase."
+        },
+        "impact": {
+            "problem_solved": "The high costs, extended timelines, and logistical challenges associated with traditional school construction, as well as the need for flexible and rapidly deployable educational spaces.",
+            "evidence_of_success": "Reduced construction costs, minimized on-site labor, less material waste, 30-50% faster completion times, lower utility expenses due to energy-efficient designs, and minimized disruption to existing school operations.",
+            "beneficiaries_reach": "Students, teachers, school administrators, and entire communities requiring new or expanded educational facilities. Applicable globally in various contexts.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The on-site assembly of modular units, despite being faster, still involves construction activities and heavy machinery, posing physical safety risks to students and staff if the site is not rigorously secured and isolated from active school areas. Furthermore, while customization is mentioned, a strong emphasis on 'low-cost' construction could inadvertently lead to standardized designs that overlook comprehensive accessibility features, potentially creating exclusion barriers for students with diverse needs if not explicitly prioritized during the planning and design phases."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "b201a9014635fcd18e2be555648256aa",
+        "timestamp": "2026-05-29T06:34:53.697561",
+        "title": "Low-Cost, Sustainable Classroom Construction using Natural Materials",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL_WpZ6xzZOao6RXvGPjhxoR8KSMl1VzvCTfZWUya1sSms5fODVR7jtGjWTqhwPFmCVQtFqK0-vLosaZqlr7EmIHr64VMy4V1Ks85Vl0XZy00G9Tw72lDbymPyL-Z6tH43xSaq59KXebVpoBLkKcifo4tb1SJ7en5DRk3niRvu6RNPZLvEnQn08nSuUEk=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGINBNcwMXm5lFLEdpagbpAqzIoECQc6EK9kQjxpNIuWUPAgBSJLiBU6IPJggn-4e8ZWjlBiWck8v-N5IjT0hG_R3Fap2w2x8uhVWEOYirwx745_3K8fFqdswUUFW1yNgS3fBKRLU9kCQhviQfKHW4rkmrm30YPlM50KIOeOq5jnD7n",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ2Uy26Ke5QTk-dU8QWy8d1DN42dkyPgkgq9j4JBII-CsViosOE44rHzMZHn6MDH3Uhg9Wr0itOC_IT00diCIpv7BYHJY1-v9Ae0fT19zUj7GWDAZiXTLhONbdNFuGHiq6PVO4MRiWXB_bVUrLElW50OlrhvGyOtngqVNeg_JLNIjWHoqKHE0UV7LOIxstneFHAOhaDvzFNhhIe0McWvB11BRN2H9BIGm5Z5flXNIBmwlN",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwpwgbn-9YExiCrshyBsVzJTr48ktZeMHIYAJCSkDMRVTbgyvyDbwMEvtlvNXnEEmHfkV5EdoCZ9obMzbmLPpJJBvJMy-w60bobTcY6JlU_AxGeJwJJx4luutAF3TLB1C9ws15E1HQWCKeBsacvyejWtI60Sprdi4axZrWv5z_j-QqGhg1KG53j0qsqTwMsfrPEi6UMzEg3j9cdQ21pF7RO20xeTrLmkFTNTbEzWg="
+        ],
+        "summary": "This innovation focuses on constructing classrooms using readily available, sustainable, and locally sourced natural materials such as earth, bamboo, and reclaimed wood. This approach significantly lowers material costs and minimizes environmental impact by reducing transportation needs and utilizing renewable resources. It results in environmentally friendly, long-lasting learning environments with natural insulation and shade.",
+        "category": [
+            "Construction",
+            "Sustainability",
+            "Education Infrastructure",
+            "Environmental Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "Southeast Asia",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 49.1915332,
+            "lon": 16.6103805
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Students attending schools in built structures",
+            "learning_outcomes": [
+                "Access to safe, durable, and comfortable learning environments",
+                "Reduced exposure to extreme temperatures due to natural insulation",
+                "Learning in an environmentally conscious setting"
+            ],
+            "pedagogical_approach": "Not applicable to the construction method itself, but supports a conducive learning environment."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Earth (for load-bearing walls)",
+                "Bamboo (for roofs and structural elements)",
+                "Reclaimed wood",
+                "Local, natural binders/finishes (implied)"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Utilize local expertise in traditional building techniques. Ensure proper structural design for durability and safety. Engage local communities in the construction process to foster ownership and skill development."
+        },
+        "impact": {
+            "problem_solved": "High material costs for classroom construction, significant environmental impact of traditional building methods, lack of naturally insulated and shaded learning spaces.",
+            "evidence_of_success": "Schools in Southeast Asia have been successfully constructed using earthen load-bearing walls and bamboo roofs, creating environmentally friendly and long-lasting learning environments that offer natural insulation and shade.",
+            "beneficiaries_reach": "Students, educators, and local communities benefiting from accessible, sustainable, and comfortable learning infrastructure.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "other",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is child safety, stemming from the structural integrity of natural materials (e.g., resistance to seismic activity, high winds, heavy rains), fire safety, and potential issues with pests or material degradation if construction standards and ongoing maintenance are not rigorously managed. There is also a risk of cultural friction if communities perceive these natural materials as inferior to modern construction methods. Additionally, potential exclusion or accessibility barriers could arise if inclusive design principles are not explicitly integrated into the construction plans for students with diverse needs."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "b8c4d4fb3065c97ff4f3264895f83778",
+        "timestamp": "2026-05-29T06:35:28.238702",
+        "title": "Modular Building Blocks for Flexible Classroom Construction",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj7u8AZ7MiU7LwPVWHS_Jaa2K1guo52h_d5uAHcAw4Izu0YWm47qTbQUYRcL3YPgFdLP4WQ-ATz_-54ccxy2Q9CXZDSYltUXmD_wPapjjYC9RtXZm2kpbn-HE6da1LE20Bub4Z668mATwEeIR48jENB40Zya-lMlx5voQCKMBxUBMZ5wCUHtXqR3NEHz3n4h4="
+        ],
+        "summary": "This innovation utilizes giant modular building blocks, such as those offered by EverBlock®, to create versatile, interlocking systems for low-cost classroom construction. Schools can quickly and cost-effectively assemble temporary classrooms, breakout rooms, STEM labs, or sensory areas in hours or days, without permanent construction. These blocks are portable, reusable, and can be disassembled and reassembled elsewhere, offering a budget-friendly and flexible alternative to conventional temporary structures like portable trailers.",
+        "category": [
+            "Infrastructure",
+            "Flexible Learning Spaces",
+            "Cost-Effective Solutions"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students, educators, school administrators, facility managers",
+            "learning_outcomes": [
+                "Improved access to dedicated learning spaces",
+                "Enhanced flexibility in educational program delivery",
+                "Creation of specialized learning environments (e.g., STEM labs, sensory rooms)"
+            ],
+            "pedagogical_approach": "Flexible learning environments, activity-based learning facilitation"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Giant modular building blocks (e.g., EverBlock®)"
+            ],
+            "preparation_steps": [
+                "Assess space requirements and design desired layout (classroom, lab, etc.)",
+                "Calculate the number and types of blocks needed for the design",
+                "Prepare a level and clean surface for assembly"
+            ],
+            "execution_steps": [
+                "Begin by interlocking base blocks according to the floor plan",
+                "Continue stacking and interlocking blocks to form walls, partitions, and structural elements",
+                "Integrate openings for doors and windows as per design",
+                "Assemble any internal structures like desks, shelves, or dividers using the blocks if desired"
+            ],
+            "tips_for_success": "Plan the layout meticulously to optimize space and functionality. Ensure all blocks are securely interlocked for stability. Consider lighting, ventilation, and accessibility during the design phase. Leverage the modularity for future reconfigurations as needs evolve."
+        },
+        "impact": {
+            "problem_solved": "The high cost and inflexibility of traditional temporary classroom construction, and the need for rapidly deployable and reconfigurable learning spaces.",
+            "evidence_of_success": "Quick assembly (hours/days), minimal equipment required, no permanent construction needed, portability and reusability, cost-effectiveness compared to traditional portable trailers.",
+            "beneficiaries_reach": "Schools, students, teachers, and communities requiring flexible and affordable educational infrastructure.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety, stemming from the potential for structural instability. While modular blocks offer flexibility, improper assembly, lack of secure anchoring, or children tampering with the structures could lead to walls collapsing or blocks dislodging, posing a significant injury risk. Material safety (e.g., fire retardancy, non-toxicity) and adherence to temporary building codes for ventilation, lighting, and emergency egress are critical. Furthermore, there's a risk of exclusion if designs do not adequately consider accessibility for all students, requiring careful planning for doorways, ramps, and internal space to accommodate mobility aids and diverse needs."
+        },
+        "priority_score": 76,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "bd97924455a95f13f2fa0706cbd2c2b4",
+        "timestamp": "2026-05-29T06:36:11.068206",
+        "title": "The Nuclear Literacy Project (NLP)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfsN2hMyaELnpZx9FEm3N_c7-llVPK5elA-nWEfSpmpxdiL1nveGY-x1X5bZKy8pY3XrrvZPZK8UqAIDhwHkJaDiRTHD5U4UM3Rwc1FaQlLfj_Fu7z4cT3qT6K1sj3K5vu2HhrLmwpbjI9yQKt9gylKEn3Mcz8JA=="
+        ],
+        "summary": "The Nuclear Literacy Project (NLP), led by PopAtomic Studios, is a grassroots public education campaign that innovatively employs art and design to educate the public on energy issues, specifically nuclear energy. This cross-disciplinary approach uses visual arts for broad engagement and integrates sociological analysis through community college outreach to address cultural misunderstandings and cultivate positive perceptions of nuclear energy.",
+        "category": [
+            "Public Education",
+            "Energy Education",
+            "Science Communication",
+            "Art and Design"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "PopAtomic Studios",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "STEM",
+                "Arts",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "The general public, community college students, international science classrooms, corporate audiences.",
+            "learning_outcomes": [
+                "Educate the public on energy issues, particularly nuclear energy.",
+                "Make complex topics accessible and relatable through creative expression.",
+                "Cultivate positive perceptions of nuclear energy.",
+                "Address and clarify public misunderstandings surrounding nuclear energy."
+            ],
+            "pedagogical_approach": "Utilizes art and design as primary educational tools, employs a cross-disciplinary approach combining visual arts with sociological analysis, and conducts long-standing outreach programs with community colleges."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Public misunderstandings and negative perceptions surrounding nuclear energy, and the challenge of making complex energy topics accessible to a broad audience.",
+            "evidence_of_success": "Imagery has been featured in diverse settings including international science classrooms, corporate offices, and public rallies, indicating broad reach and acceptance.",
+            "beneficiaries_reach": "Broad audience, including students, professionals, and the general public internationally.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "cultural",
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The Nuclear Literacy Project's innovative approach to 'cultivate positive perceptions' about nuclear energy through art, design, and sociology faces significant cultural friction. Nuclear energy is a highly contentious topic, and efforts to shift public perception risk being perceived as biased or dismissive of legitimate historical and environmental concerns, potentially deepening existing societal divides. While aiming for broad accessibility, the reliance on specific artistic and academic methods (visual arts, sociology) could inadvertently create exclusion barriers for individuals with different learning styles or accessibility needs, despite the project's inclusive intent. However, the methods themselves do not pose direct physical or psychological safety risks to participants."
+        },
+        "priority_score": 52,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "4671bdd0e00e66ee23d32a0845f96d72",
+        "timestamp": "2026-05-29T06:36:34.015877",
+        "title": "Generation Atomic: Creative Science Communication and Advocacy",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGURmflA7GbFvGApM_Z6DLKDeryr1rkFsqVTbCKMjtacCksD7VCOnxRGujiSZaq0Zf-K-1hDWfG7_LrFw2IkJ8UbLGtaObaj_XqqojJxMX9Vr7g1GJOHD4ZlFOOdHFcBBj7x2EFVsudTQ=="
+        ],
+        "summary": "Generation Atomic is a non-profit advocacy group dedicated to boosting nuclear literacy and fostering grassroots support for nuclear technology. They employ a 'Creative Science Communication Program' to simplify complex energy policy and nuclear science through engaging short videos and memes, enabling informed energy decisions. The organization also integrates art, co-curating exhibitions and hosting art shows to stimulate dialogue about nuclear energy's future. A core component is their 'Atomic Ambassadors' training, which equips a global network of advocates with communication skills, including storytelling and objection handling, along along with toolkits to effectively engage and influence their local communities.",
+        "category": [
+            "Advocacy",
+            "Science Communication",
+            "Energy Education",
+            "Community Engagement",
+            "Public Awareness"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Generation Atomic",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "General public, individuals interested in energy policy and nuclear science, grassroots advocates, local communities",
+            "learning_outcomes": [
+                "Increased nuclear literacy and understanding of energy policy",
+                "Ability to make informed decisions regarding energy",
+                "Enhanced communication skills for advocating nuclear energy",
+                "Effective engagement with local communities on nuclear topics"
+            ],
+            "pedagogical_approach": "Creative science communication (videos, memes), art-based engagement, storytelling, objection handling training, peer-to-peer learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Short videos",
+                "Memes",
+                "Communication toolkits",
+                "Art exhibition materials"
+            ],
+            "preparation_steps": [
+                "Simplify complex energy policy and nuclear science topics",
+                "Develop engaging and accessible content formats (videos, memes)",
+                "Design comprehensive training programs for advocates (e.g., Atomic Ambassadors)",
+                "Curate art exhibitions and shows"
+            ],
+            "execution_steps": [
+                "Disseminate simplified content (videos, memes) through various platforms",
+                "Host art shows and exhibitions to spark conversations",
+                "Conduct 'Atomic Ambassadors' training sessions globally",
+                "Empower trained advocates to engage and impact their local communities"
+            ],
+            "tips_for_success": "Focus on simplifying complex information, utilize diverse and engaging communication formats, empower and train local advocates, integrate creative mediums like art to foster dialogue."
+        },
+        "impact": {
+            "problem_solved": "Lack of public understanding and literacy regarding nuclear energy and complex energy policies, leading to uninformed decisions and potential misinformation.",
+            "evidence_of_success": "Empowering individuals to make informed energy decisions, equipping a global network of nuclear energy advocates with communication skills, sparking conversations about atomic energy through art, fostering grassroots support.",
+            "beneficiaries_reach": "Individuals, general public, a global network of advocates, local communities worldwide.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "cultural",
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk lies in 'cultural friction' due to the advocacy for nuclear energy, a highly contentious topic globally with diverse historical and political contexts. Despite 'objection handling' training, promoting nuclear technology can lead to significant community pushback or misunderstanding. 'Data privacy' is a moderate concern for the 'Atomic Ambassadors' program, as participant data for a 'global network' would be collected and requires robust protection. 'Exclusion/accessibility barriers' are also a moderate risk for a global program, as digital literacy, internet access, and language differences could limit participation and understanding, even with simplified content. Cognitive overload is actively mitigated by the 'Creative Science Communication Program's' focus on simplification. Child safety and physical safety risks are low based on the provided description, as the innovation focuses on communication and advocacy for adults/general public, not direct interaction with children or hardware."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "34997f9da98b1d28026af7aab993d707",
+        "timestamp": "2026-05-29T06:37:05.294292",
+        "title": "'Powering Our Town' Nuclear Energy Curriculum for K-2",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHy-0SnNEW1wbzCFQqOUSgP7q4rRNSEeYZhTMdbhqtQJlbsk_oGrhFVV7s_NKSVJRBK9OT2h1ZNSjihN90v_LwHj2T7bJ5WsLH8Iw5WhsvDnx8OmgwvHfSq-2XrXZp3gRFU7nOgZcARadHkMXsTyFB1Ru2s0vHQb_0="
+        ],
+        "summary": "The University of Tennessee's Department of Nuclear Engineering, in collaboration with the Tennessee STEM Innovation Network (TSIN) and other partners, has launched 'Powering Our Town,' a groundbreaking statewide initiative. This curriculum introduces nuclear energy concepts to kindergarten through second-grade classrooms, making it the first of its kind in the United States to target such early learners. The program trains elementary teachers to deliver age-appropriate, inquiry-based energy education, utilizing a Project-Based Learning (PBL) model where students design a model town powered by nuclear energy. The initiative aims to demystify nuclear power, establish a foundation for future interest in clean energy careers, and foster nuclear literacy from an early age.",
+        "category": [
+            "STEM",
+            "Energy Education",
+            "Early Childhood Education",
+            "Curriculum Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "United States",
+            "region": "Tennessee",
+            "city_or_village": "",
+            "institution_name": "University of Tennessee, Department of Nuclear Engineering; Tennessee STEM Innovation Network (TSIN)",
+            "lat": 35.7730076,
+            "lon": -86.2820081
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment"
+            ],
+            "target_learners": "Kindergarten through second-grade students",
+            "learning_outcomes": [
+                "Demystify nuclear power",
+                "Establish a foundation for future interest in clean energy careers",
+                "Foster nuclear literacy",
+                "Develop inquiry-based learning skills",
+                "Understand basic energy concepts"
+            ],
+            "pedagogical_approach": "Inquiry-based energy education, Project-Based Learning (PBL) model"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "Train elementary teachers to deliver age-appropriate, inquiry-based energy education."
+            ],
+            "execution_steps": [
+                "Students explore how to design a model town powered by nuclear energy using a Project-Based Learning (PBL) model."
+            ],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of early exposure to nuclear energy concepts; need for a pipeline of informed citizens and future clean energy professionals.",
+            "evidence_of_success": "First of its kind in the United States to focus on such early learners; statewide initiative.",
+            "beneficiaries_reach": "Kindergarten through second-grade classrooms statewide in Tennessee.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks are cultural friction and potential cognitive overload (categorized as 'other'). Introducing nuclear energy to K-2 students, even with age-appropriate design, carries a risk of being perceived as premature or biased by some parents/communities due to the topic's controversial and complex nature. Additionally, despite efforts to simplify, the inherent complexity of nuclear energy concepts may lead to cognitive overload, superficial understanding, or confusion for very young learners. Careful curriculum design, neutral presentation, thorough teacher training on sensitive topic handling, and transparent communication with parents are crucial to mitigate these risks."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "78d9bbb65cf1c4b1c7b7849605db7f77",
+        "timestamp": "2026-05-29T06:37:56.579785",
+        "title": "Timber Outdoor Classroom with Green Roof",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdZedaW2Ama8n_yMV24nyWFaVs0mKrfUdzgjIQMCznhX5TcwZNP0OG8d012buLJtIyT9LlAgbS5O4khma2CPsODLd6vIawy1cRQMroWSCO-OLrC_oABu3AH66Mxv6oyBJBzO_SUhVQTTOSJv1tVFKHla-PsgdCdS7w6VEF-OSuvZ7swHWFwohY-vBIKA3VlnBKJ8ZTGvZimv6IfBi6BpknrIkDwvWp6i9Nd4W6D68CJWRY8F4="
+        ],
+        "summary": "This innovation features a distinct and environmentally conscious rainproof outdoor classroom constructed from timber with a green roof. An example project by Handspring Design for a primary school in Whitley Bay utilized UK-grown Douglas Fir for the frame, incorporating mortise and tenon jointed and pegged posts with braces onto a hexagonal ring beam. The roof, designed with a 12-sided perimeter that appears as a star from below, is covered with wildflower turf over a 100mm substrate. This design provides natural rain protection and insulation, while also integrating ecological benefits by supporting biodiversity and offering an educational element about sustainability and nature.",
+        "category": [
+            "Outdoor Learning",
+            "Environmental Education",
+            "Sustainable Architecture"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "UK",
+            "region": "",
+            "city_or_village": "Whitley Bay",
+            "institution_name": "A primary school",
+            "lat": 55.0422091,
+            "lon": -1.4454353
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Other"
+            ],
+            "target_learners": "Primary school students",
+            "learning_outcomes": [
+                "Understanding sustainability principles",
+                "Appreciation for local biodiversity",
+                "Knowledge of natural building materials and techniques",
+                "Enhanced outdoor learning experiences"
+            ],
+            "pedagogical_approach": "Experiential learning, nature-based education, outdoor learning, hands-on environmental education"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "UK-grown Douglas Fir timber",
+                "Mortise and tenon joints",
+                "Pegs",
+                "Braces",
+                "Hexagonal ring beam",
+                "Wildflower turf",
+                "100mm substrate",
+                "Waterproofing membrane (implied for green roof)"
+            ],
+            "preparation_steps": [
+                "Design the timber frame with specific jointing techniques (mortise and tenon)",
+                "Plan for a multi-sided roof perimeter (e.g., 12-sided) for aesthetic and structural purposes",
+                "Source sustainable, locally grown timber (e.g., UK-grown Douglas Fir)",
+                "Prepare the roof structure to support the substrate and wildflower turf"
+            ],
+            "execution_steps": [
+                "Construct the timber frame using mortise and tenon jointed and pegged posts with braces",
+                "Install a hexagonal ring beam to form the base of the roof structure",
+                "Build the 12-sided roof perimeter to achieve the desired 'star' appearance from below",
+                "Apply a waterproofing layer to the roof deck",
+                "Install the 100mm substrate layer on the roof",
+                "Cover the substrate with wildflower turf to create the green roof"
+            ],
+            "tips_for_success": "Prioritize sustainable and local materials. Ensure structural integrity for the green roof's weight. Design for both functional rain protection and aesthetic appeal, considering the view from below. Integrate educational signage or activities to highlight the ecological benefits and sustainability aspects."
+        },
+        "impact": {
+            "problem_solved": "Lack of weather-protected outdoor learning spaces, limited integration of ecological education within school infrastructure, and insufficient exposure to natural environments for students.",
+            "evidence_of_success": "Provides natural rain protection and insulation, supports biodiversity (wildflower turf), offers an educational element about sustainability and nature, creates an engaging outdoor learning environment.",
+            "beneficiaries_reach": "Students and staff of the primary school where it is implemented.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The timber structure and green roof present physical safety risks, including potential splinters, structural integrity concerns due to timber degradation or the significant weight of the green roof (especially when wet), and attraction of insects/pests (e.g., bees, wasps) which could pose allergy risks. Exclusion barriers may arise from physical accessibility challenges for students with mobility impairments or sensory sensitivities to the natural environment/wildlife. These risks necessitate careful design, robust construction, ongoing maintenance, and accessibility planning."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "78200b933368d7db2f713290f68abf06",
+        "timestamp": "2026-05-29T06:38:18.880469",
+        "title": "Schoolyard Space by Innovative Canopy Solutions",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXqg4CwV_l-OLBHPTaqT1h7mXhcfjaKEHIatk3hhq8sBYF-59Hbq7bXVjyeesKgTv5qRuR3JXBZTYysBSXdqb2Zv49Umuun8WTqVCifTq0FFz4I-3CMckARQ0KrAQyw3yoKuEJ8JUltkI="
+        ],
+        "summary": "The 'Schoolyard Space' by Innovative Canopy Solutions provides a highly flexible and rainproof outdoor classroom solution. It features modular, freestanding aluminum structures equipped with manually operated sliding PVC covers. Designed for quick installation with minimal disruption, these units can be placed in various outdoor settings, offering protection from rain and sun. The durable aluminum structure, PVC cover, and stainless hardware ensure longevity and corrosion resistance. This innovation supports multifunctional use, serving as classrooms, lunch areas, performance stages, or general shelter, adapting to diverse educational and social activities year-round.",
+        "category": [
+            "Outdoor Learning",
+            "Flexible Learning Spaces",
+            "Educational Infrastructure"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Innovative Canopy Solutions",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students, teachers, school staff",
+            "learning_outcomes": [
+                "Enhanced opportunities for outdoor education",
+                "Increased flexibility in learning environments",
+                "Improved access to sheltered outdoor spaces for various school activities"
+            ],
+            "pedagogical_approach": "Outdoor education, flexible learning, experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Modular aluminum structures",
+                "Manually operated sliding PVC covers",
+                "Stainless hardware"
+            ],
+            "preparation_steps": [
+                "Site assessment to determine optimal placement",
+                "Minimal disruption planning for installation"
+            ],
+            "execution_steps": [
+                "Quick installation of freestanding units",
+                "Manual operation of retractable covers for weather management"
+            ],
+            "tips_for_success": "Leverage the multifunctional design for diverse educational and social activities. Ensure regular maintenance of sliding covers and structure for durability and smooth operation. Adapt the space to specific curriculum needs."
+        },
+        "impact": {
+            "problem_solved": "Lack of flexible, rainproof, and sun-protected outdoor learning and activity spaces within schoolyards.",
+            "evidence_of_success": "Provides protection from rain and sun, allows for multifunctional use (classrooms, lunch areas, stages, shelter), quick installation with minimal disruption, durable and corrosion-resistant materials.",
+            "beneficiaries_reach": "Schools, students, teachers, and the wider school community.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The manually operated sliding PVC covers present potential physical safety risks such as pinch points or entrapment, especially for children. The stability of freestanding structures in diverse weather conditions also requires robust anchoring and regular inspection to prevent collapse or damage. Furthermore, accessibility barriers may arise if the design does not fully accommodate students with mobility or dexterity challenges, both in accessing the space and operating its features."
+        },
+        "priority_score": 78,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "6a9c4dce754d9b5a3df616c6d5a0fe67",
+        "timestamp": "2026-05-29T06:39:36.048130",
+        "title": "Anishinaabemowin Animated Video Series for Children",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrT-HU63YE2agcuHpEv33X_PTpcM2_evqdeK-7cfJyzDFaI_K0PYBQG9lFow6_ahF23NwGY14hi2YUANwdB2X4ICjCDaCHwupVZuPmjLg9g-zJtKihj524_H8JeTSmZWZDeGaPe07EVVPJCLzgFE7ikh7AyYqEGFXcyqmEFUnfmhGHVbTP7n-8CbtQ8-j6rkFJabigrQ=="
+        ],
+        "summary": "Barbara Nolan, an Indigenous languages educator from Garden River First Nation, launched an animated video series designed for children to learn Anishinaabemowin. The three- to eight-minute vignettes feature Nolan interacting with an animated environment, teaching words without subtitles to encourage natural language acquisition. This initiative aims to revitalize the Anishinaabemowin language, which is facing a decline in fluent speakers, and was inspired by Nolan's observations of children watching cartoons in daycare. Nolan, a lifelong speaker, has dedicated decades to language revitalization efforts.",
+        "category": [
+            "Language Revitalization",
+            "Early Childhood Education",
+            "Digital Learning",
+            "Indigenous Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Canada",
+            "region": "Ontario",
+            "city_or_village": "Garden River First Nation",
+            "institution_name": "",
+            "lat": 46.5344016,
+            "lon": -84.1508798
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Arts",
+                "Other"
+            ],
+            "target_learners": "Children (ages not specified, but implied young children from daycare context)",
+            "learning_outcomes": [
+                "Acquire Anishinaabemowin vocabulary naturally",
+                "Develop listening comprehension skills in Anishinaabemowin",
+                "Foster cultural connection through language"
+            ],
+            "pedagogical_approach": "Immersion, natural language acquisition, visual learning, contextual learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Animation software and tools",
+                "Recording equipment (microphone, camera)",
+                "Anishinaabemowin fluent speaker/educator",
+                "Curriculum development resources"
+            ],
+            "preparation_steps": [
+                "Develop a curriculum/script for each short vignette, focusing on specific vocabulary and concepts.",
+                "Design and animate an engaging environment and characters.",
+                "Record the educator's interactions and dialogue in Anishinaabemowin.",
+                "Edit and synchronize animation with audio and video of the educator."
+            ],
+            "execution_steps": [
+                "Distribute the animated video series through accessible platforms (e.g., online video channels, educational portals).",
+                "Encourage children to watch the videos repeatedly to facilitate natural language acquisition.",
+                "Integrate the videos into daycare or home learning environments."
+            ],
+            "tips_for_success": "Focus on creating highly engaging and interactive animated environments. Prioritize natural language acquisition by avoiding subtitles and relying on visual cues and context. Leverage the authenticity and expertise of fluent native speakers. Start with basic, high-frequency vocabulary and build complexity gradually."
+        },
+        "impact": {
+            "problem_solved": "Decline in fluent Anishinaabemowin speakers and lack of engaging, accessible language learning resources for young children.",
+            "evidence_of_success": "Designed to allow children to pick up the language naturally, inspired by observations of children learning from cartoons.",
+            "beneficiaries_reach": "Children within Anishinaabemowin communities and families interested in language revitalization.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The animated video series presents very low risks for data privacy, child safety (content is age-appropriate and educational), cognitive overload (short vignettes, natural immersion method), and cultural friction (it's an Indigenous-led revitalization effort). The primary risk lies in exclusion/accessibility barriers, as access to the digital video series requires internet connectivity and devices, which may not be universally available, particularly in some Indigenous communities. Intervention to ensure equitable access to the technology needed to view the series would be beneficial for its widespread impact."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "ce8a18545c9080e03b5afae60201878f",
+        "timestamp": "2026-05-29T06:40:00.716236",
+        "title": "Little Life Skills",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVRu-I1J4d_sBbfuC4WGjmlYKTBzN5nCO_guE0Ofozr02N1Cf56sOIoJIO49yg5vl4w69eLxVxaxyRHdP31ZdGR8yBpvbIf44TEawvyLELf2SGpnUT78c-yeBjK1jGhBdqKKtD0Lc="
+        ],
+        "summary": "Raymond M. Patterson Jr., a former teacher, created 'Little Life Skills,' an educational initiative comprising an animated series and accompanying book series. This innovation aims to foster social and emotional intelligence in children by presenting common daily challenges, such as dealing with loss and grief, through the engaging character of Ben. It is designed to support children, parents, and teachers in navigating essential life skills.",
+        "category": [
+            "Social-Emotional Learning",
+            "Children's Media",
+            "Life Skills"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "Other",
+                "Health"
+            ],
+            "target_learners": "Children",
+            "learning_outcomes": [
+                "Develop social and emotional intelligence",
+                "Navigate daily challenges",
+                "Deal with loss and grief"
+            ],
+            "pedagogical_approach": "Engaging and accessible animated content, storytelling, character-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Creative writing skills",
+                "Animation software and artists",
+                "Illustrators",
+                "Publishing resources",
+                "Marketing and distribution channels"
+            ],
+            "preparation_steps": [
+                "Identify key social-emotional learning topics",
+                "Develop engaging characters and storylines",
+                "Create scripts for animated series",
+                "Write and illustrate accompanying books"
+            ],
+            "execution_steps": [
+                "Produce animated episodes",
+                "Publish book series",
+                "Market and distribute content to target audience"
+            ],
+            "tips_for_success": "Focus on relatable scenarios, ensure age-appropriateness, collaborate with educational experts, leverage multiple media formats for wider reach."
+        },
+        "impact": {
+            "problem_solved": "Lack of engaging and accessible resources to support children, parents, and teachers in developing social and emotional intelligence and navigating important life skills.",
+            "evidence_of_success": "The text implies success by addressing a recognized need, but no direct evidence or metrics are provided.",
+            "beneficiaries_reach": "Children, parents, teachers",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks are related to exclusion and cultural friction. Access to the animated series and books may be limited for some socioeconomic groups, and accessibility features (e.g., subtitles, diverse language options, alternative formats) for children with disabilities are not specified. While the themes of social-emotional intelligence and dealing with loss are universal, the specific cultural context and methods of addressing these topics within the series could lead to cultural friction or reduced effectiveness in diverse populations. The presentation of sensitive topics like loss and grief also requires careful consideration to ensure age-appropriateness and avoid cognitive overload or distress."
+        },
+        "priority_score": 44,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "e4d6c1f1395cba36e8be257f00543935",
+        "timestamp": "2026-05-29T06:40:51.221281",
+        "title": "68 Voces - 68 Corazones",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhQnmCatQ3EqCJyKNOiApFQjdjXnYwZVN_tf5dozxqjA-mTgqAl-dQtXv4mmVrOKLixK_u3DrMI04SJMrZh2hA5WK-mEf-6_CGNf_CG5S5fzaDbwCktdS8h-h1JI_VhXUndj1vcwuE_21fSy8cvIi800R9lkSvKfxn8rOBA0fwYB51S5GXumeMoPQbhhFiMquc="
+        ],
+        "summary": "Initiated in 2013 by Mexican artist Gabriela Badillo, '68 Voces - 68 Corazones' is a series of animated short films that retell traditional indigenous Mexican stories in their native languages. The project aims to celebrate and preserve the Indigenous languages of Mexico, which are at risk of disappearing, by transforming ancient myths and tales into engaging animated narratives. This series has produced films in over half of Mexico's 68 linguistic groups, demonstrating how animation can serve as a powerful tool for cultural and linguistic revitalization.",
+        "category": [
+            "Cultural Preservation",
+            "Linguistic Revitalization",
+            "Animation",
+            "Indigenous Education"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "Mexico",
+            "region": "Nationwide",
+            "city_or_village": "",
+            "institution_name": "Gabriela Badillo (Artist-initiated)",
+            "lat": 35.6382819,
+            "lon": -106.0067905
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "Arts",
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Indigenous communities, General public, Children",
+            "learning_outcomes": [
+                "Increased awareness and appreciation of indigenous languages and cultures",
+                "Preservation of traditional stories and myths",
+                "Linguistic revitalization among indigenous youth",
+                "Promotion of cultural diversity"
+            ],
+            "pedagogical_approach": "Storytelling through animation, Cultural immersion, Language exposure"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "The disappearance of Indigenous languages and traditional cultural heritage in Mexico.",
+            "evidence_of_success": "Produced films in over half of Mexico's 68 linguistic groups, including Otomi, Tohono O'odham, Huichol, Tarahumara, Nahuatl, Mayan, and Mixtec.",
+            "beneficiaries_reach": "Indigenous communities across Mexico and the broader public interested in cultural preservation.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The project primarily aims to combat linguistic and cultural exclusion. However, potential risks include exclusion if digital access barriers prevent target indigenous communities from viewing the films, and a low risk of cultural friction if the storytelling process does not maintain continuous, deep collaboration and validation from the respective indigenous groups. Ensuring broad, equitable access and ongoing community engagement are key interventions."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "ecd27ce1eccd597f8f6c859566f57fc1",
+        "timestamp": "2026-05-29T06:41:20.512931",
+        "title": "Kurzgesagt – In a Nutshell",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGR92UWFl9sQSwjvWNx2fH1GJX5TXZcGGgtyyTGQWGFzZPkM85Ojgn7uMxCDQBrW1Zi_o1Yo3ICt50uekxwmpKzkSGQlMIBeWDK9gUJTVnq6Nalwu8CjqsGUyofHucwg_4="
+        ],
+        "summary": "Kurzgesagt – In a Nutshell is a popular YouTube channel that produces short, animated videos to explain complex topics across science, technology, philosophy, and more. Known for its distinctive animation style and engaging narrative, the channel covers subjects from space and climate change to biology. While it has evolved into a highly professional operation, its origins were grassroots, aiming to make intricate scientific and philosophical concepts accessible and captivating to a wide audience.",
+        "category": [
+            "Science Communication",
+            "Digital Learning",
+            "Educational Media"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Broad audience interested in science, technology, and philosophy",
+            "learning_outcomes": [
+                "Enhanced understanding of complex scientific and philosophical concepts",
+                "Increased engagement with educational content through visual storytelling",
+                "Improved critical thinking about diverse topics"
+            ],
+            "pedagogical_approach": "Utilizes short, animated videos with engaging storytelling and unique visual styles to simplify and explain complex topics."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible, engaging, and easily digestible explanations for complex scientific, technological, and philosophical concepts for a general audience.",
+            "evidence_of_success": "Grown into a highly popular and professional operation with a broad global audience, evidenced by millions of subscribers and views, and widespread recognition for its educational content.",
+            "beneficiaries_reach": "Millions of global viewers across various age groups and educational backgrounds.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "self-taught"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "While Kurzgesagt's content is high-quality, engaging, and generally safe, significant accessibility barriers exist. These include the digital divide (requiring internet access and devices), language barriers (primarily English, despite multi-language subtitles), and challenges for visually or hearing-impaired users due to the heavy reliance on visual animation and audio narration. Additionally, while aiming for universality, some philosophical or societal topics might encounter cultural friction or differing interpretations depending on the audience's background. Data privacy concerns are platform-level (YouTube) rather than specific to Kurzgesagt's content."
+        },
+        "priority_score": 52,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
