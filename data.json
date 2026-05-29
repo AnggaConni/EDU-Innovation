@@ -4582,5 +4582,854 @@
         "priority_score": 52,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "12b894064d25a3dce03c967332af256a",
+        "timestamp": "2026-05-29T07:37:46.259523",
+        "title": "Project Axê",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnRzvWefB_fRnF0YgNxQ2znqg4HOLVkyFCVsd6U7mfT8-qkE6KPI_6DEdxRdlKwQnL_DBqA0cAIIZHg8X7BJL_PQ0TB3-hmZ-oRvcV_9TDeu3rEypYs32JRv9Q0e7FI_n7B5bBzk2IS1A080WhZtDFz43rqB49ulbEqaANAWz35sP3Atm4AMTh0inSq8oritszgf9SEy6_qzXY7sW1vhs2uokJYeg=="
+        ],
+        "summary": "Project Axê in Brazil utilizes a 'pedagogy of desire' to engage street children in education. Instead of traditional classroom methods, it fosters children's interest in learning through artistic, recreational, and other non-formal educational activities. The project aims to meet children where they are on the streets, cultivate their desire to learn and stay in school, and strengthen their interest in formal education. It has successfully integrated its innovative approach into the public school system through a partnership with the State Secretariat of Education.",
+        "category": [
+            "Social Inclusion",
+            "Education Reform",
+            "Child Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Brazil",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Project Axê",
+            "lat": -10.3333333,
+            "lon": -53.2
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Arts",
+                "Other"
+            ],
+            "target_learners": "street children",
+            "learning_outcomes": [
+                "stimulates children's interest in learning",
+                "cultivate a desire to stay in school and learn",
+                "strengthen children's desire for formal education"
+            ],
+            "pedagogical_approach": "pedagogy of desire; artistic and recreational activities; non-formal educational methods designed to meet children where they are on the streets"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Engaging street children in education who may not respond to traditional classroom approaches.",
+            "evidence_of_success": "Successfully integrated its innovative pedagogy into the public school system through a strong partnership with the State Secretariat of Education.",
+            "beneficiaries_reach": "Street children",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "Project Axê operates with highly vulnerable street children, directly engaging them 'on the streets'. This inherently poses significant child safety risks, including exposure to violence, exploitation, and unsafe environments. While the project aims for integration, the transition from non-formal to formal education could create new exclusion barriers if not carefully managed. Furthermore, collecting and managing personal data for these vulnerable children, especially when integrating with the public school system, presents considerable data privacy risks that require robust protection protocols."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "941b6c3f73dbf02bfb2a92e3fddae480",
+        "timestamp": "2026-05-29T07:38:08.922532",
+        "title": "KalyEskwela",
+        "sources": [
+            "https://childhope.org.ph/importance-non-formal-education-street-children/"
+        ],
+        "summary": "KalyEskwela, meaning 'school on the streets,' is an educational initiative by Childhope Philippines designed to bring learning directly to street children and youth. The program utilizes mobile vans equipped with audiovisual tools to conduct classes in areas frequented by its target learners. It delivers education through modules aligned with the Alternative Learning System (ALS), guided by street educators. Beyond foundational learning, KalyEskwela aims to facilitate re-entry into formal schooling and provides older teens with vocational and technical skills training to empower them with income-generating capabilities.",
+        "category": [
+            "Education",
+            "Social Work",
+            "Youth Development",
+            "Community Outreach"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Philippines",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Childhope Philippines",
+            "lat": 12.7503486,
+            "lon": 122.7312101
+        },
+        "education_details": {
+            "education_type": "alternative",
+            "related_fields": [
+                "Literacy",
+                "Vocational",
+                "Life Skills"
+            ],
+            "target_learners": "Street children and youth",
+            "learning_outcomes": [
+                "Basic education attainment",
+                "Re-entry into formal schooling",
+                "Acquisition of trade and technical skills",
+                "Ability to generate income"
+            ],
+            "pedagogical_approach": "Mobile classroom delivery via vans, audiovisual tools, modular learning under Alternative Learning System (ALS), guidance from street educators."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mobile vans",
+                "Audiovisual tools (projectors, screens, audio equipment)",
+                "Alternative Learning System (ALS) modules",
+                "Educational supplies (notebooks, pens, etc.)",
+                "Trade and technical skills training materials"
+            ],
+            "preparation_steps": [
+                "Identify areas frequented by street children and youth.",
+                "Recruit and train street educators specialized in ALS and working with vulnerable populations.",
+                "Equip mobile vans with necessary audiovisual tools and learning materials.",
+                "Develop or acquire relevant ALS modules and vocational training curricula.",
+                "Establish partnerships for formal school re-entry and vocational training certifications."
+            ],
+            "execution_steps": [
+                "Deploy mobile vans to designated street locations on a regular schedule.",
+                "Conduct classes using ALS modules and audiovisual aids.",
+                "Provide individualized support and guidance to learners.",
+                "Facilitate enrollment for children wishing to re-enter formal schooling.",
+                "Offer specialized trade and technical skills training for older youth.",
+                "Monitor progress and provide mentorship for income-generating activities."
+            ],
+            "tips_for_success": "Build trust with street children and their communities. Ensure flexibility in scheduling and curriculum to adapt to the learners' transient lifestyles. Integrate psychosocial support alongside education. Continuously update vocational training to align with market demands. Foster a safe and engaging learning environment."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to basic education and vocational training for street children and youth, leading to cycles of poverty and marginalization.",
+            "evidence_of_success": "Encourages children to re-enter formal schooling. Provides older teens with trade and technical skills training, enabling them to generate income and support themselves and their families.",
+            "beneficiaries_reach": "Street children and youth in various urban areas where Childhope Philippines operates.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "KalyEskwela, while highly commendable for its mission, faces significant risks due to its target population and operating environment. Child safety is a primary concern ('other' risk type) given that it operates in areas frequented by street children, who are inherently vulnerable to exploitation and harm. Thorough vetting and continuous training of street educators, along with robust child protection protocols, are crucial. Data privacy is also a high risk, as collecting any personal information from a vulnerable, often undocumented, population requires extreme care to prevent misuse or exposure. Physical safety is a concern related to the 'trade and technical skills training' component, which may involve tools or machinery, and also the inherent safety of operating mobile vans in diverse urban environments. Cognitive overload could be a minor risk for children with inconsistent prior education or trauma, but the ALS modules and dedicated educators likely mitigate this. Exclusion is the problem the program aims to solve, but specific children might still face barriers to access."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "336ae30bcd157ee4a13c8ade2ffef156",
+        "timestamp": "2026-05-29T07:38:53.081107",
+        "title": "FACE Non-Formal Education Project for Street Children",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_vEbQcLCUPcAlbDnNuy6xiQvX50h7hsGnXR7bNK4iqTd2d1yJv4VzQRvamsXoIGBt_u_z9jwcyx0qqSF1iwXCsnDUnHA5RQHnwJNEEOZOtPF5uBcdLjDhcbgTYHzFnGtFGGTi2k87mHjy_7Ynu0dBBbb09MC1SBTQaYpRhP5tOzfmKoYy4aa5tb67dFf3VPo4"
+        ],
+        "summary": "The FACE non-formal education project in Cairo, Egypt, provides child-friendly education and essential life skills to street children. It operates through a Drop-In Center (DIC) and a Transitional Home, integrated into a Child-Friendly School (CFS) model. The curriculum includes crucial awareness on road safety, reproductive health, hygiene, HIV, and other STDs. The project aims to destigmatize street children and reintegrate them into the public school system and society, offering a pathway away from street life. It was a 2014 WISE Awards winner and introduced innovative training tools in 2012, promoting learning through play, self-learning, and peer education.",
+        "category": [
+            "Non-Formal Education",
+            "Child Protection",
+            "Social Reintegration",
+            "Life Skills Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Egypt",
+            "region": "",
+            "city_or_village": "Cairo",
+            "institution_name": "FACE",
+            "lat": 30.0443879,
+            "lon": 31.2357257
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Street children",
+            "learning_outcomes": [
+                "Acquire child-friendly education",
+                "Develop essential life skills",
+                "Gain awareness on road safety",
+                "Understand reproductive health, hygiene, HIV, and other STDs",
+                "Reintegrate into the public school system",
+                "Reintegrate into society",
+                "Achieve destigmatization",
+                "Become peer educators"
+            ],
+            "pedagogical_approach": "Learning through play, self-learning, and training children to become peer educators"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Operate through a Drop-In Center (DIC) to engage street children.",
+                "Provide a Transitional Home environment as part of a Child-Friendly School (CFS) model.",
+                "Implement a curriculum emphasizing learning through play and self-learning.",
+                "Train children to act as peer educators to disseminate knowledge and skills."
+            ],
+            "tips_for_success": "Emphasize child-friendly approaches, incorporate learning through play and self-learning, and empower beneficiaries by training them as peer educators."
+        },
+        "impact": {
+            "problem_solved": "Lack of education, essential life skills, and social integration for street children, compounded by societal stigmatization.",
+            "evidence_of_success": "The project was a 2014 WISE Awards winner, indicating international recognition and validation of its effectiveness.",
+            "beneficiaries_reach": "Street children in Cairo, Egypt.",
+            "scale": "medium",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The project works with extremely vulnerable street children, leading to high risks. Data privacy is critical due to the collection of sensitive personal and health information for reintegration. Cultural friction is high when discussing reproductive health, HIV, and STDs in a conservative societal context. Exclusion risks exist in reaching all street children and ensuring their successful, sustained reintegration into public schools without creating new barriers. 'Other' encompasses significant child safety concerns, including protection from exploitation/abuse and ensuring emotional well-being within the Drop-In Center and Transitional Home, especially when addressing sensitive topics. Cognitive overload is also a concern given the curriculum's breadth and the children's potential learning gaps and trauma."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "97fd9edccd9a3cc31f31506fb2a2715a",
+        "timestamp": "2026-05-29T07:39:21.607690",
+        "title": "Salaam Baalak Trust: Education and Support for Street Children",
+        "sources": [
+            "https://www.salaambaalaktrust.com/",
+            "https://www.salaambaalaktrust.com/blog/empowering-street-children-through-educational-aid/"
+        ],
+        "summary": "The Salaam Baalak Trust provides comprehensive support, including shelter, education, and vocational training, to street and working children in India. Their approach involves extensive outreach to identify at-risk children, building trust through social workers and volunteers. They offer tailored educational interventions, such as mobile schools and informal learning centers with flexible schedules, integrating access to basic necessities like food, shelter, and healthcare. The Trust also focuses on vocational training and life skills to empower children to escape poverty and exploitation.",
+        "category": [
+            "Child Welfare",
+            "Education",
+            "Social Work",
+            "Poverty Alleviation"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "India",
+            "region": "National Capital Territory of Delhi",
+            "city_or_village": "Delhi",
+            "institution_name": "Salaam Baalak Trust",
+            "lat": 28.6138954,
+            "lon": 77.2090057
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Vocational",
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Street and working children in India",
+            "learning_outcomes": [
+                "Access to basic necessities (food, shelter, healthcare)",
+                "Improved literacy and foundational education",
+                "Development of vocational skills",
+                "Acquisition of life skills",
+                "Breaking the cycle of poverty and exploitation"
+            ],
+            "pedagogical_approach": "Outreach and trust-building, tailored educational interventions (mobile schools, informal learning centers), flexible schedules and curricula, integrated access to basic necessities, vocational training, and life skills development."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Dedicated social workers, educators, and volunteers",
+                "Mobile school infrastructure or adaptable learning spaces",
+                "Basic educational materials (books, stationery)",
+                "Facilities for shelter, food, and healthcare access",
+                "Vocational training equipment/partnerships"
+            ],
+            "preparation_steps": [
+                "Conduct extensive outreach to identify at-risk children in target areas.",
+                "Build trust with children and their communities through consistent engagement.",
+                "Recruit and train a multidisciplinary team of social workers, educators, and volunteers.",
+                "Establish or secure flexible learning environments (e.g., mobile schools, informal centers).",
+                "Develop a flexible curriculum that accommodates children's challenging lifestyles and diverse learning needs."
+            ],
+            "execution_steps": [
+                "Provide tailored educational interventions, adapting to individual learning paces.",
+                "Integrate provision of basic necessities (food, shelter, healthcare) alongside education.",
+                "Offer vocational training and life skills development to prepare children for self-sufficiency.",
+                "Maintain ongoing support and mentorship to ensure sustained progress."
+            ],
+            "tips_for_success": "Prioritize trust-building and relationships with children. Ensure flexibility in educational delivery to accommodate their unique circumstances. Provide holistic support that addresses not only education but also basic needs and psychosocial well-being. Foster community engagement and partnerships for broader impact."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to education, shelter, healthcare, and protection from exploitation for street and working children, perpetuating a cycle of poverty.",
+            "evidence_of_success": "Empowerment of children to break the cycle of poverty and exploitation through education, vocational skills, and life skills development, alongside provision of basic necessities.",
+            "beneficiaries_reach": "Thousands of street and working children in India.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "data_privacy",
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The most significant risks are child safety and data privacy. Direct outreach and provision of shelter/education to highly vulnerable street and working children necessitate extremely rigorous vetting, training, and supervision of all staff and volunteers to prevent exploitation or abuse. Extensive data collection on at-risk children also poses a high data privacy risk, requiring robust protection protocols to prevent misuse or breach. While the program actively addresses exclusion, some children may remain unreachable. Cognitive overload is mitigated by tailored curricula, but the cumulative impact of education, vocational training, and life skills on children with traumatic backgrounds needs careful monitoring. Cultural friction is a moderate risk, requiring continuous sensitivity in program design and delivery."
+        },
+        "priority_score": 46,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "ea833350b4c03c59bfc65222c26a9d73",
+        "timestamp": "2026-05-29T07:39:54.617894",
+        "title": "I Care",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJY_aw68SRFzOrGtiu2xChJNu5M0_iMpdUMvMLZicSfxxKiNMFLTGYIBwGCJOrp-Kv0QDXsyP9hT9njc-WtRhDqSJ3jNSqwPzoEXV9Qjfr4eZVzeI9WxWjiJq7SDMdLcSpYXMCu6I2BLQC4xeQ0zwXU028QwxknbBu8bN6Iimgk8uDdY43MtR3zw=="
+        ],
+        "summary": "I Care is a small non-profit organization established in 2002 in Durban, South Africa, focused on the support, rehabilitation, and education of street children. The organization aims to equip children with essential life skills like honesty, a strong work ethic, and collaborative attitudes to help them transition off the streets and build successful lives. Instead of direct handouts, I Care encourages public donations to fund its programs, which include safe-houses, free meals, and various skills training initiatives, promoting self-reliance and lasting change for the children it serves.",
+        "category": [
+            "Social Welfare",
+            "Youth Development",
+            "Non-formal Education"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "South Africa",
+            "region": "",
+            "city_or_village": "Durban",
+            "institution_name": "I Care",
+            "lat": -29.861825,
+            "lon": 31.009909
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Vocational",
+                "Civics",
+                "Life Skills"
+            ],
+            "target_learners": "Street children",
+            "learning_outcomes": [
+                "Transition off the streets",
+                "Build successful lives",
+                "Develop honesty",
+                "Cultivate a strong work ethic",
+                "Foster collaborative attitudes",
+                "Achieve self-reliance"
+            ],
+            "pedagogical_approach": "Holistic support combining safe housing, basic needs provision, rehabilitation, and life skills training to foster self-reliance and long-term integration."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of support, rehabilitation, and education for street children, hindering their ability to transition off the streets and build successful lives.",
+            "evidence_of_success": "Equipping children with crucial life skills (honesty, work ethic, collaboration) essential for successful transition, fostering self-reliance and long-term change.",
+            "beneficiaries_reach": "Street children in Durban, South Africa",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "other",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "While the provided text does not describe a specific technological or pedagogical innovation, the organization's approach to supporting and educating highly vulnerable street children can be considered an 'educational innovation' in its holistic model. The primary risks identified stem from the nature of working with this population:\n\n1.  **Data Privacy:** The organization undoubtedly collects sensitive personal information about street children (background, health, family history). Mismanagement, breaches, or unauthorized access to this data could expose children to re-exploitation, stigmatization, or harm.\n2.  **Child Safety (categorized as 'other' as per prompt's definition of physical safety):** Operating safe-houses and providing direct care to vulnerable children inherently carries a high risk of abuse (physical, emotional, sexual) by staff, other residents, or external parties. Robust safeguarding policies, thorough staff vetting, and constant oversight are critical.\n3.  **Exclusion/Accessibility Barriers:** While the mission is inclusive, any program can inadvertently create barriers. Limited capacity in safe-houses or skills training programs, specific entry criteria, or an inability to cater to children with particular disabilities or severe trauma could lead to the exclusion of some of the most vulnerable children.\n\nCognitive overload is a potential medium risk given the children's likely traumatic backgrounds, requiring a trauma-informed and paced educational approach. Cultural friction is a lower risk, as the values taught are broadly positive, but delivery must be culturally sensitive. Physical safety related to STEAM/hardware is not applicable based on the general description of 'various skills training initiatives'."
+        },
+        "priority_score": 52,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "159fcbb87490b850baae5d4a14259b26",
+        "timestamp": "2026-05-29T07:40:25.065336",
+        "title": "LEAP (Learning, Educating And Protecting) Together Project",
+        "sources": [
+            "https://theirworld.org/news/from-street-child-to-school-achiever-theirworld-project-turns-reubens-life-around/"
+        ],
+        "summary": "The LEAP Together project, a collaboration between Chance for Childhood and Kisumu Urban Apostolate Programmes (KUAP) in Kenya, aims to reintegrate street children, especially those with disabilities and special education needs, into mainstream schools within Vihiga County. This grassroots initiative employs specialist Learning Support Assistants (LSAs) in classrooms and Violence Prevention Activists in communities to champion children's rights, ensure their safety, and address stigmatization and abuse.",
+        "category": [
+            "Special Education",
+            "Child Protection",
+            "Community Development",
+            "Reintegration",
+            "Disability Inclusion"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Kenya",
+            "region": "Vihiga County",
+            "city_or_village": "",
+            "institution_name": "Chance for Childhood, Kisumu Urban Apostolate Programmes (KUAP)",
+            "lat": 0.0819284,
+            "lon": 34.7084197
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Street children, particularly those with visible and invisible disabilities and special education needs.",
+            "learning_outcomes": [
+                "Reintegration into mainstream schools",
+                "Improved safety and care for children",
+                "Reduced stigmatization and abuse",
+                "Enhanced educational support for children with special needs"
+            ],
+            "pedagogical_approach": "Direct in-classroom support by specialist Learning Support Assistants (LSAs); community-based violence prevention and advocacy; facilitation of mainstream school reintegration."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Specialist Learning Support Assistants (LSAs)",
+                "Violence Prevention Activists (community members)",
+                "Partnerships with mainstream schools",
+                "Community engagement resources"
+            ],
+            "preparation_steps": [
+                "Identify and recruit street children with disabilities and special education needs.",
+                "Train specialist Learning Support Assistants (LSAs) for classroom deployment.",
+                "Recruit and train community members as Violence Prevention Activists.",
+                "Establish collaborative agreements with mainstream schools in Vihiga County."
+            ],
+            "execution_steps": [
+                "Facilitate the reintegration of identified children into mainstream schools.",
+                "Deploy LSAs to provide direct support to children in classroom settings.",
+                "Engage Violence Prevention Activists to monitor children's safety and well-being in their homes and communities.",
+                "Conduct advocacy and awareness campaigns to combat stigmatization and abuse."
+            ],
+            "tips_for_success": "Prioritize individualized support for children with diverse needs; foster strong community involvement for protection and advocacy; ensure continuous training and support for LSAs and activists; build robust partnerships with local schools and authorities."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to formal education for street children, especially those with disabilities and special education needs; exposure to abuse and stigmatization; insufficient support systems for reintegrated children.",
+            "evidence_of_success": "Successful reintegration of street children into mainstream schools; establishment of community-based support systems ensuring children's safety and care.",
+            "beneficiaries_reach": "Street children in Vihiga County, Kenya, particularly those with visible and invisible disabilities and special education needs.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "other",
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The LEAP Together project addresses critical risks faced by highly vulnerable street children, particularly those with disabilities and special education needs. While the deployment of Learning Support Assistants and Violence Prevention Activists directly mitigates risks of exclusion, cultural friction, and child safety, the inherent vulnerability of this population means that the overall safety level remains low due to potential for abuse, stigmatization, and the sensitive nature of their personal data. The project itself is a vital intervention, but continuous vigilance and adaptation are needed to manage these significant and complex risks effectively."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "121836f398e1cf099c23e60f09acdbfe",
+        "timestamp": "2026-05-29T07:41:01.515718",
+        "title": "The Global Support for Kids Initiative (GSK)",
+        "sources": [
+            "https://gskinitiative.org/education-for-street-connected-children/"
+        ],
+        "summary": "The Global Support for Kids Initiative (GSK) in Nigeria provides basic literacy classes, including mathematics, English language, and moral education, to street-connected children and youth-at-risk. The program operates directly in the children's living locations, offering a flexible and holistic approach to rehabilitation that addresses their physical, psychological, and sociological needs. GSK aims to improve intellectual capacity, support moral development, and integrate these children into societal norms, enabling them to transition away from street life and become self-reliant, productive, and responsible citizens.",
+        "category": [
+            "Education Access",
+            "Social Inclusion",
+            "Youth Development",
+            "Human Rights"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Nigeria",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Global Support for Kids Initiative (GSK)",
+            "lat": 9.6000359,
+            "lon": 7.9999721
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "street-connected children and youth-at-risk",
+            "learning_outcomes": [
+                "improved intellectual capacity",
+                "moral development",
+                "integration into societal norms",
+                "move away from street life",
+                "self-reliance",
+                "productive citizenship",
+                "responsible citizenship"
+            ],
+            "pedagogical_approach": "flexible, holistic rehabilitation, direct instruction in their living locations"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Critical gap in education for street-connected children and youth-at-risk.",
+            "evidence_of_success": "Helps children build a foundation to move away from street life and develop into self-reliant, productive, and responsible citizens.",
+            "beneficiaries_reach": "Street-connected children and youth-at-risk.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The Global Support for Kids Initiative faces significant risks due to its vulnerable target population and challenging operating environment. **Child Safety** (categorized under 'other' risk type) is a primary concern: working directly with street-connected children in their living locations exposes them and staff to potential physical harm, exploitation, and psychological re-traumatization. Robust safeguarding protocols are essential. **Data Privacy** is a high concern given the sensitive nature of information collected from highly vulnerable children, requiring stringent protection against misuse or further exploitation. **Cultural Friction** may arise from the 'moral education' and 'integration into societal norms' components if not delivered with deep cultural sensitivity, potentially alienating children from their existing realities. While the program explicitly aims to reduce **Exclusion**, inherent challenges in reaching all street children mean some barriers may persist. Lastly, **Cognitive Overload** (also 'other') is a risk if the pace of basic literacy and holistic rehabilitation overwhelms children who have experienced significant trauma and deprivation."
+        },
+        "priority_score": 50,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "08f119a4754b489d2b18ab21e894a380",
+        "timestamp": "2026-05-29T07:41:51.160522",
+        "title": "Teacher Education through School-based Support (TESS-India)",
+        "sources": [
+            "https://www.oerknowledgecloud.org/record983"
+        ],
+        "summary": "The TESS-India project, led by the Open University UK, developed Open Educational Resources (OER) for India's teacher education system. It addressed the country's vast cultural and linguistic diversity by implementing a two-tier localization model, embedding state-level adaptation within OER production. The initiative aimed to provide teacher educators, head-teachers, and teachers with access to high-quality, free educational materials, fostering knowledge partnerships and communities of OER practice.",
+        "category": [
+            "Teacher Training",
+            "Open Educational Resources",
+            "Educational Technology",
+            "Curriculum Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "India",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Open University UK (leading institution)",
+            "lat": 22.3511148,
+            "lon": 78.6677428
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Teacher educators, head-teachers, and teachers in India",
+            "learning_outcomes": [
+                "Enhanced access to high-quality, free educational materials",
+                "Improved contextual relevance of teacher education resources",
+                "Promotion of knowledge partnerships and OER communities of practice"
+            ],
+            "pedagogical_approach": "Development and localization of Open Educational Resources (OER) with a school-based support model, fostering knowledge partnerships and community engagement."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Open Educational Resources (OER)",
+                "Digital platforms for OER distribution"
+            ],
+            "preparation_steps": [
+                "Develop high-quality educational resources.",
+                "Implement a two-tier model for localization, considering linguistic, cultural, and pedagogical diversity.",
+                "Embed state-level adaptation processes within OER production."
+            ],
+            "execution_steps": [
+                "Provide access to OER for teacher educators, head-teachers, and teachers.",
+                "Facilitate engagement in communities of OER practice.",
+                "Support contextual understanding and sharing of expertise."
+            ],
+            "tips_for_success": "Prioritize localization by embedding adaptation processes directly into OER production. Foster knowledge partnerships to leverage local expertise and ensure resources meet diverse needs."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to high-quality, free, and contextually relevant educational materials for teacher education across diverse Indian states.",
+            "evidence_of_success": "Implemented a successful two-tier model for localization, ensuring resources met diverse linguistic, cultural, and pedagogical needs.",
+            "beneficiaries_reach": "Teacher educators, head-teachers, and teachers across Indian states.",
+            "scale": "high",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 4,
+            "risk_type": [
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The TESS-India project's core design, with its two-tier localization model, actively addresses and mitigates risks related to exclusion/accessibility barriers and cultural friction by adapting resources to diverse linguistic, cultural, and pedagogical needs. However, given the vast scale and diversity of India, complete elimination of these challenges (e.g., digital divide for access, subtle cultural nuances) remains an ongoing consideration. There are no direct risks identified for data privacy, child safety, cognitive overload (as localization aims to prevent this), or physical safety based on the project description."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "b5cad1782d199d570ce44ad274bca431",
+        "timestamp": "2026-05-29T07:42:33.116265",
+        "title": "Localizing Open Educational Resources (OER) in Ghana",
+        "sources": [
+            "https://www.irrodl.org/index.php/irrodl/article/view/7102",
+            "https://files.eric.ed.gov/fulltext/EJ1446995.pdf"
+        ],
+        "summary": "Research in Ghana has explored both formal and informal methods of localizing Open Educational Resources (OER) to better suit specific cultural and linguistic contexts. Informal adaptations by educators included on-the-spot translation into Twi, incorporating local stories and images, and adjusting discussions to resonate with student experiences, often to overcome issues like low bandwidth, hardware limitations, and content decontextualization. Formal localization involved Ghanaian partner teachers remixing openly-licensed human rights content from the Geneva Office for Human Rights Education (GO-HRE), focusing on adapting instructional methods and leveraging local teacher knowledge to ensure cultural relevance and accessibility for youth and young adults.",
+        "category": [
+            "Open Educational Resources (OER)",
+            "Cultural Adaptation",
+            "Linguistic Localization",
+            "Teacher Professional Development",
+            "Human Rights Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Ghana",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 8.0300284,
+            "lon": -1.0800271
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other",
+                "Human Rights",
+                "Literacy"
+            ],
+            "target_learners": "students, youth and young adults",
+            "learning_outcomes": [
+                "Content suited to specific cultural and linguistic contexts",
+                "Overcome challenges of content decontextualization",
+                "Content made culturally relevant and accessible"
+            ],
+            "pedagogical_approach": "Localization of OER through translation, incorporation of local content (stories, pictures), adaptation of discussions, and modification of instructional methods, leveraging teacher knowledge."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Open Educational Resources (OER) content (e.g., human rights education materials)",
+                "Local language resources (e.g., Twi language materials)",
+                "Local stories, images, and cultural references",
+                "Hardware (computers, internet access, though often limited)"
+            ],
+            "preparation_steps": [
+                "Identify existing OER content relevant to the curriculum or learning objectives.",
+                "Assess the cultural and linguistic gaps in the OER for the target learners.",
+                "Gather local stories, pictures, and examples that can be integrated into the content.",
+                "Engage partner teachers or local educators for their contextual knowledge and linguistic expertise."
+            ],
+            "execution_steps": [
+                "Translate OER content or key concepts into the local language (e.g., Twi).",
+                "Incorporate local stories, proverbs, and images to make the content relatable.",
+                "Adapt discussion prompts and activities to resonate with students' local experiences and cultural norms.",
+                "Modify instructional methods to align with local pedagogical practices and address logistical challenges like low bandwidth.",
+                "Remix openly-licensed content, ensuring proper attribution and adherence to licensing terms."
+            ],
+            "tips_for_success": "Leverage the deep contextual and pedagogical knowledge of local educators. Prioritize addressing technical barriers like low bandwidth and hardware issues through content adaptation. Foster a collaborative environment between content providers and local teachers for effective co-creation and adaptation."
+        },
+        "impact": {
+            "problem_solved": "Decontextualization of educational content, low bandwidth, hardware problems, and lack of cultural/linguistic relevance in OER.",
+            "evidence_of_success": "Successful adaptation of OER to suit specific cultural and linguistic contexts, making content culturally relevant and accessible to youth and young adults.",
+            "beneficiaries_reach": "Students, youth, and young adults in Ghana.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The innovation aims to enhance cultural relevance and accessibility of Open Educational Resources (OER), including sensitive human rights content, through localization efforts in Ghana. While involving local teachers is a strong mitigating factor, the primary risk is cultural friction. Adapting universal human rights principles to specific local cultural and linguistic contexts, even with expert local input, inherently carries the potential for misinterpretation, resistance, or perceived conflicts with existing values or traditions. This requires continuous, careful navigation to ensure content is truly relevant and accepted without inadvertently causing friction or alienating segments of the community."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "138b2639752ad6f2cb87a458bd725424",
+        "timestamp": "2026-05-29T07:43:01.192283",
+        "title": "CREA programme",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnaBOP-A_nhS-N5lyyLgLUVgjql6nhkp5WuZuI2-kbZKzO5RAdsPG_c8ALV9S5PtOjP8eSpsYx4ZOrgvzNjoQeDX50XdOqIxnvACqdwrCp6Wsind_lA5ee7qsrGOSfXN6RmAlqoF4A6GyXekiZSkOgZ7keTBpqa-7uAXGEIHvOZzDI0U53UyWVr603_W80lc8kIFILWK3DK31MJ0drqqNl-kmT"
+        ],
+        "summary": "The CREA programme, initiated by the Junta de Extremadura in Spain, is an educational innovation focused on the collaborative production of Open Educational Resources (OER). It provides a platform for teachers to create, adapt, and share structured teaching materials, integrating regional curricular content with active methodologies. By generating resources in interoperable formats with metadata, CREA enhances their searchability, reusability, and seamless integration into various learning platforms, fostering a community of educators who contribute to and benefit from localized OER.",
+        "category": [
+            "Open Educational Resources",
+            "Curriculum Development",
+            "Teacher Professional Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Spain",
+            "region": "Extremadura",
+            "city_or_village": "",
+            "institution_name": "Junta de Extremadura",
+            "lat": 39.1748426,
+            "lon": -6.1529891
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Teachers (as creators and users), Students (as ultimate beneficiaries)",
+            "learning_outcomes": [
+                "Increased availability of localized and adaptable educational resources",
+                "Enhanced teacher collaboration and resource sharing",
+                "Improved integration of regional curricular content",
+                "Promotion of active pedagogical methodologies"
+            ],
+            "pedagogical_approach": "Collaborative learning, Active methodologies, Resource-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of relevant, localized, and adaptable educational resources that integrate regional curricula and active methodologies.",
+            "evidence_of_success": "Fosters a vibrant community of educators; enhances searchability, reusability, and seamless integration of resources.",
+            "beneficiaries_reach": "Teachers and students within the Extremadura region's educational system.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "exclusion",
+                "data_privacy",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The CREA programme, while fostering OER, presents several risks. A significant risk of 'exclusion' exists if the created resources are not designed with universal accessibility in mind, potentially disadvantaging students with disabilities. There's also a risk of 'cognitive overload' for teachers due to the demands of creating, adapting, and properly tagging resources, which could impact participation and resource quality. 'Data privacy' is a concern if teachers inadvertently include sensitive student information in shared materials. Finally, as a user-generated content platform, there's an inherent 'child safety' risk related to the potential for inappropriate content, requiring robust moderation."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]

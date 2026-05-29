@@ -1,0 +1,288 @@
+[
+    {
+        "report_metadata": {
+            "report_id": "edu-current",
+            "generated_at": "2026-05-29T07:46:04.842438",
+            "period": "Q2 2026",
+            "total_records_analyzed": 62
+        },
+        "global_summary": {
+            "total_education_innovations": 48,
+            "grassroots_percentage": 25.81,
+            "institutional_percentage": 58.06,
+            "formal_percentage": 54.17,
+            "informal_percentage": 45.83,
+            "total_innovations": 62,
+            "semi_formal_percentage": 16.13
+        },
+        "top_categories": [
+            {
+                "category": "Environmental Education",
+                "count": 10,
+                "trend": "increasing"
+            },
+            {
+                "category": "Community Engagement",
+                "count": 9,
+                "trend": "increasing"
+            },
+            {
+                "category": "Literacy",
+                "count": 7,
+                "trend": "stable"
+            },
+            {
+                "category": "Digital Learning",
+                "count": 6,
+                "trend": "increasing"
+            },
+            {
+                "category": "Energy Education",
+                "count": 6,
+                "trend": "increasing"
+            }
+        ],
+        "geographic_insights": [
+            {
+                "region": "North America",
+                "key_pattern": "Strong focus on community-led advocacy, environmental initiatives, and specialized STEM outreach, often leveraging grassroots efforts for systemic change.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Sub-Saharan Africa",
+                "key_pattern": "Significant efforts in bridging educational access gaps through sustainable technology, offline digital solutions, and comprehensive support for street children, alongside clean energy education.",
+                "impact_level": "high"
+            },
+            {
+                "region": "South & Southeast Asia",
+                "key_pattern": "Innovations concentrate on supporting vulnerable street children, integrating sustainable practices into education, and developing localized Open Educational Resources for teacher training.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Europe",
+                "key_pattern": "Emphasis on hands-on environmental education, sustainable and flexible learning infrastructure, and collaborative development of Open Educational Resources.",
+                "impact_level": "high"
+            }
+        ],
+        "impact_analysis": {
+            "high_impact_cases": 34,
+            "critical_cases": 41,
+            "top_impact_types": [
+                "Access to Education",
+                "Environmental Stewardship",
+                "Community Empowerment",
+                "Skill Development",
+                "Cultural & Linguistic Preservation"
+            ],
+            "emerging_impacts": [
+                "Nuclear Literacy & Clean Energy Advocacy",
+                "De-stigmatization & Reintegration of Marginalized Youth",
+                "Sustainable Infrastructure Development"
+            ]
+        },
+        "innovation_patterns": [
+            {
+                "pattern_name": "Community-Led Environmental Action",
+                "description": "Students and communities actively transform school environments or engage in local ecosystem restoration, fostering ecological literacy and civic responsibility through hands-on projects.",
+                "regions": [
+                    "USA",
+                    "Sweden"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Digital Inclusion & Offline Learning",
+                "description": "Leveraging technology to provide education in remote, off-grid, or underserved areas, often utilizing offline-first platforms to ensure continuous access to learning materials.",
+                "regions": [
+                    "Tanzania",
+                    "Africa",
+                    "Uganda",
+                    "Sudan",
+                    "Kenya"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Gamification & Experiential Learning",
+                "description": "Utilizing game-based mechanics, escape rooms, or real-world business simulations to increase student engagement, foster critical thinking, and develop practical skills.",
+                "regions": [
+                    "Global/Unspecified"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Support & Reintegration for Street Children",
+                "description": "Comprehensive programs offering education, life skills, and pathways back to formal schooling or societal integration for highly vulnerable youth living on the streets.",
+                "regions": [
+                    "Brazil",
+                    "Philippines",
+                    "Egypt",
+                    "India",
+                    "South Africa",
+                    "Kenya",
+                    "Nigeria"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Cultural & Linguistic Revitalization through Media",
+                "description": "Employing animation and digital storytelling to preserve, teach, and celebrate indigenous languages and cultural narratives, particularly for younger generations.",
+                "regions": [
+                    "Canada",
+                    "Mexico"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Sustainable & Flexible Educational Infrastructure",
+                "description": "Innovative construction methods for classrooms using natural, modular, or recycled materials, providing cost-effective, environmentally friendly, and adaptable learning spaces.",
+                "regions": [
+                    "Global/Unspecified",
+                    "Thailand",
+                    "Côte d'Ivoire"
+                ],
+                "impact_level": "high"
+            }
+        ],
+        "hidden_gems": [
+            {
+                "title": "Anishinaabemowin Animated Video Series for Children",
+                "country": "Canada",
+                "reason": "A grassroots, culturally vital initiative using modern animation to revitalize an endangered indigenous language for early learners."
+            },
+            {
+                "title": "68 Voces - 68 Corazones",
+                "country": "Mexico",
+                "reason": "A high-impact, semi-formal project that leverages animation to preserve and celebrate numerous indigenous languages and traditional stories."
+            },
+            {
+                "title": "Mechai Pattana School (Bamboo School)",
+                "country": "Thailand",
+                "reason": "A holistic, sustainable education model for disadvantaged children, integrating eco-friendly infrastructure, farming, and community engagement with high impact."
+            },
+            {
+                "title": "Plastic Waste to Classrooms Initiative",
+                "country": "Côte d'Ivoire",
+                "reason": "Addresses two critical challenges simultaneously (plastic pollution and classroom shortages) while empowering women through a circular economy model."
+            }
+        ],
+        "intervention_opportunities": [
+            {
+                "type": "funding",
+                "target": "Grassroots Language & Cultural Revitalization Projects",
+                "priority_level": "high",
+                "justification": "These initiatives are crucial for preserving endangered languages and cultural heritage, often operating with limited resources despite high impact potential."
+            },
+            {
+                "type": "training",
+                "target": "Educators in Experiential & Gamified Learning Design",
+                "priority_level": "medium",
+                "justification": "Expanding training in low-tech, engaging pedagogies can significantly boost student motivation and skill development across diverse settings without heavy tech reliance."
+            },
+            {
+                "type": "policy",
+                "target": "Sustainable Infrastructure & OER Integration",
+                "priority_level": "high",
+                "justification": "Policies supporting sustainable, modular construction and the systematic adoption/localization of Open Educational Resources can address infrastructure gaps and enhance curriculum relevance globally."
+            },
+            {
+                "type": "collaboration",
+                "target": "Offline Digital Learning Solutions for Remote Areas",
+                "priority_level": "high",
+                "justification": "Partnerships between tech providers, NGOs, and governments are essential to scale offline-first digital learning platforms, ensuring educational access in areas with limited connectivity."
+            }
+        ],
+        "knowledge_insights": {
+            "most_common_source": "adapted_from_existing",
+            "trend": "stable",
+            "observation": "A significant portion of education innovation is driven by the adaptation and localization of existing successful models, highlighting a pragmatic, iterative approach to problem-solving. Formal education institutions and traditional knowledge also serve as foundational sources, especially for culturally relevant and foundational learning initiatives."
+        },
+        "recommendations": [
+            "Prioritize investment in scalable offline-first digital learning platforms to ensure equitable access to quality education in remote and underserved regions, bridging the global digital divide.",
+            "Support and replicate community-led environmental education initiatives and sustainable infrastructure projects that empower students with hands-on experience and foster environmental stewardship.",
+            "Develop and promote frameworks for the collaborative creation and localization of Open Educational Resources (OER) to ensure curricula are culturally relevant, accessible, and adaptable to diverse learning contexts worldwide."
+        ],
+        "charts": {
+            "innovation_by_region": [
+                {
+                    "region": "North America",
+                    "count": 15
+                },
+                {
+                    "region": "Sub-Saharan Africa",
+                    "count": 12
+                },
+                {
+                    "region": "Global/Unspecified",
+                    "count": 8
+                },
+                {
+                    "region": "South & Southeast Asia",
+                    "count": 4
+                },
+                {
+                    "region": "Europe",
+                    "count": 4
+                },
+                {
+                    "region": "Latin America",
+                    "count": 3
+                },
+                {
+                    "region": "MENA",
+                    "count": 1
+                },
+                {
+                    "region": "Oceania",
+                    "count": 1
+                }
+            ],
+            "impact_distribution": [
+                {
+                    "level": "High",
+                    "count": 34
+                },
+                {
+                    "level": "Medium",
+                    "count": 28
+                },
+                {
+                    "level": "Low",
+                    "count": 0
+                }
+            ],
+            "knowledge_source_trend": [
+                {
+                    "source": "adapted_from_existing",
+                    "count": 27
+                },
+                {
+                    "source": "formal_education",
+                    "count": 11
+                },
+                {
+                    "source": "unspecified",
+                    "count": 5
+                },
+                {
+                    "source": "traditional",
+                    "count": 4
+                },
+                {
+                    "source": "self-taught",
+                    "count": 1
+                }
+            ],
+            "learning_outcomes": [
+                {
+                    "level": "high",
+                    "count": 27
+                },
+                {
+                    "level": "medium",
+                    "count": 21
+                }
+            ]
+        }
+    }
+]
