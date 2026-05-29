@@ -273,5 +273,275 @@
         "priority_score": 54,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "8eefe8e10fb787827652034873d5a763",
+        "timestamp": "2026-05-29T05:58:06.818847",
+        "title": "Hybrid Classification System for Children's Non-Fiction",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaQun7Vg_N5an5XcYbjXm4tJsQhyH0nbeVNxdzHhOrv9khwYuy7sAt_87LI6ZiUVcp1PSLPSlGrKA-m2G4TZWnYEyY1kMm9FPQ6iAPo0yIjO8QrnXgdu6zkJOCw-zIP3X1gh1h135cVbmVjn4OFpGo-tna4HLptwk_LNVG5IKgSk7m3a0kj9VppCrE76Z6DQ=="
+        ],
+        "summary": "One library implemented a hybrid classification system for its children's non-fiction collection to enhance accessibility and appeal for elementary-aged children and their caregivers. The system retains the original Dewey Decimal Classification (DDC) shelf addresses for specific item location but groups books into nine distinct, intuitive, and color-coded thematic sections. This allows related subjects, such as 'Animals and pets,' to be shelved together, overcoming DDC's traditional limitations and sometimes outdated or Euro-centric classifications. Each book receives a small, color-coded spine label indicating its new section, and the call number is adapted with a 'Kids' prefix (e.g., 'Kids Animals 598.47 Stone'). The goal is to improve browsing enjoyment while maintaining the findability of specific titles via DDC numbers within the new thematic groupings.",
+        "category": [
+            "Library Science",
+            "Education",
+            "Information Organization",
+            "Child Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "One library",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Elementary-aged children and their caregivers",
+            "learning_outcomes": [
+                "Improved browsing experience for non-fiction materials",
+                "Increased engagement with non-fiction topics",
+                "Easier discovery of related subjects",
+                "Enhanced information literacy skills for young learners"
+            ],
+            "pedagogical_approach": "User-centered design, thematic grouping, visual cues, simplified information access"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Existing non-fiction book collection",
+                "Color-coded labels (e.g., stickers, printed labels)",
+                "Label printer",
+                "Shelving units",
+                "Signage for new sections"
+            ],
+            "preparation_steps": [
+                "Identify and define 9 distinct, intuitive, and color-coded thematic sections for the non-fiction collection.",
+                "Assign a unique color to each of the nine sections.",
+                "Develop a clear system for adapting existing DDC call numbers (e.g., adding a 'Kids' prefix and thematic label)."
+            ],
+            "execution_steps": [
+                "Group all non-fiction books into the newly defined thematic sections.",
+                "Apply a small, color-coded label corresponding to its section onto the spine of each book.",
+                "Update the call number on each book to include the 'Kids' prefix and thematic label (e.g., 'Kids Animals 598.47 Stone'), while retaining the DDC number.",
+                "Reshelve the books according to their new thematic groupings, ensuring related subjects are placed side-by-side.",
+                "Install clear signage in the library indicating the new sections and their corresponding colors."
+            ],
+            "tips_for_success": "Clearly communicate the new system to both children and caregivers through signage and staff explanations. Train library staff on the new classification and shelving system to assist users effectively. Regularly solicit feedback from users to identify areas for improvement."
+        },
+        "impact": {
+            "problem_solved": "The traditional Dewey Decimal Classification (DDC) system can be difficult for elementary-aged children and their caregivers to navigate due to its sometimes antiquated or Euro-centric classifications and the separation of related subjects. This innovation addresses the challenge of making non-fiction collections more accessible and inviting for young users.",
+            "evidence_of_success": "The system was implemented with the aim to improve browsing enjoyment and preserve the findability of specific titles, suggesting an intent to address user experience issues. While direct metrics are not provided, the design directly tackles known limitations of DDC for this target audience.",
+            "beneficiaries_reach": "Elementary-aged children and their caregivers who utilize the library's non-fiction collection.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The hybrid classification system significantly enhances accessibility for its target audience by simplifying browsing and addressing DDC's Euro-centric limitations. Minor risks include potential exclusion for color-blind individuals if color were the sole identifier for sections, though this is largely mitigated by the inclusion of descriptive thematic names on call numbers and signage. Additionally, there's a very minor potential for initial cognitive load ('other' risk type) for some users or staff navigating between the new intuitive system and the underlying DDC, but the overall design aims to reduce complexity for children."
+        },
+        "priority_score": 64,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "36ea617511fbb6ac42d2aed8b4874de4",
+        "timestamp": "2026-05-29T05:58:52.055041",
+        "title": "Dewey Lite System for Elementary School Libraries",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnf0H-SOgiOWOFehTdOZ_-CYo8mdDgktvDnAY78tH24yc_vIbzkhtWTMkIg2qiIwAY1oTaS_l93tvRSTgrv8Y0zJg89OkY4oYpRMLmQyBNdo1u18yA_DzXqd_l5R8EtAoqwdaCjeouqTJ2lEJKL5n-533eUUUcFoIsV_kLkFU5nl277c5Fhj9_hglJD-yZkvUuyhPTZxbP"
+        ],
+        "summary": "An elementary school library implemented a 'Dewey Lite' system to simplify its nonfiction collection for young students, specifically preschool through third grade. This system eliminates decimal places from call numbers, allowing books within the same category to share a simplified, whole-number call number. Shelves are clearly labeled with contact paper, displaying the call number, category name, and a relevant image to aid navigation, particularly for non-readers. This approach aims to reduce cognitive load and promote independent learning.",
+        "category": [
+            "Library Science",
+            "Early Childhood Education",
+            "Information Literacy",
+            "Cognitive Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "An elementary school library",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Preschool through third-grade students",
+            "learning_outcomes": [
+                "Increased independence in finding library materials",
+                "Improved navigation of nonfiction collections",
+                "Reduced cognitive load during information seeking",
+                "Enhanced understanding of topic grouping"
+            ],
+            "pedagogical_approach": "Student-driven learning, simplified information access, visual aids for non-readers"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Nonfiction book collection",
+                "Contact paper or sturdy labels",
+                "Printer or labeling tools",
+                "Laminator (optional)",
+                "Images/icons relevant to categories"
+            ],
+            "preparation_steps": [
+                "Analyze the existing nonfiction collection and identify primary categories relevant to young learners.",
+                "Assign simplified, whole-number call numbers to each category, eliminating decimals.",
+                "Select clear, representative images or icons for each category, suitable for non-readers.",
+                "Design shelf labels incorporating the simplified call number, category name, and image."
+            ],
+            "execution_steps": [
+                "Re-label all nonfiction books with their new, simplified call numbers.",
+                "Affix the designed labels to the corresponding shelves using contact paper or other durable methods.",
+                "Organize books on shelves according to the new 'Dewey Lite' system.",
+                "Introduce the new system to students, demonstrating how to use the simplified call numbers and visual cues."
+            ],
+            "tips_for_success": "Ensure labels are durable and highly visible. Use consistent imagery across all materials. Involve students in the transition to foster ownership. Regularly solicit feedback from students and teachers to make minor adjustments. Consider a gradual rollout if the collection is very large."
+        },
+        "impact": {
+            "problem_solved": "The complexity of the traditional Dewey Decimal System for young elementary school students (preschool-3rd grade), which hindered their ability to independently locate nonfiction materials.",
+            "evidence_of_success": "Allows young learners to independently find materials, groups related topics in a more intuitive way, reduces cognitive load, and aligns with best practices for student-driven learning environments.",
+            "beneficiaries_reach": "Students in preschool through third grade within the implementing elementary school library.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The 'Dewey Lite' system significantly reduces cognitive load and enhances accessibility for young students, especially non-readers, by simplifying call numbers and incorporating visual aids. This fosters independence and aligns with best practices for early learners. The primary, low-level risk is a potential future 'exclusion' barrier: students accustomed to this highly simplified system might face a steeper learning curve when transitioning to the full Dewey Decimal System in higher grades or public libraries, requiring additional instruction to bridge this gap. However, for its target age group, the innovation significantly improves immediate access and learning."
+        },
+        "priority_score": 82,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "e1ff712a4307b897033ac23ab6bb9047",
+        "timestamp": "2026-05-29T05:59:48.629398",
+        "title": "Transforming Laredo Schoolyards into Native Forests",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-JNTQVmdGgN1Ujt5JRgGpi0T4dajd_xdUfw792UeA4YH_zkoJmWr5ONBAPZ4fP3vpW_L-Vv-tE_ukM_HvWh-VewaocSUby3GaN3JCJxReS7R8WWG1lJF8MSUIid9UB9LjWtHboaz0gv3J_X1-brGNkTSHDtgDm7UflV0BRAtD7Y-f50sXev5LFBetVSu_5oW3gnzyo0icFHTVWHVUHgVeRKl1BpLTJBXDKA=="
+        ],
+        "summary": "This Laredo, Texas initiative, backed by a significant grant, aims to convert schoolyards into native forests, boosting canopy coverage to at least 30% across eight schools. It engages students, parents, and community members in hands-on environmental education, addressing local challenges like climate change, urban heat, and air quality, while fostering ecological understanding.",
+        "category": [
+            "Environmental Education",
+            "Community Engagement",
+            "Urban Sustainability",
+            "Climate Action"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Texas",
+            "city_or_village": "Laredo",
+            "institution_name": "Eight schools",
+            "lat": 27.5079211,
+            "lon": -99.5069834
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Civics"
+            ],
+            "target_learners": "Students, parents, and community members",
+            "learning_outcomes": [
+                "Hands-on experience in planting and maintaining native trees",
+                "Deeper connection to local environment",
+                "Understanding of ecological principles",
+                "Awareness and action on climate change, urban heat, and air quality"
+            ],
+            "pedagogical_approach": "Experiential learning, community-based learning, hands-on activities"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Native tree saplings",
+                "Planting tools (shovels, gloves)",
+                "Watering equipment",
+                "Educational materials"
+            ],
+            "preparation_steps": [
+                "Secure grant funding",
+                "Identify participating schools and areas for planting",
+                "Plan native tree species selection suitable for local climate",
+                "Mobilize student, parent, and community volunteers",
+                "Develop educational curriculum for participants"
+            ],
+            "execution_steps": [
+                "Conduct workshops on native tree planting and care",
+                "Engage students and community in hands-on tree planting activities",
+                "Implement long-term maintenance plans for the newly planted forests",
+                "Monitor canopy coverage and environmental improvements"
+            ],
+            "tips_for_success": "Ensure strong community buy-in and participation from the outset. Select drought-tolerant native species. Establish clear roles for long-term tree maintenance. Integrate the project into existing school curricula for sustained engagement."
+        },
+        "impact": {
+            "problem_solved": "Low urban canopy coverage, urban heat island effect, poor air quality, lack of environmental education, limited community engagement in climate action.",
+            "evidence_of_success": "Aims to increase canopy coverage to at least 30% across eight schools; actively engages students, parents, and community members; fosters deeper connection to the environment; addresses critical local environmental issues.",
+            "beneficiaries_reach": "Students, parents, and community members across eight schools in Laredo, Texas.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The hands-on nature of planting and maintaining native trees involves minor physical safety risks such as scrapes, sun exposure, or insect bites during outdoor activities. There is also a potential for exclusion or accessibility barriers for students with physical disabilities who may find certain tasks challenging, or for community members if communication and engagement are not fully multilingual and culturally sensitive, particularly in a diverse area like Laredo. These risks are manageable with proper planning, supervision, safety protocols, adaptive tools, and inclusive communication strategies."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
