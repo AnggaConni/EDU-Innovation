@@ -224,7 +224,11 @@
             const dbCount = document.getElementById('db-count');
 
             const urls = [
-                'https://raw.githubusercontent.com/AnggaConni/EDU-Innovation/refs/heads/main/data.json'
+                'https://raw.githubusercontent.com/AnggaConni/GSI-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/EDU-Innovation/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/ICH-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/Nexus-Radar/refs/heads/main/data.json',
+                'https://raw.githubusercontent.com/AnggaConni/artifact-radar/refs/heads/main/data.json'
             ];
 
             try {
@@ -275,7 +279,8 @@
             
             let scoredData = innovationData.map(item => {
                 let score = 0;
-                let textToSearch = `${item.title || ''} ${item.summary || ''} ${(item.category||[]).join(' ')} ${item.location?.country || ''}`.toLowerCase();
+                let categoryText = Array.isArray(item.category) ? item.category.join(' ') : (item.category || '');
+                let textToSearch = `${item.title || ''} ${item.summary || ''} ${categoryText} ${item.location?.country || ''}`.toLowerCase();
                 
                 keywords.forEach(kw => {
                     if (textToSearch.includes(kw)) score += 1;
@@ -421,7 +426,10 @@
 
             // 3. SIAPKAN KONTEKS HANYA BERISI DATA RELEVAN (Bukan 500 data lagi)
             const filteredContext = JSON.stringify(relevantData.map(item => ({
-                T: item.title, C: item.location?.country, Cat: (item.category || []).join(","), S: item.summary
+                T: item.title, 
+                C: item.location?.country, 
+                Cat: Array.isArray(item.category) ? item.category.join(",") : (item.category || ""), 
+                S: item.summary
             })));
 
             const systemPrompt = `You are Edu-Scite, an elite academic research assistant. 
