@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Scite — AI Innovation Research Assistant</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* Markdown Styles for Chat */
+        .markdown-body p { margin-bottom: 0.75rem; line-height: 1.6; }
+        .markdown-body strong { font-weight: 600; color: #1e293b; }
+        .markdown-body ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 0.75rem; }
+        .markdown-body ol { list-style-type: decimal; margin-left: 1.5rem; margin-bottom: 0.75rem; }
+        .markdown-body a { color: #2563eb; text-decoration: underline; }
+        .markdown-body blockquote { border-left: 4px solid #cbd5e1; padding-left: 1rem; color: #475569; font-style: italic; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-slate-50 h-full flex overflow-hidden text-slate-800">
+
+    <!-- Sidebar Settings -->
+    <aside class="w-80 bg-white border-r border-slate-200 flex flex-col shadow-sm z-10 hidden md:flex">
+        <div class="p-6 border-b border-slate-100">
+            <div class="flex items-center gap-3 text-indigo-600 mb-1">
+                <i class="ph-fill ph-brain text-3xl"></i>
+                <h1 class="text-xl font-heading font-extrabold tracking-tight">Edu-Scite<span class="text-slate-400">.ai</span></h1>
+            </div>
+            <p class="text-xs text-slate-500 font-medium" data-i18n="subtitle">Intelligence Research Assistant</p>
+        </div>
+
+        <div class="p-6 flex-1 overflow-y-auto space-y-6">
+            <!-- Language Toggle -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="langLabel">Language / Bahasa</label>
+                <div class="flex bg-slate-100 p-1 rounded-lg">
+                    <button onclick="setLang('en')" id="btn-en" class="flex-1 py-1.5 text-sm font-semibold rounded-md bg-white shadow-sm text-indigo-600 transition-all">EN</button>
+                    <button onclick="setLang('id')" id="btn-id" class="flex-1 py-1.5 text-sm font-semibold rounded-md text-slate-500 hover:text-slate-700 transition-all">ID</button>
+                </div>
+            </div>
+
+            <!-- API Key Input (BYOK) -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="apiLabel">Gemini API Key</label>
+                <div class="relative">
+                    <i class="ph ph-key absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="password" id="api-key" placeholder="AIzaSy..." class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all">
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1" data-i18n="apiDesc">Your key is stored locally in your browser.</p>
+            </div>
+
+            <!-- Model Selection -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="modelLabel">AI Model</label>
+                <select id="model-select" class="w-full p-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option value="gemini-2.5-flash">Gemini 2.5 Flash (Fast)</option>
+                    <option value="gemini-2.5-pro">Gemini 2.5 Pro (Advanced)</option>
+                </select>
+            </div>
+
+            <!-- Database Status -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="dbLabel">Database Status</label>
+                <div class="flex items-center gap-2">
+                    <div id="db-indicator" class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></div>
+                    <span id="db-status" class="text-sm font-medium text-slate-700" data-i18n="dbLoading">Loading data.json...</span>
+                </div>
+                <p id="db-count" class="text-xs text-slate-500 mt-1"></p>
+            </div>
+        </div>
+        
+        <div class="p-4 border-t border-slate-100 bg-slate-50">
+            <button onclick="clearChat()" class="w-full py-2 px-4 bg-white border border-slate-200 text-slate-600 rounded-lg text-sm font-semibold hover:bg-slate-100 hover:text-rose-600 transition-colors flex items-center justify-center gap-2">
+                <i class="ph ph-trash"></i> <span data-i18n="clearChat">Clear Chat</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="flex-1 flex flex-col h-full bg-white relative">
+        <!-- Mobile Header -->
+        <header class="md:hidden flex items-center justify-between p-4 border-b border-slate-200 bg-white">
+            <div class="flex items-center gap-2 text-indigo-600">
+                <i class="ph-fill ph-brain text-2xl"></i>
+                <h1 class="text-lg font-heading font-bold">Edu-Scite</h1>
+            </div>
+            <button id="mobile-menu-btn" class="text-slate-500 text-2xl"><i class="ph ph-list"></i></button>
+        </header>
+
+        <!-- Chat Container -->
+        <div id="chat-container" class="flex-1 overflow-y-auto p-4 md:p-8 scroll-smooth">
+            <!-- Initial Welcome Message -->
+            <div class="max-w-3xl mx-auto flex flex-col gap-6" id="chat-history">
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
+                        <i class="ph-fill ph-robot text-xl text-indigo-600"></i>
+                    </div>
+                    <div class="flex-1 pt-1">
+                        <p class="font-heading font-bold text-slate-800 mb-1">Edu-Scite Assistant</p>
+                        <div class="text-slate-600 text-sm markdown-body bg-slate-50 border border-slate-100 p-4 rounded-2xl rounded-tl-none">
+                            <p id="welcome-msg">Hello! I am your AI Research Assistant. I have read your <code>data.json</code> database containing educational innovations.</p>
+                            <p id="welcome-prompt">You can ask me questions like:</p>
+                            <ul class="text-sm mt-2 text-indigo-700">
+                                <li class="cursor-pointer hover:underline" onclick="fillInput('What are the most impactful low-cost innovations in rural Africa?')">"What are the most impactful low-cost innovations in rural Africa?"</li>
+                                <li class="cursor-pointer hover:underline" onclick="fillInput('Summarize innovations related to Special Needs and Inclusive Education.')">"Summarize innovations related to Special Needs and Inclusive Education."</li>
+                                <li class="cursor-pointer hover:underline" onclick="fillInput('Find grassroots projects that use recycled materials for STEAM.')">"Find grassroots projects that use recycled materials for STEAM."</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="chat-anchor" class="h-4"></div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 md:p-6 bg-white border-t border-slate-100">
+            <div class="max-w-3xl mx-auto relative flex items-end gap-2 bg-slate-50 border border-slate-200 rounded-2xl p-2 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-indigo-500 transition-all shadow-sm">
+                <textarea id="chat-input" rows="1" placeholder="Ask about the education innovations..." class="w-full max-h-32 bg-transparent border-none focus:ring-0 resize-none text-sm p-3 py-3 text-slate-700 placeholder-slate-400" oninput="this.style.height = ''; this.style.height = Math.min(this.scrollHeight, 120) + 'px'"></textarea>
+                <button id="send-btn" onclick="sendMessage()" class="shrink-0 w-10 h-10 mb-1 mr-1 rounded-xl bg-indigo-600 text-white flex items-center justify-center hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="ph-fill ph-paper-plane-right"></i>
+                </button>
+            </div>
+            <div class="text-center mt-2">
+                <p class="text-[10px] text-slate-400" data-i18n="disclaimer">AI can make mistakes. Check generated citations against the original dataset.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        // --- State Management ---
+        let currentLang = 'en';
+        let innovationData = [];
+        let datasetContextString = "";
+        let chatHistory = [];
+
+        // --- Dictionary ---
+        const i18n = {
+            en: {
+                subtitle: "Intelligence Research Assistant",
+                langLabel: "Language",
+                apiLabel: "Gemini API Key",
+                apiDesc: "Your key is stored locally in your browser.",
+                modelLabel: "AI Model",
+                dbLabel: "Database Status",
+                dbLoading: "Loading data.json...",
+                dbSuccess: "Dataset Connected",
+                dbFail: "Failed to load dataset",
+                clearChat: "Clear Chat",
+                disclaimer: "AI can make mistakes. Check generated citations against the original dataset.",
+                inputPlaceholder: "Ask about the education innovations in the database...",
+                welcomeMsg: "Hello! I am your AI Research Assistant. I am connected to your `data.json` database containing educational innovations. **Please enter your Gemini API Key in the sidebar first.**",
+                welcomePrompt: "You can ask me questions like:",
+                errorNoKey: "⚠️ Please enter your Gemini API Key in the sidebar settings.",
+                errorDb: "⚠️ Cannot analyze. Database not loaded.",
+                errorApi: "⚠️ Error communicating with Gemini API. Please check your key or internet connection.",
+                loading: "Searching the database and analyzing..."
+            },
+            id: {
+                subtitle: "Asisten Riset Intelijen",
+                langLabel: "Bahasa",
+                apiLabel: "Kunci API Gemini",
+                apiDesc: "API Key Anda disimpan secara lokal di browser.",
+                modelLabel: "Model AI",
+                dbLabel: "Status Database",
+                dbLoading: "Memuat data.json...",
+                dbSuccess: "Dataset Terhubung",
+                dbFail: "Gagal memuat dataset",
+                clearChat: "Hapus Obrolan",
+                disclaimer: "AI bisa melakukan kesalahan. Periksa kembali sitasi yang dihasilkan dengan dataset asli.",
+                inputPlaceholder: "Tanyakan tentang inovasi edukasi yang ada di database...",
+                welcomeMsg: "Halo! Saya Asisten Riset AI Anda. Saya telah terhubung dengan database `data.json` yang berisi inovasi pendidikan. **Silakan masukkan API Key Gemini Anda di panel pengaturan terlebih dahulu.**",
+                welcomePrompt: "Anda bisa menanyakan hal seperti:",
+                errorNoKey: "⚠️ Harap masukkan API Key Gemini Anda di panel pengaturan (sidebar).",
+                errorDb: "⚠️ Tidak dapat menganalisis. Database belum dimuat.",
+                errorApi: "⚠️ Terjadi kesalahan saat menghubungi API Gemini. Periksa key atau koneksi internet Anda.",
+                loading: "Mencari di database dan menganalisis..."
+            }
+        };
+
+        // --- Initialization ---
+        window.onload = () => {
+            // Load API key from local storage if exists
+            const savedKey = localStorage.getItem('gii_gemini_key');
+            if (savedKey) document.getElementById('api-key').value = savedKey;
+
+            // Load data
+            loadDataset();
+
+            // Set language (detect browser lang or default EN)
+            const userLang = navigator.language || navigator.userLanguage;
+            setLang(userLang.startsWith('id') ? 'id' : 'en');
+
+            // Enter to send
+            document.getElementById('chat-input').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+        };
+
+        // --- Language Toggle ---
+        function setLang(lang) {
+            currentLang = lang;
+            
+            // Update UI buttons
+            const btnEn = document.getElementById('btn-en');
+            const btnId = document.getElementById('btn-id');
+            if(lang === 'en') {
+                btnEn.className = "flex-1 py-1.5 text-sm font-semibold rounded-md bg-white shadow-sm text-indigo-600 transition-all";
+                btnId.className = "flex-1 py-1.5 text-sm font-semibold rounded-md text-slate-500 hover:text-slate-700 transition-all bg-transparent shadow-none";
+            } else {
+                btnId.className = "flex-1 py-1.5 text-sm font-semibold rounded-md bg-white shadow-sm text-indigo-600 transition-all";
+                btnEn.className = "flex-1 py-1.5 text-sm font-semibold rounded-md text-slate-500 hover:text-slate-700 transition-all bg-transparent shadow-none";
+            }
+
+            // Update texts
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) el.innerHTML = i18n[lang][key];
+            });
+
+            document.getElementById('chat-input').placeholder = i18n[lang].inputPlaceholder;
+            document.getElementById('welcome-msg').innerHTML = marked.parse(i18n[lang].welcomeMsg);
+            document.getElementById('welcome-prompt').innerText = i18n[lang].welcomePrompt;
+            
+            updateDbStatusUI();
+        }
+
+        // --- Data Loading ---
+        async function loadDataset() {
+            const dbStatus = document.getElementById('db-status');
+            const dbIndicator = document.getElementById('db-indicator');
+            const dbCount = document.getElementById('db-count');
+
+            try {
+                // Menggunakan URL absolut GitHub agar dapat diakses dari lingkungan preview/blob
+                const datasetUrl = 'https://raw.githubusercontent.com/AnggaConni/GSI-Radar/refs/heads/main/data.json';
+                const response = await fetch(datasetUrl + '?v=' + new Date().getTime());
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                let rawData = await response.json();
+                
+                // Handle struktur data.json (apakah array langsung atau di dalam 'inventory')
+                innovationData = Array.isArray(rawData) ? rawData : (rawData.inventory || []);
+
+                if (innovationData.length > 0) {
+                    dbIndicator.className = "w-2.5 h-2.5 rounded-full bg-emerald-500";
+                    dbStatus.innerText = i18n[currentLang].dbSuccess;
+                    dbCount.innerText = `${innovationData.length} records loaded.`;
+                    
+                    // Prepare minimized context string to save tokens
+                    prepareContextString();
+                } else {
+                    throw new Error("Empty array");
+                }
+            } catch (error) {
+                console.error("Failed to load data.json:", error);
+                dbIndicator.className = "w-2.5 h-2.5 rounded-full bg-rose-500";
+                dbStatus.innerText = i18n[currentLang].dbFail;
+                dbCount.innerText = "Check file path / CORS.";
+            }
+        }
+
+        function updateDbStatusUI() {
+            const dbStatus = document.getElementById('db-status');
+            const dbIndicator = document.getElementById('db-indicator');
+            if (innovationData.length > 0) {
+                dbStatus.innerText = i18n[currentLang].dbSuccess;
+            } else if (dbIndicator.classList.contains('bg-rose-500')) {
+                dbStatus.innerText = i18n[currentLang].dbFail;
+            } else {
+                dbStatus.innerText = i18n[currentLang].dbLoading;
+            }
+        }
+
+        // Kompresi data untuk RAG (Hanya ambil yang penting agar muat di konteks model)
+        function prepareContextString() {
+            const minifiedData = innovationData.map(item => ({
+                T: item.title || "No Title",
+                C: item.location?.country || "Unknown",
+                L: item.innovation_level || "Unknown",
+                Cat: (item.category || []).join(", "),
+                S: item.summary || "",
+                Imp: item.impact?.scale || "",
+                Rsk: item.risk_assessment?.risk_score || 0
+            }));
+            // Limit to max 500 items to ensure it doesn't break browser memory string limits
+            datasetContextString = JSON.stringify(minifiedData.slice(0, 500));
+        }
+
+        // --- Chat UI & Logic ---
+        function fillInput(text) {
+            document.getElementById('chat-input').value = text;
+            document.getElementById('chat-input').focus();
+        }
+
+        function appendMessage(role, text) {
+            const container = document.getElementById('chat-history');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "flex gap-4 animate-[fadeIn_0.3s_ease-out]";
+            
+            if (role === 'user') {
+                msgDiv.innerHTML = `
+                    <div class="flex-1 pt-1 flex flex-col items-end">
+                        <p class="font-heading font-bold text-slate-800 mb-1">You</p>
+                        <div class="text-slate-800 text-sm bg-indigo-50 border border-indigo-100 p-4 rounded-2xl rounded-tr-none inline-block">
+                            ${text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}
+                        </div>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center shrink-0">
+                        <i class="ph-fill ph-user text-xl text-slate-500"></i>
+                    </div>
+                `;
+            } else {
+                msgDiv.innerHTML = `
+                    <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
+                        <i class="ph-fill ph-robot text-xl text-indigo-600"></i>
+                    </div>
+                    <div class="flex-1 pt-1 overflow-hidden">
+                        <p class="font-heading font-bold text-slate-800 mb-1">Edu-Scite</p>
+                        <div class="text-slate-700 text-sm markdown-body bg-white border border-slate-200 p-4 rounded-2xl rounded-tl-none shadow-sm w-full">
+                            ${marked.parse(text)}
+                        </div>
+                    </div>
+                `;
+            }
+            container.appendChild(msgDiv);
+            document.getElementById('chat-anchor').scrollIntoView({ behavior: "smooth" });
+        }
+
+        function showLoading() {
+            const container = document.getElementById('chat-history');
+            const msgDiv = document.createElement('div');
+            msgDiv.id = 'loading-bubble';
+            msgDiv.className = "flex gap-4";
+            msgDiv.innerHTML = `
+                <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-circle-notch animate-spin text-xl text-indigo-600"></i>
+                </div>
+                <div class="flex-1 pt-2">
+                    <p class="text-xs font-semibold text-slate-500 animate-pulse">${i18n[currentLang].loading}</p>
+                </div>
+            `;
+            container.appendChild(msgDiv);
+            document.getElementById('chat-anchor').scrollIntoView({ behavior: "smooth" });
+            
+            document.getElementById('send-btn').disabled = true;
+            document.getElementById('chat-input').disabled = true;
+        }
+
+        function hideLoading() {
+            const loading = document.getElementById('loading-bubble');
+            if (loading) loading.remove();
+            
+            document.getElementById('send-btn').disabled = false;
+            document.getElementById('chat-input').disabled = false;
+            document.getElementById('chat-input').focus();
+        }
+
+        function clearChat() {
+            const container = document.getElementById('chat-history');
+            // Keep only the first welcome message
+            while (container.children.length > 1) {
+                container.removeChild(container.lastChild);
+            }
+            chatHistory = [];
+        }
+
+        // --- Gemini API Call ---
+        async function sendMessage() {
+            const inputEl = document.getElementById('chat-input');
+            const message = inputEl.value.trim();
+            const apiKey = document.getElementById('api-key').value.trim();
+            const model = document.getElementById('model-select').value;
+
+            if (!message) return;
+            
+            if (!apiKey) {
+                alert(i18n[currentLang].errorNoKey);
+                return;
+            }
+
+            if (innovationData.length === 0) {
+                alert(i18n[currentLang].errorDb);
+                return;
+            }
+
+            // Save key to local storage for convenience
+            localStorage.setItem('gii_gemini_key', apiKey);
+
+            // UI Updates
+            inputEl.value = '';
+            inputEl.style.height = 'auto'; // reset height
+            appendMessage('user', message);
+            showLoading();
+
+            // Prepare prompt
+            const systemPrompt = `You are Edu-Scite, an elite AI research assistant specializing in global educational innovations. 
+            You are speaking with the user in ${currentLang === 'id' ? 'Indonesian' : 'English'}.
+            
+            CRITICAL RULE 1 (SMART CITATIONS): When you make a claim or answer a question, you MUST cite the relevant innovations from the provided dataset. Use the format: "...according to [Innovation Title] in [Country]." or use footnotes like [1], [2] referencing the title at the bottom.
+            CRITICAL RULE 2: Base your answers ONLY on the provided dataset. Do not hallucinate innovations that are not in the JSON.
+            CRITICAL RULE 3: Output in clean Markdown formatting (bolding, bullet points, headers if necessary).
+
+            Here is the minified dataset context (T=Title, C=Country, L=Level, Cat=Categories, S=Summary, Imp=Impact, Rsk=Risk):
+            ---
+            ${datasetContextString}
+            ---`;
+
+            // Prepare history for Gemini format
+            const contents = chatHistory.map(msg => ({
+                role: msg.role === 'user' ? 'user' : 'model',
+                parts: [{ text: msg.text }]
+            }));
+            
+            // Add current message
+            contents.push({ role: 'user', parts: [{ text: message }] });
+
+            try {
+                // Gunakan model yang dipilih dari dropdown
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+                
+                const payload = {
+                    contents: contents,
+                    systemInstruction: { parts: [{ text: systemPrompt }] },
+                    generationConfig: {
+                        temperature: 0.3, // Lower temp for more factual retrieval
+                        maxOutputTokens: 2048,
+                    }
+                };
+
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error("API Error:", errorData);
+                    throw new Error(`API Error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const aiResponseText = data.candidates[0]?.content?.parts[0]?.text;
+
+                if (aiResponseText) {
+                    hideLoading();
+                    appendMessage('ai', aiResponseText);
+                    
+                    // Save to history
+                    chatHistory.push({ role: 'user', text: message });
+                    chatHistory.push({ role: 'ai', text: aiResponseText });
+                } else {
+                    throw new Error("Empty response from AI");
+                }
+
+            } catch (error) {
+                console.error("Gemini call failed:", error);
+                hideLoading();
+                appendMessage('ai', i18n[currentLang].errorApi);
+            }
+        }
+
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body>
+</html>
