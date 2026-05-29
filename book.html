@@ -202,15 +202,15 @@
             
             <div class="space-y-5 mb-8 relative z-10">
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <label class="block text-xs font-bold text-brand-teal uppercase tracking-wider mb-2">1. Pilih data.json (Wajib)</label>
+                    <label class="block text-xs font-bold text-brand-teal uppercase tracking-wider mb-2">1. Choose data.json (Wajib)</label>
                     <input type="file" id="upload-data" accept=".json" class="w-full text-sm text-slate-500 font-medium">
                 </div>
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <label class="block text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">2. Pilih resume.json (Wajib)</label>
+                    <label class="block text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">2. Choose resume.json (Optional)</label>
                     <input type="file" id="upload-resume" accept=".json" class="w-full text-sm text-slate-500 font-medium">
                 </div>
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <label class="block text-xs font-bold text-brand-orange uppercase tracking-wider mb-2">3. Pilih report.md (Opsional)</label>
+                    <label class="block text-xs font-bold text-brand-orange uppercase tracking-wider mb-2">3. Choose report.md (Optional)</label>
                     <input type="file" id="upload-report" accept=".md,.txt" class="w-full text-sm text-slate-500 font-medium">
                 </div>
             </div>
@@ -313,15 +313,17 @@
 
             let fetchSuccess = false;
             try {
+                const cb = '?v=' + new Date().getTime();
                 const [reqReport, reqResume, reqData] = await Promise.all([
-                    fetch('report.md').catch(()=>null), 
-                    fetch('resume.json').catch(()=>null), 
-                    fetch('data.json').catch(()=>null)
+                    fetch('report.md' + cb).catch(()=>null), 
+                    fetch('resume.json' + cb).catch(()=>null), 
+                    fetch('data.json' + cb).catch(()=>null)
                 ]);
 
-                if (reqData && reqData.ok && reqResume && reqResume.ok) {
-                    let rpt = reqReport && reqReport.ok ? await reqReport.text() : fallbackReport;
-                    let rsm = await reqResume.json();
+                // HANYA wajibkan reqData (data.json)
+                if (reqData && reqData.ok) {
+                    let rpt = reqReport && reqReport.ok ? await reqReport.text() : "# Executive Report\nLaporan teks belum tersedia atau sedang diproses.";
+                    let rsm = reqResume && reqResume.ok ? await reqResume.json() : null; // Buat jadi opsional
                     let dta = await reqData.json();
                     
                     startBookEngine(rpt, rsm, dta);
@@ -342,8 +344,8 @@
             const resumeFile = document.getElementById('upload-resume').files[0];
             const reportFile = document.getElementById('upload-report').files[0];
 
-            if (!dataFile || !resumeFile) {
-                alert("Mohon pilih file data.json dan resume.json terlebih dahulu!");
+            if (!dataFile) {
+                alert("Mohon pilih file data.json terlebih dahulu!");
                 return;
             }
 
@@ -356,11 +358,11 @@
                 });
 
                 const dataContent = await readAsText(dataFile);
-                const resumeContent = await readAsText(resumeFile);
+                const resumeContent = resumeFile ? await readAsText(resumeFile) : null;
                 const reportContent = reportFile ? await readAsText(reportFile) : fallbackReport;
 
                 const parsedData = JSON.parse(dataContent);
-                const parsedResume = JSON.parse(resumeContent);
+                const parsedResume = resumeContent ? JSON.parse(resumeContent) : null;
 
                 document.getElementById('data-upload-modal').classList.add('hidden');
                 document.getElementById('data-upload-modal').classList.remove('flex');
@@ -371,11 +373,16 @@
             }
         }
 
+
         function startBookEngine(reportStr, resumeObj, dataArr) {
             document.getElementById('main-content').classList.remove('hidden');
             globalDataArr = dataArr;
             precompiled.reportHtml = marked.parse(reportStr);
-            precompiled.resumeHtml = buildResumeHtml(resumeObj);
+            
+            // Menggunakan dataArr langsung untuk menghitung resume
+            precompiled.resumeHtml = buildResumeHtml(dataArr);
+            
+            // 👇 INI BAGIAN YANG TERLEWAT (Untuk merender halaman bukunya) 👇
             buildDropdownMenu();
             if (isMobile) currentPageIndex = 1; 
             renderBook();
@@ -511,38 +518,69 @@
             `;
         }
 
-        function buildResumeHtml(resumeJson) {
-            const resume = Array.isArray(resumeJson) ? resumeJson[0] : resumeJson;
-            let catsHtml = (resume.top_categories || []).map(c => `
+        function buildResumeHtml(dataArr) {
+            if (!dataArr || dataArr.length === 0) return `<p class="text-slate-500">Tidak ada data.</p>`;
+
+            // 1. Hitung Statistik Dasar
+            let total = dataArr.length;
+            let grassrootsCount = dataArr.filter(i => i.innovation_level === 'grassroots').length;
+            let grassrootsPct = Math.round((grassrootsCount / total) * 100) || 0;
+
+            // 2. Hitung Kategori Terpopuler
+            let catCounts = {};
+            dataArr.forEach(i => {
+                (i.category || []).forEach(c => {
+                    catCounts[c] = (catCounts[c] || 0) + 1;
+                });
+            });
+            let topCats = Object.keys(catCounts)
+                .map(k => ({ category: k, count: catCounts[k] }))
+                .sort((a, b) => b.count - a.count)
+                .slice(0, 5); // Ambil 5 teratas
+
+            // 3. Hitung Sebaran Dampak (Impact Distribution)
+            let impactDist = { high: 0, medium: 0, low: 0 };
+            dataArr.forEach(i => {
+                let scale = (i.impact?.scale || 'low').toLowerCase();
+                if (impactDist[scale] !== undefined) impactDist[scale]++;
+            });
+
+            // 4. Bangun Elemen HTML
+            let catsHtml = topCats.map(c => `
                 <div class="flex justify-between items-center bg-white p-3.5 rounded-xl mb-3 border border-slate-100 shadow-sm">
                     <span class="text-sm font-bold truncate pr-4 text-slate-700">${c.category}</span>
                     <span class="bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-md text-xs font-black shadow-sm">${c.count}</span>
                 </div>
             `).join('');
 
-            let riskDistHtml = (resume.risk_distribution || []).map(r => {
-                let color = r.level === 'high' ? 'bg-rose-500' : (r.level === 'medium' ? 'bg-amber-500' : 'bg-emerald-500');
-                let maxRisk = Math.max(...(resume.risk_distribution || []).map(x=>x.count), 60);
-                return `
+            let distArray = [
+                { level: 'high', count: impactDist.high, color: 'bg-emerald-500' },
+                { level: 'medium', count: impactDist.medium, color: 'bg-amber-500' },
+                { level: 'low', count: impactDist.low, color: 'bg-rose-500' }
+            ];
+            
+            let maxImpact = Math.max(impactDist.high, impactDist.medium, impactDist.low, 10);
+
+            let impactDistHtml = distArray.map(r => `
                 <div class="flex items-center justify-between text-sm mb-3">
                     <span class="capitalize font-bold text-slate-600 w-20">${r.level}</span>
                     <div class="flex-1 mx-3 h-2.5 bg-slate-100 rounded-full overflow-hidden shadow-inner">
-                        <div class="h-full ${color}" style="width: ${(r.count/maxRisk)*100}%"></div>
+                        <div class="h-full ${r.color}" style="width: ${(r.count/maxImpact)*100}%"></div>
                     </div>
                     <span class="font-black text-slate-800 w-8 text-right">${r.count}</span>
-                </div>`;
-            }).join('');
+                </div>`
+            ).join('');
 
             return `
                 <div class="space-y-8 font-sans">
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
                             <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-2">Total Nodes</p>
-                            <p class="text-4xl font-display font-black text-slate-900">${resume.global_summary?.total_innovations || 0}</p>
+                            <p class="text-4xl font-display font-black text-slate-900">${total}</p>
                         </div>
                         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
                             <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-2">Grassroots</p>
-                            <p class="text-4xl font-display font-black text-brand-orange">${resume.global_summary?.grassroots_percentage || 0}%</p>
+                            <p class="text-4xl font-display font-black text-brand-orange">${grassrootsPct}%</p>
                         </div>
                     </div>
                     
@@ -552,8 +590,8 @@
                     </div>
 
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm mt-8">
-                        <h4 class="text-xs font-black text-brand-purple uppercase tracking-widest mb-5 flex items-center gap-2"><i class="ph-fill ph-warning-circle text-lg"></i> Risk Distribution</h4>
-                        ${riskDistHtml}
+                        <h4 class="text-xs font-black text-brand-purple uppercase tracking-widest mb-5 flex items-center gap-2"><i class="ph-fill ph-crosshair text-lg"></i> Impact Distribution</h4>
+                        ${impactDistHtml}
                     </div>
                 </div>
             `;
