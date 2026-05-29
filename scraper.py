@@ -461,7 +461,9 @@ def run_discovery_pipeline(api_key, database, max_items=3):
     success_count = 0
     
     # 💥 PERUBAHAN UTAMA: Jika gagal, JANGAN STOP. Coba hingga 3 Keyword Berbeda!
-    for attempt_kw in range(3):
+    # AI akan terus mencoba mencari topik berbeda sampai target MAX terpenuhi!
+    max_attempts = max(5, max_items * 2) # Jika minta 20 data, AI diizinkan muter cari keyword s/d 40x
+    for attempt_kw in range(max_attempts):
         if success_count >= max_items:
             break
             
