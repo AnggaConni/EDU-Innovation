@@ -132,7 +132,12 @@
         </div>
         <div>
           <h1 class="font-serif font-bold text-lg sm:text-xl tracking-tight text-slate-900 leading-tight">Edu-Innovation <span class="text-unesco-blue">Radar</span></h1>
-          <p class="text-[10px] sm:text-xs text-slate-500 font-medium truncate">Global Education OSINT Intelligence</p>
+          <p class="text-[10px] sm:text-xs text-slate-500 font-medium truncate flex items-center gap-1.5">
+            Global Education OSINT Intelligence 
+            <span class="text-slate-300">|</span> 
+            <i class="ph ph-clock text-unesco-blue text-sm"></i> 
+            <span id="last-updated" class="font-semibold text-unesco-blue">Checking data...</span>
+          </p>
         </div>
       </div>
       <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
@@ -284,15 +289,14 @@
         <!-- Impact Mix -->
         <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
           <div class="resume-section-title"><i class="ph-fill ph-chart-bar text-unesco-blue"></i> Impact Assessment</div>
-          <div class="flex items-center gap-4">
-            <div id="resume-donut-chart" style="width:160px;height:160px;flex-shrink:0;"></div>
-            <div id="resume-donut-legend" class="flex flex-col gap-2 flex-grow"></div>
+          <div class="w-full">
+            <div id="resume-donut-chart" style="height: 240px; width: 100%;"></div>
           </div>
         </div>
         <!-- Top Categories -->
         <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
           <div class="resume-section-title"><i class="ph-fill ph-tag text-unesco-blue"></i> Focus Areas</div>
-          <div id="resume-cat-chart" style="height:180px;"></div>
+          <div id="resume-cat-chart" style="height:260px; width: 100%;"></div>
         </div>
       </div>
 
@@ -301,13 +305,13 @@
         <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
           <div class="resume-section-title"><i class="ph-fill ph-target text-emerald-600"></i> Impact & Threat Analysis</div>
           <div class="grid grid-cols-2 gap-3 mb-4" id="resume-impact-stats"></div>
-          <div id="resume-impact-chart" style="height:160px;"></div>
+          <div id="resume-impact-chart" style="height:220px; width: 100%;"></div>
         </div>
         <!-- Knowledge Source -->
         <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
           <div class="resume-section-title"><i class="ph-fill ph-brain text-purple-600"></i> Knowledge Lineage</div>
-          <div id="resume-knowledge-chart" style="height:190px;" class="mb-5"></div>
-          <div id="resume-knowledge-insight" class="bg-purple-50 border border-purple-100 rounded-xl p-3 text-sm text-purple-900 leading-relaxed"></div>
+          <div id="resume-knowledge-chart" style="height:220px; width: 100%;" class="mb-3"></div>
+          <div id="resume-knowledge-insight" class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-sm text-purple-900 leading-relaxed hidden shadow-sm"></div>
         </div>
       </div>
 
@@ -603,8 +607,20 @@
     try { const r = await fetch('data.json'); if(r.ok) { globalData = await r.json(); } else throw new Error(); } catch(e) { globalData = RAW_JSON; }
     try { const r = await fetch('resume.json'); if(r.ok) { globalResume = await r.json(); } else throw new Error(); } catch(e) { globalResume = RAW_RESUME; }
     
+    // Sortir data dari yang paling baru
     globalData.sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
     
+    // --- KODE BARU: RENDER LAST UPDATED TIME ---
+    if (globalData.length > 0) {
+      const latestDataDate = new Date(globalData[0].timestamp);
+      document.getElementById('last-updated').innerText = "Last Update: " + latestDataDate.toLocaleString('en-US', { 
+        day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' 
+      });
+    } else {
+      document.getElementById('last-updated').innerText = "No data available";
+    }
+    // -------------------------------------------
+
     populateFilters(); populateCountryFilter(); setupFilters(); applyFilters(); renderStats(); populateReportSelector(); 
     lucide.createIcons(); switchTab('directory');
   }
@@ -935,36 +951,95 @@ function applyFilters() {
     globalResume.forEach((r,i) => sel.add(new Option(`${r.report_metadata?.period||'Report'} - ${new Date(r.report_metadata?.generated_at).toLocaleDateString()}`, i)));
   }
 
-  function loadReport(idx) {
+function loadReport(idx) {
     const r = globalResume[idx]; if(!r) return;
-    document.getElementById('resume-meta').innerHTML = `<div class="bg-white p-4 rounded-xl shadow-sm"><p class="text-xs text-slate-500">Total Analyzed</p><p class="text-2xl font-bold">${r.global_summary?.total_innovations||0}</p></div>`;
+    document.getElementById('resume-meta').innerHTML = `<div class="bg-white p-4 rounded-xl shadow-sm"><p class="text-xs text-slate-500">Total Analyzed</p><p class="text-2xl font-bold text-slate-800">${r.global_summary?.total_innovations||0}</p></div>`;
     
-    // Donut
+    // 1. Donut Chart (Impact Assessment) - Dipercantik dgn legend asli ECharts
     if(!resumeCharts.donut) resumeCharts.donut = echarts.init(document.getElementById('resume-donut-chart'));
-    resumeCharts.donut.setOption({ series:[{type:'pie', radius:['50%','80%'], data:[{name:'Formal',value:r.global_summary?.formal_percentage||0},{name:'Informal',value:r.global_summary?.informal_percentage||0},{name:'Non-Formal',value:100-((r.global_summary?.formal_percentage||0)+(r.global_summary?.informal_percentage||0))}] }]});
+    resumeCharts.donut.setOption({
+      tooltip: { trigger: 'item' },
+      legend: { orient: 'vertical', right: '5%', top: 'center', icon: 'circle', textStyle: { fontSize: 12, color: '#475569' } },
+      color: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ef4444'],
+      series:[{
+        type:'pie', radius:['45%','75%'], center: ['35%', '50%'],
+        itemStyle: { borderRadius: 8, borderColor: '#fff', borderWidth: 3 },
+        label: { show: false }, // Label disembunyikan agar bersih, pindah ke legend
+        data:[
+          {name:'Formal',value:r.global_summary?.formal_percentage||0},
+          {name:'Informal',value:r.global_summary?.informal_percentage||0},
+          {name:'Non-Formal',value:100-((r.global_summary?.formal_percentage||0)+(r.global_summary?.informal_percentage||0))}
+        ]
+      }]
+    });
     
-    // Bar Categories
+    // 2. Bar Chart (Focus Areas) - Spasi dibenarkan agar teks tdk kepotong, tambah gradien
     if(!resumeCharts.cat) resumeCharts.cat = echarts.init(document.getElementById('resume-cat-chart'));
-    resumeCharts.cat.setOption({ xAxis:{type:'value'}, yAxis:{type:'category', data:(r.top_categories||[]).map(c=>c.category)}, series:[{type:'bar', data:(r.top_categories||[]).map(c=>c.count)}]});
+    resumeCharts.cat.setOption({
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+      grid: { left: '2%', right: '8%', bottom: '0%', top: '5%', containLabel: true }, // containLabel: true menyelesaikan masalah teks terpotong!
+      xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#e2e8f0' } } },
+      yAxis: { type: 'category', data: (r.top_categories||[]).map(c=>c.category), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: '#475569', fontWeight: '500' } },
+      series: [{
+        type: 'bar', barWidth: '50%',
+        itemStyle: { borderRadius: [0, 4, 4, 0], color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{offset: 0, color: '#60a5fa'}, {offset: 1, color: '#2563eb'}]) },
+        data: (r.top_categories||[]).map(c=>c.count)
+      }]
+    });
 
-    // Impact Stats & Chart
+    // 3. Impact Stats & Bar Chart
     const ia = r.impact_analysis || {};
-    document.getElementById('resume-impact-stats').innerHTML = `<div class="bg-emerald-50 p-3 rounded-xl"><p class="text-2xl text-emerald-600 font-bold">${ia.high_impact_cases||0}</p><p class="text-xs">High Impact</p></div><div class="bg-red-50 p-3 rounded-xl"><p class="text-2xl text-red-600 font-bold">${ia.critical_cases||0}</p><p class="text-xs">Critical Threats</p></div>`;
+    document.getElementById('resume-impact-stats').innerHTML = `<div class="bg-emerald-50 border border-emerald-100 p-3 rounded-xl"><p class="text-2xl text-emerald-600 font-bold">${ia.high_impact_cases||0}</p><p class="text-xs text-emerald-800 font-medium mt-1">High Impact</p></div><div class="bg-red-50 border border-red-100 p-3 rounded-xl"><p class="text-2xl text-red-600 font-bold">${ia.critical_cases||0}</p><p class="text-xs text-red-800 font-medium mt-1">Critical Threats</p></div>`;
+    
     if(!resumeCharts.risk) resumeCharts.risk = echarts.init(document.getElementById('resume-impact-chart'));
-    resumeCharts.risk.setOption({ xAxis:{type:'category', data:(r.charts?.impact_distribution||[]).map(d=>d.level)}, yAxis:{type:'value'}, series:[{type:'bar', data:(r.charts?.impact_distribution||[]).map(d=>d.count)}] });
+    resumeCharts.risk.setOption({
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+      grid: { left: '2%', right: '2%', bottom: '5%', top: '10%', containLabel: true },
+      xAxis: { type: 'category', data: (r.charts?.impact_distribution||[]).map(d=>d.level), axisLine: { show: false }, axisTick: { show: false } },
+      yAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#e2e8f0' } } },
+      series: [{
+        type: 'bar', barWidth: '40%',
+        itemStyle: { borderRadius: [6, 6, 0, 0], color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{offset: 0, color: '#f43f5e'}, {offset: 1, color: '#fb7185'}]) },
+        data: (r.charts?.impact_distribution||[]).map(d=>d.count)
+      }]
+    });
 
-    // Knowledge
+    // 4. Knowledge Source (Pie to Donut, Modern Colors)
     if(!resumeCharts.knowledge) resumeCharts.knowledge = echarts.init(document.getElementById('resume-knowledge-chart'));
-    resumeCharts.knowledge.setOption({ series:[{type:'pie', radius:'70%', data:(r.charts?.knowledge_source_trend||[]).map(t=>({name:t.source.replace(/_/g,' '),value:t.count})) }]});
+    resumeCharts.knowledge.setOption({
+      tooltip: { trigger: 'item' },
+      color: ['#8b5cf6', '#d946ef', '#ec4899', '#f43f5e', '#f97316'],
+      series:[{
+        type:'pie', radius: ['40%', '75%'], center: ['50%', '50%'],
+        itemStyle: { borderRadius: 6, borderColor: '#fff', borderWidth: 2 },
+        label: { show: true, formatter: '{b}\n{d}%', color: '#475569', fontSize: 10 },
+        data: (r.charts?.knowledge_source_trend||[]).map(t=>({name:t.source.replace(/_/g,' '),value:t.count}))
+      }]
+    });
 
-    // Patterns
-    document.getElementById('resume-patterns').innerHTML = (r.innovation_patterns||[]).map(p=>`<div class="bg-indigo-50 p-4 rounded-xl"><h4 class="font-bold text-indigo-900">${p.pattern_name}</h4><p class="text-sm text-indigo-800">${p.description}</p></div>`).join('');
+    // Knowledge Insight Box (Sembunyikan box ungu jika kosong, tampilkan cantik jika ada)
+    const insightBox = document.getElementById('resume-knowledge-insight');
+    if (r.knowledge_insights && r.knowledge_insights.observation) {
+       insightBox.innerHTML = `<span class="font-bold flex items-center gap-1.5 mb-1"><i class="ph-fill ph-lightbulb text-purple-600"></i> AI Insight</span> ${r.knowledge_insights.observation}`;
+       insightBox.classList.remove('hidden');
+    } else {
+       insightBox.classList.add('hidden');
+    }
+
+    // 5. Patterns & Interventions
+    document.getElementById('resume-patterns').innerHTML = (r.innovation_patterns||[]).map(p=>`<div class="bg-indigo-50 border border-indigo-100 p-4 rounded-xl"><h4 class="font-bold text-indigo-900 mb-1">${p.pattern_name}</h4><p class="text-sm text-indigo-700 leading-relaxed">${p.description}</p></div>`).join('');
+    document.getElementById('resume-interventions').innerHTML = (r.intervention_opportunities||[]).map(v=>`<tr><td class="p-3 border-b text-slate-700 font-medium capitalize">${v.type}</td><td class="p-3 border-b text-slate-600">${v.target}</td><td class="p-3 border-b text-right"><span class="bg-rose-100 text-rose-700 font-bold px-2.5 py-1 rounded-md text-[10px] uppercase tracking-wide">${v.priority_level}</span></td></tr>`).join('');
     
-    // Interventions
-    document.getElementById('resume-interventions').innerHTML = (r.intervention_opportunities||[]).map(v=>`<tr><td class="p-2 border-b">${v.type}</td><td class="p-2 border-b">${v.target}</td><td class="p-2 border-b"><span class="bg-slate-200 px-2 py-1 rounded text-xs">${v.priority_level}</span></td></tr>`).join('');
-    
-    // Recs
-    document.getElementById('resume-recommendations').innerHTML = (r.recommendations||[]).map(rc=>`<li class="text-sm mb-2">${rc}</li>`).join('');
+    // 6. Rekomendasi Strategis - Diubah dari list membosankan menjadi Grid/Card Layout
+    const recsHTML = (r.recommendations||[]).map(rc=>`
+      <div class="flex items-start gap-3 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-xl transition-all">
+        <div class="bg-yellow-400/20 p-2 rounded-lg shrink-0 mt-0.5">
+          <i class="ph-fill ph-check-circle text-yellow-400 text-lg"></i>
+        </div>
+        <p class="text-sm text-slate-200 leading-relaxed">${rc}</p>
+      </div>
+    `).join('');
+    document.getElementById('resume-recommendations').innerHTML = recsHTML;
   }
 
   window.onload = init;
