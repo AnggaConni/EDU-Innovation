@@ -1,0 +1,318 @@
+[
+    {
+        "report_metadata": {
+            "report_id": "edu-current",
+            "generated_at": "2026-05-31T09:06:45.961261",
+            "period": "Q2 2026",
+            "total_records_analyzed": 102
+        },
+        "global_summary": {
+            "total_education_innovations": 61,
+            "grassroots_percentage": 23.53,
+            "institutional_percentage": 55.88,
+            "formal_percentage": 56,
+            "informal_percentage": 44,
+            "total_innovations": 102,
+            "semi_formal_percentage": 20.59
+        },
+        "top_categories": [
+            {
+                "category": "Environmental Education",
+                "count": 18,
+                "trend": "increasing"
+            },
+            {
+                "category": "STEM",
+                "count": 14,
+                "trend": "increasing"
+            },
+            {
+                "category": "Community Engagement",
+                "count": 14,
+                "trend": "increasing"
+            },
+            {
+                "category": "Literacy",
+                "count": 12,
+                "trend": "increasing"
+            },
+            {
+                "category": "Digital Learning",
+                "count": 8,
+                "trend": "stable"
+            },
+            {
+                "category": "Robotics",
+                "count": 7,
+                "trend": "increasing"
+            },
+            {
+                "category": "Library Science",
+                "count": 6,
+                "trend": "stable"
+            }
+        ],
+        "geographic_insights": [
+            {
+                "region": "North America",
+                "key_pattern": "Strong focus on grassroots advocacy (parental, youth empowerment), place-based learning, and environmental initiatives. Significant activity in culturally responsive education and social justice through arts.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Africa",
+                "key_pattern": "Pioneering digital inclusion solutions (solar-powered, offline platforms), education for street children, and sustainable energy education. Addressing fundamental access and infrastructure challenges.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Asia-Pacific",
+                "key_pattern": "Diverse innovations including sustainable infrastructure (bamboo schools, plastic waste to classrooms), digital literacy programs, and community-led literacy initiatives. Strong emphasis on environmental sustainability and access for rural/disadvantaged youth.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Latin America",
+                "key_pattern": "Significant efforts in social inclusion for street children, girls' education in rural areas, and accelerated learning recovery. Integration of indigenous knowledge and sustainable agriculture practices.",
+                "impact_level": "high"
+            },
+            {
+                "region": "Europe",
+                "key_pattern": "Focus on environmental conservation through hands-on projects, collaborative OER development, and advanced hydrogen technology education.",
+                "impact_level": "medium"
+            },
+            {
+                "region": "Global/Unknown",
+                "key_pattern": "Innovations with broad applicability, often in EdTech, gamification, and open-source tools, designed for diverse contexts without specific geographic ties.",
+                "impact_level": "high"
+            }
+        ],
+        "impact_analysis": {
+            "high_impact_cases": 65,
+            "critical_cases": 64,
+            "top_impact_types": [
+                "Access to Education",
+                "Environmental Stewardship",
+                "STEM Skill Development",
+                "Cultural Preservation",
+                "Community Empowerment"
+            ],
+            "emerging_impacts": [
+                "Circular Economy Integration",
+                "Neurodiversity Empowerment",
+                "Hydrogen Economy Workforce Development",
+                "Indigenous Knowledge Systems Integration"
+            ]
+        },
+        "innovation_patterns": [
+            {
+                "pattern_name": "Environmental & Sustainability Education",
+                "description": "A pervasive theme across all regions, focusing on hands-on learning, ecosystem restoration, sustainable agriculture, waste management, and green infrastructure in schools. Often integrated with community engagement.",
+                "regions": [
+                    "North America",
+                    "Africa",
+                    "Asia-Pacific",
+                    "Europe",
+                    "Latin America",
+                    "Global/Unknown"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Accessible STEM & Robotics",
+                "description": "Innovations making STEM and robotics education affordable and accessible through low-cost materials, open-source hardware, and repurposed e-waste, particularly for underserved communities.",
+                "regions": [
+                    "Global/Unknown",
+                    "Africa"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Digital Inclusion & Offline Learning",
+                "description": "Solutions designed to bridge the digital divide in low-connectivity/electricity environments, utilizing solar power, offline digital libraries, and adaptable learning platforms.",
+                "regions": [
+                    "Africa",
+                    "Asia-Pacific",
+                    "Global/Unknown"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Cultural & Linguistic Revitalization",
+                "description": "Initiatives focused on preserving and promoting indigenous languages, oral histories, and culturally relevant knowledge through animation, storytelling, and adapted library classification systems.",
+                "regions": [
+                    "North America",
+                    "Latin America",
+                    "Asia-Pacific"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Education for Marginalized Youth",
+                "description": "Dedicated programs for street children, refugee/immigrant youth, and rural girls, providing holistic support, access to education, and pathways to reintegration and empowerment.",
+                "regions": [
+                    "Africa",
+                    "Asia-Pacific",
+                    "Latin America",
+                    "North America"
+                ],
+                "impact_level": "high"
+            },
+            {
+                "pattern_name": "Gamification & Experiential Learning",
+                "description": "Creative pedagogical approaches using gamified quests, board game adaptations, escape rooms, and hands-on projects to increase student engagement, motivation, and practical skill development.",
+                "regions": [
+                    "Global/Unknown"
+                ],
+                "impact_level": "medium"
+            }
+        ],
+        "hidden_gems": [
+            {
+                "title": "68 Voces - 68 Corazones",
+                "country": "Mexico",
+                "reason": "Transforms ancient indigenous myths into engaging animated short films, powerfully revitalizing endangered languages and cultural heritage for a broad audience."
+            },
+            {
+                "title": "Plastic Waste to Classrooms Initiative",
+                "country": "Côte d'Ivoire",
+                "reason": "A highly innovative solution addressing both plastic pollution and classroom shortages by converting waste into building materials, while also empowering women economically."
+            },
+            {
+                "title": "Open Flexure Microscope",
+                "country": "",
+                "reason": "Democratizes STEM education by providing an accessible, low-cost, 3D-printable open-source microscope, fostering hands-on learning and customization for students globally."
+            },
+            {
+                "title": "Junk to STEM: Everyday Materials for Learning",
+                "country": "",
+                "reason": "Promotes highly accessible, low-cost STEM education and sustainability by encouraging students to build and invent using common household waste materials."
+            }
+        ],
+        "intervention_opportunities": [
+            {
+                "type": "funding",
+                "target": "Grassroots Digital Inclusion & Accessible STEM Initiatives",
+                "priority_level": "high",
+                "justification": "Many high-impact innovations in digital literacy and STEM education are grassroots or semi-formal, relying on low-cost, open-source, or repurposed materials. Targeted funding can scale these solutions, especially in low-resource settings."
+            },
+            {
+                "type": "training",
+                "target": "Educators in Culturally Responsive & Experiential Pedagogies",
+                "priority_level": "high",
+                "justification": "There's a clear trend towards integrating local knowledge, place-based learning, and diverse cultural narratives. Training educators in these methods is crucial to ensure effective implementation and avoid cultural insensitivity or exclusion risks."
+            },
+            {
+                "type": "regulation",
+                "target": "Data Privacy & Child Safety in Digital and Community Programs",
+                "priority_level": "medium",
+                "justification": "Several innovations, especially those involving digital platforms, storytelling, or community engagement with vulnerable populations, highlight data privacy and child safety risks. Clear guidelines and best practices are needed to protect participants."
+            },
+            {
+                "type": "funding",
+                "target": "Sustainable Infrastructure Development for Learning Spaces",
+                "priority_level": "high",
+                "justification": "Innovations in modular classrooms, outdoor learning labs, and construction using recycled/natural materials offer cost-effective and environmentally friendly solutions for expanding educational access and quality, particularly in developing regions."
+            }
+        ],
+        "knowledge_insights": {
+            "most_common_source": "adapted_from_existing",
+            "trend": "increasing",
+            "observation": "The majority of innovations are built upon adapting existing knowledge or methodologies, indicating a strong trend of iterative improvement and contextualization rather than entirely novel creation. Formal education institutions also serve as significant knowledge generators and disseminators, particularly for STEM and environmental initiatives. Traditional and self-taught knowledge sources, while less frequent, contribute to culturally unique and highly impactful solutions."
+        },
+        "recommendations": [
+            "Prioritize and scale innovations that address multiple Sustainable Development Goals (SDGs) simultaneously, such as the Plastic Waste to Classrooms initiative, which tackles education, environment, and women's empowerment.",
+            "Invest in teacher professional development that emphasizes culturally responsive pedagogy, outdoor learning, and the integration of local/indigenous knowledge to enhance relevance and engagement.",
+            "Develop standardized frameworks for assessing and mitigating 'exclusion' risks, which are prevalent across nearly all innovation types, ensuring equitable access and participation for all learners.",
+            "Foster cross-regional collaboration and knowledge sharing on low-cost, high-impact EdTech solutions (e.g., offline digital libraries, accessible robotics) to accelerate digital inclusion in underserved areas.",
+            "Support grassroots and community-led initiatives, especially those empowering marginalized youth and advocating for systemic change, as they often demonstrate deep contextual understanding and high impact."
+        ],
+        "charts": {
+            "innovation_by_region": [
+                {
+                    "region": "North America",
+                    "count": 17
+                },
+                {
+                    "region": "Africa",
+                    "count": 11
+                },
+                {
+                    "region": "Asia-Pacific",
+                    "count": 8
+                },
+                {
+                    "region": "Latin America",
+                    "count": 6
+                },
+                {
+                    "region": "Europe",
+                    "count": 5
+                },
+                {
+                    "region": "Global",
+                    "count": 2
+                },
+                {
+                    "region": "Unknown",
+                    "count": 12
+                }
+            ],
+            "impact_distribution": [
+                {
+                    "level": "High",
+                    "count": 65
+                },
+                {
+                    "level": "Medium",
+                    "count": 37
+                },
+                {
+                    "level": "Low",
+                    "count": 0
+                }
+            ],
+            "knowledge_source_trend": [
+                {
+                    "source": "adapted_from_existing",
+                    "count": 35
+                },
+                {
+                    "source": "formal_education",
+                    "count": 18
+                },
+                {
+                    "source": "traditional",
+                    "count": 5
+                },
+                {
+                    "source": "self-taught",
+                    "count": 1
+                },
+                {
+                    "source": "unspecified",
+                    "count": 1
+                }
+            ],
+            "learning_outcomes": [
+                {
+                    "level": "Literacy & Numeracy",
+                    "count": 12
+                },
+                {
+                    "level": "STEM Skills",
+                    "count": 14
+                },
+                {
+                    "level": "Environmental Stewardship",
+                    "count": 18
+                },
+                {
+                    "level": "Social-Emotional & Civic Development",
+                    "count": 6
+                },
+                {
+                    "level": "Cultural Competence & Preservation",
+                    "count": 6
+                }
+            ]
+        }
+    }
+]
