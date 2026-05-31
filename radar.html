@@ -1180,7 +1180,98 @@ function loadReport(idx) {
     document.getElementById('resume-recommendations').innerHTML = recsHTML;
   }
 
+
+  // ═══════════════════════════════════════════════════════
+  //  EXPORT DATABASE TO XML
+  // ═══════════════════════════════════════════════════════
+  
+  // Fungsi kecil untuk mencegah karakter ilegal (seperti < atau &) merusak XML
+  function escapeXml(unsafe) {
+    if (unsafe === null || unsafe === undefined) return '';
+    if (typeof unsafe !== 'string') unsafe = String(unsafe);
+    return unsafe.replace(/[<>&'"]/g, function (c) {
+      switch (c) {
+        case '<': return '&lt;';
+        case '>': return '&gt;';
+        case '&': return '&amp;';
+        case '\'': return '&apos;';
+        case '"': return '&quot;';
+      }
+    });
+  }
+
+  // Fungsi rekursif untuk mengubah JSON Object ke XML Node
+  function jsonToXmlNode(key, value, indent) {
+    let spaces = ' '.repeat(indent);
+    // Hapus spasi dan karakter aneh untuk nama tag XML
+    let safeKey = key.replace(/[^a-zA-Z0-9_]/g, ''); 
+    
+    if (value === null || value === undefined) {
+      return `${spaces}<${safeKey}></${safeKey}>\n`;
+    } else if (Array.isArray(value)) {
+      let arrXml = '';
+      value.forEach(val => {
+        // Beri akhiran "_item" untuk isi array, contoh: <category_item>
+        arrXml += jsonToXmlNode(safeKey + '_item', val, indent + 2);
+      });
+      return `${spaces}<${safeKey}>\n${arrXml}${spaces}</${safeKey}>\n`;
+    } else if (typeof value === 'object') {
+      let objXml = '';
+      for (let k in value) {
+        if (value.hasOwnProperty(k)) {
+          objXml += jsonToXmlNode(k, value[k], indent + 2);
+        }
+      }
+      return `${spaces}<${safeKey}>\n${objXml}${spaces}</${safeKey}>\n`;
+    } else {
+      return `${spaces}<${safeKey}>${escapeXml(value)}</${safeKey}>\n`;
+    }
+  }
+
+  // Fungsi Utama Export
+  function exportToXML() {
+    if (!globalData || globalData.length === 0) {
+      alert("Database is empty or still loading. Please wait.");
+      return;
+    }
+
+    // 1. Buat Header XML
+    let xmlString = '<?xml version="1.0" encoding="UTF-8"?>\n<education_innovations_database>\n';
+    
+    // 2. Looping semua data dan bungkus ke dalam tag <innovation>
+    globalData.forEach((item) => {
+      xmlString += '  <innovation>\n';
+      for (let key in item) {
+        if (item.hasOwnProperty(key)) {
+          xmlString += jsonToXmlNode(key, item[key], 4);
+        }
+      }
+      xmlString += '  </innovation>\n';
+    });
+    
+    xmlString += '</education_innovations_database>';
+
+    // 3. Proses Download File
+    const blob = new Blob([xmlString], { type: 'application/xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    
+    // Nama file otomatis sesuai tanggal hari ini
+    const dateStr = new Date().toISOString().split('T')[0];
+    a.href = url;
+    a.download = `Edu_Innovation_DB_${dateStr}.xml`;
+    
+    document.body.appendChild(a);
+    a.click(); // Memicu klik untuk download
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url); // Membersihkan memori browser
+  }
+
   window.onload = init;
+
+
+
+
   </script>
 </body>
 </html>
