@@ -141,6 +141,11 @@
         </div>
       </div>
       <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+        <!-- Tombol Help / Guide -->
+        <button onclick="openGuideModal()" class="text-indigo-600 hover:bg-indigo-50 bg-white border border-indigo-200 transition-all flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded-md shadow-sm">
+          <i class="ph-bold ph-question text-lg"></i> <span class="hidden md:inline">System Guide</span>
+        </button>
+        <!-- Tombol Export -->
         <button onclick="exportToXML()" class="text-slate-600 hover:text-unesco-blue bg-white border border-slate-200 transition-all flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-md shadow-sm">
           <i class="ph ph-export text-lg"></i> <span class="hidden md:inline">Export DB</span>
         </button>
@@ -445,6 +450,115 @@
     </div>
   </div>
 
+  <!-- MODAL: HELP / SYSTEM GUIDE -->
+  <div id="guide-modal" class="fixed inset-0 z-[150] flex items-center justify-center hidden modal-blur bg-slate-900/80 p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[95vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 shadow-2xl" id="guide-modal-content">
+      
+      <!-- Header -->
+      <div class="flex justify-between items-center p-5 border-b border-slate-200 bg-slate-50 shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl"><i class="ph-bold ph-info"></i></div>
+          <div>
+            <h3 class="font-serif font-bold text-xl text-slate-900 leading-tight">System Architecture & Guide</h3>
+            <p class="text-xs text-slate-500 font-medium mt-0.5">How data is collected, synthesized, and cited.</p>
+          </div>
+        </div>
+        <button onclick="closeGuideModal()" class="text-slate-500 hover:text-red-500 bg-white border border-slate-200 shadow-sm p-2 rounded-full"><i class="ph ph-x text-xl"></i></button>
+      </div>
+      
+      <!-- Body -->
+      <div class="p-6 overflow-y-auto flex-grow bg-white flex flex-col gap-8 text-slate-700 text-sm">
+        
+        <!-- Section 1: OSINT Radar Engine -->
+        <div>
+          <h4 class="font-bold text-lg text-slate-900 flex items-center gap-2 mb-3"><i class="ph-fill ph-radar text-unesco-blue"></i> 1. The OSINT Radar Engine</h4>
+          <p class="leading-relaxed mb-4">
+            The data you see on this dashboard is collected autonomously by a Python-based <strong>Global Intelligence Engine</strong>. It constantly scours the web for unrecorded grassroots pedagogy, offline EdTech, and local innovations. Raw text is parsed by <strong>Google Gemini AI</strong>, verified for educational relevance, mapped for threats/impacts, and ultimately compiled into a structured JSON corpus displayed here.
+          </p>
+          <!-- SVG Pipeline -->
+          <div class="w-full bg-slate-50 rounded-xl border border-slate-200 p-4 flex justify-center">
+            <svg viewBox="0 0 600 120" class="w-full max-w-2xl h-auto font-sans">
+                <!-- Connectors -->
+                <path d="M 80 60 L 220 60 L 380 60 L 520 60" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="6,4" fill="none" class="animate-pulse"/>
+                <!-- Nodes -->
+                <circle cx="80" cy="60" r="30" fill="#eff6ff" stroke="#3b82f6" stroke-width="3"/>
+                <text x="80" y="66" text-anchor="middle" font-size="24">🌐</text>
+                <text x="80" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Global Web</text>
+                
+                <circle cx="220" cy="60" r="35" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="3"/>
+                <text x="220" y="68" text-anchor="middle" font-size="28">🤖</text>
+                <text x="220" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Gemini AI Parser</text>
+                
+                <circle cx="380" cy="60" r="30" fill="#ecfdf5" stroke="#10b981" stroke-width="3"/>
+                <text x="380" y="66" text-anchor="middle" font-size="24">📄</text>
+                <text x="380" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">JSON Corpus</text>
+                
+                <circle cx="520" cy="60" r="30" fill="#fffbeb" stroke="#f59e0b" stroke-width="3"/>
+                <text x="520" y="66" text-anchor="middle" font-size="24">📊</text>
+                <text x="520" y="110" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">This Dashboard</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Section 2: Edu-Scite -->
+        <div>
+          <h4 class="font-bold text-lg text-slate-900 flex items-center gap-2 mb-3"><i class="ph-fill ph-quotes text-purple-600"></i> 2. Edu-Scite: Smart Citation Assistant</h4>
+          <p class="leading-relaxed mb-4">
+            We integrated a companion tool called <strong>Edu-Scite</strong>. It is a Retrieval-Augmented Generation (RAG) assistant that answers your specific research questions by synthesizing data from three distinct sources, guaranteeing academic-grade validation through smart citations:
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-emerald-500 mt-0.5 text-base"></i> <div><strong>Local OSINT Database:</strong> Retrieves the innovations curated on this dashboard (Generating <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.5 rounded text-[10px] font-bold">Supporting</span> or <span class="bg-slate-100 text-slate-600 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-bold">Mentioning</span> badges).</div></li>
+            <li class="flex items-start gap-2"><i class="ph-fill ph-bank text-blue-500 mt-0.5 text-base"></i> <div><strong>UNESDOC API:</strong> The AI dynamically routes global/policy questions to UNESCO's library and extracts official documents (Generating <span class="bg-blue-50 text-blue-600 border border-blue-200 px-1.5 py-0.5 rounded text-[10px] font-bold">UNESDOC</span> badges).</div></li>
+            <li class="flex items-start gap-2"><i class="ph-fill ph-globe text-purple-500 mt-0.5 text-base"></i> <div><strong>Google Search Grounding:</strong> Validates claims via live internet/Google Scholar (Generating <span class="bg-purple-50 text-purple-600 border border-purple-200 px-1.5 py-0.5 rounded text-[10px] font-bold">External</span> badges).</div></li>
+          </ul>
+
+          <!-- SVG Scite Architecture -->
+          <div class="w-full bg-slate-50 rounded-xl border border-slate-200 p-4 flex justify-center">
+            <svg viewBox="0 0 600 220" class="w-full max-w-2xl h-auto font-sans">
+                <!-- Lines -->
+                <path d="M 300 45 L 300 110" stroke="#94a3b8" stroke-width="2" />
+                <path d="M 300 110 L 150 160" stroke="#94a3b8" stroke-width="2" />
+                <path d="M 300 110 L 300 160" stroke="#94a3b8" stroke-width="2" />
+                <path d="M 300 110 L 450 160" stroke="#94a3b8" stroke-width="2" />
+                <!-- User Question -->
+                <rect x="220" y="10" width="160" height="36" rx="18" fill="#1e293b" />
+                <text x="300" y="33" text-anchor="middle" font-size="14" fill="white" font-weight="bold">User Question</text>
+                <!-- AI Router Brain -->
+                <circle cx="300" cy="110" r="28" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="3"/>
+                <text x="300" y="118" text-anchor="middle" font-size="22">🧠</text>
+                <text x="345" y="105" font-size="11" font-weight="bold" fill="#64748b">AI Router</text>
+                <!-- Source 1 -->
+                <rect x="80" y="160" width="140" height="50" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+                <text x="150" y="180" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">OSINT Database</text>
+                <text x="150" y="196" text-anchor="middle" font-size="10" fill="#059669">Local Grassroots</text>
+                <!-- Source 2 -->
+                <rect x="230" y="160" width="140" height="50" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+                <text x="300" y="180" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">UNESDOC API</text>
+                <text x="300" y="196" text-anchor="middle" font-size="10" fill="#2563eb">Global Policy Docs</text>
+                <!-- Source 3 -->
+                <rect x="380" y="160" width="140" height="50" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="2"/>
+                <text x="450" y="180" text-anchor="middle" font-size="12" font-weight="bold" fill="#6b21a8">Google Search</text>
+                <text x="450" y="196" text-anchor="middle" font-size="10" fill="#9333ea">Scholar & Web</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-gradient-to-r from-indigo-900 to-slate-900 rounded-xl p-6 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+            <div>
+                <h4 class="font-serif font-bold text-lg mb-1">Experience Edu-Scite</h4>
+                <p class="text-indigo-200 text-sm">Ask a research question and watch the AI synthesize citations from all three databases in real-time.</p>
+            </div>
+            <a href="https://anggaconni.github.io/EDU-Innovation/scite" target="_blank" class="shrink-0 bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2.5 px-5 rounded-lg shadow-md transition-all flex items-center gap-2">
+                Launch Edu-Scite <i class="ph-bold ph-arrow-up-right"></i>
+            </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
   <script>
   // ═══════════════════════════════════════════════════════
   //  EMBEDDED DATA DARI USER
@@ -623,6 +737,30 @@
 
     populateFilters(); populateCountryFilter(); setupFilters(); applyFilters(); renderStats(); populateReportSelector(); 
     lucide.createIcons(); switchTab('directory');
+  }
+
+  // ═══════════════════════════════════════════════════════
+  //  GUIDE MODAL LOGIC
+  // ═══════════════════════════════════════════════════════
+  function openGuideModal() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-content');
+    modal.classList.remove('hidden');
+    // Beri jeda kecil agar animasi CSS terbaca
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      wrapper.classList.remove('scale-95');
+    }, 10);
+  }
+
+  function closeGuideModal() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-content');
+    modal.classList.add('opacity-0');
+    wrapper.classList.add('scale-95');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
   }
 
   // ═══════════════════════════════════════════════════════
