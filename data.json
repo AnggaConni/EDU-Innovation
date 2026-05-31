@@ -5431,5 +5431,1776 @@
         "priority_score": 54,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "d5c7c84eaa767d7627689e6505feb593",
+        "timestamp": "2026-05-31T07:14:56.630033",
+        "title": "Open Flexure Microscope",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDmyeSqFuDKuoGrtPla6RrJpJvYx36dhmqHn4Mxnh1aE6SimAFf_Ru8R2ulPxOoEY61-ByMcxhdKEjWF0SZQYNqjErKHO5D7izwsIG1sbFXurMDYNukixcuMZsPlEjYn71zlr0dLuftGEyB62p5jvqoKSIf1Bg_tLLJnEALsELNT7k9S97qPRuICWjo7fgi19ckf2lLJ7Yv5IBo1dVjsmNXQNIM54HfwwEnlxHDUIvswbXSDnwgKxrUaP9Q_GhMqKlC9Tvb5vAMfgLvSx5A-2dumYUSyT_snfby0oNQ6Z6AxYdFGzxUTGIC5I56OUxejgEc1vUkxqh33HigUq61deqZdBSOE_LQlspHQj3oRHQzNrjfQ==",
+            "https://openhardware.science/2019/01/27/expanding-equitable-access-to-experimental-research-and-stem-education-by-supporting-open-source-hardware-development/"
+        ],
+        "summary": "The Open Flexure Microscope is an educational innovation that utilizes open-source hardware principles and 3D printing to create an accessible, low-cost microscope. Designed for K-12 settings and institutions with limited funding, its public design allows for modification, building, and improvement using basic components and digital fabrication. This approach significantly reduces costs compared to proprietary microscopes, fostering active, experiential STEM learning by enabling students to customize and assemble their own scientific instruments, thereby developing creativity and problem-solving skills.",
+        "category": [
+            "STEM Education",
+            "Open Source Hardware",
+            "3D Printing",
+            "Low-Cost Tools"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Engineering",
+                "Science"
+            ],
+            "target_learners": "K-12 students, institutions with limited funding",
+            "learning_outcomes": [
+                "Active, experiential learning",
+                "Deep engagement in science and engineering",
+                "Customization and assembly of scientific instruments",
+                "Fostering creativity and problem-solving skills",
+                "Adaptation of tools to curriculum needs or research questions"
+            ],
+            "pedagogical_approach": "Active learning, Experiential learning, Hands-on learning, Project-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Basic components",
+                "Digital fabrication tools (e.g., 3D printers)"
+            ],
+            "preparation_steps": [
+                "Accessing publicly shared design files",
+                "Gathering necessary basic components",
+                "Utilizing 3D printing technology to fabricate parts"
+            ],
+            "execution_steps": [
+                "Customizing the microscope design (optional)",
+                "Assembling the microscope using fabricated parts and basic components",
+                "Integrating the microscope into classroom activities or research"
+            ],
+            "tips_for_success": "Leverage open-source hardware principles for community support and continuous improvement. Focus on the educational value of hands-on assembly and customization to enhance learning outcomes."
+        },
+        "impact": {
+            "problem_solved": "High cost and inaccessibility of proprietary microscopes for STEM education, particularly in underfunded settings.",
+            "evidence_of_success": "Drastically reduces cost, facilitates active and experiential learning, enables deep engagement in science and engineering, fosters creativity and problem-solving skills.",
+            "beneficiaries_reach": "K-12 settings, educational institutions with limited funding, anyone interested in building and modifying scientific instruments.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety, as K-12 students will be directly involved in customizing and assembling hardware. This necessitates strict supervision, comprehensive safety protocols for tool handling, and awareness of potential hazards such as small parts (choking), sharp edges, or hot components if 3D printing is integrated into the classroom activity. Additionally, while promoting accessibility through low cost, the requirement for 3D printers and digital fabrication tools could create an exclusion barrier for institutions lacking such infrastructure. The assembly process itself might also pose challenges for students with fine motor skill difficulties without specific accommodations."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "789ad4f933624fb3bd9542431b7ca6ad",
+        "timestamp": "2026-05-31T07:15:19.999654",
+        "title": "Junk to STEM: Everyday Materials for Learning",
+        "sources": [
+            "https://www.fuzzigram.com/play-and-creativity/creative-stem-play-ideas-using-recycled-materials",
+            "https://kgseducationservices.com/stem-kits-for-schools-igniting-curiosity-inspiring-innovation/",
+            "https://globalardour.co.uk/teaching-stem-with-scrap-project-ideas-for-schools/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRI60jvMaD34DKtq1qKZJKzgWN11TXOS_SWHeTtLQLc32sOy-2EO71zUltdcUqZppoRwEnlLByF26UBX5qgZSNguU4kaUrTop44rq3Wq_iivHkkrihQkVEHVGRaFzsiixdOwnAI6d5ENjTX3pcGaLUI_fGb5Dtj9UtvphHRQiCzo-YgIzKv421279uJKVVgQFX8Ll2iDH1A4IXDt6-Gn6ZlTT5tpjF9U2Wl0f_jvrYOexhRM0NNeQ3gJ9_0wbreWftDdPer5swkn-AliN2E4XOokD1FC1fzHzIJg==",
+            "https://www.parametricstudioinc.com/blog/10-affordable-stem-supplies-every-classroom-should-have"
+        ],
+        "summary": "This educational approach promotes hands-on STEM learning by utilizing common household items and 'junk' as primary materials. It champions resourcefulness and inventive problem-solving, making STEM education accessible and low-cost. Students transform materials like cardboard tubes, plastic bottles, and egg cartons into tools for exploration and invention, engaging in projects ranging from building miniature houses to simple machines. This method fosters spatial reasoning, risk-taking, core STEM concepts, and instills values of sustainability and eco-consciousness through open-ended play and experimentation.",
+        "category": [
+            "STEM",
+            "Sustainability",
+            "Hands-on Learning",
+            "Creative Arts"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal | non-formal | informal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Arts",
+                "Vocational"
+            ],
+            "target_learners": "Students, children",
+            "learning_outcomes": [
+                "Resourcefulness",
+                "Inventive problem-solving",
+                "Spatial reasoning",
+                "Risk-taking during design attempts",
+                "Core STEM concepts",
+                "Sustainability",
+                "Eco-consciousness"
+            ],
+            "pedagogical_approach": "Hands-on learning, Project-based learning, Experiential learning, Inquiry-based learning, Play-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Everyday household items",
+                "'Junk'",
+                "Cardboard tubes",
+                "Plastic bottles",
+                "Bottle caps",
+                "Egg cartons",
+                "Scrap fabric"
+            ],
+            "preparation_steps": [
+                "Collect and sort various clean household 'junk' and recycled materials."
+            ],
+            "execution_steps": [
+                "Encourage students to transform collected materials into tools for exploration and invention.",
+                "Guide students in building various projects such as miniature houses, marble runs, simple machines (levers, pulleys), bird feeders, or mini greenhouses.",
+                "Facilitate open-ended play and experimentation, allowing children to design and build boldly without pressure for perfection."
+            ],
+            "tips_for_success": "Encourage open-ended play and experimentation; allow children to take risks during design attempts without pressure to keep things pristine; emphasize the value of resourcefulness and creative problem-solving."
+        },
+        "impact": {
+            "problem_solved": "Reliance on expensive kits for engaging STEM learning, limited accessibility to STEM education, lack of practical application for core concepts, and insufficient focus on sustainability and eco-consciousness in education.",
+            "evidence_of_success": "Fosters resourcefulness, inventive problem-solving, spatial reasoning, and risk-taking. Effectively teaches core STEM concepts and instills values of sustainability and eco-consciousness by demonstrating how waste can be turned into valuable learning resources.",
+            "beneficiaries_reach": "Students and children in diverse educational settings, including homes, schools, and non-formal learning environments.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The innovation's reliance on 'everyday household items and junk' presents a notable physical safety risk. Materials such as plastic bottles, cardboard, or other discarded items can have sharp edges, splinters, or small parts that pose choking hazards, especially for younger children. The process of transforming these materials into inventions may involve cutting, gluing, or assembly, requiring age-appropriate tools (e.g., scissors, craft knives, glue guns) which carry inherent risks. While fostering resourcefulness, the 'open-ended play' aspect necessitates careful supervision to ensure materials are vetted for safety (e.g., clean, free of hazardous residues) and that children use tools safely. Intervention is needed to establish clear guidelines for material selection, preparation, and supervision protocols to mitigate these physical hazards."
+        },
+        "priority_score": 84,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "7ffdf200e3821e64f5b6f55b23f36ded",
+        "timestamp": "2026-05-31T07:15:47.094730",
+        "title": "WitBot",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzgA6mnumOd-4ytznJzyI8da2J1yR5Grxo0QK3W5ett6Q_Vm2ILrRSRB0xWjUrZZ8zRTNP3xHULy4AwOwvWo9lo__weIzHvWWrqTZQ3hOycEXGzP-n1YVUgKDYduxW185SNZ_DEg2ewSc3cvuwpOmBSSNuwei5LMdEdJbOiDvCXt00zmYWbNMoL"
+        ],
+        "summary": "The WitBot is an open-source, low-cost robotics platform designed to make STEM education, particularly in robotics and programming, more accessible to younger students (ages 8-10). It utilizes readily available, off-the-shelf components, including a Raspberry Pi Zero, to significantly reduce costs compared to high-end educational robots. Its open-source nature encourages customization and expansion of the robot's design, fostering creativity and deeper engagement through visual coding interfaces like Blockly and 3D-printed chassis modifications.",
+        "category": [
+            "STEM",
+            "Robotics",
+            "Programming"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Younger students (ages 8-10)",
+            "learning_outcomes": [
+                "Customize and expand upon robot design",
+                "Foster creativity and deeper engagement",
+                "Solve challenges using visual coding interfaces (e.g., Blockly)",
+                "Attain advanced STEM concepts like programming and engineering"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning, visual coding, customization, problem-solving"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Raspberry Pi Zero",
+                "Readily available, off-the-shelf components",
+                "3D-printed chassis (optional for customization)"
+            ],
+            "preparation_steps": [
+                "Gather readily available, off-the-shelf components",
+                "Assemble components to form the WitBot platform",
+                "Prepare 3D-printed chassis components for additional customization (optional)"
+            ],
+            "execution_steps": [
+                "Customize and expand upon the robot's design",
+                "Add additional components via a 3D-printed chassis",
+                "Devise and solve new challenges using visual coding interfaces like Blockly"
+            ],
+            "tips_for_success": "Leverage the open-source nature to encourage student creativity and deeper engagement through customization and expansion of the robot's design."
+        },
+        "impact": {
+            "problem_solved": "High cost and inaccessibility of robotics and programming education for younger students, particularly compared to expensive high-end educational robots.",
+            "evidence_of_success": "Aims to provide similar customizability and learning opportunities as more expensive alternatives at a significantly lower price point, making advanced STEM concepts more attainable for a wider audience.",
+            "beneficiaries_reach": "Wider audience of younger students (ages 8-10)",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The hands-on assembly and customization of a robotics platform with moving parts and electrical components (even low voltage) pose physical safety risks for students aged 8-10, requiring close supervision and clear safety protocols. Additionally, while aiming for accessibility through low cost, the reliance on a 3D-printed chassis for customization creates an exclusion barrier for users without access to 3D printing technology."
+        },
+        "priority_score": 78,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "d54ec943e4ef06f8dccdab1d219b54b8",
+        "timestamp": "2026-05-31T07:16:09.653901",
+        "title": "Repurposing E-waste for Digital Education and Skill Development",
+        "sources": [
+            "https://informalscience.org/project/ise-pathways-repurposing-obsolescence-teaching-diy-science-technology-and-engineering-practices/",
+            "https://www.imthecheftoo.com/blogs/stem-for-kids/sparking-futures-engaging-kids-in-stem-community-service-projects",
+            "https://opensource.org/blog/835-2"
+        ],
+        "summary": "This innovative approach transforms discarded electronic waste (e-waste) into valuable educational tools, addressing both environmental concerns and the digital divide. Projects like 'Repurposing Obsolescence' and the 'FLOSS Desktops For Kids Incubator Project' teach computing and design by customizing and repurposing items such as old cell phones or decommissioned school computers. Students, often from underserved communities, learn practical skills in troubleshooting, repairing, and installing open-source software like Linux. The refurbished devices are often provided to students, fostering ownership and engagement, while introducing core STEM concepts and essential digital literacy skills, thereby lowering barriers to technical education.",
+        "category": [
+            "Environmental Education",
+            "Digital Literacy",
+            "STEM Education",
+            "Vocational Training"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Students, often from underserved communities, lacking access to technology and technical education.",
+            "learning_outcomes": [
+                "Practical skills in troubleshooting, repairing, and installing software (e.g., Linux)",
+                "Understanding of core engineering, mathematics, and computer science concepts",
+                "Enhanced digital literacy skills",
+                "Access to functional technology",
+                "Fostering a sense of ownership and engagement with technology"
+            ],
+            "pedagogical_approach": "Hands-on, project-based learning, utilizing readily available and often free materials."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Discarded electronic waste (e-waste)",
+                "Old cell phones",
+                "Decommissioned school computers",
+                "Open-source software (e.g., Linux distributions)"
+            ],
+            "preparation_steps": [
+                "Identify and collect suitable e-waste items for repurposing",
+                "Develop a curriculum or project plan for customizing and refurbishing devices"
+            ],
+            "execution_steps": [
+                "Teach students practical skills in troubleshooting and diagnosing issues with e-waste",
+                "Guide students through repairing and cleaning electronic components",
+                "Instruct students on installing and configuring open-source operating systems and applications",
+                "Facilitate the customization and personalization of refurbished devices",
+                "Distribute the refurbished devices to students for their continued use"
+            ],
+            "tips_for_success": "Emphasize practical, hands-on engagement; utilize familiar, readily available, and often free materials to lower barriers; foster a sense of ownership and responsibility among learners for their refurbished devices."
+        },
+        "impact": {
+            "problem_solved": "Addresses environmental concerns by reducing e-waste, bridges the digital divide by providing access to technology, and lowers barriers to technical education for underserved communities.",
+            "evidence_of_success": "Students acquire practical technical skills, gain access to functional technology, develop digital literacy, and learn core STEM concepts. The approach utilizes readily available materials, making it accessible.",
+            "beneficiaries_reach": "Students, particularly those from underserved communities, who gain access to technology and technical education.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "physical"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risks are data privacy, as repurposed e-waste (old cell phones, computers) can contain residual personal data from previous owners, requiring robust and secure data wiping protocols. Physical safety is also a significant concern due to students handling electronic components, tools, and potentially hazardous materials (e.g., sharp edges, electrical components, dust, heavy metals in older tech). This necessitates strict supervision, safety training, and appropriate personal protective equipment. While the innovation actively addresses exclusion by providing access to technology, careful consideration for diverse physical and cognitive learning needs is still important."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "8a7edab33c4ff8ac12f7489872c1c2d4",
+        "timestamp": "2026-05-31T07:17:29.920650",
+        "title": "SolarSPELL (Solar Powered Educational Learning Library) Initiative",
+        "sources": [
+            "https://solarspell.org/",
+            "https://asuonline.asu.edu/newsroom/asu-news/solarspell-initiative-bridges-digital-divide-global-communities/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7CrmgYCWscTvH2bMQG-HyAG82cSrLYKvUo-bXhCsmUN0d2yJgkMoU5qmrj45j-HjKsPYjnCt2W6yEWQO1UmDxFBs3gKCR7k2Dgl8oSBxlEZAaqLd7tmtmp-_FE6cCDey3suiVw5sSChokfrUvY3QZpeW_bDz3Zj3lhxqx4JMhlSFpyOPOsi2pgS3xgjg="
+        ],
+        "summary": "The SolarSPELL Initiative, developed by Arizona State University, provides solar-powered, offline digital libraries to schools and communities globally that lack internet and reliable electricity. This portable technology creates an offline Wi-Fi hotspot, allowing devices like smartphones, tablets, or laptops to access a curated collection of tens of thousands of localized, open-access educational resources without internet or external power. Beyond technology, SolarSPELL aims to bridge the digital divide by delivering relevant content, boosting literacy, enhancing teacher capacity, and developing 21st-century skills in underserved areas. It has been deployed in over 13 countries with more than 400 libraries, showing measurable improvements in digital literacy and student outcomes through its low-cost, modular, and replicable model.",
+        "category": [
+            "Digital Literacy",
+            "Access to Education",
+            "Technology in Education",
+            "Rural Development",
+            "Teacher Professional Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Global",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Arizona State University",
+            "lat": 55.702215,
+            "lon": 12.5592485
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Technology",
+                "Other"
+            ],
+            "target_learners": "Students, teachers, and communities in underserved areas lacking internet and reliable electricity",
+            "learning_outcomes": [
+                "Boost literacy",
+                "Enhance teacher capacity",
+                "Develop 21st-century skills",
+                "Improve digital literacy",
+                "Improve student outcomes"
+            ],
+            "pedagogical_approach": "Self-directed learning through curated digital resources; teacher support and capacity building."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Solar-powered, offline digital library unit (SolarSPELL device)",
+                "Smartphones, tablets, or laptops (any Wi-Fi enabled device)"
+            ],
+            "preparation_steps": [
+                "Deploy the SolarSPELL unit in a school or community setting."
+            ],
+            "execution_steps": [
+                "Power on the SolarSPELL device.",
+                "Connect any Wi-Fi enabled device to its generated offline Wi-Fi hotspot.",
+                "Access tens of thousands of curated, localized, and open-access educational resources."
+            ],
+            "tips_for_success": "Ensure content is locally relevant and regularly updated to maximize engagement and learning outcomes. Provide training for teachers and community members on how to effectively utilize the library."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to educational resources, internet, and reliable electricity in underserved schools and communities, thereby bridging the digital divide.",
+            "evidence_of_success": "Active in over 13 countries, deployed over 400 libraries, demonstrated measurable improvements in digital literacy and student outcomes.",
+            "beneficiaries_reach": "Schools and communities in over 13 countries globally, impacting users of more than 400 deployed libraries.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "exclusion",
+                "physical",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While SolarSPELL excels at bridging the digital divide and curating content, several risks exist. The primary 'exclusion' risk is the requirement for users to have a smartphone, tablet, or laptop to connect, which may still be a barrier in the most underserved communities. Initial digital literacy and universal accessibility features for diverse learners are also considerations. 'Physical safety' is a moderate concern due to the hardware component, including solar panels and batteries, which carry inherent risks of overheating, damage, or improper handling, especially in challenging environments. Despite efforts to provide 'localized' content, ensuring perfect cultural alignment across numerous global contexts is an ongoing challenge, presenting a potential for 'cultural friction' if content inadvertently contains biases or doesn't fully resonate with local pedagogical approaches. Finally, the 'tens of thousands of resources' could lead to 'cognitive overload' for users new to digital learning without strong navigational tools and teacher guidance."
+        },
+        "priority_score": 84,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "2f5c8568d9cef28a78e629f7fcc3aa87",
+        "timestamp": "2026-05-31T07:17:55.636564",
+        "title": "Kiwix Hotspot Project: Offline Educational Resources",
+        "sources": [
+            "https://leonnoel.com/blog/offline-learning-remote-schools/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAlyo0rE4CaE92lDaK4hsVbtfwKcNqohEoR03JKXOVlIDWLnvNA20OgGnaXlVayjYvBbYmToL-kZLKm8mS3e-HEs265vKCWQTVtvkm-ou9eoWDQVitKnW7foHIc-734EvIDj1HKW9eKBGEJReL2Piwa52XrNYdOIlZeUZItQ=",
+            "https://allthingsopen.org/articles/kiwix-open-source-solution-offline-content-delivery",
+            "https://blog.tcea.org/kiwix/"
+        ],
+        "summary": "The Kiwix Hotspot project provides offline educational resources to schools in remote areas of Tanzania and Kenya where internet access is limited or non-existent. It utilizes inexpensive single-board computers, such as Raspberry Pis, configured as local Wi-Fi servers. These hotspots allow students and teachers to access a vast library of content, including offline versions of Wikipedia, Project Gutenberg, and TED Talks, using any Wi-Fi-enabled device with a browser, without needing an active internet connection after the initial setup and content download.",
+        "category": [
+            "Education Technology",
+            "Digital Inclusion",
+            "Rural Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Tanzania, Kenya",
+            "region": "Remote areas (near Tarangire National Park, Amboseli National Park)",
+            "city_or_village": "",
+            "institution_name": "Schools",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Students and teachers in remote, internet-deprived schools",
+            "learning_outcomes": [
+                "Access to a vast library of educational content offline",
+                "Enhanced learning opportunities despite lack of internet connectivity",
+                "Improved digital literacy through device usage"
+            ],
+            "pedagogical_approach": "Resource-based learning, Self-directed learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Inexpensive single-board computers (e.g., Raspberry Pis)",
+                "Wi-Fi enabled devices (for access by learners)",
+                "Offline content packages (e.g., Kiwix archives of Wikipedia, Project Gutenberg, TED Talks)"
+            ],
+            "preparation_steps": [
+                "Acquire and configure single-board computers as local Wi-Fi servers",
+                "Download and install a vast library of offline educational content onto the servers"
+            ],
+            "execution_steps": [
+                "Set up computer labs or designated hotspot areas within schools",
+                "Activate the Raspberry Pi servers to generate local Wi-Fi hotspots",
+                "Students and teachers connect to the hotspots using their Wi-Fi-enabled devices and a web browser to access content"
+            ],
+            "tips_for_success": "Ensure a robust initial content download and regular updates (when internet access is briefly available). Train local staff on basic maintenance and troubleshooting of the hardware and software."
+        },
+        "impact": {
+            "problem_solved": "Lack of internet access in remote areas preventing students and teachers from accessing essential educational resources and global knowledge.",
+            "evidence_of_success": "Knowledge made accessible to hundreds of students miles away from the nearest internet connection in schools near Tarangire National Park and Amboseli National Park.",
+            "beneficiaries_reach": "Hundreds of students and teachers",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "cultural",
+                "exclusion",
+                "child_safety",
+                "physical",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The Kiwix Hotspot project introduces significant educational resources but carries several risks. Cultural friction is high due to the potential for globally sourced content (Wikipedia, TED Talks) to conflict with local cultural norms or values without proper curation or contextualization. Exclusion barriers could arise if universal access to Wi-Fi enabled devices isn't guaranteed for all students, or if digital literacy and language support are insufficient. Child safety is a medium risk, as the 'vast library' of content, while generally educational, may contain topics inappropriate for certain age groups or cultural contexts without specific filtering. Physical safety is a medium concern due to the installation and maintenance of electrical hardware (Raspberry Pis) in potentially challenging environments. Cognitive overload (categorized under 'other') is also a medium risk, as students and teachers may be overwhelmed by the sheer volume of information without adequate pedagogical guidance. Data privacy is low, as the system is offline and doesn't inherently collect user data."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "22894d07e386b5a239c9fbe3577263fd",
+        "timestamp": "2026-05-31T07:18:28.160053",
+        "title": "Kolibri",
+        "sources": [
+            "https://oecdedutoday.com/wp-content/uploads/2021/04/Jordan-Edtech-without-Internet-Kolibri.pdf",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7_lggsURXLZV-nDyWXeUZNg-uYieE44WfujsUPFIAL17sARV7aRu5ETlS1698t253kv-gBwoMnz6rkSpL4n2Ch5rwsDdZ4LY6MVkYB9YY5ivrkCj85Yq9ujbNQpSBQ4ndZUx4qgiVDnz71BA_L3lDCgdahfeNFDnZjO0SCjk_Cqs=",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-sZpwe8oxpZSkzq-NDWWQEgeiwsFiWobgDoN7v5HlPswU4KHzgyjgnToH1py19YUUH4ZbZcmXQ1IlwNP0_etkQzDZ4jSU_yCuQyTLEd3HAlGwrCXtD3sZSNNdCBp2j8Iqj58QCyqcmdU939zh7w==",
+            "https://globaledleadership.org/2021/04/21/re-defining-innovation-using-the-offline-edtech-platform-kolibri-to-support-learners-globally/",
+            "https://vertexaisearch.cloud.google.google.com/grounding-api-redirect/AUZIYQFScrDFoZban7lm-Dz0FXN67mycxyGUqs8MrejnDH9i7AY50DuKjmpyBr1sQxleDV81tLikKrt1EOlNdnxl7LAWEgO4f7petLslVwaxnpoe89mmAawFN1x_1shzvRMR_Ja7_63mgJkxNiofqg=="
+        ],
+        "summary": "Kolibri is an open-source EdTech platform developed by Learning Equality, designed to provide offline digital education in low-connectivity environments globally. It allows learners and educators to access a vast library of curriculum-aligned educational resources, including videos, e-books, and interactive exercises, without requiring consistent internet access. Kolibri can be deployed on local servers for network access within schools or run on individual devices like tablets and smartphones for self-study. Its applications include real-time learner progress tracking in Jordan, national deployment with curriculum content in Uganda, and support for students during school closures in Honduras.",
+        "category": [
+            "EdTech",
+            "Offline Learning",
+            "Digital Education",
+            "Open Source",
+            "Educational Resources"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Global (examples: Jordan, Uganda, Honduras)",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Learning Equality, National IT Authority (Uganda), UNICEF (Uganda), National Curriculum Development Centre (Uganda), Shoulder to Shoulder (Honduras)",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Learners and educators in low-connectivity environments, K-12 students, self-learners",
+            "learning_outcomes": [
+                "Access to curriculum-aligned educational content offline",
+                "Facilitation of digital learning without internet",
+                "Real-time tracking of learner progress by educators",
+                "Support for remote learning during school closures"
+            ],
+            "pedagogical_approach": "Resource-based learning, self-paced learning, blended learning (with facilitator support), offline digital instruction"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Local server (optional)",
+                "Tablets",
+                "Smartphones",
+                "Computers",
+                "Local Area Network (LAN) infrastructure (optional)"
+            ],
+            "preparation_steps": [
+                "Download and install Kolibri software",
+                "Deploy Kolibri on a local server or individual devices",
+                "Pre-load educational content (curriculum-aligned resources, videos, e-books, exercises) onto the platform/devices"
+            ],
+            "execution_steps": [
+                "Learners connect to the local Kolibri server via a LAN (in schools) or use the Kolibri app on individual devices",
+                "Learners access and engage with the pre-loaded educational content offline",
+                "Educators can track learner progress and manage content (where applicable)"
+            ],
+            "tips_for_success": "Ensure content is relevant to the local curriculum. Provide initial training for educators and learners on platform usage. Leverage local facilitators to support learners, especially in self-study scenarios. Regularly update content and software."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to digital educational resources due to inconsistent or non-existent internet connectivity. Limited ability to deliver structured digital learning in remote or underserved areas.",
+            "evidence_of_success": "Widely used in various low-connectivity environments globally. Facilitates real-time tracking of learner progress in Jordan. Deployed nationally in Uganda by government and UNICEF. Piloted successfully in Honduras to support students during school closures.",
+            "beneficiaries_reach": "Thousands of learners and educators across numerous countries, particularly in developing regions and remote areas.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "Kolibri effectively addresses internet connectivity barriers but introduces other risks. Data privacy is a significant concern due to the 'real-time tracking of learner progress' and involvement of various organizations in sensitive contexts. While local deployment can enhance privacy, robust data governance and security protocols are essential to protect vulnerable populations. Exclusion risks stem from the necessity of devices (tablets, smartphones) and consistent power supply, which can still be barriers in low-resource environments, despite solving internet access. Furthermore, while efforts are made for curriculum alignment, ensuring cultural relevance and preventing friction across a 'vast library' of content in diverse global settings requires continuous vigilance and localization efforts."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "9e7264ee0664fdfd01d4c8fa83e01e3b",
+        "timestamp": "2026-05-31T07:19:20.253585",
+        "title": "Culturally Responsive Dewey Decimal Adaptation for Diverse Library Collections",
+        "sources": [
+            "https://lookingbackward.edublogs.org/2015/10/15/multicultural-collections/",
+            "https://lookingbackward.edublogs.org/2021/05/15/changing-dewey/"
+        ],
+        "summary": "A school librarian recognized the inherent biases of the traditional Dewey Decimal Classification (DDC) system in representing diverse cultures. To address this, she innovatively adapted DDC numbers, particularly in the 300s (Social Sciences), 398 (Folklore), and 920 (Collected Biographies), by appending 'continent of origin' identifiers. This modification allowed for the creation of special multicultural collections, making U.S. history, folktales, and biographies from various cultural backgrounds more accessible and culturally responsive for the school's diverse student population.",
+        "category": [
+            "Library Science",
+            "Cultural Competence",
+            "Information Literacy",
+            "Curriculum Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "school",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "K-12 students",
+            "learning_outcomes": [
+                "Improved access to culturally diverse materials",
+                "Enhanced cultural understanding and representation",
+                "Easier browsing and discovery of relevant resources"
+            ],
+            "pedagogical_approach": "Information organization and classification adapted for cultural responsiveness and accessibility"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Existing library collection",
+                "Dewey Decimal Classification system knowledge",
+                "Labels or signage for modified sections",
+                "Cataloging software (optional, for digital records)"
+            ],
+            "preparation_steps": [
+                "Identify areas within the DDC system that inadequately represent diverse cultures (e.g., 300s, 398, 920).",
+                "Research and define 'continent of origin' or other relevant cultural identifiers.",
+                "Analyze the existing collection to identify books suitable for reclassification under new multicultural categories.",
+                "Plan the specific modifications to DDC numbers (e.g., adding suffixes, creating new sub-categories)."
+            ],
+            "execution_steps": [
+                "Apply the adapted DDC numbers to the selected books (e.g., physically relabeling books, updating catalog records).",
+                "Organize the physical library shelves according to the new classification, creating distinct multicultural collections.",
+                "Install clear signage and guides to help students understand and navigate the new system.",
+                "Educate students and staff on how to use the new culturally responsive classification."
+            ],
+            "tips_for_success": "Ensure consistency in the application of new identifiers. Provide clear, intuitive signage. Engage students in the process to gather feedback. Continuously review and adapt the system as the collection and student demographics evolve. Collaborate with cultural experts if available."
+        },
+        "impact": {
+            "problem_solved": "Limitations and biases of the traditional DDC system in representing diverse cultures, making it difficult for students to find culturally relevant materials.",
+            "evidence_of_success": "The collection became 'more culturally responsive' and 'easier for students to browse and find relevant materials'.",
+            "beneficiaries_reach": "The diverse student population of the school.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "cultural"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "This innovation is overwhelmingly positive, directly addressing inherent biases in the traditional Dewey Decimal Classification system and significantly improving cultural responsiveness and accessibility for a diverse student population. The primary, albeit minor, risk lies in the potential for oversimplification or generalization when using broad 'continent of origin' identifiers. While a vast improvement over DDC's biases, grouping diverse cultures under large continental labels could inadvertently reduce the nuance and specificity of individual cultural identities. However, this is a low-level risk compared to the substantial benefits of increased discoverability and inclusion. No intervention is needed for the innovation's concept, but ongoing refinement of the categorization system could enhance its precision and cultural sensitivity."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "a8ae09d9e6390edf5a552b504e497452",
+        "timestamp": "2026-05-31T07:19:48.774006",
+        "title": "Saline County Library's Category-Based System for Children's Nonfiction",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdb43fa7FjCMnBNYZZ2cXXH06ouF0PlSUi5OyiMu0bBTjDAZaGHlsAPtsDiAoEwf-AP6TE024Gv35QcP__RZBl9-YJAB1vxDBiCNIZELbnvk4NEcZP7rLJEHJoLT_7Ymh1YH7U1zvve0JOqmryak8xneWG8FSb-ynJu0M9rPFjDB_m0FM63ZM0rAGzbmhh-cf8"
+        ],
+        "summary": "The Saline County Library in Arkansas has replaced the traditional Dewey Decimal Classification (DDC) system for its children's nonfiction section with a more intuitive, category-based organization. This adaptation groups books into simple, alphabetically arranged 'call words' categories such as 'Animals,' 'Education – Chemistry – Elements,' 'Hobby-Draw,' and 'Mythology.' The goal is to make it easier for young patrons, from early readers to young adults, to browse and locate books on specific topics without needing to understand complex numerical sequences, thereby enhancing accessibility and user experience.",
+        "category": [
+            "Library Science",
+            "Information Access",
+            "Early Childhood Education",
+            "Youth Services"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Arkansas",
+            "city_or_village": "Benton (main branch)",
+            "institution_name": "Saline County Library",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Information Literacy",
+                "Other"
+            ],
+            "target_learners": "Children, early readers, young adults",
+            "learning_outcomes": [
+                "Improved ability to locate desired books independently",
+                "Enhanced browsing experience for nonfiction topics",
+                "Increased engagement with library resources"
+            ],
+            "pedagogical_approach": "User-centered design, simplification of information retrieval, intuitive organization"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Existing library collection",
+                "New shelving labels",
+                "Cataloging software capable of custom categories",
+                "Staff for re-cataloging and re-labeling"
+            ],
+            "preparation_steps": [
+                "Identify target section (e.g., children's nonfiction)",
+                "Develop a list of intuitive, age-appropriate categories ('call words')",
+                "Map existing DDC numbers to new categories",
+                "Train library staff on the new system and re-cataloging process"
+            ],
+            "execution_steps": [
+                "Physically re-shelve books according to new categories",
+                "Update library catalog records with new 'call words'",
+                "Create and apply new shelf labels and signage",
+                "Educate patrons and parents about the new organization"
+            ],
+            "tips_for_success": "Involve children and parents in the category development process to ensure relevance and clarity. Provide clear signage and staff assistance during the transition period. Continuously evaluate the system for ease of use and make adjustments as needed."
+        },
+        "impact": {
+            "problem_solved": "The complexity and lack of intuitiveness of the Dewey Decimal Classification system for young library patrons, making it difficult for them to find nonfiction books.",
+            "evidence_of_success": "Enhanced browsability and ease of access for children, simplifying the process of locating books on specific topics.",
+            "beneficiaries_reach": "Children and young adults utilizing the Saline County Library's nonfiction collection.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risk associated with this innovation is the potential for exclusion/accessibility barriers related to the lack of standardization. While the category-based system significantly improves ease of access and reduces cognitive load for young patrons within the Saline County Library, it departs from the universally adopted Dewey Decimal Classification (DDC). This could create a barrier for children when they transition to other libraries or school media centers that still use DDC, potentially hindering their ability to independently navigate and locate resources in different environments. The innovation itself does not pose risks to data privacy, child safety, or physical safety. Intervention, such as providing supplementary information about DDC or clearly communicating the differences to children and parents, could help bridge this gap."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "75c839b9d6885fa0e8a6b51eb5fc6049",
+        "timestamp": "2026-05-31T07:20:24.570732",
+        "title": "Adoption of Brian Deer Classification System at X̱wi7x̱wa Library",
+        "sources": [
+            "https://www.yesmagazine.org/social-justice/2019/03/22/decolonize-western-bias-indigenous-library-books",
+            "https://sigcr.wordpress.com/wp-content/uploads/2017/10/2017sigcrworshopgreen.pdf",
+            "https://iastate.pressbooks.pub/isudp-2024-153/chapter/classification/",
+            "https://www.cbc.ca/news/canada/british-columbia/cstc-library-dewey-brian-deer-1.5726732"
+        ],
+        "summary": "The X̱wi7x̱wa Library at the University of British Columbia (UBC) has implemented an adapted version of the Brian Deer Classification system, moving away from the Western-centric biases of traditional classification schemes like Dewey Decimal and Library of Congress. Developed by Kahnawake librarian Brian Deer in 1974, this system organizes materials by related Indigenous cultures and geographical locations, providing a more accurate and culturally relevant representation of Indigenous knowledge and culture. This innovation makes the library a more accessible and meaningful space for Indigenous researchers and community members.",
+        "category": [
+            "Library Science",
+            "Indigenous Studies",
+            "Cultural Preservation",
+            "Information Management"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Canada",
+            "region": "British Columbia",
+            "city_or_village": "Vancouver",
+            "institution_name": "X̱wi7x̱wa Library, University of British Columbia",
+            "lat": 49.2608724,
+            "lon": -123.113952
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Indigenous Studies",
+                "Library Science",
+                "Cultural Studies",
+                "Information Science"
+            ],
+            "target_learners": "Indigenous researchers, community members, university students, faculty, and staff interested in Indigenous knowledge",
+            "learning_outcomes": [
+                "Improved access to Indigenous knowledge resources",
+                "Enhanced cultural relevance and representation in library collections",
+                "Support for Indigenous research methodologies and perspectives",
+                "Increased understanding of Indigenous worldviews through organized knowledge"
+            ],
+            "pedagogical_approach": "Supports self-directed learning and research by providing a culturally appropriate and intuitive organization of resources, facilitating discovery and engagement with Indigenous knowledge."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Western-centric biases and colonial legacies in traditional library classification systems that misrepresent or marginalize Indigenous knowledge and culture.",
+            "evidence_of_success": "The library is described as 'a more culturally relevant and accessible space for Indigenous researchers and community members.'",
+            "beneficiaries_reach": "Indigenous researchers, students, and community members, as well as non-Indigenous users seeking to engage with Indigenous perspectives.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "cognitive_overload"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The adoption of the Brian Deer Classification system significantly enhances cultural relevance and accessibility for Indigenous researchers and community members, directly addressing historical exclusion and Western-centric biases. The primary potential risk is a temporary cognitive load for users unfamiliar with the new system, requiring a learning curve. However, this is a manageable challenge through standard library support and is far outweighed by the substantial benefits of a culturally appropriate knowledge organization system for its specialized audience. The innovation actively resolves existing cultural friction rather than creating new significant risks."
+        },
+        "priority_score": 68,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "4d5bc31acad59c988018e8450fdc0ecf",
+        "timestamp": "2026-05-31T07:20:58.037551",
+        "title": "Wellington Library's Mātauranga Māori Classification System",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjfqZFPejbtdpRjI97v5OLXGsFHTVuSNuzatB9SkBVkZaHFKt5GIhlCIv6CN1gv3CZkCf3qo3w9FqJHn29MILpvOTJNCde5qHGors6EICgkx57J-a7iLYS0ZTXJz8jo7gEyJ7-Pw2Ysq8Wk5m-dM6Mpr_RnN9fHxQJYH6xFYxBvtfFZXvSqBW8Dnb7ljAmJpBX8LwvDOZft9QaivpCgw_V6a1yOj6D1xZEckPBelpKGZtwOgfZ228nXnoEiJ5kAqD9KvEFslFQEyNXnY4n82ms"
+        ],
+        "summary": "The Wellington Library in New Zealand is piloting an innovative classification system for its mātauranga Māori (Māori knowledge) books. This new approach moves away from the traditional Dewey Decimal system, organizing books instead by Māori atua (gods) and their associated domains of knowledge and activity. For instance, resources related to oceans, lakes, rivers, aquatic life, and carving are classified under Tangaroa, the atua of the oceans. This culturally specific system aims to better reflect Indigenous ways of knowing, address the historical marginalization of non-Western knowledge within standard classification systems, and make these resources more accessible and relevant to the Māori community.",
+        "category": [
+            "Cultural Preservation",
+            "Indigenous Education",
+            "Library Science",
+            "Information Science"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "New Zealand",
+            "region": "",
+            "city_or_village": "Wellington",
+            "institution_name": "Wellington Library",
+            "lat": -41.2887953,
+            "lon": 174.7772114
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other",
+                "Literacy",
+                "Arts",
+                "Environment"
+            ],
+            "target_learners": "Māori community, general public interested in mātauranga Māori, researchers",
+            "learning_outcomes": [
+                "Improved access to mātauranga Māori resources",
+                "Enhanced understanding of Indigenous knowledge systems",
+                "Promotion of cultural relevance and preservation"
+            ],
+            "pedagogical_approach": "Culturally responsive information organization, Indigenous knowledge systems framework"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Historical marginalization of non-Western knowledge within standard classification systems and poor accessibility/relevance of mātauranga Māori resources for the Māori community.",
+            "evidence_of_success": "Aims to better reflect Indigenous ways of knowing and make resources more accessible and relevant to the Māori community.",
+            "beneficiaries_reach": "Māori community, library patrons, researchers, and those interested in Indigenous knowledge.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 4,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risk lies in potential exclusion or cognitive overload for users unfamiliar with Māori atua (gods) and their associated domains, making it initially challenging for them to navigate the mātauranga Māori section. While the system significantly enhances accessibility and cultural relevance for the Māori community, it introduces a new learning curve for others. There is also a minor potential for cultural friction from those resistant to moving away from Western classification systems. However, the innovation itself poses no physical safety or data privacy risks. Interventions such as clear signage, cross-referencing with traditional systems (if applicable), and robust staff guidance will be essential to mitigate these barriers and ensure a smooth transition for all library patrons."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "45b4968c03b3c8e594e36a777067de46",
+        "timestamp": "2026-05-31T07:22:00.419037",
+        "title": "Labuhanbatu Local Literacy Initiative",
+        "sources": [
+            "https://royaliiteglobal.com/code/uploads/26032025024537.pdf"
+        ],
+        "summary": "The Labuhanbatu District in Indonesia launched a comprehensive Local Literacy Initiative to improve community literacy. This program employs a multi-faceted approach, including adult literacy programs, mobile libraries, community reading groups, and school-based book drives. Its goals are to enhance reading abilities, cultivate critical thinking, and foster overall community empowerment. While showing positive progress in literacy skills and participant confidence, the initiative faces challenges like unequal access to digital resources and economic constraints, underscoring the necessity for inclusive and accessible program design.",
+        "category": [
+            "Literacy",
+            "Community Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Indonesia",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Labuhanbatu District",
+            "lat": -2.4833826,
+            "lon": 117.8902853
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Community members, adults, school children",
+            "learning_outcomes": [
+                "improve reading abilities",
+                "foster critical thinking skills",
+                "contribute to overall community empowerment"
+            ],
+            "pedagogical_approach": "Multi-faceted approach incorporating adult literacy programs, mobile libraries, community reading groups, and school-based book drives."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "books",
+                "mobile library resources",
+                "reading group materials"
+            ],
+            "preparation_steps": [
+                "Design comprehensive literacy programs",
+                "Allocate resources for program components",
+                "Conduct community outreach"
+            ],
+            "execution_steps": [
+                "Implement adult literacy programs",
+                "Establish and operate mobile libraries",
+                "Organize and facilitate community reading groups",
+                "Conduct school-based book drives"
+            ],
+            "tips_for_success": "Design inclusive programs that address diverse needs and accessibility barriers, including challenges related to digital resources and economic constraints."
+        },
+        "impact": {
+            "problem_solved": "Low community literacy levels and limited access to reading resources.",
+            "evidence_of_success": "Positive developments in literacy skills and participant confidence.",
+            "beneficiaries_reach": "Community members within Labuhanbatu District.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk identified is exclusion and accessibility barriers, as the initiative faces 'unequal access to digital resources and economic constraints'. This directly impacts the program's ability to serve all community members equitably, potentially hindering overall community empowerment. While there are no explicit physical safety or data privacy risks mentioned, the challenges to inclusive participation are significant and require intervention to ensure the program effectively reaches diverse needs and addresses accessibility barriers."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "488dacb430c5cde052e8b89cc2c4665b",
+        "timestamp": "2026-05-31T07:22:27.662792",
+        "title": "Storylines Community Storytelling Projects",
+        "sources": [
+            "https://www.storylines.org.uk/projects/"
+        ],
+        "summary": "Storylines, based in Cornwall, UK, facilitates unique community storytelling projects designed to help individuals, organizations, and communities unearth and creatively share personal stories. Through various methods like memory days, workshops, digital storytelling, and photography, they preserve local histories and foster intergenerational connections. Notable projects include 'Merchant Schooner Memories,' which collected local recollections of maritime history; 'Tattoo Tales,' documenting the stories behind people's tattoos for an exhibition; and 'Library of Us - Intergenerational Exchange Project,' which created bespoke books for sharing experiences, including those from the COVID-19 pandemic.",
+        "category": [
+            "Storytelling",
+            "Community Engagement",
+            "Cultural Heritage",
+            "Intergenerational Learning",
+            "Oral History"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "UK",
+            "region": "Cornwall",
+            "city_or_village": "",
+            "institution_name": "Storylines",
+            "lat": 50.416667,
+            "lon": -4.75
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Arts",
+                "Literacy",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Individuals, organizations, and communities of all ages; specific groups include those with memories of merchant schooners, people with tattoos, and different generations.",
+            "learning_outcomes": [
+                "Enhanced storytelling and communication skills",
+                "Preservation of personal and community histories",
+                "Increased community connection and cohesion",
+                "Improved intergenerational understanding",
+                "Creative expression through various media"
+            ],
+            "pedagogical_approach": "Participatory storytelling, memory days, workshops, digital storytelling, photography, bespoke book creation, intergenerational exchange."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Audio/video recording equipment",
+                "Cameras for photography",
+                "Writing materials and journals",
+                "Digital editing software (for stories/photos)",
+                "Book-making supplies (for bespoke books)",
+                "Workshop facilitation tools"
+            ],
+            "preparation_steps": [
+                "Identify a specific community or thematic focus for storytelling (e.g., local history, personal experiences).",
+                "Conduct outreach to potential participants and community partners.",
+                "Plan and schedule 'memory days' or workshops to gather stories.",
+                "Develop ethical guidelines for story collection, consent, and usage."
+            ],
+            "execution_steps": [
+                "Facilitate interactive sessions to encourage participants to share personal narratives.",
+                "Record stories through interviews, written accounts, audio, or video.",
+                "Guide participants in crafting their stories into digital formats, photo essays, or written works.",
+                "Organize exhibitions, publications (e.g., bespoke books), or online platforms to share the collected stories.",
+                "Facilitate intergenerational exchanges to promote shared learning and understanding."
+            ],
+            "tips_for_success": "Create a safe, inclusive, and supportive environment where participants feel comfortable sharing. Provide clear guidance and creative tools while allowing for individual expression. Ensure proper archiving and dissemination of stories to maximize impact and reach. Actively listen and validate all contributions."
+        },
+        "impact": {
+            "problem_solved": "Loss of personal and community histories, lack of intergenerational connection, limited avenues for creative self-expression, underrepresentation of diverse voices within historical narratives.",
+            "evidence_of_success": "Uncovered local recollections of merchant schooners, documented stories behind people's tattoos contributing to a major exhibition, created bespoke books fostering intergenerational connection and shared narratives, enhanced community engagement.",
+            "beneficiaries_reach": "Individuals, organizations, and communities across Cornwall, UK, including specific groups like older adults, maritime enthusiasts, people with tattoos, and different generations during significant events like the COVID-19 pandemic.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "High risks are present regarding data privacy, as the projects involve collecting and publicly sharing personal stories, photographs, and digital content, which requires stringent consent processes and GDPR compliance, especially for sensitive information. Child safety is a significant concern in intergenerational projects, necessitating robust safeguarding policies, DBS checks for staff/volunteers, and careful content moderation. Potential for exclusion exists for individuals lacking digital literacy or facing social/accessibility barriers to participation. Cultural friction could arise from the sharing of diverse personal narratives, requiring sensitive facilitation."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "2fcbb5b73df46799d7179333ad892700",
+        "timestamp": "2026-05-31T07:22:52.426049",
+        "title": "Laundromat Literacy Initiatives",
+        "sources": [
+            "https://www.naeyc.org/resources/pubs/tyc/oct2019/using-village-raise-a-reader"
+        ],
+        "summary": "Laundromat literacy initiatives transform everyday laundromats into 'Family Read, Play & Learn' spaces to promote early literacy. These programs, supported by national foundations and local communities, provide free books and facilitate literacy activities in places families already frequent. This approach makes reading more accessible, and research indicates that children in laundromats with these spaces show significantly increased literacy engagement, especially with regular story times led by librarians.",
+        "category": [
+            "Literacy",
+            "Early Childhood Education",
+            "Community Engagement"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Early Childhood Education"
+            ],
+            "target_learners": "Families, young children, parents",
+            "learning_outcomes": [
+                "Increased engagement in literacy activities",
+                "Greater access to reading materials",
+                "Extended periods of sustained literacy engagement"
+            ],
+            "pedagogical_approach": "Community-based learning, environmental learning, play-based learning, family engagement"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Free books (children's books, age-appropriate)",
+                "Dedicated space within a laundromat",
+                "Signage for 'Family Read, Play & Learn' area",
+                "Optional: Literacy activity materials (puzzles, drawing supplies)",
+                "Optional: Librarians or volunteers for story times"
+            ],
+            "preparation_steps": [
+                "Identify willing laundromat owners/managers",
+                "Designate and set up a 'Family Read, Play & Learn' space within the laundromat",
+                "Acquire and stock a collection of diverse, age-appropriate children's books",
+                "Develop a schedule for literacy activities or story times (if applicable)"
+            ],
+            "execution_steps": [
+                "Maintain the book collection and learning space",
+                "Facilitate impromptu literacy activities for families using the laundromat",
+                "Organize and conduct weekly story times or other structured literacy events (if resources allow)"
+            ],
+            "tips_for_success": "Focus on meeting families where they are by integrating learning into their existing routines. Ensure the space is welcoming, comfortable, and well-stocked with engaging materials. Partner with local libraries or community groups for book donations and volunteer support."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to reading materials and opportunities for literacy engagement for families, particularly those with limited resources or time.",
+            "evidence_of_success": "Children in laundromats with dedicated literacy spaces engage in significantly more literacy activities. Weekly story times led by librarians can lead to extended periods of sustained literacy engagement.",
+            "beneficiaries_reach": "Families and children frequenting laundromats, particularly those from underserved communities.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "child_safety"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk is child safety due to the public and operational nature of laundromats. While dedicated 'Family Read, Play & Learn' spaces and librarian-led story times enhance the environment, children are still in a public commercial space with potential hazards (e.g., machinery, cleaning chemicals, general public interaction). Parental supervision remains crucial, and the initiative itself does not fully mitigate all inherent risks of the venue, requiring ongoing vigilance and clear guidelines."
+        },
+        "priority_score": 82,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "e18c040cd1745ac0c7d536bca854c999",
+        "timestamp": "2026-05-31T07:23:16.331801",
+        "title": "Collective Spaces of the Industrious",
+        "sources": [
+            "https://www.theipsnow.org/oral-history-projects.html"
+        ],
+        "summary": "The \"Collective Spaces of the Industrious\" project is an oral history initiative in Saginaw, Michigan, focused on documenting the lives of Black and Latino residents from the early 20th century to 2003. It's a collaboration between local community centers and Saginaw Valley State University, involving professors and students in collecting extensive oral testimonies. A unique feature is the translation of these histories into a mixed-media \"doors project,\" where narratives are transferred onto wooden doors, symbolizing access and opportunity, and providing an engaging way for future generations to connect with their community's history.",
+        "category": [
+            "Oral History",
+            "Community Engagement",
+            "Arts & Culture",
+            "History",
+            "Cultural Preservation"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Michigan",
+            "city_or_village": "Saginaw",
+            "institution_name": "Saginaw Valley State University and local community centers",
+            "lat": 43.4200387,
+            "lon": -83.9490365
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "History",
+                "Arts",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Black and Latino residents of Saginaw, university students, wider community, future generations",
+            "learning_outcomes": [
+                "Preservation of marginalized historical narratives",
+                "Enhanced understanding of local community history and culture",
+                "Development of oral history research skills",
+                "Intergenerational learning and engagement",
+                "Promotion of cultural identity and heritage"
+            ],
+            "pedagogical_approach": "Oral history methodology, community-based participatory research, experiential learning through mixed-media art creation, interdisciplinary collaboration."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Audio recording equipment (recorders, microphones)",
+                "Transcription software/services",
+                "Wooden doors (recycled or new)",
+                "Mixed-media art supplies (paints, glues, printing materials, protective sealants)",
+                "Interview guides and consent forms",
+                "Archival storage for recordings and transcripts"
+            ],
+            "preparation_steps": [
+                "Establish partnerships with community centers and historical societies.",
+                "Recruit and train interviewers (students, community volunteers) in oral history techniques and ethical considerations.",
+                "Develop interview questions focused on key historical periods and themes.",
+                "Identify and outreach to potential narrators within the target community.",
+                "Secure a space for the 'doors project' creation and exhibition."
+            ],
+            "execution_steps": [
+                "Conduct in-depth oral history interviews with community members, ensuring informed consent.",
+                "Transcribe and process the recorded interviews, extracting key themes and narratives.",
+                "Collaborate with artists or design teams to conceptualize how narratives will be visually represented on the doors.",
+                "Transfer selected quotes, images, and historical context onto wooden doors using mixed-media techniques.",
+                "Exhibit the completed 'doors project' in public spaces (e.g., community centers, university galleries, libraries) to maximize community engagement."
+            ],
+            "tips_for_success": "Foster strong community trust and collaboration throughout the project. Ensure ethical practices in interviewing and data handling. Encourage creative and accessible ways to present historical narratives. Plan for long-term preservation and accessibility of the oral history archive. Engage local artists and historians for authentic representation."
+        },
+        "impact": {
+            "problem_solved": "The project addresses the lack of documented historical narratives for Black and Latino residents in traditional records, preventing their experiences from being overlooked and lost to future generations. It provides a platform for marginalized voices.",
+            "evidence_of_success": "Preservation of extensive oral testimonies from early 20th century to 2003. Creation of a unique mixed-media 'doors project' that serves as a powerful metaphor for access and opportunity, allowing future generations to engage with rich historical narratives.",
+            "beneficiaries_reach": "Black and Latino residents of Saginaw (narrators and their families), Saginaw Valley State University students and faculty, local community centers, wider public engaging with the exhibition, future generations.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The project faces a significant data privacy risk due to the collection and public display of extensive personal oral testimonies. Ensuring robust informed consent, clear data governance for sensitive historical narratives, and careful consideration of what identifying information is publicly accessible are crucial. Additionally, the physical 'doors project' could present exclusion or accessibility barriers for individuals with disabilities or those with diverse language needs, requiring thoughtful design and presentation to ensure broad community engagement."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "6a0f79f9b3bead3957c437ff44204517",
+        "timestamp": "2026-05-31T07:24:06.222068",
+        "title": "Storying the FEW Nexus",
+        "sources": [
+            "https://www.mdpi.com/2227-7102/15/6/744"
+        ],
+        "summary": "The 'Storying the FEW Nexus' is an interdisciplinary pedagogical framework for K-12 learners in rural areas. It integrates STEM education with local narratives to cultivate a deep sense of place and address socio-ecological issues. By using storytelling, it connects STEM concepts to real-world Food-Energy-Water (FEW) Nexus challenges relevant to local communities, fostering place-based socio-ecological systems thinking and supporting sustainable decision-making.",
+        "category": [
+            "STEM",
+            "Environmental Education",
+            "Place-Based Learning",
+            "Storytelling",
+            "Community Engagement"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Literacy",
+                "Civics"
+            ],
+            "target_learners": "K-12 learners in rural areas",
+            "learning_outcomes": [
+                "Foster a deep sense of place",
+                "Address socio-ecological issues",
+                "Develop place-based socio-ecological systems thinking",
+                "Support decision-making for sustainable solutions to local resource challenges"
+            ],
+            "pedagogical_approach": "Interdisciplinary framework integrating STEM with local narratives; uses storytelling to connect scientific concepts to real-world Food-Energy-Water (FEW) Nexus challenges; emphasizes place-based learning."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of connection between STEM education and local socio-ecological issues, inadequate place-based systems thinking, and insufficient engagement with sustainability challenges in rural communities, especially those with environmental justice histories.",
+            "evidence_of_success": "",
+            "beneficiaries_reach": "K-12 learners in rural areas",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "cultural",
+                "data_privacy",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The 'Storying the FEW Nexus' framework carries significant risks, primarily cultural friction due to its reliance on local narratives and 'unique environmental justice histories.' Handling these sensitive, potentially conflicting stories requires extreme care to avoid misrepresentation, community division, or offense. Data privacy is a concern as these narratives might contain sensitive personal or community information that, if collected or shared, could pose risks. Exclusion barriers could arise if certain local narratives or community voices are inadvertently marginalized or if the framework doesn't adequately support diverse learning styles. Finally, discussing challenging socio-ecological issues and environmental justice histories (categorized under 'other' for child safety) could be emotionally taxing for K-12 learners, requiring careful facilitation to ensure their well-being. Cognitive overload is also a potential, given the interdisciplinary complexity for K-12."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "727c39ddd06bfa8e73099939479eeeff",
+        "timestamp": "2026-05-31T07:24:27.764905",
+        "title": "The Walking Curriculum",
+        "sources": [
+            "https://www.edcan.ca/articles/imaginative-ecological-education/",
+            "https://hundred.org/en/innovations/1-the-walking-curriculum"
+        ],
+        "summary": "The Walking Curriculum is an interdisciplinary resource featuring 60 easy-to-use activities that encourage educators to move learning outdoors. It aims to engage students' emotions and imaginations with their local natural and cultural communities, broadening their 'Sense of Place' and fostering a sense of wonder. By connecting curricular topics with the real world through walking-based practices, it helps students develop ecological understanding while fulfilling mandated curriculum requirements and cultivating imagination through storytelling and engagement with nature.",
+        "category": [
+            "Environment",
+            "Pedagogy",
+            "Interdisciplinary"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Arts",
+                "Other"
+            ],
+            "target_learners": "students",
+            "learning_outcomes": [
+                "Broaden students' awareness of their 'Sense of Place'",
+                "Evoke a sense of wonder in learning",
+                "Connect curricular topics with the real world",
+                "Develop ecological understanding",
+                "Cultivate learners' imaginations"
+            ],
+            "pedagogical_approach": "Moving learning experiences outdoors, walking-based practices, teaching as storytelling, engaging with the natural world, interdisciplinary connections"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of connection between curricular topics and the real world; limited ecological understanding; insufficient cultivation of imagination in learning.",
+            "evidence_of_success": "Helps students develop ecological understanding and cultivate their imaginations through practical, engaging activities.",
+            "beneficiaries_reach": "Educators in various settings (including rural areas) and their students.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The 'Walking Curriculum' inherently shifts learning to outdoor environments, introducing significant child safety risks related to unfamiliar terrain, weather exposure, encounters with strangers or wildlife, and traffic, especially in diverse settings including rural areas. There are also substantial exclusion barriers for students with physical disabilities, certain medical conditions (e.g., severe allergies, asthma), or those lacking appropriate outdoor gear due to economic constraints. While aiming to connect with local culture, there's potential for cultural friction if activities are not implemented with deep sensitivity and respect for diverse community values and land uses. These factors necessitate robust planning for safety protocols, accessibility accommodations, and culturally sensitive engagement."
+        },
+        "priority_score": 72,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "8326381ade696500491c94820a4cec31",
+        "timestamp": "2026-05-31T07:25:06.643354",
+        "title": "Rural School Makerspaces for STEM and Environmental Problem-Solving",
+        "sources": [
+            "https://edtechmagazine.com/k12/article/2017/10/thanks-makerspaces-rural-schools-can-teach-stem-skills-too"
+        ],
+        "summary": "Rural schools are adopting makerspaces, which can be high-tech or low-tech, to provide hands-on learning and cultivate STEM skills, imagination, and creative problem-solving. These spaces offer a safe environment for creativity and collaboration. An example from Corvallis High School in Montana demonstrates science students using a grant to build air sensors to analyze local air pollution from forest fires and wood-burning stoves. This project required students to integrate hardware and software, actively change code, and work with tangible components, engaging their design thinking and imaginative application of scientific principles to address a real-world community issue.",
+        "category": [
+            "STEM",
+            "Environmental Education",
+            "Hands-on Learning",
+            "Rural Education",
+            "Creative Problem-Solving",
+            "Design Thinking"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Montana",
+            "city_or_village": "Corvallis",
+            "institution_name": "Corvallis High School",
+            "lat": 46.318423,
+            "lon": -114.1145045
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Computer Science",
+                "Engineering"
+            ],
+            "target_learners": "High school science students",
+            "learning_outcomes": [
+                "Develop STEM skills",
+                "Foster creative problem-solving",
+                "Enhance design thinking",
+                "Understand local environmental issues (air pollution)",
+                "Integrate hardware and software components",
+                "Apply scientific principles to real-world problems"
+            ],
+            "pedagogical_approach": "Makerspace methodology, Project-based learning, Hands-on learning, Inquiry-based learning, Collaborative learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Makerspace tools and equipment (e.g., 3D printers, microcontrollers, sensors)",
+                "Hardware components (e.g., air quality sensors, circuit boards)",
+                "Software development kits and coding platforms",
+                "Computers with internet access",
+                "Funding/Grants for materials and setup"
+            ],
+            "preparation_steps": [
+                "Secure funding (e.g., through school grants or community partnerships) for makerspace setup and project materials.",
+                "Design and equip a dedicated makerspace area, considering both high-tech and low-tech options.",
+                "Identify relevant local or community-based problems that can be addressed through student-led projects (e.g., air quality, water quality, local infrastructure).",
+                "Develop curriculum or project guidelines that integrate STEM principles with design thinking and problem-solving."
+            ],
+            "execution_steps": [
+                "Introduce students to the concept of design thinking, iterative problem-solving, and the makerspace environment.",
+                "Guide students in researching and selecting appropriate hardware and software components for their chosen project (e.g., air sensor components).",
+                "Facilitate the assembly, programming, and calibration of the devices (e.g., building and coding air sensors).",
+                "Support students in data collection, analysis, and interpretation related to their project (e.g., monitoring local air pollution levels).",
+                "Encourage students to iterate on their designs, troubleshoot issues, and refine their solutions.",
+                "Provide opportunities for students to present their findings and solutions to peers, school staff, or the wider community."
+            ],
+            "tips_for_success": "Connect makerspace projects to real-world, local issues to increase student engagement and relevance. Foster an environment that encourages experimentation, collaboration, and learning from 'failure'. Provide adequate training and support for educators to guide students effectively. Seek community partnerships for resources, expertise, and project inspiration."
+        },
+        "impact": {
+            "problem_solved": "Limited access to hands-on, real-world STEM learning opportunities in rural schools; lack of local data and awareness regarding specific environmental issues like air pollution.",
+            "evidence_of_success": "Students successfully designed, built, and utilized air sensors to analyze local air pollution. Students actively engaged in coding, hardware integration, and design thinking, demonstrating practical application of scientific and engineering principles.",
+            "beneficiaries_reach": "Directly benefits students at Corvallis High School by enhancing their STEM skills and problem-solving abilities. Potentially benefits the local community through increased awareness and data on air pollution.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "Makerspaces, especially those involving hardware and tangible components like the air sensor project, inherently carry physical safety risks. These can include hazards from tools (e.g., cutting tools, soldering irons), electrical components, and other materials. While the description mentions a 'safe environment,' this implies active management of risks through supervision, safety protocols, and proper training, rather than an absence of potential hazards. Without robust safety measures, there is a moderate risk of physical injury to students."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "54062d7cedd5e0574e2b9f40dcfd9a6d",
+        "timestamp": "2026-05-31T07:25:32.394183",
+        "title": "Bee The Cure: Project-Based Learning Initiative",
+        "sources": [
+            "https://youthoffthestreets.com.au/2020/10/19/project-based-learning-on-the-land/"
+        ],
+        "summary": "The 'Bee The Cure' initiative, implemented by Youth Off The Streets, engaged students from The Lakes College in a ten-week Project-Based Learning (PBL) program at Grace Springs Farm. Centered on the driving question 'How can the decrease in bee populations be remediated on a community level?', students participated in hands-on activities including beekeeping workshops, learning sustainable practices and polyculture, building bee hotels for native bees, studying the ecosystem, and cooking with fresh produce. This immersive, real-world project encouraged students to develop and implement creative solutions to an environmental problem, fostering a deeper connection with nature and their community.",
+        "category": [
+            "Environmental Education",
+            "Project-Based Learning",
+            "Community Engagement",
+            "Sustainable Practices"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Australia",
+            "region": "Queensland",
+            "city_or_village": "Peachester (farm location), North Lakes (college location)",
+            "institution_name": "Youth Off The Streets, The Lakes College, Grace Springs Farm",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Vocational",
+                "Civics"
+            ],
+            "target_learners": "Students from The Lakes College",
+            "learning_outcomes": [
+                "Understanding of bee population decline and remediation",
+                "Knowledge of sustainable practices and polyculture",
+                "Practical skills in beekeeping and building bee habitats",
+                "Ecosystem understanding",
+                "Ability to devise and implement creative solutions to environmental problems",
+                "Enhanced connection with nature and community"
+            ],
+            "pedagogical_approach": "Project-Based Learning (PBL), hands-on experiential learning, immersive real-world problem-solving, inquiry-based learning."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Access to a farm or natural environment suitable for beekeeping",
+                "Beekeeping equipment (hives, protective gear, tools)",
+                "Materials for building native bee hotels",
+                "Seeds/plants for polyculture/sustainable farming",
+                "Cooking supplies and fresh produce",
+                "Curriculum resources on bee ecology and sustainable practices"
+            ],
+            "preparation_steps": [
+                "Establish partnerships with educational institutions and environmental farms/centers.",
+                "Define a clear, real-world 'driving question' for the project.",
+                "Develop a structured curriculum or program outline (e.g., 10-week plan).",
+                "Secure expert facilitators for workshops (e.g., beekeepers, sustainable farmers).",
+                "Prepare learning materials and resources related to the project topic.",
+                "Arrange logistics for student transport and on-site activities."
+            ],
+            "execution_steps": [
+                "Introduce the driving question and project goals to students.",
+                "Conduct hands-on beekeeping workshops, teaching safety and care.",
+                "Educate students on sustainable farming practices and polyculture.",
+                "Guide students in designing and constructing native bee hotels.",
+                "Facilitate ecosystem studies and observations.",
+                "Organize cooking sessions using farm produce to connect food systems.",
+                "Encourage students to brainstorm, design, and implement their own solutions to the environmental problem.",
+                "Provide opportunities for reflection and presentation of student work."
+            ],
+            "tips_for_success": "Ensure a strong, compelling driving question that sparks curiosity. Prioritize hands-on, immersive experiences over purely theoretical learning. Foster collaboration between students and community experts. Emphasize the connection between environmental issues and community action. Allow for student autonomy and creativity in problem-solving."
+        },
+        "impact": {
+            "problem_solved": "Decrease in bee populations, lack of practical environmental education and community engagement in ecological solutions.",
+            "evidence_of_success": "Students engaged in hands-on learning, devised and implemented creative solutions, and fostered a deeper connection with nature and their community.",
+            "beneficiaries_reach": "Students from The Lakes College (specific number not provided).",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety, particularly from bee stings (including potential allergic reactions) during beekeeping workshops, and general hazards associated with a farm environment and tool use for building bee hotels. There is also a potential for exclusion or accessibility barriers for students with physical disabilities or severe allergies, impacting their full participation in hands-on farm and beekeeping activities."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "89fa110d6bf48700c7f17bed8a79aa54",
+        "timestamp": "2026-05-31T07:26:22.799563",
+        "title": "Neurodiversity Alliance: Eye to Eye Mentorship Program",
+        "sources": [
+            "https://www.courthousenews.com/these-neurodivergent-students-are-helping-each-other-build-more-inclusive-schools/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9l89E5vo3KBB7BAeCiJ6WdgRhXb17sZBIM5u6kfBphqt9ZKA6PaDURELoaDEG7BCK78Id9ugSpJnw42HnH2mhBFooCOMDC-L9ohUWiUQQjWhQ2ESAlYbRbC6qNLMH9kZ49FjlNSkRCWrjP5EFzbAc3XbAm6px6kFeRWAeyNbGD9f7z1tSNVlhreCfnX3iTUbaYgV63xikB6rnBMcbRixlF2tGh3jOuZDDKqZk9FlvnyS_Hudj",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUFfj5tSFaI04m1mwZ8U-n1IqMwhCeWuVqlgkm-exCjGwCfU_Vkxaxrr7Hmp_pNVCZF4Hf_1k9SqV_9qO8_cctGcegNz5CaqP2O6RWpjOpZLKdfDhT2rN1CrMnmWLnNUUPOT2BoogJQOiIfmWHOjUH__Y1o1134rQnm1B8lt9Esmdv25yfxY2ePc-5QPe45zh1OfA3LA==",
+            "https://thendalliance.org/"
+        ],
+        "summary": "The Neurodiversity Alliance is a student-led, grassroots initiative that empowers neurodivergent youth. Its 'Eye to Eye' program connects neurodivergent high school mentors with middle schoolers through creative activities like crafts. The program aims to help younger students reframe cognitive differences as strengths, discuss coping strategies, build community, and foster self-acceptance, thereby promoting inclusive educational spaces.",
+        "category": [
+            "Inclusion",
+            "Mentorship",
+            "Neurodiversity",
+            "Youth Empowerment",
+            "Social-Emotional Learning"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Neurodivergent high school students (mentors) and neurodivergent middle schoolers (mentees)",
+            "learning_outcomes": [
+                "Reframing cognitive differences as strengths",
+                "Developing coping strategies",
+                "Building a sense of community",
+                "Fostering self-acceptance",
+                "Promoting inclusive mindsets"
+            ],
+            "pedagogical_approach": "Peer mentorship, strengths-based approach, creative activities (crafts), community building, discussion-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Craft materials (e.g., paper, markers, glue, art supplies)"
+            ],
+            "preparation_steps": [
+                "Identify and recruit neurodivergent high school students as mentors",
+                "Provide training to mentors on facilitating discussions, active listening, and supporting younger neurodivergent students",
+                "Recruit neurodivergent middle school students interested in mentorship",
+                "Plan creative activities suitable for both age groups"
+            ],
+            "execution_steps": [
+                "Pair high school mentors with middle school mentees",
+                "Facilitate regular meetings where mentors and mentees engage in creative activities (e.g., crafts)",
+                "Encourage mentors to guide discussions on reframing cognitive differences, sharing personal experiences, and discussing coping strategies",
+                "Foster an environment of mutual support, acceptance, and community building"
+            ],
+            "tips_for_success": "Emphasize a strengths-based perspective on neurodiversity. Create a safe and welcoming space for open discussion. Empower mentors to lead and share their experiences authentically. Focus on building genuine connections and a sense of belonging."
+        },
+        "impact": {
+            "problem_solved": "Lack of inclusive educational spaces and understanding for neurodivergent youth, negative self-perception among neurodivergent individuals, and social isolation.",
+            "evidence_of_success": "Shifts the narrative from deficits to strengths, promotes inclusion by advocating for systemic adaptation, builds community and self-acceptance among neurodivergent youth.",
+            "beneficiaries_reach": "Neurodivergent high school students (mentors) and neurodivergent middle schoolers (mentees).",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "data_privacy"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The 'Eye to Eye' program involves high school students mentoring middle schoolers on sensitive personal topics related to neurodiversity. Without explicit mention of adult supervision, formal training for mentors (e.g., in safeguarding, appropriate boundaries, or handling disclosures), and clear data privacy protocols for the personal information shared, there are significant risks. The grassroots, student-led nature, while empowering, suggests these critical safeguards might be less developed than in institutionally-backed programs. Intervention is needed to establish robust child protection and data privacy measures."
+        },
+        "priority_score": 56,
+        "hidden_gem": true,
+        "critical_flag": true
     }
 ]
