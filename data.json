@@ -8987,5 +8987,293 @@
         "priority_score": 56,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "ca07037b59b5326452553fa40155eedc",
+        "timestamp": "2026-06-03T02:23:35.075528",
+        "title": "Recycled Robots (Junkbots)",
+        "sources": [
+            "https://learningmole.com/recycled-robot-sculptures-stem-learning/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWhKN3KgLMdzfD5zQK0tZ32szSq6zoB_VtvFA8r7oOaCvwHdujrJ9XFBPRMmpnmQYM2Aj3rNPnLh66TH_XOOukFZv4wKtaRCv2zu4R_ZKyWFzdxQOSZNk9b_lSbeYeZNLMIP4nvqCb1xYMRtX8EwXXLPhdb3r0PQjbmgjsesJfFATKLr6nlcy0kq8h9HTRySEdJw=",
+            "https://www.sciencebuddies.org/stem-activities/build-a-recycled-robot",
+            "https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/lessons-and-activities/activities/tap/recycled-robots-with-matt-mcgee/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEONLg8SF-6UOBztJ44EsJ5HIyuMU5CRpT8AjgYgNlJJIddT0HM8c84J-crjmaZimxr2sNc8hgLoyBxk6kNKm4Wtb6W7kZQLNBXHbfZ8cbkxXcjg5CogF6coUl_Hr1s9pKysj7kF8v8Mdg0HXvDvVmCBRwm2vNAZvQ==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGFntTtndLDhOyPJVqmi--xHelGrkqauToDMCctr2enmXk1OvBX1zqDsZLTv_7TT5fzYMLL1TCQ4Fhqul8vgjrx8YCBaQKlF2e3nnqMXKdzbBOIkzZR8NLkS6e2KmNDCHLDGbixvnKcSl-z0ASxw6lIoLhowqUfy1uelstz6IPG3JhcdivA9R3Dc0_G8lzI="
+        ],
+        "summary": "The concept of 'recycled robots' or 'junkbots' provides an affordable and accessible method for robotics education, transforming everyday waste materials into functional machines. This approach fosters creativity, problem-solving, and environmental awareness by using items like plastic bottles, cardboard, and bottle caps for structural components. Students learn fundamental engineering principles such as structural integrity and motion mechanisms, often integrating simple electronics like vibration motors, batteries, and switches. This method eliminates financial barriers, making rich STEM learning experiences available to a wide audience and promoting resourcefulness by demonstrating that innovation does not require expensive new resources.",
+        "category": [
+            "Robotics",
+            "STEM",
+            "Environmental Education",
+            "Hands-on Learning",
+            "Design & Technology"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Students (various age groups)",
+            "learning_outcomes": [
+                "Creativity",
+                "Problem-solving",
+                "Environmental awareness",
+                "Understanding of fundamental engineering principles (structural integrity, weight distribution, mechanisms for motion)",
+                "Resourcefulness",
+                "Basic electronics integration"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning, inquiry-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Plastic bottles",
+                "Cardboard boxes",
+                "Bottle caps",
+                "Other household discards",
+                "Vibration motors",
+                "Batteries",
+                "Switches",
+                "Adhesives (glue, tape)",
+                "Tools for cutting/joining"
+            ],
+            "preparation_steps": [
+                "Collect various clean, discarded household materials suitable for building.",
+                "Gather simple electronic components like vibration motors, batteries, and switches."
+            ],
+            "execution_steps": [
+                "Design a robot concept using available recycled materials.",
+                "Construct the robot's structural components from discards.",
+                "Integrate simple electronic components to create motion or other functions.",
+                "Test and refine the robot's functionality and design."
+            ],
+            "tips_for_success": "Encourage experimentation and creativity, emphasize problem-solving through iterative design, highlight the value of resourcefulness, and demonstrate that impactful innovation can be achieved with minimal cost."
+        },
+        "impact": {
+            "problem_solved": "High cost and inaccessibility of traditional robotics education; lack of hands-on STEM opportunities; limited environmental awareness in educational settings.",
+            "evidence_of_success": "Removes financial barriers, making rich learning experiences available to a broader audience; directly supports STEM curricula by engaging students in design, technology, and environmental stewardship.",
+            "beneficiaries_reach": "Broad audience, including students from diverse socioeconomic backgrounds.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risks are physical, stemming from the use of tools (e.g., scissors, craft knives for cutting recycled materials) and handling small electronic components (potential choking hazard for very young children, minor battery handling risks such as short circuits or overheating if mishandled). These are common to hands-on STEM activities and are manageable with appropriate supervision, age-specific tool selection, and clear safety guidelines. The innovation actively reduces exclusion barriers by utilizing low-cost, accessible materials."
+        },
+        "priority_score": 90,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "81b636d0f358dd7216624cff69edd971",
+        "timestamp": "2026-06-03T02:24:07.629340",
+        "title": "Every Kid Gets a Robot (EKGAR)",
+        "sources": [
+            "https://solve.mit.edu/solutions/36931",
+            "https://www.steamconnection.org/ekgar",
+            "https://roboticsforall.net/"
+        ],
+        "summary": "Every Kid Gets a Robot (EKGAR) is an initiative aimed at broadening access to technical education for youth, especially those in Indigenous and underserved communities. It provides an affordable, app-controlled robot kit (under $20 USD to manufacture) for free distribution. The robot's design features simple assembly using four 3D-printed components and ESP32 technology. EKGAR complements the hardware with a culturally competent curriculum, teaching robotics, digital design, and coding through a hybrid learning model. The program has reached tens of thousands of youth and educators globally, promoting technical skills in engineering and computer science, and emphasizes sustainability by using recycled plastic.",
+        "category": [
+            "Robotics",
+            "STEM Education",
+            "Digital Literacy",
+            "Community Development",
+            "Sustainable Technology"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "Worldwide",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": -33.8938107,
+            "lon": 151.2621478
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Environment",
+                "Computer Science",
+                "Engineering"
+            ],
+            "target_learners": "Youth, particularly those in Indigenous and underserved communities, and educators.",
+            "learning_outcomes": [
+                "Essential technical skills in robotics, digital design, and coding",
+                "Technical competency in electrical engineering",
+                "Technical competency in mechanical engineering",
+                "Technical competency in computer science"
+            ],
+            "pedagogical_approach": "Hybrid learning model combining hands-on robot building with virtual resources, delivered through a culturally competent curriculum."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "App-controlled robot kit",
+                "Four unique 3D-printed components",
+                "Low-cost ESP32 technology",
+                "Recycled plastic (for sustainable bots)"
+            ],
+            "preparation_steps": [
+                "Manufacture robot kits for less than $20 USD",
+                "Distribute robot kits to students for free",
+                "Develop culturally competent curriculum"
+            ],
+            "execution_steps": [
+                "Assemble simple robot kits",
+                "Utilize virtual resources for learning",
+                "Engage in hands-on activities to learn robotics, digital design, and coding"
+            ],
+            "tips_for_success": "Emphasize culturally competent curriculum to engage diverse learners, utilize low-cost and sustainable materials, and leverage a hybrid learning model for broad reach."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to technical education for youth, especially in Indigenous and underserved communities.",
+            "evidence_of_success": "Reached tens of thousands of youth and educators worldwide, fostering technical competency in electrical and mechanical engineering and computer science.",
+            "beneficiaries_reach": "Tens of thousands of youth and educators worldwide.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks relate to data privacy due to the app-controlled robot and virtual resources, particularly concerning youth data collection, storage, and usage at scale. While EKGAR aims to reduce exclusion, the reliance on app control and virtual resources could create new accessibility barriers for youth in underserved communities lacking consistent internet access or smart devices. There's also a medium risk of cognitive overload given the breadth of technical skills taught, despite the culturally competent curriculum."
+        },
+        "priority_score": 80,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "850df17f1ee52d1f5fa988832a2216e8",
+        "timestamp": "2026-06-03T02:24:58.700705",
+        "title": "Pro Bono Robotics Clubs",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEbclpW5adGqrzvgHxC36JE3kPY4KhgoewuxCRbtAjeqcrnw0ZwM9_-GUZIUCKTc0zEWjNYrTiXzQo9xKoGAIgjJSnZq2a_4qCGUpB1nl_NBnwM8OF28Pd6Rd6nIQWbEyebTz2VIDyF_QCX8nruKYo6dPCy8Gm2Qu6-4gK-Jhw",
+            "https://www.kars4kidsgrants.org/our-grantees/robotics-for-all-serving-up-stem-for-free-to-underserved-youth/",
+            "https://www.smartcorelabs.com/post/discover-the-best-places-to-learn-robotics-in-the-greater-houston-area-for-kids"
+        ],
+        "summary": "Pro Bono Robotics Clubs offer low-cost robotics education by providing free access to resources, mentorship, and hands-on experience to underserved communities. These clubs are volunteer-driven, often run by professionals and educators, and partner with local schools and community centers. They utilize affordable kits (e.g., Arduino, Raspberry Pi) and open-source software (e.g., Scratch, Python) to teach coding and programming. Examples include RoboReach in Chicago, engaging over 500 students in projects like environmental cleanup robots, and TechBridge Robotics Club in rural India, using solar-powered kits to overcome digital divide challenges. The initiative fosters skill development, creativity, and empowers individuals to pursue STEM fields, promoting a more equitable future.",
+        "category": [
+            "STEM Education",
+            "Community Development",
+            "Digital Literacy",
+            "Education Access",
+            "Volunteerism"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Global",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Local schools and community centers (as partners)",
+            "lat": 55.702215,
+            "lon": 12.5592485
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Underserved communities, students lacking exposure to technology",
+            "learning_outcomes": [
+                "Significant skill development in robotics and coding",
+                "Fostering creativity and problem-solving",
+                "Empowering individuals to pursue STEM fields",
+                "Bridging the digital divide"
+            ],
+            "pedagogical_approach": "Hands-on experience, mentorship, project-based learning, peer-to-peer learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Beginner-friendly and affordable robotics kits (e.g., Arduino, Raspberry Pi)",
+                "Free or open-source software (e.g., Scratch, Python)",
+                "Solar-powered kits (for areas with unreliable electricity)",
+                "Offline resources (for areas with unreliable internet)"
+            ],
+            "preparation_steps": [
+                "Form a volunteer team of professionals, educators, and enthusiasts",
+                "Partner with local schools and community centers",
+                "Acquire affordable robotics kits and identify open-source software",
+                "Develop a curriculum focused on hands-on projects"
+            ],
+            "execution_steps": [
+                "Introduce robotics concepts to students through workshops and activities",
+                "Teach coding and programming using chosen software",
+                "Guide students in building robots for specific projects (e.g., environmental cleanup, assistive devices)",
+                "Provide ongoing mentorship and support"
+            ],
+            "tips_for_success": "Leverage passionate volunteers; focus on beginner-friendly and affordable technologies; adapt to local infrastructure challenges (e.g., solar power for electricity, offline resources for internet); emphasize project-based learning for engagement and practical skill development."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to robotics education and technology for underserved communities; high cost of STEM education; digital divide; unreliable infrastructure in some regions.",
+            "evidence_of_success": "RoboReach engaged over 500 students; significant skill development and fostering creativity; empowerment of individuals to pursue STEM fields.",
+            "beneficiaries_reach": "Hundreds of students in underserved communities (e.g., over 500 in Chicago example)",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "Pro Bono Robotics Clubs, while highly beneficial for inclusion, face several risks. Child safety is a primary concern due to the volunteer-driven model, necessitating robust vetting processes, background checks, and clear supervision protocols for all volunteers. Physical safety risks are inherent in hands-on robotics activities involving hardware, tools, and electronics, requiring strict safety guidelines, training, and appropriate protective gear. Data privacy for student information collected by clubs and shared with partners also needs careful management and explicit consent. These operational risks, if not adequately addressed, could undermine the positive impact of the initiative."
+        },
+        "priority_score": 58,
+        "hidden_gem": true,
+        "critical_flag": true
     }
 ]
