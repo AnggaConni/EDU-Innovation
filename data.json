@@ -9275,5 +9275,242 @@
         "priority_score": 58,
         "hidden_gem": true,
         "critical_flag": true
+    },
+    {
+        "id": "872ecea221a4e1e6a7fcb8806a87e197",
+        "timestamp": "2026-06-11T02:15:15.131523",
+        "title": "Westside Innovative School House (WISH) Charter School's Inclusive Education Model",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmNzA1WTPbpJMYIN5VBSBTzqd-Mhnh2JNFS0qC0Q58giELxkg3j-q_DvHBo62txm5mMeqYG5Alrc5zYyLo1DKsS-raDFEYAAyi3zV_sZgwqM9xOK1pJGiFJF6hA2Z3ahr3e3e3ljzkZyHej7dF03iaGFDE8RpR8XQoMqKCc-soOd8T7SQ_uuWSiBJvIKQD-1LoxbOsYEid3EuY5vuRz5lsHujZ9buWw9mhEzFdrzKm91kr2GLA=="
+        ],
+        "summary": "The Westside Innovative School House (WISH) Charter School in Los Angeles, California, implements an inclusive education model where students with mild, moderate, and severe special needs learn alongside their typically developing peers. This approach, inspired by the CHIME Charter School, utilizes co-teaching, with special and general education teachers collaborating to provide instruction and support, ensuring social integration and curriculum access for all students.",
+        "category": [
+            "Inclusive Education",
+            "Special Education",
+            "Charter Schools"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "United States",
+            "region": "California",
+            "city_or_village": "Los Angeles",
+            "institution_name": "Westside Innovative School House (WISH) Charter School",
+            "lat": 34.0536909,
+            "lon": -118.242766
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students with mild, moderate, and severe special needs, and typically developing peers.",
+            "learning_outcomes": [
+                "Fostering social integration",
+                "Enabling all students to access the core curriculum",
+                "Providing targeted support for diverse learners",
+                "Enriching the educational experience through diverse learning styles and interactions"
+            ],
+            "pedagogical_approach": "Co-teaching model where special education and general education teachers collaborate to deliver instruction and provide support throughout the day."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Emphasize co-teaching and collaboration between special education and general education teachers. Ensure a commitment to full inclusion for students with diverse abilities."
+        },
+        "impact": {
+            "problem_solved": "Segregation of students with special needs from their typically developing peers in educational settings; lack of comprehensive inclusive educational models.",
+            "evidence_of_success": "Successfully enrolls students with diverse needs within the same classrooms; fosters social integration; enables all students to access core curriculum; provides targeted support; enriches educational experience for all learners; inspired by the successful CHIME Charter School.",
+            "beneficiaries_reach": "Students with mild, moderate, and severe special needs, and typically developing peers attending the WISH Charter School.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The inclusion of students with mild, moderate, and severe special needs in general classrooms, while beneficial, introduces significant risks. Child safety is a concern due to potential behavioral challenges from students with severe needs, requiring robust safety protocols and highly trained staff to protect all students. Despite the inclusive intent, the risk of exclusion or accessibility barriers remains high if curriculum differentiation, social integration strategies, and individual support are not perfectly implemented for such a diverse group. The 'other' risk category encompasses the potential for cognitive overload for both students (if differentiation is insufficient) and especially for co-teachers, who face immense demands in managing such varied learning and behavioral needs, risking burnout and inconsistent support. This model requires continuous intervention, monitoring, and adaptation to mitigate these inherent complexities."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "bf4364d56be7dbaade2bc77ed24c251c",
+        "timestamp": "2026-06-11T02:16:01.174450",
+        "title": "Unified Electives Program",
+        "sources": [
+            "https://www.njsba.org/award-winning-programs-for-diverse-learners-with-big-dreams/"
+        ],
+        "summary": "The Ridgewood School District in New Jersey has implemented a \"Unified Electives\" program for high school students. This initiative integrates students with and without disabilities in specially designed courses to foster inclusivity, teamwork, and mutual learning. The program aims to cultivate a sense of belonging, provide individualized support and accommodations, encourage collaboration, and promote independence and self-advocacy skills for students with special needs. The curriculum is adapted using a Universal Design for Learning (UDL) framework. This program evolved from the community's engagement with Unified Sports, demonstrating a commitment to breaking down stigmas and fostering empathy and broader peer connections.",
+        "category": [
+            "Special Education",
+            "Inclusion",
+            "Curriculum Development",
+            "Social-Emotional Learning"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "New Jersey",
+            "city_or_village": "Ridgewood",
+            "institution_name": "Ridgewood School District",
+            "lat": 40.9796683,
+            "lon": -74.1194403
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "High school students with and without disabilities",
+            "learning_outcomes": [
+                "Cultivating a sense of belonging",
+                "Offering individualized support and accommodations",
+                "Encouraging collaboration",
+                "Promoting independence and self-advocacy skills"
+            ],
+            "pedagogical_approach": "Universal Design for Learning (UDL) framework, integrated learning, collaborative learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of inclusivity and collaboration between general and special education students; stigmas surrounding disabilities in education.",
+            "evidence_of_success": "Fosters inclusivity, teamwork, mutual learning, a sense of belonging, and broader peer connections; provides individualized support and promotes independence.",
+            "beneficiaries_reach": "High school students within the Ridgewood School District.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The 'Unified Electives' program is inherently designed to mitigate risks such as exclusion, cognitive overload, and cultural friction through its focus on inclusion, Universal Design for Learning (UDL), individualized support, and fostering empathy. It actively enhances child safety by promoting a sense of belonging and breaking down stigmas. The primary low-level risks are the ongoing need for diligent data privacy practices concerning student accommodations and ensuring consistent, high-quality implementation of UDL to prevent any unintended exclusion. Physical safety is not a specific risk given the general description of 'electives' without details on specific activities."
+        },
+        "priority_score": 68,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "04c1f6743973e74384cdac2d723168d0",
+        "timestamp": "2026-06-11T02:17:57.125330",
+        "title": "Excellence in Co-Teaching Initiative",
+        "sources": [
+            "https://ttaconline.org/coteaching-excellence",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNGHJEXPN337n6Lu3_xDPEDrdUDLUL8Anm1azGh9xUJAE4keLQX5ro7mqMMK1HVfSpcy6IZu1kI2-VKvEDkdPrF_z6E4qaCCOK0aPf4SacBTz0dW5-QMU5KHP-1F9e3JqdshT9VSfyJNaFqj2OSOrASeQphpQCb5KarP99x5C9KNE4_gtEI8AsUb0rJ5vfh1Ve8_TXk7npWe0OvtfsEkI="
+        ],
+        "summary": "Virginia's Department of Education (VDOE) launched the 'Excellence in Co-Teaching Initiative' as a grassroots-focused effort to promote and enhance co-teaching across the state. The initiative identifies 'Real Co-Teachers of Virginia' through a competitive application process, establishing demonstration sites. These sites allow co-teaching teams and administrators to observe high-quality co-taught instruction in inclusive settings, providing opportunities for professional development, discussions on implementation, instructional planning, and identifying factors supporting successful co-teaching partnerships. The program aims to improve inclusive education and ensure students with disabilities access the general curriculum within the least restrictive environment by fostering local expertise and sharing best practices.",
+        "category": [
+            "Inclusive Education",
+            "Professional Development",
+            "Teacher Collaboration"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "Virginia",
+            "city_or_village": "",
+            "institution_name": "Virginia Department of Education (VDOE)",
+            "lat": 37.1232245,
+            "lon": -78.4927721
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students with disabilities, General education students, Co-teaching teams, Administrators",
+            "learning_outcomes": [
+                "Improved inclusive education",
+                "Students with disabilities access general curriculum",
+                "Enhanced co-teaching implementation",
+                "Fostered local expertise",
+                "Shared best practices among educators"
+            ],
+            "pedagogical_approach": "Co-teaching, Demonstration sites, Professional development, Collaborative planning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Application forms for 'Real Co-Teachers'",
+                "Evaluation rubrics for selection",
+                "Professional development resources and modules",
+                "Observation protocols for site visits"
+            ],
+            "preparation_steps": [
+                "Define clear criteria for 'Excellence in Co-Teaching'",
+                "Develop a competitive application and selection process",
+                "Recruit and train evaluators for applications and site visits",
+                "Identify potential demonstration sites and secure their commitment",
+                "Develop professional development content and discussion guides"
+            ],
+            "execution_steps": [
+                "Launch the application period for 'Real Co-Teachers'",
+                "Select and designate 'Real Co-Teachers' and their schools as demonstration sites",
+                "Organize and facilitate observation visits to the demonstration sites",
+                "Conduct professional development workshops and facilitated discussions",
+                "Encourage peer-to-peer learning and collaborative instructional planning"
+            ],
+            "tips_for_success": "Ensure strong administrative and district-level support for the initiative. Clearly communicate the goals and benefits to all stakeholders. Provide ongoing resources and support to both demonstration sites and visiting teams. Foster a culture of collaboration, continuous improvement, and shared responsibility for student success."
+        },
+        "impact": {
+            "problem_solved": "Ineffective or inconsistent co-teaching implementation, limited access for students with disabilities to the general curriculum, and a need for improved inclusive education practices across the state.",
+            "evidence_of_success": "Establishment of 'Real Co-Teachers of Virginia' and designated demonstration sites, creation of professional development opportunities, and structured observation experiences for educators.",
+            "beneficiaries_reach": "Educators and administrators across Virginia, and ultimately, students with disabilities who benefit from enhanced inclusive education.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The competitive application process for 'Real Co-Teachers' and the establishment of demonstration sites, while aiming to share best practices, could inadvertently create exclusion among educators not selected or those in less resourced areas. This model also risks cultural friction if the 'best practices' are not adaptable to diverse local contexts or if the labeling creates a perceived hierarchy. Additionally, demonstration teachers may experience cognitive overload due to increased responsibilities."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
