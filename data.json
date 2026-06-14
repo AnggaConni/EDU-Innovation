@@ -9512,5 +9512,269 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "02f488d3b7cc8c8f7be9dc3c6d0ef670",
+        "timestamp": "2026-06-14T02:08:31.077414",
+        "title": "Neurodiversity Alliance: High School Neurodiversity Clubs",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm9AwllMfh5rEcZmSCeKjH3HrRdkICRjqc1caYX1eYGbZyoLkUKs7M5I4MbkOpSjJiQLmMAdF5X489kidkiy5Vmx8rn81U4jDe45uPsJc0HhZYHDPJTisleE7W-cfcnWb1ePTdkNx0iCfbXScCfSF_OY1Tn-Ke8oENKatVBn2cRPxfwU1B9-We7hXodD6SfDi9prT8FDq1f5aaMd0r62IYo-wOeHa1FxKwR1pOe2vYEflF9obP",
+            "https://thendalliance.org/nyc/",
+            "https://www.courthousenews.com/these-neurodivergent-students-are-helping-each-other-build-more-inclusive-schools/"
+        ],
+        "summary": "The Neurodiversity Alliance champions a grassroots, student-led initiative to establish neurodiversity clubs in high schools, exemplified in cities like New York. These clubs empower neurodivergent students by offering advising, leadership development, and crucial peer support. Through an innovative club model, including peer mentoring programs like 'Eye to Eye,' participants learn coping strategies, reframe cognitive differences, and develop self-advocacy skills. The initiative aims to foster a culture of inclusion, celebrate learning differences, dismantle stigma, and advocate for systemic changes such as sensory-friendly events and spaces.",
+        "category": [
+            "Inclusion",
+            "Youth Development",
+            "Peer Support",
+            "Neurodiversity"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "New York",
+            "institution_name": "High schools",
+            "lat": 40.7127281,
+            "lon": -74.0060152
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Neurodivergent high school students and younger neurodivergent students (through peer mentoring).",
+            "learning_outcomes": [
+                "Developing coping strategies",
+                "Reframing cognitive differences",
+                "Developing self-advocacy skills",
+                "Leadership development",
+                "Fostering a culture of inclusion",
+                "Dismantling stigma"
+            ],
+            "pedagogical_approach": "Student-led club model, peer mentoring, group discussions, leadership training, and advocacy for systemic change."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Meeting space (e.g., school classroom)",
+                "Resources for club activities (e.g., educational materials, craft supplies)",
+                "Access to school communication channels for promotion."
+            ],
+            "preparation_steps": [
+                "Identify interested neurodivergent students and allies.",
+                "Secure a faculty advisor.",
+                "Develop a club constitution/mission statement.",
+                "Register the club with school administration."
+            ],
+            "execution_steps": [
+                "Hold regular club meetings for peer support and discussion.",
+                "Implement peer mentoring programs (e.g., 'Eye to Eye' model).",
+                "Organize awareness campaigns and sensory-friendly events.",
+                "Advocate for systemic changes within the school environment."
+            ],
+            "tips_for_success": "Empower student leadership, prioritize peer support and mentorship, collaborate with school administration, focus on celebrating differences, and actively advocate for inclusive policies and environments."
+        },
+        "impact": {
+            "problem_solved": "Lack of dedicated support, resources, and understanding for neurodivergent students in high schools, leading to stigma and underachievement.",
+            "evidence_of_success": "Empowerment of neurodivergent students, development of leadership and self-advocacy skills, creation of inclusive school cultures, dismantling of stigma, and advocacy for systemic changes.",
+            "beneficiaries_reach": "Neurodivergent high school students, younger neurodivergent students, and the broader school community through cultural shifts.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The initiative, while highly beneficial, presents several risks. The most significant is 'child safety' (categorized under 'other' risk type) due to the 'Eye to Eye' peer mentoring program, where neurodivergent youth mentor younger students. Without robust training for mentors, clear safeguarding protocols, vetting processes, and consistent adult supervision, there's a risk of mishandling sensitive disclosures, potential power imbalances, or inadequate support for mentees. 'Cognitive overload' (also under 'other' risk type) is a concern for the neurodivergent student leaders and mentors, who may experience significant emotional labor and stress from their responsibilities without adequate support for their own well-being. 'Data privacy' is a relevant risk given the sensitive nature of identifying and supporting neurodivergent students; confidentiality of personal information must be rigorously maintained. Lastly, 'cultural friction' may arise as the initiative actively seeks to shift school culture from mere acceptance to celebration and advocate for systemic changes, which can encounter resistance from various stakeholders."
+        },
+        "priority_score": 58,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "ad8afca5977f045b5c8abd340e18c053",
+        "timestamp": "2026-06-14T02:09:00.421599",
+        "title": "Schools Unified in Neurodiversity Collaborative",
+        "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41230624/"
+        ],
+        "summary": "The Schools Unified in Neurodiversity Collaborative is a grassroots initiative focused on educator training to create safe and inclusive public school environments for neurodivergent children. It was developed through a participatory research approach, involving a diverse group of stakeholders including educators, administrators, researchers, and advocates, many with personal connections to neurodiversity. The program provides educators with practical tools to redesign classrooms and instructional methods, aiming to remove barriers, foster success, and promote neurodiversity acceptance within the education system.",
+        "category": [
+            "Educator Training",
+            "Inclusion",
+            "Neurodiversity",
+            "Professional Development"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Special Needs Education",
+                "Pedagogy",
+                "Psychology",
+                "Civics"
+            ],
+            "target_learners": "Educators (teachers, counselors, principals, administrators) and ultimately neurodivergent children in public schools",
+            "learning_outcomes": [
+                "Transform public schools into safe and inclusive environments for neurodivergent children",
+                "Equip educators with practical tools to re-design classrooms and instructional methods",
+                "Eliminate unnecessary barriers for neurodivergent students",
+                "Foster success for neurodivergent students",
+                "Enhance educator knowledge and confidence in supporting neurodivergent learners",
+                "Promote neurodiversity acceptance at a foundational level within the education system"
+            ],
+            "pedagogical_approach": "Participatory research approach; community-based professional development; practical tool-based training"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Practical tools for classroom and instructional redesign (specific tools not detailed in text)"
+            ],
+            "preparation_steps": [
+                "Co-design training program through a participatory research approach involving diverse stakeholders (researchers, teachers, counselors, principals, administrators, advocates), many with personal connections to neurodiversity."
+            ],
+            "execution_steps": [
+                "Deliver professional development training to educators to equip them with practical tools and enhanced knowledge to support neurodivergent learners."
+            ],
+            "tips_for_success": "Employ a collaborative, community-based approach to professional development; ensure diverse representation, including individuals with lived experience of neurodiversity, in the program's design."
+        },
+        "impact": {
+            "problem_solved": "Lack of safe and inclusive public school environments for neurodivergent children; presence of unnecessary barriers in classrooms and instructional methods; insufficient educator knowledge and confidence in supporting neurodivergent learners.",
+            "evidence_of_success": "The program aims to transform schools and foster success for neurodivergent students, implying improved outcomes and acceptance, though specific metrics are not provided in the text.",
+            "beneficiaries_reach": "Educators in public schools; neurodivergent children in public schools.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 3,
+            "risk_type": [
+                "cultural"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The innovation is designed to enhance child safety and inclusivity, actively mitigating risks related to exclusion and promoting a safer environment for neurodivergent children. The participatory co-design approach involving diverse stakeholders, including advocates and individuals with personal connections to neurodiversity, significantly reduces the likelihood of introducing new risks. The primary potential risk is minor cultural friction or resistance from some educators or administrators to adopt new paradigms and practices, which is common with any significant educational reform, but the collaborative and community-based nature of the program is designed to address this proactively. No direct risks related to data privacy, cognitive overload, or physical safety are apparent, and the program aims to improve overall safety and well-being."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "1d0486e9763362a3a065cffe948e43ce",
+        "timestamp": "2026-06-14T02:09:31.090645",
+        "title": "The Perception Foundation's PreK-12 Neurodiversity Curriculum",
+        "sources": [
+            "https://www.perceptionfoundation.com/general-1"
+        ],
+        "summary": "The Perception Foundation offers a free, four-day PreK-12 neurodiversity curriculum designed for grassroots implementation in schools during Disability Awareness or Autism Awareness Week. This program provides detailed lesson plans and ready-to-use activities covering topics such as brain function, neurodevelopmental disorders, emotional regulation, and youth advocacy. Its primary goal is to educate students on neurological differences, empower them to make their schools more inclusive, and break down stigma by fostering an understanding of neurodiversity as a strength across various community settings, including schools, workplaces, and general community spaces.",
+        "category": [
+            "Neurodiversity",
+            "Inclusion",
+            "Disability Awareness",
+            "Curriculum Development",
+            "Social-Emotional Learning"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "PreK-12 students, school staff, community members, workplace employees",
+            "learning_outcomes": [
+                "Understand neurological differences",
+                "Empower students to make schools more inclusive",
+                "Break down stigma around neurodiversity",
+                "Foster understanding of neurodiversity as a strength",
+                "Improve emotional regulation skills",
+                "Promote youth advocacy for inclusion"
+            ],
+            "pedagogical_approach": "Structured four-day program with detailed lesson plans and ready-to-use activities, adaptable for various community audiences."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Free PreK-12 neurodiversity curriculum materials provided by The Perception Foundation"
+            ],
+            "preparation_steps": [
+                "Identify a suitable implementation period, such as Disability Awareness or Autism Awareness Week",
+                "Review and select relevant lesson plans and activities from the provided curriculum",
+                "Tailor sessions to the specific audience (e.g., PreK-12 students, workplace, community group)"
+            ],
+            "execution_steps": [
+                "Deliver the four-day program, covering topics like brain function, neurodevelopmental disorders, emotional regulation, and youth advocacy",
+                "Facilitate discussions and activities designed to promote understanding and empathy towards neurodiversity",
+                "Encourage students to identify and implement actions for creating more inclusive school environments"
+            ],
+            "tips_for_success": "Emphasize neurodiversity as a strength rather than a limitation to effectively break down stigma and foster a positive understanding of neurological differences."
+        },
+        "impact": {
+            "problem_solved": "Lack of understanding and stigma surrounding neurodiversity; insufficient inclusive practices in schools and communities.",
+            "evidence_of_success": "",
+            "beneficiaries_reach": "PreK-12 students, educators, school communities, workplaces, and general community members.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The curriculum's broad scope (PreK-12) for complex topics like brain function, neurodevelopmental disorders, and emotional regulation within a four-day program presents a risk of cognitive overload, especially for younger students, which falls under 'other'. While aiming for inclusion, the 'grassroots' implementation and potential for varied delivery quality could inadvertently lead to exclusion or misunderstanding if content is not perfectly age-appropriate or culturally sensitive across diverse school environments. Cultural friction is a significant risk given the sensitive nature of discussing neurodiversity, disorders, and advocacy, which can clash with existing community beliefs or be misinterpreted without careful framing and trained facilitators. Intervention is needed to ensure age-appropriateness, provide comprehensive training for implementers, and offer resources for sensitive discussions."
+        },
+        "priority_score": 80,
+        "hidden_gem": true,
+        "critical_flag": false
     }
 ]
