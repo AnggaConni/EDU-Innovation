@@ -10272,5 +10272,264 @@
         "priority_score": 60,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "944e9954537796f45c730a7312fd713f",
+        "timestamp": "2026-06-22T02:15:48.021416",
+        "title": "Envirotech Recycling Inc.",
+        "sources": [
+            "https://www.oneearth.org/turning-plastic-waste-into-school-chairs/"
+        ],
+        "summary": "Envirotech Recycling Inc. in the Philippines tackles the nation's plastic waste crisis by converting collected single-use plastics from communities and large companies into durable school furniture like chairs and benches, as well as other functional items. This initiative not only significantly reduces plastic waste in landfills and oceans but also supplies long-lasting furniture to schools. The process involves collection, shredding, crushing, sorting, melting, molding, and assembling 100% recycled plastic into new products, fostering a sustainable solution for educational infrastructure, creating livelihood opportunities, and promoting a circular economy.",
+        "category": [
+            "Environmental Education",
+            "Waste Management",
+            "Circular Economy",
+            "Sustainable Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Philippines",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Envirotech Recycling Inc.",
+            "lat": 12.7503486,
+            "lon": 122.7312101
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Environment",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Communities, Educational institutions, Students",
+            "learning_outcomes": [
+                "Increased awareness of plastic waste problem and solutions",
+                "Understanding of circular economy principles",
+                "Access to durable and sustainable school furniture",
+                "Creation of livelihood opportunities"
+            ],
+            "pedagogical_approach": "Practical application of recycling and resource management, community engagement, sustainable manufacturing"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Single-use plastics"
+            ],
+            "preparation_steps": [
+                "Collecting single-use plastics from communities and large companies",
+                "Shredding collected plastics",
+                "Crushing plastics",
+                "Sorting plastics"
+            ],
+            "execution_steps": [
+                "Melting the sorted plastics",
+                "Molding the melted plastic into desired shapes (e.g., chair components)",
+                "Assembling the molded components into functional items (e.g., school chairs, benches)"
+            ],
+            "tips_for_success": "Strong community engagement for plastic collection, efficient industrial recycling processes, focus on creating high-quality, durable end-products."
+        },
+        "impact": {
+            "problem_solved": "Significant plastic waste problem in the Philippines, lack of durable and sustainable school furniture.",
+            "evidence_of_success": "Transforms substantial amounts of single-use plastics into durable school chairs and other functional items; diverts plastic from landfills and oceans; provides sturdy, long-lasting furniture for schools; creates livelihood programs; promotes a circular economy.",
+            "beneficiaries_reach": "Local communities (through collection and livelihood), large companies (waste management), educational institutions (furniture), students (improved learning environment).",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk lies in the physical safety and durability of the recycled plastic furniture for children. While described as sturdy, rigorous testing and adherence to national and international safety standards (e.g., non-toxicity of materials, fire resistance, structural integrity, ergonomic design, absence of sharp edges or pinch points) are crucial. Consistent quality control for recycled materials is essential to ensure the long-term safety and well-being of students using these items in a demanding school environment."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "8a67975f584ba56984e680bef68c5836",
+        "timestamp": "2026-06-22T02:16:25.932199",
+        "title": "DIY Classroom Furniture from Repurposed Materials",
+        "sources": [
+            "https://woodgrain.com/diy-home-classroom-projects/",
+            "https://www.youtube.com/watch?v=78N0KiD-3A4",
+            "https://www.youtube.com/watch?v=wL5OmiFtnTA"
+        ],
+        "summary": "This educational innovation involves creating functional and affordable classroom furniture by repurposing readily available or discarded household materials. Examples include transforming wooden crates into benches with storage, constructing children's desks from plywood, and converting old cabinet doors into portable desks. The approach emphasizes resourcefulness and cost-effectiveness, enabling educators and communities to furnish learning spaces without significant financial investment.",
+        "category": [
+            "Classroom Design",
+            "Sustainability",
+            "Resourcefulness",
+            "DIY"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Educators, communities, and students benefiting from improved learning environments",
+            "learning_outcomes": [
+                "Creation of affordable and functional learning spaces",
+                "Promotion of resourcefulness and sustainability",
+                "Enhanced physical learning environment for students"
+            ],
+            "pedagogical_approach": "Supports diverse pedagogical approaches by providing flexible and adaptable learning furniture."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Wooden crates",
+                "Plywood sheets",
+                "Old cabinet doors",
+                "Basic tools (e.g., saws, drills, fasteners)",
+                "Finishing materials (e.g., paint, sandpaper, sealant)"
+            ],
+            "preparation_steps": [
+                "Identify available discarded or readily available materials.",
+                "Plan the design and dimensions of the desired furniture pieces.",
+                "Gather necessary tools and additional supplies."
+            ],
+            "execution_steps": [
+                "Clean and prepare raw materials (e.g., sand wooden crates).",
+                "Cut and assemble materials according to design (e.g., cut plywood for desks).",
+                "Secure components using appropriate fasteners.",
+                "Apply finishes for durability and aesthetics (e.g., paint, seal).",
+                "Install or place furniture in the classroom."
+            ],
+            "tips_for_success": "Prioritize affordability and resourcefulness by utilizing common and repurposed materials. Focus on simple, minimalist designs for ease of construction and adaptability to various classroom needs."
+        },
+        "impact": {
+            "problem_solved": "Lack of affordable and accessible furniture for classrooms, especially in resource-constrained settings.",
+            "evidence_of_success": "Enables educators and communities to furnish learning spaces without significant financial outlay, making solutions highly accessible and adaptable.",
+            "beneficiaries_reach": "Classrooms and learning spaces in various educational settings, improving the physical environment for students and educators.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "DIY classroom furniture from repurposed materials carries significant physical safety risks. These include potential structural instability leading to tipping, sharp edges, splinters, and the use of materials with unknown origins that might contain lead paint, toxic finishes, or allergens. Without professional design, construction, and material vetting, these items could cause injury. There's also a risk of exclusion if the DIY designs do not adequately address diverse accessibility needs, such as appropriate heights for all ages and abilities, or wheelchair access."
+        },
+        "priority_score": 72,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "ad89da469189b8529db4111a6af4ed47",
+        "timestamp": "2026-06-22T02:16:52.658585",
+        "title": "Temporary, Relocatable Schools in Bangladesh's Char Areas",
+        "sources": [
+            "https://www.tbsnews.net/features/tales-from-the-edge/schools-come-students-1467371"
+        ],
+        "summary": "In the remote char areas of Bangladesh, communities frequently relocate due to river erosion. To ensure continued access to education, temporary schools and their furniture are constructed from readily available local materials like tin and bamboo. This community-led, necessity-driven DIY approach allows educational facilities to be easily dismantled and rebuilt in new locations as families move, providing essential learning environments despite challenging and transient geographical conditions.",
+        "category": [
+            "Education in Emergencies",
+            "Community-led Development",
+            "Sustainable Materials",
+            "Adaptable Infrastructure"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Bangladesh",
+            "region": "char areas",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Children in remote, transient char communities",
+            "learning_outcomes": [
+                "Access to basic formal education",
+                "Continuity of schooling despite displacement"
+            ],
+            "pedagogical_approach": "Flexible and adaptive delivery of education in temporary settings"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Tin sheets",
+                "Bamboo",
+                "Other local building materials"
+            ],
+            "preparation_steps": [
+                "Identify suitable temporary land for school relocation",
+                "Mobilize community members for construction",
+                "Gather local building materials (tin, bamboo, etc.)"
+            ],
+            "execution_steps": [
+                "Construct basic school structures using tin and bamboo for walls and roofs",
+                "Build simple, functional furniture (desks, benches) from available local materials",
+                "Dismantle existing school structures and furniture when relocation is necessary",
+                "Reconstruct the school and furniture at the new site"
+            ],
+            "tips_for_success": "Foster strong community involvement and ownership; prioritize simple, robust designs for easy assembly and disassembly; utilize readily available and affordable local materials to minimize costs and ensure rapid reconstruction."
+        },
+        "impact": {
+            "problem_solved": "Lack of stable educational facilities and continuity of learning for communities frequently displaced by river erosion.",
+            "evidence_of_success": "Ensures that educational facilities, including their furnishings, can be easily dismantled and rebuilt in new locations as families move, providing essential learning environments.",
+            "beneficiaries_reach": "Children and families living in the remote char areas of Bangladesh affected by river erosion and displacement.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is child safety, specifically physical safety, due to the temporary nature and materials used. Structures and furniture made from tin and bamboo can pose hazards such as sharp edges, splinters, and potential structural instability, especially in challenging environments, leading to cuts, punctures, or falls. Secondly, while providing access to education, the necessity-driven DIY approach might inadvertently create exclusion or accessibility barriers for children with disabilities if specific design considerations are not integrated into the construction process."
+        },
+        "priority_score": 76,
+        "hidden_gem": true,
+        "critical_flag": true
     }
 ]
