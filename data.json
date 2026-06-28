@@ -10804,5 +10804,290 @@
         "priority_score": 52,
         "hidden_gem": true,
         "critical_flag": true
+    },
+    {
+        "id": "38d8786d7824567b6bd1bd460014f75c",
+        "timestamp": "2026-06-28T02:02:35.709220",
+        "title": "Kenya Kids Can Initiative: Solar-Powered Computer Centers",
+        "sources": [
+            "https://en.reset.org/how-solar-powered-computer-labs-are-transforming-learning-in-kenyas-remote-schools/"
+        ],
+        "summary": "The 'Kenya Kids Can' initiative addresses the digital divide in remote Kenyan villages by establishing solar-powered computer centers within public primary schools that lack grid electricity. These centers, often housed in converted 20-foot shipping containers, are equipped with solar panels, batteries, and refurbished computers running Linux Mint and LibreOffice. This program provides children with their initial access to digital learning, enabling engagement with online math games and other educational content, while also empowering students and teachers with essential digital literacy skills. Founded in 2000, the organization has evolved from focusing on school meals to prioritizing digital empowerment.",
+        "category": [
+            "Digital Literacy",
+            "Rural Education",
+            "Technology in Education",
+            "Sustainable Technology"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Kenya",
+            "region": "Remote villages",
+            "city_or_village": "",
+            "institution_name": "Public primary schools",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Other"
+            ],
+            "target_learners": "Children in public primary schools, teachers",
+            "learning_outcomes": [
+                "Digital literacy acquisition",
+                "Access to digital learning resources",
+                "Engagement with educational software and online content",
+                "Connection of rural classrooms to the wider world"
+            ],
+            "pedagogical_approach": "Technology-enhanced learning, access to digital resources, teacher capacity building in digital literacy"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "20-foot shipping containers",
+                "Solar panels",
+                "Batteries",
+                "Refurbished computers",
+                "Linux Mint operating system",
+                "LibreOffice software"
+            ],
+            "preparation_steps": [
+                "Acquire and convert 20-foot shipping containers into suitable computer centers",
+                "Design and install a robust solar power system (panels, batteries, inverters)",
+                "Source and refurbish computers suitable for educational use",
+                "Install Linux Mint and LibreOffice on all computers"
+            ],
+            "execution_steps": [
+                "Open computer centers for student and teacher access during school hours",
+                "Facilitate engagement with online math games and other digital educational content",
+                "Provide training and support for teachers to integrate digital tools into their pedagogy"
+            ],
+            "tips_for_success": "Utilize refurbished equipment and open-source software to minimize costs. Leverage solar power for sustainability in off-grid locations. Focus on teacher training to ensure effective integration of technology into the curriculum."
+        },
+        "impact": {
+            "problem_solved": "Lack of digital access and literacy in rural Kenyan schools, exacerbated by the absence of grid electricity. Bridging the digital divide between urban and rural areas.",
+            "evidence_of_success": "Provides children with their first access to digital learning, enables engagement with online educational content, empowers students and teachers with digital literacy.",
+            "beneficiaries_reach": "Children attending public primary schools in remote villages across Kenya, and their teachers.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The initiative presents significant data privacy risks for children engaging with online content, requiring robust policies and consent mechanisms. Physical safety concerns arise from the solar power installations, battery storage, and refurbished computers within converted shipping containers, necessitating strict electrical and structural safety protocols. While bridging a major digital divide, potential exclusion for children with specific disabilities or learning needs must be actively addressed. Additionally, general child safety related to online content filtering and supervision (categorized as 'other') is crucial to protect against inappropriate material."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "27b6d6d831d3d2e63d255698049cda77",
+        "timestamp": "2026-06-28T02:03:01.964123",
+        "title": "DigiTruck Project: Mobile Solar-Powered Digital Classrooms",
+        "sources": [
+            "https://en.reset.org/how-solar-powered-computer-labs-are-transforming-learning-in-kenyas-remote-schools/",
+            "https://www.architectmagazine.com/Design/solar-powered-classrooms-bring-digital-education-to-rural-africa_c"
+        ],
+        "summary": "The DigiTruck project is a collaborative initiative by Close the Gap, Arrow Electronics, and Hoops of Hope, which deploys self-sufficient, mobile solar-powered digital classrooms to rural African communities. Housed within a 40-foot shipping container, these units are equipped with solar panels, a robust power management system, refurbished laptops, routers, a large LED display screen, and a printer. The first pilot was launched in Tanzania, aiming to bridge the digital literacy gap in off-the-grid locations and can be adapted for various community needs.",
+        "category": [
+            "Digital Literacy",
+            "Community Development",
+            "Technology Access",
+            "Mobile Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Tanzania",
+            "region": "rural African communities",
+            "city_or_village": "",
+            "institution_name": "Close the Gap, Arrow Electronics, Hoops of Hope (collaborators)",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Rural African communities lacking digital access",
+            "learning_outcomes": [
+                "Bridge the digital literacy gap",
+                "Provide access to digital tools and internet",
+                "Enable basic computer skills and online navigation"
+            ],
+            "pedagogical_approach": "Hands-on learning with digital workstations in a mobile classroom setting"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "40-foot shipping container",
+                "Solar panels",
+                "Robust power management system (batteries, inverters, charge controllers)",
+                "Refurbished laptops (multiple units for workstations)",
+                "Routers (for internet connectivity, e.g., satellite or mobile data)",
+                "Large LED display screen",
+                "Printer"
+            ],
+            "preparation_steps": [
+                "Outfit a 40-foot shipping container with insulation and interior fittings to create a classroom environment.",
+                "Install solar panels on the exterior and integrate a comprehensive power management system.",
+                "Set up individual workstations with refurbished laptops, network connectivity, and a central display/printer.",
+                "Ensure the unit is self-sufficient and can operate for days on solar energy and battery reserves."
+            ],
+            "execution_steps": [
+                "Transport the DigiTruck to selected rural, off-the-grid communities.",
+                "Deploy the mobile classroom, ensuring all systems (power, internet, workstations) are operational.",
+                "Conduct digital literacy training sessions for community members.",
+                "Adapt the space for other community needs such as health clinics or vocational training as required."
+            ],
+            "tips_for_success": "Focus on robust, sustainable power solutions for off-grid operation. Prioritize durable, low-maintenance equipment suitable for challenging environments. Ensure local community engagement for successful adoption and long-term impact."
+        },
+        "impact": {
+            "problem_solved": "Lack of digital literacy and access to technology in off-the-grid rural African communities.",
+            "evidence_of_success": "Successful piloting of the first initiative in Tanzania, demonstrating operational viability.",
+            "beneficiaries_reach": "Rural African communities (specific numbers not provided in text).",
+            "scale": "low",
+            "impact_score": 6
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The DigiTruck project, while innovative, presents several risks. Data privacy is a concern due to the use of refurbished laptops and internet access, requiring clear policies for data handling, user accounts, and security. Exclusion barriers could arise from physical accessibility to the container for individuals with disabilities, language barriers for digital content, and potential social or gender norms impacting access within communities. Cultural friction may occur when introducing new technology and learning methods into traditional settings without explicit community engagement and adaptation strategies. Physical safety risks include potential electrical hazards from the solar power system, batteries, and refurbished equipment, as well as the structural safety, ventilation, emergency exits, and security of the shipping container classroom, especially in varying environmental conditions. Child safety online, including content filtering and supervision, also requires explicit consideration."
+        },
+        "priority_score": 38,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "edc92e6fd812f0073f20844e8f79e14c",
+        "timestamp": "2026-06-28T02:03:37.687912",
+        "title": "Mobile Solar Digital Classrooms for Rural Literacy in Mozambique",
+        "sources": [
+            "https://worldpossible.org/rachel-plus",
+            "https://www.laynemcdonald.com/post/news-solar-powered-literacy-programs-reach-remote-areas"
+        ],
+        "summary": "This innovation brings digital literacy and educational content to remote areas of Mozambique through mobile 'solar tablet' units. These units, functioning as digital libraries on wheels, are transported between villages by trucks or donkeys. Each unit features multiple high-visibility LCD screens powered by roof-mounted solar panels, creating an instant digital classroom in any open clearing. Supported by organizations like World Possible, these initiatives provide children in rural villages with interactive literacy lessons and access to educational content, overcoming challenges of electricity, internet access, and physical book distribution.",
+        "category": [
+            "Digital Literacy",
+            "Rural Education",
+            "Mobile Learning",
+            "Access to Education"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "Mozambique",
+            "region": "Remote areas",
+            "city_or_village": "Rural villages",
+            "institution_name": "World Possible (and local partners)",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "STEM",
+                "Other"
+            ],
+            "target_learners": "Children in rural villages",
+            "learning_outcomes": [
+                "Improved digital literacy skills",
+                "Access to a wide range of educational content",
+                "Enhanced interactive learning experiences",
+                "Bridging the educational gap between urban and rural areas"
+            ],
+            "pedagogical_approach": "Mobile, technology-enhanced learning; self-directed learning facilitated by interactive digital content; community-based learning."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mobile unit (truck or donkey cart)",
+                "Solar panels (roof-mounted)",
+                "Battery storage system",
+                "Multiple high-visibility LCD screens",
+                "Ruggedized 'solar tablet' devices or RACHEL-like servers",
+                "Educational content (e.g., interactive literacy lessons, digital libraries)",
+                "Charging infrastructure for devices (if individual tablets are used)"
+            ],
+            "preparation_steps": [
+                "Design and construct the mobile unit, integrating solar power and display screens.",
+                "Curate and load educational content onto the digital server/tablets (e.g., RACHEL content).",
+                "Establish routes and schedules for visiting different villages.",
+                "Train facilitators or local community members on operating the unit and guiding learners.",
+                "Engage with local communities to ensure acceptance and participation."
+            ],
+            "execution_steps": [
+                "Transport the mobile unit to a designated village clearing.",
+                "Set up the screens and power on the system.",
+                "Facilitate interactive learning sessions, allowing children to engage with the digital content.",
+                "Provide guidance and support to learners as they explore the educational materials.",
+                "Dismantle the unit and move to the next scheduled village."
+            ],
+            "tips_for_success": "Ensure robust and durable equipment suitable for rough terrain and varying weather. Prioritize user-friendly interfaces for children. Regularly update educational content to keep it relevant and engaging. Foster strong relationships with local communities and leaders. Provide ongoing training and support for facilitators. Design for energy efficiency to maximize uptime."
+        },
+        "impact": {
+            "problem_solved": "Lack of digital literacy, limited access to educational content, and challenges posed by lack of electricity and internet connectivity in remote rural areas.",
+            "evidence_of_success": "The initiative successfully provides interactive literacy lessons and educational resources to children previously excluded from such opportunities, effectively overcoming significant infrastructural barriers.",
+            "beneficiaries_reach": "Children in numerous rural villages across remote areas of Mozambique.",
+            "scale": "medium",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion",
+                "cultural",
+                "data_privacy"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The innovation carries a high physical safety risk due to the electrical components (solar panels, batteries, wiring) and the structural stability of screens during transport via trucks and donkeys, especially in remote, potentially unsupervised settings. Robust design, installation, and maintenance are crucial. Significant exclusion barriers may arise from language differences (content not matching local indigenous languages) and lack of accessibility features for children with disabilities. Cultural friction is also a risk if content or teaching methods conflict with local customs or values. Finally, if 'interactive literacy lessons' involve tracking progress or user data, data privacy for children becomes a concern."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
