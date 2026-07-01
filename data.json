@@ -11089,5 +11089,272 @@
         "priority_score": 60,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "518c06fede854e5b5f709a73f565be2b",
+        "timestamp": "2026-07-01T02:02:29.570137",
+        "title": "Farnsworth-Hirsch Fusor (Amateur-Built)",
+        "sources": [
+            "https://makezine.com/projects/nuclear-fusor/",
+            "https://www.instructables.com/Build-A-Fusion-Reactor/",
+            "https://www.popsci.com/lucky-donkey-theory/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8HDCI0XDpcU6VjRfbE0JlDf5QkneBUhpy2-lr9NtNFQclfFFvgePUYvBwYNGmqVKwjTH3r3OwKuXGllx9k6M5jCuLEpdNMDB45br0EXqNA73xLEK9mOPkX2brGuTuHdvgE9MElQJ7dAs99XC-ifydbxU5lQAXh8EBPRcKW1Dc",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKZ5_hnOrhaqS20GYqtTzU__fj4LVx2bJdSq1pDa0gVKJYztlsfEUd4dcOpyYM8fmuOzMyKNfsfEsa-Es6HWJBeiUAHlWaP37m8eSy3Q8OtxKkZKo6mF5JJnB0ClTpnKbbONO01y8UgyiE0qWrd6fKXKXcpRh7zMRMVXOJnVdoVfW6PszjDxHCd2esS-mLLmjNKv-n1GVOHKbw="
+        ],
+        "summary": "The amateur-built Farnsworth-Hirsch fusor is a grassroots initiative where individuals, including hobbyists and students, construct devices in homes or school labs to achieve nuclear fusion reactions. These fusors use inertial electrostatic confinement to accelerate ions, primarily deuterium, into a central grid, creating a plasma where fusion can occur. While not producing net energy, they serve experimental and educational purposes, demonstrating fundamental principles of nuclear fusion and high-voltage physics. This community-driven approach, facilitated by online forums like Fusor.net for sharing knowledge and verifying fusion attempts via neutron detection, empowers individuals to engage directly with advanced scientific concepts and fosters distributed scientific experimentation outside traditional institutional research.",
+        "category": [
+            "Science Education",
+            "Experimental Physics",
+            "Community Science",
+            "DIY Science"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Homes and School Laboratories (distributed)",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Physics",
+                "Engineering"
+            ],
+            "target_learners": "Self-taught hobbyists, students, individuals interested in nuclear physics and high-voltage experimentation",
+            "learning_outcomes": [
+                "Demonstrate fundamental principles of nuclear fusion",
+                "Understand high-voltage physics",
+                "Engage directly with advanced scientific concepts",
+                "Develop practical skills in experimental physics"
+            ],
+            "pedagogical_approach": "Hands-on experimentation, community-driven learning, peer-to-peer knowledge sharing, problem-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "High-voltage power supply",
+                "Vacuum chamber",
+                "Deuterium gas",
+                "Electrodes (central grid)",
+                "Vacuum pump",
+                "Neutron detector (for verification)"
+            ],
+            "preparation_steps": [
+                "Research existing designs and safety protocols (e.g., on Fusor.net)",
+                "Acquire necessary high-voltage and vacuum components",
+                "Understand the principles of inertial electrostatic confinement"
+            ],
+            "execution_steps": [
+                "Assemble the vacuum chamber and electrode configuration",
+                "Evacuate the chamber to a high vacuum",
+                "Introduce deuterium gas at low pressure",
+                "Apply high voltage to accelerate ions into the central grid",
+                "Monitor for plasma formation and neutron emissions (indicating fusion)"
+            ],
+            "tips_for_success": "Prioritize safety due to high voltages and vacuum. Actively participate in online communities like Fusor.net for design guidance, troubleshooting, and verification of results. Start with simpler designs and gradually increase complexity."
+        },
+        "impact": {
+            "problem_solved": "Limited accessibility to advanced scientific experimentation (nuclear fusion) outside large institutional research facilities. Lack of direct, hands-on engagement with complex physics concepts for individuals.",
+            "evidence_of_success": "Successful fusion attempts verified through neutron detection by hobbyists. Active and growing online community (e.g., Fusor.net) for knowledge sharing and collaboration.",
+            "beneficiaries_reach": "Thousands of hobbyists, students, and enthusiasts globally interested in nuclear physics and high-voltage experimentation.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "internet"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The construction and operation of amateur-built Farnsworth-Hirsch fusors present severe physical safety risks. These devices involve extremely high voltages (tens of thousands of volts), posing a significant electrocution hazard. Furthermore, successful fusion reactions produce ionizing radiation (neutrons and X-rays), which can cause severe health damage with inadequate shielding and monitoring. Building these devices in 'homes or school laboratories' by 'hobbyists and students' without professional safety protocols, expert supervision, and specialized equipment (like radiation detectors and high-voltage safety gear) drastically increases the risk of serious injury or fatality. The complexity, cost of components, and required technical expertise also create significant exclusion barriers, limiting participation to a select few with resources and advanced skills."
+        },
+        "priority_score": 42,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "2c3fc5fdfefeab39f11798eb6d8c955a",
+        "timestamp": "2026-07-01T02:03:22.658712",
+        "title": "Silicon Valley Clean Energy (SVCE) Education Fund",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsMktITahPAkq0LJ4grd6hk0XqtfX_0tfUvlEcZ7h17KKWq-uvhKJGnUfhsiHaaT8pIuHPWb_QAhgeiphPkNKlMdbHRI-KNT44QkEU28IogjXknxd_xHsSa1yHh8BcREfE1PyAKQ7NlUOgt1QB53JYoOH2eA6NTPawfUxAYPDgncgBTTLVKK_NM8iu4OfOtHKAXuz"
+        ],
+        "summary": "The Silicon Valley Clean Energy (SVCE) Education Fund offers grants to student teams across Silicon Valley. These grants enable students from middle schools, high schools, and community colleges to design and execute projects focused on local climate change issues and climate action. The program fosters hands-on learning, innovation, and community engagement, leading to diverse projects like solar-powered systems, electric bikes, repair workshops, upcycling apps, tree sapling distribution, and renewable power workshops. It aims to empower young people to create tangible environmental changes within their communities.",
+        "category": [
+            "Environmental Education",
+            "STEM",
+            "Community Engagement",
+            "Youth Empowerment"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Silicon Valley, California",
+            "city_or_village": "",
+            "institution_name": "Silicon Valley Clean Energy (SVCE)",
+            "lat": 37.4429964,
+            "lon": -122.1545229
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Civics",
+                "Vocational"
+            ],
+            "target_learners": "Students from middle schools, high schools, and community colleges",
+            "learning_outcomes": [
+                "Develop and implement projects addressing local climate change issues",
+                "Promote climate action",
+                "Engage in creative, community-driven problem-solving",
+                "Foster hands-on learning and innovation",
+                "Make tangible environmental changes within local communities"
+            ],
+            "pedagogical_approach": "Project-based learning, hands-on learning, community-driven problem-solving, experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of local climate action and engagement among youth, need for practical solutions to climate change issues.",
+            "evidence_of_success": "Successful implementation of diverse projects including solar-powered school announcement systems, solar-powered electric bikes, bicycle repair workshops, upcycling applications, native tree sapling distribution, and renewable power workshops.",
+            "beneficiaries_reach": "Student teams across Silicon Valley and their local communities.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The program involves significant physical safety risks due to hands-on projects with electricity (solar systems, e-bikes, renewable power) and tools, particularly for middle and high school students. Community engagement activities also pose broader child safety concerns requiring robust supervision and clear guidelines. There is a risk of exclusion as access to resources, technical skills, and mentorship may vary across schools and student teams, potentially limiting participation for less-resourced groups. Cognitive overload is also a potential concern given the complexity of developing and implementing projects."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "aac7c8265f5ae2ae6cf4edcbb550f047",
+        "timestamp": "2026-07-01T02:04:02.060150",
+        "title": "Children's Sensory Garden Project at Westville Little School",
+        "sources": [
+            "https://www.plt.org/story/student-projects-improve-environment/"
+        ],
+        "summary": "Teacher candidates from Purdue University North Central (PNC) collaborated with community partners, including Purdue Master Gardeners, Purdue North Central Women's Association, and high school agricultural students, to design and construct a children's sensory garden at Westville Little School in Westville, Indiana. The project provided preschoolers with an outdoor space to explore nature through various senses, featuring plants chosen for their textures, scents, colors, and names, while also offering practical experience for the university students after their Project Learning Tree training.",
+        "category": [
+            "Early Childhood Education",
+            "Environmental Education",
+            "Community Engagement",
+            "Teacher Training"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Indiana",
+            "city_or_village": "Westville",
+            "institution_name": "Westville Little School (and Purdue University North Central)",
+            "lat": 41.5463225,
+            "lon": -86.8969236
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Early Childhood Development",
+                "Agricultural Education",
+                "Teacher Education"
+            ],
+            "target_learners": "Preschoolers, Purdue University North Central teacher candidates, high school agricultural students",
+            "learning_outcomes": [
+                "Enhanced sensory exploration of nature for preschoolers",
+                "Development of practical gardening skills",
+                "Understanding the value of outdoor classrooms for teacher candidates",
+                "Fostering a connection to nature",
+                "Interdisciplinary collaboration skills"
+            ],
+            "pedagogical_approach": "Experiential learning, outdoor education, project-based learning, community-based learning, interdisciplinary collaboration"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Plants selected for sensory qualities (texture, scent, color)",
+                "Seeds",
+                "Garden beds",
+                "Gardening tools",
+                "Educational resources (e.g., Project Learning Tree training materials)"
+            ],
+            "preparation_steps": [
+                "Teacher candidates participate in outdoor classroom training (e.g., Project Learning Tree)",
+                "Identify and engage community partners with relevant expertise (e.g., Master Gardeners, women's associations, agricultural programs)",
+                "Collaborate on garden design and plant selection focusing on sensory elements",
+                "Gather seeds and materials",
+                "Construct garden beds"
+            ],
+            "execution_steps": [
+                "Plant selected plants and seeds in the prepared garden beds",
+                "Maintain the garden as an ongoing learning space",
+                "Integrate garden activities into preschool curriculum"
+            ],
+            "tips_for_success": "Foster strong community partnerships for expertise and resources. Ensure educational training for facilitators. Select plants specifically for sensory stimulation and educational value. Involve multiple levels of learners (university, high school, preschool) for a richer experience."
+        },
+        "impact": {
+            "problem_solved": "Lack of dedicated outdoor sensory learning spaces for young children; limited practical, community-engaged experience for teacher candidates.",
+            "evidence_of_success": "Successful planning and construction of a functional children's sensory garden; engagement of multiple educational and community groups; provision of an outdoor space for preschoolers to explore nature through senses.",
+            "beneficiaries_reach": "Preschoolers at Westville Little School, Purdue University North Central teacher candidates, high school agricultural students, community partners.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The sensory garden presents potential physical safety risks for preschoolers related to plant toxicity (e.g., ingestion, skin irritation) and physical hazards from garden structures (e.g., tripping hazards, sharp edges). The text does not explicitly confirm that all plants are non-toxic or that the garden is fully accessible for children with diverse physical or sensory needs."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
