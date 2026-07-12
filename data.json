@@ -12161,5 +12161,297 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "62a71d92ed9d5ad175e09c5714970bee",
+        "timestamp": "2026-07-12T01:18:04.609594",
+        "title": "DIY Olive Oil Lamps for Sustainable and Emergency Lighting",
+        "sources": [
+            "https://thenaturewheel.com/2018/05/08/diy-olive-oil-lamps/",
+            "https://farmingmybackyard.com/olive-oil-lamps/",
+            "https://www.instructables.com/How-To-Make-Your-Own-Olive-Oil-Lamp/",
+            "https://thecottagepeach.com/blog/diy-mason-jar-olive-oil-lamp",
+            "https://www.motherearthnews.com/diy/crafting/make-olive-oil-lamp/",
+            "https://www.instructables.com/Olive-Oil-Lamp/",
+            "https://survivalsherpa.wordpress.com/2012/06/25/diy-preparedness-the-5-minute-tin-olive-oil-lamp/",
+            "http://redhillgeneralstore.blogspot.com/2017/03/diy-olive-oil-lamp.html",
+            "https://www.youtube.com/watch?v=nVi2dBkCpZ0",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgM_zea57aaDZHQlSlsPfIWB-qfaC9jZKk9qLUpUnXaM9ph5noulN8NqO1CNyATbhS15Y_vjHJmwJaj5QKNx_Ow_mcnzhxB1pJgATbjV_SLpQpamTFy8pc3jZU0AaD2cxBi3BFlZBVPOFkKBVxlqjXe5U0d7OEww="
+        ],
+        "summary": "This grassroots movement involves individuals and communities creating their own olive oil lamps as a sustainable, low-cost, and safe alternative to conventional lighting. It's particularly useful for emergency preparedness or reducing electricity consumption. The innovation repurposes common household items like mason jars, tin cans, and cotton twine into functional light sources. The initiative integrates science education by demonstrating principles of capillary action and clean-burning fuels. Participants experiment with different wick materials and container designs to optimize performance. Olive oil is favored for its clean-burning properties, minimal smoke/odor, and high flash point, making it safer than kerosene. Additionally, the use of rancid olive oil provides an economical and practical way to utilize wasted resources, promoting self-reliance and aligning with 'radical home economics' principles.",
+        "category": [
+            "Sustainability",
+            "DIY/Crafts",
+            "Science Education",
+            "Emergency Preparedness",
+            "Resourcefulness"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Individuals and communities seeking sustainable alternatives and practical skills.",
+            "learning_outcomes": [
+                "Understanding principles of capillary action and combustion.",
+                "Developing practical skills in creating alternative lighting solutions.",
+                "Promoting resourcefulness and repurposing household items.",
+                "Gaining knowledge about the properties of different fuels and wick materials.",
+                "Fostering self-reliance and emergency preparedness."
+            ],
+            "pedagogical_approach": "Hands-on experimentation, self-directed learning, problem-based learning (finding alternative lighting), and practical application of scientific principles."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mason jars",
+                "Tin cans",
+                "Cotton twine",
+                "Cotton string",
+                "Shoelaces (as wick material)",
+                "Olive oil (including rancid oil)"
+            ],
+            "preparation_steps": [
+                "Gathering and cleaning repurposed containers (mason jars, tin cans).",
+                "Preparing wick material (cotton twine, string, shoelaces) to fit the container and reach the oil."
+            ],
+            "execution_steps": [
+                "Assembling the wick and container to create a functional olive oil lamp.",
+                "Filling the container with olive oil.",
+                "Lighting the wick and observing the capillary action and combustion process.",
+                "Experimenting with different wick types and container designs to optimize burn time, light output, and safety."
+            ],
+            "tips_for_success": "Optimize burn time, light output, and safety through experimentation. Utilize rancid olive oil for an economical and sustainable approach. Ensure the wick is properly saturated before lighting for best results and minimal smoke."
+        },
+        "impact": {
+            "problem_solved": "Provides a sustainable, low-cost, and safe alternative to conventional lighting, addresses emergency preparedness needs, reduces electricity consumption, and offers a practical use for otherwise wasted resources like rancid olive oil.",
+            "evidence_of_success": "Described as a 'growing grassroots movement' with users actively experimenting to optimize designs, indicating widespread adoption and engagement.",
+            "beneficiaries_reach": "Individuals, families, and communities seeking self-reliance and sustainable living practices.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "self-taught"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "child_safety"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety due to the open flame, posing fire and burn hazards. As a DIY project, construction quality and safety features can vary significantly, increasing the potential for accidents. While olive oil has a higher flash point and tends to self-extinguish if spilled, it is still a combustible material. This innovation also presents significant child safety concerns if lamps are constructed or used without proper adult supervision, potentially leading to burns or accidental fires, especially given the grassroots and community-led nature of the movement."
+        },
+        "priority_score": 76,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "d5ca10895dfda5a0b9f64490a9b1e880",
+        "timestamp": "2026-07-12T01:18:54.342197",
+        "title": "Roots of Empathy Program",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECl0S_PdF9NZJlnLhAMjSZ7MeXC-Q6QmSyA75fcodp-Sy9557_ZgTzgC1VAExf5LN8gE3G7ctJz4MIr9ORizgrIddUQzJWdfttVY70pChak4vj9UWbJGkfv8kox3ud5VQLqvnESnWmaucPCj2MQxx-"
+        ],
+        "summary": "The Roots of Empathy program is an international, evidence-based classroom initiative for children aged 5 to 13. It operates in diverse communities across Canada, the United States, and several European countries. The program's core involves a local parent and their baby visiting classrooms throughout the school year. Guided by a trained instructor and a specialized curriculum, children observe the baby's development and emotional expressions. This experiential learning fosters emotional literacy, helping students identify feelings, understand their own emotions, and develop perspective-taking skills. The curriculum integrates subjects like math, literature, and art to promote empathy and healthy relationships, ultimately aiming to reduce aggression and bullying while increasing prosocial behavior.",
+        "category": [
+            "Social-Emotional Learning",
+            "Child Development",
+            "Anti-Bullying",
+            "Empathy Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Canada, United States, European countries",
+            "region": "rural, urban, and Indigenous populations",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Social-Emotional Learning",
+                "Child Development",
+                "Health",
+                "Literacy",
+                "Arts",
+                "Mathematics",
+                "Civics"
+            ],
+            "target_learners": "children aged 5 to 13",
+            "learning_outcomes": [
+                "foster emotional literacy",
+                "identify and label feelings",
+                "understand own emotions",
+                "develop perspective-taking skills",
+                "recognize baby's feelings and intentions",
+                "promote empathy",
+                "build healthy relationships",
+                "reduce aggression and bullying",
+                "increase prosocial behavior"
+            ],
+            "pedagogical_approach": "experiential learning, observation, coaching, curriculum integration"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "local parent and their baby",
+                "classroom space",
+                "trained instructor",
+                "specialized curriculum"
+            ],
+            "preparation_steps": [
+                "Secure a trained instructor for the program.",
+                "Obtain and familiarize with the specialized curriculum.",
+                "Recruit local parents willing to bring their baby to the classroom throughout the school year."
+            ],
+            "execution_steps": [
+                "Facilitate regular classroom visits by a parent and their baby.",
+                "Under the instructor's guidance, coach children to observe the baby's development and emotional expressions.",
+                "Lead discussions and activities that help children identify and label feelings, understand their own emotions, and develop perspective-taking skills by considering the baby's feelings and intentions.",
+                "Integrate observations and emotional learning with other subjects like math (charting growth), literature (exploring feelings), and art (expressing emotions)."
+            ],
+            "tips_for_success": "Emphasize consistent, year-long engagement with the baby and parent to maximize experiential learning. Ensure instructors are well-trained in facilitating emotional literacy and guiding children's observations. Integrate the program themes across various academic subjects to reinforce learning."
+        },
+        "impact": {
+            "problem_solved": "aggression and bullying among children, lack of emotional literacy",
+            "evidence_of_success": "described as an 'evidence-based classroom initiative'",
+            "beneficiaries_reach": "children aged 5 to 13 in rural, urban, and Indigenous populations across Canada, the United States, and several European countries",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "cultural",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The program faces potential cultural friction due to varying norms around child-rearing, emotional expression, and interaction with infants, especially across diverse international and Indigenous communities. Exclusion/accessibility barriers could arise from challenges in consistently sourcing suitable parent-baby pairs in all locations or adapting the curriculum for children with diverse learning needs. The presence of a baby in a classroom with children aged 5-13, while supervised, introduces a slight physical safety risk if interactions are not meticulously managed and boundaries clearly established ('other' risk type for child safety)."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "61f9276dd062ecd346092b8ff5196c86",
+        "timestamp": "2026-07-12T01:19:18.781801",
+        "title": "CareGuard Initiative",
+        "sources": [
+            "https://www.careguard-initiative.org/programs-initiatives/community-education"
+        ],
+        "summary": "The CareGuard Initiative is a community education project focused on enhancing access to preventive oral health education, especially for underserved communities facing educational, language, and informational barriers. It develops and delivers various educational programs, including community oral health workshops, presentations, awareness campaigns, and both printed and digital resources. The initiative aims to be practical, inclusive, and accessible, helping individuals, families, caregivers, and local organizations understand evidence-based oral healthcare to make informed health decisions. By targeting communities with low oral health literacy and fostering partnerships, CareGuard seeks to support healthier communities through continuous, evidence-based learning that complements existing healthcare services.",
+        "category": [
+            "Health",
+            "Community Development",
+            "Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Health"
+            ],
+            "target_learners": "Individuals, families, caregivers, and local organizations, particularly in underserved communities facing educational, language, and informational barriers.",
+            "learning_outcomes": [
+                "Improved access to preventive oral health education",
+                "Increased understanding of evidence-based oral healthcare",
+                "Ability to make informed health decisions",
+                "Support healthier communities through ongoing learning opportunities"
+            ],
+            "pedagogical_approach": "Development and delivery of community oral health workshops, presentations, preventive oral health awareness campaigns, and both printed and digital educational resources. Programs are designed to be practical, inclusive, and accessible, focusing on evidence-based information."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Printed educational resources (brochures, flyers)",
+                "Digital educational resources (videos, websites, social media content)",
+                "Presentation materials (slides, props)",
+                "Workshop supplies (e.g., models for demonstration)",
+                "Community outreach tools"
+            ],
+            "preparation_steps": [
+                "Identify and prioritize underserved communities with limited oral health literacy.",
+                "Develop evidence-based oral health educational programs and content (workshops, presentations, campaigns).",
+                "Create practical, inclusive, and accessible educational resources (printed and digital).",
+                "Establish and build lasting relationships with community partners and local organizations.",
+                "Train facilitators or educators for program delivery."
+            ],
+            "execution_steps": [
+                "Organize and deliver community oral health workshops.",
+                "Conduct presentations for various target groups (families, caregivers, local organizations).",
+                "Launch preventive oral health awareness campaigns through multiple channels.",
+                "Distribute printed and digital educational resources within target communities.",
+                "Engage with community members to assess needs and feedback for continuous improvement."
+            ],
+            "tips_for_success": "Focus on making content practical, inclusive, and accessible, addressing specific educational, language, and informational barriers. Prioritize building strong, lasting relationships with community partners. Ensure all information provided is evidence-based and complements existing healthcare services rather than replacing them."
+        },
+        "impact": {
+            "problem_solved": "Limited access to preventive oral health education and low oral health literacy, particularly in underserved communities facing educational, language, and informational barriers.",
+            "evidence_of_success": "The initiative aims to help individuals and families understand evidence-based oral healthcare and make informed health decisions, thereby supporting healthier communities through ongoing learning opportunities. (Specific metrics not provided in source text).",
+            "beneficiaries_reach": "Individuals, families, caregivers, and local organizations within underserved communities.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The CareGuard Initiative, while highly beneficial, carries risks related to data privacy, especially if personal or health-related information is collected from individuals, families, or caregivers. Cultural friction is a potential concern when introducing evidence-based oral health practices to diverse underserved communities with varying cultural beliefs and existing health practices. While the initiative actively targets and aims to overcome exclusion/accessibility barriers, there's an ongoing need to ensure all segments of the target population are truly reached and accommodated without inadvertently creating new barriers. Child safety protocols should also be in place given the focus on families and caregivers, which implies interaction with or impact on children."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
