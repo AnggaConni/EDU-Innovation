@@ -12453,5 +12453,265 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "c60f87672e97c0b46b5e2fd365891a93",
+        "timestamp": "2026-07-15T01:05:52.575261",
+        "title": "Thrive Emerge: The Farm and Village Programs",
+        "sources": [
+            "https://thriveemerge.com/the-village-program-for-neurodivergent-teens-young-adults-in-maryland/",
+            "https://thriveemerge.com/the-farm-experiential-learning-for-neurodivergent-teens-young-adults/"
+        ],
+        "summary": "Thrive Emerge, based in Maryland, offers peer-based experiential programs like 'The Farm program' and 'The Village program' for neurodivergent teens and young adults transitioning to independent living. The Farm program, set at the Benjamin Banneker historic farm, uses outdoor projects for hands-on learning, addressing lack of initiative and building confidence through tangible results. It integrates therapeutic interventions such as CBT and DBT to manage ADHD, anxiety, and depression, fostering emotional regulation. The Village program complements this with skills groups for social interaction, job readiness, executive functions, and self-care within a supportive peer community. This grassroots innovation blends experiential learning with therapeutic techniques for inclusive education and mental health support.",
+        "category": [
+            "Inclusive Education",
+            "Mental Health",
+            "Experiential Learning",
+            "Life Skills",
+            "Neurodiversity Support"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "Maryland",
+            "city_or_village": "",
+            "institution_name": "Thrive Emerge",
+            "lat": 39.5162401,
+            "lon": -76.9382069
+        },
+        "education_details": {
+            "education_type": "alternative",
+            "related_fields": [
+                "Vocational",
+                "Health",
+                "Other"
+            ],
+            "target_learners": "Neurodivergent teens and young adults navigating the transition to independent living.",
+            "learning_outcomes": [
+                "Building self-esteem and confidence",
+                "Fostering engagement in meaningful work",
+                "Developing emotional regulation",
+                "Improving coping strategies",
+                "Enhancing social interaction skills",
+                "Improving job readiness",
+                "Developing executive functions",
+                "Practicing self-care"
+            ],
+            "pedagogical_approach": "Peer-based experiential learning, hands-on outdoor projects and activities, integration of therapeutic interventions (Cognitive Behavioral Therapy - CBT, Dialectical Behavior Therapy - DBT), skills groups, supportive peer community."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Historic colonial-era farm or outdoor space suitable for projects",
+                "Materials for outdoor projects (e.g., gardening tools, building supplies)",
+                "Curriculum for life skills groups (social, job readiness, executive functions, self-care)",
+                "Therapeutic resources and trained professionals (CBT/DBT)"
+            ],
+            "preparation_steps": [
+                "Secure a suitable outdoor experiential learning environment (e.g., a farm).",
+                "Develop a structured curriculum for outdoor projects that yield tangible results.",
+                "Design skills groups focusing on social interaction, job readiness, executive functions, and self-care.",
+                "Integrate therapeutic frameworks (CBT, DBT) into the program structure.",
+                "Establish a peer-based support community framework."
+            ],
+            "execution_steps": [
+                "Engage participants in hands-on outdoor projects to foster initiative and provide tangible accomplishments.",
+                "Facilitate skill groups for face-to-face practice in essential life areas.",
+                "Apply therapeutic interventions (CBT/DBT) to manage neurodivergent challenges and co-occurring conditions.",
+                "Encourage peer interaction and support within all program activities.",
+                "Guide participants in developing emotional regulation and coping strategies through experiential learning."
+            ],
+            "tips_for_success": "Foster engagement through meaningful work with tangible results. Integrate therapeutic interventions directly into experiential activities. Cultivate a strong, supportive peer community. Focus on practical, real-world skills applicable to independent living. Utilize a unique, engaging environment like a historic farm to enhance learning."
+        },
+        "impact": {
+            "problem_solved": "Challenges faced by neurodivergent teens and young adults in transitioning to independent living, including lack of initiative, ADHD symptoms, co-occurring anxiety/depression, and deficits in social, executive, and self-care skills.",
+            "evidence_of_success": "Fosters engagement in meaningful work, yields tangible results, builds self-esteem and confidence, develops emotional regulation and coping strategies, and provides practice in essential life skills.",
+            "beneficiaries_reach": "Neurodivergent teens and young adults navigating the transition to independent living.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "physical"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The program involves collecting highly sensitive personal and health information (diagnoses, therapeutic progress) from neurodivergent teens and young adults, posing significant data privacy risks if not managed with stringent protocols. Experiential outdoor activities on a historic farm, involving hands-on projects and potentially tools, present substantial physical safety risks for participants, especially a neurodivergent population with varied physical capabilities and sensory needs. Furthermore, the physical accessibility of a historic farm and potential financial barriers could lead to exclusion. While the program is designed to be supportive, these inherent risks necessitate robust safety measures, comprehensive staff training, and rigorous data protection policies."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "136a3572fa212c0e2de9bd5ad24ca35d",
+        "timestamp": "2026-07-15T01:06:18.777094",
+        "title": "Commonpoint Social Skills Group for Autistic Children",
+        "sources": [
+            "https://www.commonpointqueens.org/programs/special-needs/programs-for-individuals-with-special-needs/"
+        ],
+        "summary": "Commonpoint, a community-based organization in the greater New York City area, offers an innovative Social Skills Group specifically for children on the autistic spectrum. This program utilizes Cognitive Behavioral Therapy (CBT) principles to teach essential skills such as non-verbal communication, social initiation, problem-solving, and coping strategies. Small groups (5-8 children) periodically integrate typically developing, age-matched peer mentors to encourage natural social interactions. Complementary weekly parent discussion groups, led by trained staff, provide caregivers with strategies and support, fostering a holistic and community-integrated approach to mental health and inclusive education.",
+        "category": [
+            "Special Education",
+            "Social-Emotional Learning",
+            "Mental Health",
+            "Community Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "New York",
+            "city_or_village": "Greater New York City Area",
+            "institution_name": "Commonpoint",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Health",
+                "Other"
+            ],
+            "target_learners": "Children on the autistic spectrum (ages not specified), age-matched typically developing peer mentors, and their parents/caregivers.",
+            "learning_outcomes": [
+                "Improved non-verbal communication",
+                "Enhanced social initiation skills",
+                "Better problem-solving abilities",
+                "Developed coping strategies",
+                "Increased natural social interactions",
+                "Caregiver support and strategies for managing children's social development"
+            ],
+            "pedagogical_approach": "Cognitive Behavioral Therapy (CBT) principles, small group instruction, peer mentorship, parent discussion groups, holistic community-integrated approach."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Structured application of CBT principles, integration of peer mentors for natural social interactions, comprehensive support for both children and families, and leadership by trained staff are key for success."
+        },
+        "impact": {
+            "problem_solved": "Lack of tailored social skills development programs for children on the autistic spectrum and insufficient support for their families in navigating social challenges.",
+            "evidence_of_success": "Fosters an inclusive learning environment, encourages natural social interactions and skill development, and offers caregivers strategies and support, creating a holistic and community-integrated approach.",
+            "beneficiaries_reach": "Small groups of 5-8 children, plus their parents/caregivers. The exact number of groups or total beneficiaries is not specified but is localized within the community.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The program, while highly beneficial for children on the autistic spectrum, presents several risks. Data privacy is a concern due to the sensitive nature of information shared by children and families regarding diagnoses and personal challenges. The use of peer mentors and the intensive social skills training (CBT) could lead to emotional safety issues or cognitive overload for vulnerable children if not meticulously managed with highly trained staff and robust protocols for peer interaction and session pacing. In a diverse setting like NYC, there's also a potential for cultural friction regarding social norms, communication styles, or parenting approaches. While aiming for inclusion, practical access barriers (e.g., cost, transportation, specific needs not met) could also exist. These areas require proactive intervention and careful management to ensure optimal outcomes and safety."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "ec4b529447f786ef795a3f646f6452c3",
+        "timestamp": "2026-07-15T01:07:08.736031",
+        "title": "Thaki",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmWDkjQawMJ64GDNSh2ZaotMUchD-MPqAsGbzR2-O15GBuf4741R-Zdip-31fmWCS3sdlLFUgXnlDreW8bxsTsS2a1VFKGvyNVhuo_O3U_A8hl0uYorxOiRCitfr1MMGb5UMj-u4akM68LR99vm780wI9EiT5TG2C3ETBBq7vazSDMzHfIEy3Vg4U6XtvkqIIYWOUZoZ4A8bJ7h7wWP8BngfnGia8k4pgO3d4YOtfnOQvFZ1CkKM9cKb-_jJI="
+        ],
+        "summary": "Thaki is a grassroots initiative founded by a former child refugee that aims to bridge the digital literacy gap among displaced populations. It achieves this by collecting donated, used computers from companies, loading them with high-quality, interactive, and multilingual educational software and offline content, and then distributing these devices directly to refugee children, students, and university scholarship holders. This process provides crucial access to digital tools and educational resources, especially in areas with limited internet connectivity.",
+        "category": [
+            "Digital Literacy",
+            "Refugee Education",
+            "Technology in Education",
+            "Social Innovation"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "refugee children and youth, refugee students, university scholarship holders",
+            "learning_outcomes": [
+                "Digital literacy",
+                "Access to educational content",
+                "Unlocking future potential for displaced populations"
+            ],
+            "pedagogical_approach": "Resource provision, self-paced learning (via offline content)"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Donated used computers",
+                "High-quality, interactive, multilingual educational software and offline content"
+            ],
+            "preparation_steps": [
+                "Collect donated computers from companies",
+                "Load computers with educational software and offline content"
+            ],
+            "execution_steps": [
+                "Distribute loaded computers directly to refugee children, students, and university scholarship holders"
+            ],
+            "tips_for_success": "Focus on repurposing existing resources (used computers), provide offline content to address connectivity issues, and ensure multilingual options to cater to diverse refugee populations."
+        },
+        "impact": {
+            "problem_solved": "Digital literacy gap among refugee children and youth; lack of access to digital tools and reliable internet connectivity for displaced populations.",
+            "evidence_of_success": "The simple yet effective process promotes digital literacy and unlocks future potential for beneficiaries.",
+            "beneficiaries_reach": "Refugee children, students, and university scholarship holders.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The use of repurposed computers presents data privacy risks if previous user data is not completely and securely wiped. Physical safety concerns exist regarding the distribution of used electronic devices, necessitating thorough electrical and component safety checks. While the initiative addresses exclusion, there's a potential for cognitive overload for children new to technology without sufficient initial guidance. Additionally, ongoing support for device management and responsible usage could be crucial for child safety, especially if internet connectivity is introduced later."
+        },
+        "priority_score": 76,
+        "hidden_gem": true,
+        "critical_flag": false
     }
 ]
