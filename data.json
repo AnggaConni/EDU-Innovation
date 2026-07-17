@@ -12713,5 +12713,280 @@
         "priority_score": 76,
         "hidden_gem": true,
         "critical_flag": false
+    },
+    {
+        "id": "a2e2bf60bfc9559330d21500e6672d3e",
+        "timestamp": "2026-07-17T01:18:48.429528",
+        "title": "Manzo Elementary School Garden Program",
+        "sources": [
+            "https://school-infrastructure.org/blog/school-gardens-building-inclusive-learning-spaces-through-participatory-design-fwe/"
+        ],
+        "summary": "Manzo Elementary School in Tucson, Arizona, has implemented a comprehensive, long-standing school garden program. This grassroots initiative transforms underutilized school grounds into a dynamic outdoor classroom featuring an agro-voltaic garden, aquaponics systems, a greenhouse, diverse vegetable plots, and a native Sonoran desert garden. Students are actively involved in hands-on, curriculum-integrated activities such as ecological experiments, plant cultivation, and garden maintenance. The program supports STEM education through data collection and analysis (e.g., plant growth under solar panels), fosters student well-being, and promotes community engagement by selling herbs from the aquaponics system to local restaurants, generating revenue and instilling a sense of pride and ownership.",
+        "category": [
+            "Environmental Education",
+            "STEM Education",
+            "Community Engagement",
+            "Experiential Learning"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "Arizona",
+            "city_or_village": "Tucson",
+            "institution_name": "Manzo Elementary School",
+            "lat": 32.2228765,
+            "lon": -110.974847
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Vocational",
+                "Health"
+            ],
+            "target_learners": "Elementary school students",
+            "learning_outcomes": [
+                "Enhanced understanding of ecological principles",
+                "Development of scientific inquiry and data analysis skills",
+                "Practical plant cultivation and garden maintenance skills",
+                "Increased connection to nature and local environment",
+                "Improved student well-being and sense of ownership",
+                "Understanding of sustainable food systems and local economies"
+            ],
+            "pedagogical_approach": "Hands-on learning, Experiential learning, Project-based learning, Outdoor education, Curriculum integration"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Land/space for gardens",
+                "Agro-voltaic system components (solar panels, planting beds)",
+                "Aquaponics system (tanks, pumps, grow beds, fish, plants)",
+                "Greenhouse structure and equipment",
+                "Vegetable garden beds and soil",
+                "Native Sonoran desert plants and landscaping materials",
+                "Seeds, seedlings, and plants",
+                "Gardening tools (shovels, trowels, watering cans)",
+                "Data collection instruments (e.g., for plant growth, environmental parameters)"
+            ],
+            "preparation_steps": [
+                "Identify and secure suitable outdoor space within school grounds.",
+                "Design and plan various garden components: agro-voltaic, aquaponics, greenhouse, vegetable plots, native garden.",
+                "Obtain necessary permits and funding for infrastructure.",
+                "Establish the physical garden structures and systems.",
+                "Integrate garden activities and learning objectives into existing school curriculum (e.g., science, math, social studies).",
+                "Train teachers and staff on garden-based learning methodologies and maintenance."
+            ],
+            "execution_steps": [
+                "Engage students in the planting, cultivation, and harvesting of various crops.",
+                "Conduct ecological experiments, such as investigating plant growth under solar panels in the agro-voltaic garden.",
+                "Guide students in collecting and analyzing data from experiments for science lessons.",
+                "Involve students in routine garden maintenance tasks (weeding, watering, pest control).",
+                "Operate and maintain the aquaponics system, including caring for fish and harvesting herbs.",
+                "Facilitate connections with local businesses (e.g., restaurants) for selling garden produce, involving students in the process.",
+                "Encourage students to take ownership and pride in the garden's success and upkeep."
+            ],
+            "tips_for_success": "Ensure strong curriculum integration across multiple subjects to maximize learning. Foster community partnerships (e.g., local businesses, volunteers) for support and sustainability. Utilize diverse garden types to offer varied learning experiences. Emphasize hands-on, inquiry-based activities to promote active learning. Celebrate student achievements and the garden's bounty to build enthusiasm and pride."
+        },
+        "impact": {
+            "problem_solved": "Underutilized school space, lack of hands-on STEM learning opportunities, limited environmental education, student disengagement, and lack of connection to local food systems.",
+            "evidence_of_success": "Students actively engage in curriculum-connected activities and ecological experiments. Data collection and analysis are integrated into science lessons. Herbs grown in aquaponics are successfully sold to local restaurants, generating revenue and community ties. The program fosters a strong sense of pride and ownership among students.",
+            "beneficiaries_reach": "Elementary school students, school staff, local community (restaurants, patrons), and the broader environment.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The garden program presents several physical safety risks, including those associated with garden tools, sun exposure, and potential slips around water features like aquaponics. More significantly, the agro-voltaic garden and aquaponics systems involve electrical components (solar panels, pumps) which require strict safety protocols, professional installation, and regular maintenance. Given its Sonoran desert location, there's also a risk of encountering local wildlife (e.g., snakes, scorpions). Furthermore, the hands-on nature of the garden environment could pose accessibility barriers for students with physical disabilities, potentially leading to exclusion from certain activities. These risks are manageable with robust safety training, supervision, and inclusive design."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "c3d7d7bbe5404e56ef66d8c777c7a573",
+        "timestamp": "2026-07-17T01:19:33.929155",
+        "title": "Edible Schoolyard NYC at PS 216",
+        "sources": [
+            "https://sustainableurbandelta.com/edible-schoolyard-nyc-transforming-urban-landscapes-and-young-minds-through-edible-education/",
+            "https://work.ac/work/edible-schoolyard-nyc-at-p-s-216/"
+        ],
+        "summary": "The Edible Schoolyard NYC at PS 216 in Gravesend, Brooklyn, transformed a half-acre parking lot into a vibrant teaching garden and outdoor classroom. Designed by WORKac, this project serves as an architectural learning tool, integrating organic gardening and cooking into the public school curriculum. It features a 'systems wall' to explain sustainable features like water reclamation, a kitchen classroom, offices, and a greenhouse for year-round gardening, providing hands-on experiences that connect students to food systems, foster critical thinking, and build agency for community change.",
+        "category": [
+            "Environment",
+            "Food Systems",
+            "Education",
+            "Architecture"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "New York",
+            "city_or_village": "Gravesend, Brooklyn",
+            "institution_name": "PS 216",
+            "lat": 40.5961338,
+            "lon": -73.9739426
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Health",
+                "Other"
+            ],
+            "target_learners": "Children, Public school students",
+            "learning_outcomes": [
+                "connect students to food systems",
+                "foster critical thinking",
+                "build agency to effect change in their communities",
+                "explore interplay between built environment, sustainable systems, and garden"
+            ],
+            "pedagogical_approach": "Hands-on experiences, outdoor classroom, architectural learning tool, integrated curriculum (gardening and cooking)"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of hands-on learning opportunities about food systems, sustainable practices, and the built environment within a public school setting.",
+            "evidence_of_success": "Successfully converted a parking lot into a vibrant teaching garden and outdoor classroom, integrating organic gardening and cooking into the public school curriculum, and providing a functional architectural learning tool.",
+            "beneficiaries_reach": "Students of PS 216",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The innovation involves hands-on activities with gardening tools and kitchen equipment (knives, stoves), and an outdoor environment with a cistern, posing inherent physical safety risks requiring strict supervision and protocols. Potential exclusion barriers exist regarding physical accessibility to the garden and kitchen, and ensuring all students can participate in activities, especially considering food allergies. Cultural friction might arise if the curriculum's food choices or cooking methods do not adequately reflect the diverse student body's cultural backgrounds."
+        },
+        "priority_score": 46,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "bd5ef7bda604844a6d7dfb9e18bd7632",
+        "timestamp": "2026-07-17T01:20:04.926543",
+        "title": "Sutherland Schoolyard Market Garden",
+        "sources": [
+            "https://seewhatgrows.org/6-school-garden-examples-to-inspire-your-own/"
+        ],
+        "summary": "The Sutherland Schoolyard Market Garden in North Vancouver, British Columbia, is a grassroots educational initiative that integrates sustainable local economics with agricultural education. Spearheaded by the North Shore Neighbourhood House's Edible Garden Project, the garden not only cultivates produce but also sells it at a local farmers' market. The revenue generated from sales covers the operational costs and sustains a full-time farmer, creating a self-sustaining model. This provides students with comprehensive 'seed-to-table' learning, including farming, food preparation, and understanding local food system economics, fostering nutritious eating and potentially inspiring future farmers.",
+        "category": [
+            "Environmental Education",
+            "Economic Education",
+            "Food Systems",
+            "Community Development"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Canada",
+            "region": "British Columbia",
+            "city_or_village": "North Vancouver",
+            "institution_name": "Sutherland Schoolyard Market Garden",
+            "lat": 49.3206294,
+            "lon": -123.0737925
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Environment",
+                "Vocational",
+                "Health",
+                "Other"
+            ],
+            "target_learners": "Students",
+            "learning_outcomes": [
+                "Understanding of the entire 'seed-to-table' concept",
+                "Knowledge of agricultural practices",
+                "Skills in food preparation through cooking programs",
+                "Understanding of the economic realities of local food systems",
+                "Fostering an understanding of nutritious eating",
+                "Inspiring future farmers"
+            ],
+            "pedagogical_approach": "Experiential Learning, Project-Based Learning, Community-Based Learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "School land or accessible plot for gardening",
+                "Seeds and gardening tools",
+                "Access to a local farmers' market or sales channel",
+                "Cooking facilities for food preparation programs"
+            ],
+            "preparation_steps": [
+                "Establish a school garden space suitable for cultivation.",
+                "Partner with a community organization (e.g., Edible Garden Project) for support and expertise.",
+                "Develop a plan for market sales, including logistics for harvesting, transport, and selling produce.",
+                "Secure funding or a sustainable model for initial setup and ongoing farmer support."
+            ],
+            "execution_steps": [
+                "Engage students in the cultivation of various produce items.",
+                "Organize regular harvests of the garden's yield.",
+                "Transport and sell harvested produce at a local farmers' market.",
+                "Utilize generated revenue to cover operational costs and a full-time farmer's salary.",
+                "Implement cooking programs to teach students food preparation using garden produce.",
+                "Integrate lessons on local food systems and economics into the garden activities."
+            ],
+            "tips_for_success": "Focus on creating a self-sustaining economic model through produce sales to ensure long-term viability. Foster strong community partnerships for expertise, volunteer support, and market access. Emphasize the 'seed-to-table' educational journey to provide comprehensive learning experiences for students."
+        },
+        "impact": {
+            "problem_solved": "Lack of practical understanding of local food systems, agricultural practices, and food economics among students. Funding challenges for school garden initiatives.",
+            "evidence_of_success": "Revenue generated sustains a full-time farmer and covers operational costs, demonstrating financial viability. Provides students with comprehensive learning, fosters understanding of nutritious eating, and potentially inspires future farmers.",
+            "beneficiaries_reach": "Students, local community members (through market access to fresh produce), local food system (strengthening local economy), employed farmer.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The initiative presents moderate risks primarily related to physical safety, including the use of gardening tools, exposure to elements (sun, insects), and kitchen safety during cooking programs. Student interaction with the public at farmers' markets also requires careful supervision to ensure safety. Additionally, there is a potential for exclusion if the garden environment and activities are not designed to be physically accessible for all students, especially those with mobility challenges."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
