@@ -13238,5 +13238,265 @@
         "priority_score": 56,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "a78f0e21baf11d9a339cd601dc3eb97e",
+        "timestamp": "2026-07-23T01:21:53.338418",
+        "title": "Peace Education and Action for Impact (PEAI)",
+        "sources": [
+            "https://worldbeyondwar.org/action-for-impact/"
+        ],
+        "summary": "The Peace Education and Action for Impact (PEAI) initiative, a global program by World BEYOND War in partnership with Rotary International, focuses on local, youth-led peacebuilding. It features a 14-week curriculum combining online peace education with eight weeks of community-rooted peace action. Participants aged 18–35 engage in mentoring, intergenerational collaboration, and cross-cultural exchange to develop and implement community projects addressing local needs, such as understanding impediments to peace processes, developing peacebuilding competencies in children, and influencing policy on security issues.",
+        "category": [
+            "Peace Education",
+            "Youth Empowerment",
+            "Community Development",
+            "Conflict Resolution"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "Global (with examples in Cameroon, Kenya, Nigeria)",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "World BEYOND War, Rotary International",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Civics",
+                "Other",
+                "Arts"
+            ],
+            "target_learners": "Youth aged 18–35; children, youth, and community members",
+            "learning_outcomes": [
+                "Develop peacebuilding competencies",
+                "Address urgent local community needs through action",
+                "Influence local policy with community-centered approaches",
+                "Foster intergenerational collaboration and cross-cultural exchange"
+            ],
+            "pedagogical_approach": "Online peace education, community-rooted peace action, mentoring, intergenerational collaboration, cross-cultural exchange, focus groups, surveys, workshops, arts-based activities, play, cultural activities."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Online learning platform",
+                "Mentoring resources",
+                "Community engagement tools (survey templates, workshop materials)",
+                "Project funding (for community actions)"
+            ],
+            "preparation_steps": [
+                "Design a 14-week curriculum combining online education and community action",
+                "Establish partnerships (e.g., with Rotary International networks)",
+                "Recruit and train mentors",
+                "Select youth participants (18-35 years old)",
+                "Identify local community needs and potential project areas"
+            ],
+            "execution_steps": [
+                "Deliver 6 weeks of online peace education",
+                "Facilitate 8 weeks of community-rooted peace action projects",
+                "Provide ongoing mentoring and support to participants",
+                "Encourage intergenerational and cross-cultural collaboration",
+                "Support participants in conducting local research (focus groups, surveys) and implementing community workshops/activities"
+            ],
+            "tips_for_success": "Emphasize local, youth-led initiatives; ensure projects address urgent community needs; foster strong partnerships; integrate mentoring and cross-cultural exchange; provide practical tools for community engagement and policy influence."
+        },
+        "impact": {
+            "problem_solved": "Lack of youth involvement in peace processes; community conflicts; specific local issues like school kidnappings and impediments to peace; limited peacebuilding competencies.",
+            "evidence_of_success": "Teams conducted focus groups and surveys, sharing reports with local leaders (Cameroon); workshops facilitated for over one hundred children, youth, and community members (Kenya); surveys on public perception of school kidnappings conducted to influence policy (Nigeria).",
+            "beneficiaries_reach": "Youth aged 18-35 directly participating; hundreds of children, youth, and community members in project areas; local leaders and policymakers.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The initiative presents high risks in several areas. Child safety is a significant concern due to workshops facilitated for over one hundred children by young adult participants (18-35), who may not have specialized child protection training, especially in potentially sensitive contexts. Data privacy is also a major risk, as sensitive information is collected through surveys and focus groups from community members, including potentially vulnerable populations and children, on topics like peace processes and school kidnappings, with reports shared with local leaders. Cultural friction is possible given the sensitive nature of peacebuilding work in diverse local contexts. Exclusion/accessibility barriers may arise from the online education component and potential disparities in technology access or language proficiency. Robust intervention is needed for child protection protocols, secure data handling, and comprehensive cultural sensitivity training."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "f6c0804f7d2f0f292061884de7fdd225",
+        "timestamp": "2026-07-23T01:22:21.632690",
+        "title": "Enabling University Peace Education (EUPE) Project",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHMJynOR68JbfG3jW0UHgB339ot3pALnJCgc2aJK-LO1Df1GfqS2VaXOeiQ6jPXJDdeluXNXMPvm948ccMLb77FTNRdoydlXYzdoaMdsDf7xdes3gWdncNJjmSANFM1tuKuSUbr9MYj5iJacaDyNEZec-Gg7Qso1NoMMjZ1m_ZuidxPPskctfrpeRXS6tXicB_Sc0nAxtMJFln5EsZxo3a3ZPUbV6v4X99ckJjdX9jIP2TAcYIGkJ-rqeREbJLHXGNGju3"
+        ],
+        "summary": "The Enabling University Peace Education (EUPE) project, co-funded by the European Union and the British Council, empowers university students in Ethiopia and Sudan to become active peacebuilders. It integrates academic learning with practical experience through student-led Social Action Projects (SAPs). These projects enable students to identify local conflicts, design culturally relevant interventions, and foster dialogue, collaboration, and healing among diverse community members. Examples include 'Salam Jakum' in Kordofan, using interactive theatre for peaceful coexistence, and a project in Gedarif focusing on social cohesion and psychosocial support for young people in an IDP camp. The EUPE project has supported 72 such initiatives, demonstrating education's role in equipping youth with conflict resolution skills.",
+        "category": [
+            "Peacebuilding",
+            "Community Development",
+            "Higher Education",
+            "Conflict Resolution"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Ethiopia, Sudan",
+            "region": "",
+            "city_or_village": "Kordofan, Gedarif",
+            "institution_name": "Universities in Ethiopia and Sudan",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "University students in Ethiopia and Sudan, young people in IDP camps, diverse community members",
+            "learning_outcomes": [
+                "Become active peacebuilders",
+                "Identify local conflicts",
+                "Design culturally relevant interventions",
+                "Foster dialogue, collaboration, and healing",
+                "Resolve conflicts constructively"
+            ],
+            "pedagogical_approach": "Integration of academic learning with hands-on experience, student-led Social Action Projects (SAPs), interactive theatre, group discussions, psychosocial support"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "Identify local conflicts",
+                "Design culturally relevant interventions"
+            ],
+            "execution_steps": [
+                "Implement student-led Social Action Projects (SAPs)",
+                "Bring together diverse community members",
+                "Foster dialogue, collaboration, and healing",
+                "Utilize interactive theatre performances (e.g., in local markets)",
+                "Facilitate group discussions on social cohesion and resilience",
+                "Provide psychosocial support"
+            ],
+            "tips_for_success": "Draw on traditional peacemaking tools; focus on community-led conflict resolution; ensure cultural relevance of interventions."
+        },
+        "impact": {
+            "problem_solved": "Local conflicts, lack of peacebuilding skills among youth, social cohesion issues, psychosocial needs in vulnerable communities (e.g., IDP camps).",
+            "evidence_of_success": "Supported 72 social action projects; promoted peaceful coexistence; fostered social cohesion and resilience; empowered university students as peacebuilders.",
+            "beneficiaries_reach": "University students in Ethiopia and Sudan, diverse community members in various locations (e.g., Kordofan), young people in IDP camps (e.g., Gedarif).",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "physical",
+                "other",
+                "cultural",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The EUPE project operates in conflict-affected regions of Ethiopia and Sudan, engaging university students and community members in sensitive peacebuilding activities. The primary risks are physical safety for students and participants, as discussing local conflicts and working in IDP camps and public markets can expose them to direct harm, retaliation, or unintended escalation of tensions. There is also a significant 'other' risk related to child safety, as the project explicitly works with 'young people in an IDP camp' and provides 'psychosocial support,' which necessitates robust child safeguarding protocols and trained professionals, neither of which are detailed. While aiming for 'culturally relevant interventions,' navigating diverse traditional tools and power dynamics in conflict-affected communities can inadvertently cause cultural friction or misunderstanding. Finally, despite intentions for inclusivity, practical implementation in complex, diverse settings, especially IDP camps, may inadvertently create exclusion or accessibility barriers for certain vulnerable groups."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "3e913af58e2fab884bc68e6dd0d240b8",
+        "timestamp": "2026-07-23T01:22:51.166817",
+        "title": "Peace Education Program",
+        "sources": [
+            "https://everydaypeacebuilding.com/peace-education-organizations-and-networks/",
+            "https://www.peaceinsight.org/en/organisations/peace-education-program-usa/",
+            "https://www.peaceeducationprogram.org/"
+        ],
+        "summary": "The Peace Education Program, based in Louisville, Kentucky, is a long-standing local initiative established in 1982. It aims to strengthen communities and schools by offering learning experiences focused on reducing violence, enhancing personal integrity, and fostering mutual respect. The program provides conflict resolution workshops for elementary, middle, and high school students, a mentoring initiative ('The Navigators') for young men, and professional development for youth workers and educators. It has significantly expanded its reach, now impacting 20,000 youths annually across 88 schools and numerous community sites in Jefferson County. A notable achievement includes training 400 gang-involved youths as mediators, leading to the creation of 67 community sites for nonviolent problem resolution.",
+        "category": [
+            "Peace Education",
+            "Conflict Resolution",
+            "Youth Development",
+            "Community Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Kentucky",
+            "city_or_village": "Louisville",
+            "institution_name": "Peace Education Program",
+            "lat": 38.2542376,
+            "lon": -85.759407
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Elementary, middle, and high school students, young men, youth workers, educators, gang-involved youths, families, community members.",
+            "learning_outcomes": [
+                "Reduce violence",
+                "Enhance personal integrity",
+                "Foster mutual respect",
+                "Explore experiences with conflict",
+                "Brainstorm nonviolent solutions",
+                "Develop mediation skills"
+            ],
+            "pedagogical_approach": "Workshops, mentoring, direct engagement, experiential learning, peer mediation training, professional development."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Sustained community engagement, tailored age-appropriate content, and consistent training for facilitators are crucial for long-term impact in peace education programs."
+        },
+        "impact": {
+            "problem_solved": "Violence, lack of personal integrity, disrespect, and unresolved conflict in schools and communities.",
+            "evidence_of_success": "Impacts 20,000 youths annually, operates across 88 schools and numerous community sites, trained 400 gang-involved youths as mediators, established 67 community sites for nonviolent problem resolution.",
+            "beneficiaries_reach": "20,000 youths annually, youth workers, educators, families, and community members in Jefferson County.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "other",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The program's focus on conflict resolution and violence reduction, especially involving 'gang-involved youths,' inherently deals with sensitive and potentially triggering topics. This poses a significant risk to child safety (emotional and psychological well-being), as discussions about conflict and violence require highly skilled facilitators to prevent re-traumatization or emotional distress. Given the program's scale (impacting 20,000 youths annually), there's a substantial data privacy risk if personal information, sensitive disclosures, or participation data are collected and not rigorously protected. While the program has a wide reach across schools and community sites, there's always a potential for exclusion/accessibility barriers for specific groups or individuals with unique needs if not explicitly addressed. The program's long history and demonstrated success suggest a high level of expertise in managing these risks, but ongoing vigilance, continuous training, and adaptation to evolving best practices in child protection and data security are crucial to maintain a 'medium' safety level and prevent adverse outcomes."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
