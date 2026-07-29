@@ -13779,5 +13779,257 @@
         "priority_score": 44,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "e29caeadbcf82ad9cc7cbdf53b932414",
+        "timestamp": "2026-07-29T01:16:20.221951",
+        "title": "Permanent Solid-Roofed Pavilions for Outdoor Classrooms",
+        "sources": [
+            "https://www.greenschoolyards.org/shelter"
+        ],
+        "summary": "Permanent solid-roofed pavilions offer a robust and long-lasting solution for rainproof outdoor classrooms, providing substantial protection from sun, heavy rain, snow loads, and strong winds. Their solid, angled, or arched roofs facilitate the shedding of rain and snow. Schools often opt for custom-designed pavilions or purchase kits, ensuring compliance with local building codes and district requirements for durability and safety. For example, Linden Waldorf School in Nashville, Tennessee, installed nine custom-designed outdoor pavilions to enable their entire student body to attend classes outdoors, demonstrating their effectiveness as a durable, long-term investment in outdoor learning infrastructure.",
+        "category": [
+            "Infrastructure",
+            "Outdoor Education",
+            "Educational Facilities"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "North America",
+            "city_or_village": "Nashville",
+            "institution_name": "Linden Waldorf School",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "K-12 students",
+            "learning_outcomes": [
+                "Enhanced outdoor learning opportunities",
+                "Protection from elements during outdoor instruction",
+                "Continuous outdoor instruction regardless of weather"
+            ],
+            "pedagogical_approach": "Outdoor learning, Experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Structural materials (steel, wood, concrete)",
+                "Roofing materials (metal, shingles)",
+                "Fasteners",
+                "Foundation materials"
+            ],
+            "preparation_steps": [
+                "Site selection and preparation (leveling, drainage)",
+                "Obtain necessary building permits and approvals",
+                "Design pavilion (custom or kit selection) to meet local codes and school needs",
+                "Prepare foundation (e.g., concrete footings or slab)"
+            ],
+            "execution_steps": [
+                "Assemble structural frame (columns, beams, trusses)",
+                "Install roofing structure and materials",
+                "Ensure all components are securely fastened and meet safety standards",
+                "Conduct final inspections"
+            ],
+            "tips_for_success": "Ensure compliance with all local building codes and district safety requirements. Consider local weather patterns (e.g., snow load, wind resistance) during design. Engage professional architects and contractors for design and installation to ensure durability and safety. Plan for accessibility and integration with existing school facilities."
+        },
+        "impact": {
+            "problem_solved": "Lack of robust, weather-proof outdoor learning spaces that allow for consistent outdoor instruction regardless of adverse weather conditions.",
+            "evidence_of_success": "Linden Waldorf School installed nine custom-designed outdoor pavilions, enabling their entire student body to attend classes outdoors consistently.",
+            "beneficiaries_reach": "Entire student body and faculty of participating schools, potentially extending to community use outside school hours.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety, specifically concerning structural integrity. While the description emphasizes engineering to withstand snow loads and strong winds and adherence to building codes, any large physical structure carries an inherent risk of failure if not properly designed, constructed, or maintained, potentially leading to severe injury. Additionally, without explicit design considerations for accessibility (e.g., ramps, level ground), these outdoor pavilions could create exclusion barriers for students with mobility challenges. Ongoing inspection, maintenance, and accessibility planning are crucial interventions."
+        },
+        "priority_score": 48,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "c7164f13be2d6608c0684524191311c6",
+        "timestamp": "2026-07-29T01:16:50.218510",
+        "title": "Engineered Fabric Buildings for Outdoor Classrooms",
+        "sources": [
+            "https://alaskastructures.com/products/outdoor-classrooms/"
+        ],
+        "summary": "Engineered fabric buildings and tensioned fabric structures offer innovative, weather-resistant solutions for outdoor classrooms. These structures are highly customizable in size, color, and design, providing reliable protection against rain, snow, and sun, thereby ensuring year-round learning opportunities. Manufactured with premium materials for quality and longevity, they are designed for swift assembly and disassembly, making them adaptable for seasonal use or as permanent installations. Examples like the WeatherPort® Octopae™ and Hexapae™ designs from Alaska Structures can be equipped with optional side curtains to further adapt to various weather conditions, creating versatile and immersive learning environments.",
+        "category": [
+            "Outdoor Education",
+            "Educational Infrastructure",
+            "Flexible Learning Spaces"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Students of all ages",
+            "learning_outcomes": [
+                "Enhanced access to outdoor learning",
+                "Year-round learning opportunities",
+                "Versatile and immersive learning environments"
+            ],
+            "pedagogical_approach": "Outdoor learning, Experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Engineered fabric building kit (e.g., WeatherPort® Octopae™ or Hexapae™ designs)",
+                "Optional side curtains",
+                "Foundation materials (if permanent)"
+            ],
+            "preparation_steps": [
+                "Site selection and preparation (e.g., leveling, drainage)",
+                "Order and receive engineered fabric structure kit",
+                "Review manufacturer's assembly instructions and safety guidelines"
+            ],
+            "execution_steps": [
+                "Assemble the structure according to manufacturer's instructions (often designed for swift assembly)",
+                "Install optional side curtains and other accessories as needed to adapt to weather conditions",
+                "Furnish the interior with appropriate learning materials and equipment"
+            ],
+            "tips_for_success": "Ensure proper site preparation for drainage and stability. Follow manufacturer guidelines for assembly and maintenance to maximize longevity and safety. Customize the structure with appropriate furnishings and technology to suit specific learning needs and pedagogical goals."
+        },
+        "impact": {
+            "problem_solved": "Lack of weather-protected spaces for outdoor learning, limiting year-round educational opportunities and flexibility in learning environments.",
+            "evidence_of_success": "Provides reliable protection against rain, snow, and sun, ensuring year-round learning opportunities. Creates versatile and immersive learning environments adaptable to various weather conditions.",
+            "beneficiaries_reach": "Potentially wide, enabling schools, universities, and other educational institutions to expand and diversify their learning spaces.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks involve the physical safety and structural integrity of the fabric buildings, especially under extreme weather conditions (wind, snow loads) and during assembly/disassembly. Potential issues include material failure, improper anchoring, and ensuring safe emergency egress. Additionally, accessibility barriers for students with physical disabilities or sensory sensitivities must be addressed to prevent exclusion."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "0e733b89c0828ff41d2fa4c54ecad413",
+        "timestamp": "2026-07-29T01:17:15.317983",
+        "title": "Timber and Enclosed Canopies for Rainproof Outdoor Classrooms",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNtNnMgAf9PtCpNS1l98BEK8gql0_uAter-ESSoBixDiv__tLQ0z20GrEbqs_n8oyvK8Cm3U3ruLeAdnL_8K6QDduOKdy7NGXA1CwwNmd0wYLyFr51iL1l2HVNZOHGX-mCGVU2xIAMRzRTOAKl__TkP5w==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMoOWz54zfYVDV88HzUAMVU7sRyHpOYgimlCt9cYcDOZGvgHeCenxontFeo4jJ6kRc61c022eODhNVVeXrpIK0yy0spI41pbDwqCLuVX24XKNuo4vdXqHirHR-ItSORapcwWlT_7NDefUHiZ1Gmphf8xmC31RIURaGotoxQ2NahTL79CKvJeOdD-dz3XE47JIlfTetKCH4Q8_arQOURV45frRRoCw08w1f0WGsQpyyRzX7Dw=="
+        ],
+        "summary": "Timber and enclosed canopies provide versatile, rainproof outdoor classroom solutions, blending natural aesthetics with functional weather protection. These structures can be freestanding or attached to existing school buildings, utilizing engineered timber frames with diverse roof coverings such as tensile fabric, polycarbonate, or green roofs. For enhanced protection, some canopies can be enclosed with materials like toughened glass walling, aluminum curtain walling, or solid polycarbonate vertical cladding. An example includes a 12-sided timber outdoor classroom with a wildflower green roof designed for a primary school in Whitley Bay.",
+        "category": [
+            "Outdoor Education",
+            "Sustainable Architecture",
+            "Educational Infrastructure",
+            "Environmental Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "Whitley Bay",
+            "institution_name": "a primary school",
+            "lat": 55.0422091,
+            "lon": -1.4454353
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Architecture",
+                "Outdoor Learning"
+            ],
+            "target_learners": "Primary school students",
+            "learning_outcomes": [
+                "Enhanced outdoor learning opportunities",
+                "Connection with nature",
+                "Weather-resilient learning spaces"
+            ],
+            "pedagogical_approach": "Outdoor Learning, Experiential Learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Engineered timber frames",
+                "Tensile fabric",
+                "Polycarbonate",
+                "Green roofs (e.g., wildflower turf)",
+                "Toughened glass walling",
+                "Aluminum curtain walling",
+                "Solid polycarbonate vertical cladding"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Consider local climate for material selection and enclosure level; integrate natural elements like green roofs for aesthetic and ecological benefits; ensure professional design and construction for safety and durability."
+        },
+        "impact": {
+            "problem_solved": "Lack of weather-protected outdoor learning spaces; limited opportunities for year-round outdoor education due to adverse weather.",
+            "evidence_of_success": "Successful implementation of custom-designed outdoor classrooms at educational institutions, such as the primary school in Whitley Bay.",
+            "beneficiaries_reach": "Students and staff of primary schools and other educational institutions adopting this design.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks relate to physical safety, including structural integrity (potential for collapse, material failure), material-specific hazards (e.g., broken glass, sharp edges, falling debris from green roofs), fire safety for timber structures, and adequate ventilation/temperature control in enclosed spaces to prevent overheating or poor air quality. Exclusion/accessibility barriers are also a concern, requiring designs that ensure physical accessibility for all students (ramps, wide entrances) and careful consideration of sensory environments and temperature for students with specific needs within enclosed areas. Significant intervention is needed through professional engineering, compliant construction, durable and safe material selection, clear maintenance protocols, and inclusive design principles to mitigate these risks."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
