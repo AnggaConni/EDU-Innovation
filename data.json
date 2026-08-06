@@ -14526,5 +14526,266 @@
         "priority_score": 60,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "afada409be1f18cd9730f53b498dbed8",
+        "timestamp": "2026-08-06T01:12:03.259397",
+        "title": "The Learning Passport",
+        "sources": [
+            "https://ahsedu.org/blog/digital-inclusion-in-early-education/"
+        ],
+        "summary": "The Learning Passport, developed in collaboration with Microsoft, is an educational platform providing learning opportunities in countries with disrupted schooling and limited internet access. It features local installation with pre-loaded educational content and a mobile application with an offline mode, allowing users to download lessons when connectivity is available and engage with content without an active internet connection. In regions like Sudan, touchscreen kiosks are placed in public areas such as markets and mosques to provide community access to interactive lessons and textbooks for children without home internet. As of 2024, it operates in over 29 countries.",
+        "category": [
+            "Digital Learning",
+            "Access to Education",
+            "Emergency Education",
+            "Humanitarian Aid"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Global",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 55.702215,
+            "lon": 12.5592485
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Children without home internet; learners in countries experiencing disrupted schooling",
+            "learning_outcomes": [
+                "Access interactive lessons and textbooks",
+                "Continue learning despite disruptions and limited internet access"
+            ],
+            "pedagogical_approach": "Digital learning, offline access, self-paced learning, community-based access"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Touchscreen kiosks",
+                "Mobile devices (smartphones, tablets)",
+                "Educational content (pre-loaded)",
+                "Internet access (for initial setup and content downloads)"
+            ],
+            "preparation_steps": [
+                "Develop or curate relevant educational content",
+                "Install the Learning Passport platform locally with pre-loaded content",
+                "Strategically place touchscreen kiosks in public areas (e.g., markets, mosques)",
+                "Develop and deploy mobile application with offline capabilities"
+            ],
+            "execution_steps": [
+                "Learners access interactive lessons and textbooks via public touchscreen kiosks",
+                "Learners download educational content via the mobile application when internet is available",
+                "Learners engage with downloaded content offline on their mobile devices"
+            ],
+            "tips_for_success": "Prioritize offline functionality to cater to areas with limited or no internet connectivity. Ensure strategic placement of access points in easily reachable community locations. Collaborate with local communities and organizations for effective deployment and support."
+        },
+        "impact": {
+            "problem_solved": "Disrupted schooling due to crises, limited internet access preventing educational opportunities, lack of access to educational content for children without home internet.",
+            "evidence_of_success": "Operational in over 29 countries as of 2024. Strategic placement of touchscreen kiosks in public areas (markets, mosques) in regions like Sudan. Offers a mobile application with an offline mode for continued learning.",
+            "beneficiaries_reach": "Children without home internet access; learners in over 29 countries experiencing disrupted schooling.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "physical"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The Learning Passport, while innovative, presents several high risks. Data privacy is a significant concern given the collection of user data (especially for children) via kiosks and mobile apps, and the potential for varying data protection regulations across 29+ countries. Child safety is at risk due to the unsupervised nature of public kiosks in markets and mosques, potentially exposing children to physical harm or inappropriate interactions in public spaces. While addressing internet access, exclusion barriers may arise from digital literacy requirements, physical accessibility for children with disabilities, and potential gender or cultural norms affecting access to public kiosks. Cultural friction is high, demanding careful vetting of content for cultural and religious appropriateness, especially given placement in mosques. Finally, physical safety risks include the robustness and security of public hardware (kiosks), electrical safety, and the general safety of children accessing these facilities in public areas."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "07d0d091048207624c996ef162d81a16",
+        "timestamp": "2026-08-06T01:12:37.117645",
+        "title": "Spark Kits: Digital Classroom in a Box",
+        "sources": [
+            "https://solve.mit.edu/solutions/52897"
+        ],
+        "summary": "Spark Kits are a 'digital classroom in a box' initiative in Vietnam, designed to provide quality learning resources to children from ethnic minorities, especially those affected by school disruptions. Each kit includes an 'Elevate' app for gamified basic literacy and numeracy, and a 'Library' app with culturally relevant books. These kits are distributed to schools in remote communities. Additionally, the 'Library' app's books are freely available on any Android device, extending access to all children across Vietnam. The project aims to overcome barriers like inadequate infrastructure, language differences, and poverty.",
+        "category": [
+            "Digital Learning",
+            "Access to Education",
+            "Ethnic Minorities Education",
+            "Literacy",
+            "Numeracy"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Vietnam",
+            "region": "remote communities",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Children from ethnic minorities; all children across Vietnam (via Android app)",
+            "learning_outcomes": [
+                "Improved basic literacy and numeracy skills",
+                "Access to culturally relevant educational content",
+                "Reduced learning gaps caused by school disruptions"
+            ],
+            "pedagogical_approach": "Gamified learning, digital learning resources, culturally relevant content delivery"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Spark Kits (containing devices)",
+                "'Elevate' app",
+                "'Library' app",
+                "Culturally relevant digital books",
+                "Android devices (for wider app access)"
+            ],
+            "preparation_steps": [
+                "Develop and refine 'Elevate' and 'Library' educational applications",
+                "Curate or create culturally relevant digital books",
+                "Assemble 'Spark Kits' with necessary hardware and pre-loaded software",
+                "Establish distribution channels to remote schools and communities"
+            ],
+            "execution_steps": [
+                "Distribute Spark Kits to schools in remote ethnic minority communities",
+                "Make the 'Library' app freely available for download on Android devices nationwide",
+                "Provide support and training for educators and learners on kit usage"
+            ],
+            "tips_for_success": "Focus on culturally relevant content to engage learners; ensure accessibility despite infrastructure challenges; address language barriers; leverage technology for broad reach; provide ongoing support."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to quality learning resources for ethnic minority children, exacerbated learning gaps due to school disruptions, inadequate infrastructure, language differences, and poverty hindering educational access.",
+            "evidence_of_success": "The initiative aims to address significant educational needs and overcome barriers, implying positive impact on learning access and outcomes.",
+            "beneficiaries_reach": "Children from ethnic minorities in remote communities; all children across Vietnam who can access the 'Library' app on Android devices.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The 'Elevate' app likely tracks student progress, and the 'Library' app might track usage. Without clear protocols for data collection, storage, consent (especially for children), and security, there's a significant data privacy risk. While the initiative aims to reduce exclusion, it could create new barriers: access to kits is limited to recipient schools, and broader access to the 'Library' app relies on children having personal Android devices and reliable power for charging, which may still be challenging in remote, impoverished areas. Furthermore, as a 'digital classroom in a box,' the hardware presents physical risks related to durability in challenging environments, the need for consistent power sources, and the security of valuable equipment in remote school settings."
+        },
+        "priority_score": 44,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "f688df430d32b67208441c1b8d5fae51",
+        "timestamp": "2026-08-06T01:12:57.735828",
+        "title": "SMS-based Learning Programs in Kenya during COVID-19",
+        "sources": [
+            "https://ahsedu.org/blog/digital-inclusion-in-early-education/"
+        ],
+        "summary": "During the COVID-19 pandemic, Kenya launched SMS-based learning programs to ensure educational continuity for children in areas with limited internet access, relying solely on basic mobile service. This low-tech innovation delivered educational content and activities via text messages, demonstrating that effective educational technology can be achieved by adapting to existing technological infrastructure rather than requiring advanced solutions. The initiative successfully bridged educational gaps and maintained learning for students in connectivity-constrained environments.",
+        "category": [
+            "Distance Learning",
+            "Educational Technology",
+            "Emergency Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Kenya",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 1.4419683,
+            "lon": 38.4313975
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Children in areas with only basic mobile service",
+            "learning_outcomes": [
+                "Learning continuity during crisis",
+                "Bridging educational gaps",
+                "Access to educational content in low-connectivity areas"
+            ],
+            "pedagogical_approach": "Delivery of educational content and activities via SMS (text messaging)"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Basic mobile phone",
+                "SMS service subscription"
+            ],
+            "preparation_steps": [
+                "Develop educational content suitable for short text messages",
+                "Structure content into digestible, sequential SMS lessons or activities",
+                "Establish a system for sending and potentially receiving responses via SMS"
+            ],
+            "execution_steps": [
+                "Broadcast educational content to registered learners via SMS",
+                "Provide instructions and activities through text messages",
+                "Potentially allow learners to submit answers or questions via SMS"
+            ],
+            "tips_for_success": "Adapt educational delivery to existing, widely available low-tech infrastructure; focus on simplicity and accessibility; ensure content is concise and clear for text-based learning."
+        },
+        "impact": {
+            "problem_solved": "Ensuring learning continuity for children in areas with limited internet access or only basic mobile service during the COVID-19 pandemic.",
+            "evidence_of_success": "Successfully implemented, maintained learning continuity, bridged educational gaps in connectivity-constrained environments.",
+            "beneficiaries_reach": "Children in areas across Kenya with basic mobile service but limited internet access.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "exclusion",
+                "data_privacy",
+                "child_safety"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While SMS-based learning effectively leveraged existing infrastructure to bridge educational gaps, significant risks require mitigation. The primary concern is exclusion, as not all children, particularly those in the poorest households, may have access to a mobile phone or the necessary credit. Accessibility is also a barrier for children with visual impairments or certain cognitive disabilities who may struggle with text-based content. Data privacy is a moderate risk concerning the collection, storage, and use of student phone numbers, requiring robust protocols and consent. Child safety is also a concern if the system allows for two-way communication or if phone numbers are exposed, potentially leading to unsolicited contact."
+        },
+        "priority_score": 78,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
