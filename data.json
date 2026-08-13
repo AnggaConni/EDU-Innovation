@@ -15313,5 +15313,247 @@
         "priority_score": 72,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "e5dbb57d9337067ef27e735f3cffea78",
+        "timestamp": "2026-08-13T00:50:41.912121",
+        "title": "Neuroscience Outreach Network (NeurON)",
+        "sources": [
+            "https://www.neuroscienceoutreach.org/"
+        ],
+        "summary": "The Neuroscience Outreach Network (NeurON) is a grassroots initiative dedicated to unifying and strengthening local outreach programs. It aims to provide K-12 students in underserved communities with access to neuroscience education through customized virtual and in-classroom lessons and materials. NeurON also supports caretakers in their native languages (e.g., Spanish) and facilitates connections between students and neuroscientists, offering mentoring programs to bridge the STEM preparatory-to-college pipeline. Key initiatives include 'Health and the Brain,' focusing on lifestyle's impact on brain health, and 'Data Science for All,' which democratizes computer science education by linking statistical models with neural science.",
+        "category": [
+            "Education",
+            "Science Education",
+            "Community Outreach",
+            "Health Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Health",
+                "Computer Science",
+                "Neuroscience"
+            ],
+            "target_learners": "K-12 students in underserved communities, caretakers",
+            "learning_outcomes": [
+                "Increased access to neuroscience education",
+                "Improved understanding of brain health (diet, lifestyle, exercise, social well-being)",
+                "Democratized computer science education through neural science links",
+                "Enhanced connections between students and neuroscientists",
+                "Bridged STEM preparatory-to-college pipeline through mentoring"
+            ],
+            "pedagogical_approach": "Customized virtual and in-classroom lessons and materials, support in native languages, mentoring programs, direct connections with neuroscientists."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Focus on customizing content for diverse grade levels and cultural backgrounds. Ensure language accessibility for caretakers. Foster strong connections between students and scientific mentors. Continuously develop engaging, relevant content like 'Health and the Brain' and 'Data Science for All'."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to neuroscience and computer science education for K-12 students in underserved communities, and gaps in the STEM preparatory-to-college pipeline.",
+            "evidence_of_success": "Development and customization of virtual/in-classroom lessons, provision of support in native languages, establishment of mentoring programs, and operation of two primary initiatives ('Health and the Brain', 'Data Science for All').",
+            "beneficiaries_reach": "K-12 students in underserved communities and their caretakers.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "other",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "NeurON faces significant risks, primarily in data privacy and child safety. The 'facilitating connections between students and neuroscientists' and 'mentoring programs' inherently involve sharing student data and direct interaction between K-12 students and adults, necessitating robust data privacy protocols (e.g., informed consent, data minimization, secure storage) and stringent child safety measures (e.g., comprehensive background checks for all mentors/neuroscientists, supervision guidelines, clear communication policies, reporting mechanisms). Without these, the safety level for students is low. \n\nThere is also a risk of cognitive overload, particularly with the 'Data Science for All' initiative, which links statistical models with neural science for K-12 students; careful scaffolding and age-appropriate design are crucial. Cultural friction could arise from 'Health and the Brain' lessons on diet, lifestyle, and well-being, as these topics can be culturally sensitive, despite the positive step of supporting caretakers in native languages. While NeurON targets underserved communities, relying on 'virtual lessons' could create exclusion barriers for students lacking reliable internet access or devices."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "5e91cc8e78063d5b1887e1c736840542",
+        "timestamp": "2026-08-13T00:51:03.317685",
+        "title": "Community Neuroscience Initiative (CNI)",
+        "sources": [
+            "https://www.communityneuroscience.net/neuroeducation",
+            "https://bctr.cornell.edu/projects/community-neuroscience-initiative/",
+            "https://arc.bctr.cornell.edu/2025/03/06/neuroscience-helps-teachers-empower-students-and-themselves/"
+        ],
+        "summary": "The Community Neuroscience Initiative (CNI) is a Syracuse, NY-based community program that provides developmentally appropriate classroom instruction on brain science to K-5 students. The program is scaffolded and aims to inspire young learners to identify as neuroscientists, increase the visibility of neuroscientists of color, and support the recruitment and retention of teachers of color in New York. CNI also collaborates with education leaders through its 'Brain Days' program, equipping them with neuroscience knowledge to foster holistic student development. A pilot program showed that art-focused neuroscience lessons not only boosted neuroscience learning but also improved Math and Language STARR report scores, especially for struggling students.",
+        "category": [
+            "Science Education",
+            "Community Engagement",
+            "Equity & Inclusion",
+            "Teacher Professional Development"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "USA",
+            "region": "New York",
+            "city_or_village": "Syracuse",
+            "institution_name": "Community Neuroscience Initiative (CNI)",
+            "lat": 43.0481221,
+            "lon": -76.1474244
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Arts",
+                "Teacher Professional Development",
+                "Social-Emotional Learning"
+            ],
+            "target_learners": "K-5 students, teachers of color, education leaders",
+            "learning_outcomes": [
+                "Inspire young people to view themselves as neuroscientists",
+                "Enhance the visibility of neuroscientists of color",
+                "Improve recruitment and retention of teachers of color in New York",
+                "Increase student learning about neuroscience",
+                "Improve performance on Math and Language STARR report scores",
+                "Foster holistic human development in students"
+            ],
+            "pedagogical_approach": "Community-based, scaffolded, developmentally appropriate classroom instruction, art-focused neuroscience lessons, professional development for education leaders."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Deliver developmentally appropriate classroom instruction on brain science to K-5 students.",
+                "Integrate art-focused neuroscience lessons into the curriculum.",
+                "Conduct 'Brain Days' programs in partnership with education leaders to provide neuroscience knowledge."
+            ],
+            "tips_for_success": "Not detailed in the provided text."
+        },
+        "impact": {
+            "problem_solved": "Lack of early exposure to neuroscience, underrepresentation of neuroscientists of color, challenges in recruiting and retaining teachers of color, and the need for improved student academic performance and holistic development.",
+            "evidence_of_success": "A 2017-2018 pilot program demonstrated increased student learning in neuroscience and improved Math and Language STARR report scores, particularly for students who were lagging behind their peers, through art-focused neuroscience lessons.",
+            "beneficiaries_reach": "K-5 students in Syracuse, NY, teachers of color in New York, and education leaders.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The program mentions tracking student performance and demonstrating improved Math and Language STARR report scores. This implies the collection, access, and analysis of sensitive K-5 student data. Without explicit details on data privacy protocols, parental consent for data usage, anonymization procedures, and secure storage, there is a significant potential risk of data privacy breaches or misuse. Clear guidelines and robust safeguards are essential to protect student information."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "c86c54c885466f4db101338687332ba0",
+        "timestamp": "2026-08-13T00:51:29.780878",
+        "title": "MindHive",
+        "sources": [
+            "https://www.nsta.org/connected-science-learning/connected-science-learning-march-april-2022/mindhive-online-citizen"
+        ],
+        "summary": "MindHive is an innovative online, open science, citizen science platform and curriculum. It was co-designed by a diverse team of educational researchers, teachers, scientists, UX researchers, community organizers, and software developers. The platform supports real-world human brain and behavior research by fostering participatory science learning through student-scientist-community partnerships. It serves high school students and teachers seeking authentic STEM research experiences, neuroscientists and cognitive/social psychologists looking to conduct research outside traditional labs, and community-based organizations aiming for grassroots, science-based research to inform policy change. Through MindHive, students engage with lessons, participate in studies, provide peer feedback, and develop and execute their own online citizen science studies, promoting both discovery and creation in scientific inquiry.",
+        "category": [
+            "Online Learning",
+            "Citizen Science",
+            "STEM Education",
+            "Research Platform",
+            "Community Engagement"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "High school students and teachers, neuroscientists, cognitive/social psychologists, community-based organizations",
+            "learning_outcomes": [
+                "Engage in participatory science learning",
+                "Gain authentic STEM research experiences",
+                "Conduct real-world human brain and behavior research",
+                "Develop and execute online citizen science studies",
+                "Foster discovery and creation in scientific inquiry",
+                "Inform policy change through science-based research"
+            ],
+            "pedagogical_approach": "Participatory science learning, student-scientist-community partnerships, peer feedback, inquiry-based learning, project-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible platforms for real-world human brain and behavior research, limited authentic STEM research experiences for high school students, challenges for scientists to conduct research outside traditional labs, and difficulty for community organizations to conduct grassroots, science-based research for policy change.",
+            "evidence_of_success": "",
+            "beneficiaries_reach": "High school students, teachers, neuroscientists, cognitive/social psychologists, community-based organizations",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "data_privacy",
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risks revolve around data privacy and child safety, particularly concerning high school students engaging in 'human brain and behavior research' and designing/executing their *own* online citizen science studies. Without explicit and robust ethical review boards, stringent informed consent protocols (especially for minors participating as subjects), and secure data handling/anonymization practices for student-led research, there's a high risk of collecting sensitive personal data from minors or the public inappropriately, and potential for data breaches or misuse. The 'open science' aspect further complicates data sharing. Additionally, online peer feedback and interactions, coupled with student-designed studies, present risks for cyberbullying, exposure to inappropriate content, or culturally insensitive research designs if not adequately moderated and guided. Exclusion barriers related to digital access and literacy are also present."
+        },
+        "priority_score": 42,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
