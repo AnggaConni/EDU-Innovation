@@ -15555,5 +15555,254 @@
         "priority_score": 42,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "725c05a25f3d45ab77146f026a32abef",
+        "timestamp": "2026-08-16T00:28:31.562268",
+        "title": "The SPEDucator Project",
+        "sources": [
+            "https://exceptionalchildren.org/100/stories/speducator-project"
+        ],
+        "summary": "The SPEDucator Project is a grassroots initiative in Hawaii that empowers selected special education teachers to become leaders and innovators. These 'SPEDucators' collaborate with the Hawaii Department of Education and the University of Hawaiʻi at Mānoa's College of Education to build a community of expert special education teachers. The project aims to advocate for equity, improve educational outcomes for students with disabilities, and enable teachers to develop 'passion projects' addressing specific challenges. It fosters innovative solutions, collaborative practices with general education teachers, and provides training in policy, state structures, data collection, and the Na Hopena A'o framework to lead inclusive efforts locally, ultimately enhancing support for students, parents, and communities.",
+        "category": [
+            "Special Education",
+            "Professional Development",
+            "Leadership"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "Hawaii",
+            "city_or_village": "",
+            "institution_name": "Hawaii Department of Education, University of Hawaiʻi at Mānoa's College of Education",
+            "lat": 19.5938015,
+            "lon": -155.4283701
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Other",
+                "Civics"
+            ],
+            "target_learners": "Special education teachers, Students with disabilities",
+            "learning_outcomes": [
+                "Empower special education teachers as leaders and innovators",
+                "Build a community of expert special education teachers",
+                "Advocate for equity in education",
+                "Improve educational outcomes for students with disabilities",
+                "Develop and implement 'passion projects' to address specific challenges",
+                "Foster collaborative practices with general education teachers",
+                "Lead inclusive efforts at a local level",
+                "Gain training in policy, state structures, data collection, and the Na Hopena A'o framework"
+            ],
+            "pedagogical_approach": "Leadership development, Collaborative learning, Project-based learning, Community of practice, Policy and data literacy training"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "Identify and select passionate and excellent special education teachers",
+                "Establish collaboration agreements with relevant educational institutions (e.g., Department of Education, University College of Education)",
+                "Develop a comprehensive training curriculum covering policy, state structures, data collection, and cultural frameworks (e.g., Na Hopena A'o)"
+            ],
+            "execution_steps": [
+                "Provide selected teachers ('SPEDucators') with leadership and advocacy training",
+                "Facilitate the development of individual 'passion projects' by SPEDucators to address specific educational challenges",
+                "Support SPEDucators in implementing their projects within their classrooms, schools, or the state",
+                "Foster a community of practice among SPEDucators for peer learning and collaboration",
+                "Encourage collaboration between SPEDucators and general education teachers",
+                "Support SPEDucators in advocating for equity and leading inclusive efforts locally"
+            ],
+            "tips_for_success": "Focus on empowering individual teachers as change agents. Secure strong institutional partnerships for resources and legitimacy. Emphasize community building and peer support among participants. Provide structured training alongside practical project development. Work to shift the narrative around the special education profession."
+        },
+        "impact": {
+            "problem_solved": "Lack of leadership and innovation within the special education field, challenges in improving educational outcomes for students with disabilities, need for enhanced support for students, parents, and communities, and a desire to change the narrative around the special education profession.",
+            "evidence_of_success": "SPEDucators developing and implementing 'passion projects', leading inclusive efforts at a local level, fostering collaborative practices, and advocating for equity.",
+            "beneficiaries_reach": "Special education teachers, students with disabilities, general education teachers, parents, and communities in Hawaii.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "cognitive_overload",
+                "data_privacy"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The SPEDucator Project, while highly beneficial for professional development and student advocacy, carries risks of cognitive overload for participating special education teachers. The added responsibilities of leadership, innovation, advocacy, and extensive training (policy, state structures, data collection) on top of their existing teaching duties could lead to burnout and impact the project's sustainability. Additionally, the mention of 'data collection' training and 'passion projects' raises data privacy concerns, particularly regarding student data if not handled with stringent protocols (e.g., FERPA compliance, anonymization, secure storage). Clear guidelines, support structures, and robust data governance are crucial to mitigate these risks."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "124c71b98e0d7da7f9cbefab455847a7",
+        "timestamp": "2026-08-16T00:29:01.686777",
+        "title": "Denis Osmani's E-tool for Inclusive Education at Brothers Ramiz and Hamid Primary School",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5di2-Xe8wYgbUk0hoAHvpoZCRvLCP7K6lGvCXdCQaoOmnsM-mgy-TGHzSR-6GE0qbjiFfE272SIO55_gAosXH8OKhGw-hxjZpToFFzqg0014uCRd02mpVhcDraotL9qRExpiku38MZENIsHzDTYUtqSNIY8aM4RpkJXXSAtCdMsoUM709aEMQrp-iy3LIGQ7xJlBNB4v7NgMdGHh10mUWG4VuYL95eA="
+        ],
+        "summary": "Denis Osmani, a teacher at Brothers Ramiz and Hamid Primary School in Shuto Orizari, Skopje, developed an innovative e-tool to support inclusive education. This grassroots initiative emerged from the practical need to coordinate efforts among the school's large staff of approximately 150 teachers, particularly concerning the individualized educational programs (IEPs) for 230 children requiring support. The e-tool, created using readily available IT programs, enables the school's inclusive team—comprising both general and special education teachers and staff—to engage, document, and monitor the individual progress of students. This teacher-led innovation facilitates better communication and collaboration among educators, moving beyond traditional prescriptive approaches to develop tailored strategies for diverse learners and ensuring that all children can participate and learn effectively within the general education setting.",
+        "category": [
+            "Inclusive Education",
+            "EdTech",
+            "Teacher Professional Development",
+            "Data Management"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "North Macedonia",
+            "region": "",
+            "city_or_village": "Shuto Orizari, Skopje",
+            "institution_name": "Brothers Ramiz and Hamid Primary School",
+            "lat": 42.0405453,
+            "lon": 21.423591
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "230 children requiring support (students with special educational needs)",
+            "learning_outcomes": [
+                "Improved individual student progress monitoring",
+                "Enhanced coordination of Individualized Educational Programs (IEPs)",
+                "Tailored learning strategies for diverse learners",
+                "Increased participation and effective learning for all children in general education"
+            ],
+            "pedagogical_approach": "Facilitates individualized educational programs (IEPs) through an e-tool, promoting better communication, collaboration, documentation, and progress monitoring among general and special education teachers to develop tailored, student-centered strategies for diverse learners."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Readily available IT programs"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of coordinated effort and communication among a large staff (150 teachers) in managing Individualized Educational Programs (IEPs) for 230 children requiring support, leading to traditional, less tailored approaches.",
+            "evidence_of_success": "Facilitates better communication and collaboration among educators, enables documentation and monitoring of individual student progress, ensures all children participate and learn effectively within the general education setting.",
+            "beneficiaries_reach": "Approximately 150 teachers and 230 children requiring support.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is data privacy, given the sensitive nature of Individualized Educational Programs (IEPs) for 230 children. The use of 'readily available IT programs' raises concerns about the robustness of security features, access controls, encryption, and compliance with data protection regulations. Sharing such sensitive data among approximately 150 teachers without clear, professionally vetted security protocols could lead to unauthorized access, data breaches, or misuse. Additionally, there's a potential for exclusion if some teachers lack the necessary IT literacy or adequate training to effectively use the e-tool, thereby hindering collaborative efforts."
+        },
+        "priority_score": 56,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "5ec59f054f6a1114448178c9ed2d357c",
+        "timestamp": "2026-08-16T00:30:39.555553",
+        "title": "buildOn Community-Led School Construction and Education Initiative",
+        "sources": [
+            "https://www.buildon.org/our-work/buildon-global",
+            "https://www.buildon.org/our-work/global"
+        ],
+        "summary": "buildOn partners with rural communities in economically developing countries, including Haiti, Mali, and Burkina Faso, to empower local residents to build resilient schools. This initiative focuses on re-enrolling children and educating adult learners, with a core principle of ensuring girls have equal access to education, often with local women leading the school building process. Communities commit significant volunteer work days, demonstrating strong ownership, with over 677,000 volunteer work days dedicated in Burkina Faso alone.",
+        "category": [
+            "Community Development",
+            "Education Access",
+            "Infrastructure Development",
+            "Gender Equality"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Haiti, Mali, Burkina Faso",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "buildOn",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal | non-formal",
+            "related_fields": [
+                "Literacy",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Children, adult learners, girls in rural communities",
+            "learning_outcomes": [
+                "Increased school enrollment for children",
+                "Improved literacy and education for adults",
+                "Equal access to education for girls",
+                "Resilient school infrastructure"
+            ],
+            "pedagogical_approach": "Community-led development, empowerment-focused, direct provision of educational infrastructure and access."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "Partner with rural communities in economically developing countries",
+                "Secure community commitment for significant volunteer work days",
+                "Identify local leaders, especially women, to lead construction"
+            ],
+            "execution_steps": [
+                "Mobilize local residents to build schools",
+                "Focus on re-enrolling children into schools",
+                "Provide educational opportunities for adult learners",
+                "Ensure girls have equal access to education",
+                "Design and construct schools to be resilient to severe weather and earthquakes"
+            ],
+            "tips_for_success": "Foster strong community ownership and commitment through volunteer work, ensure gender equality in access and leadership, build resilient infrastructure."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to education, inadequate and non-resilient school infrastructure, low school enrollment, adult illiteracy, gender disparity in education.",
+            "evidence_of_success": "Over 677,000 volunteer work days contributed by community members in Burkina Faso alone, successful re-enrollment of children, education of adult learners, local women leading construction.",
+            "beneficiaries_reach": "Rural communities, children, adult learners, and girls in Haiti, Mali, and Burkina Faso.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety during the school construction process. Local residents, including women, dedicate significant volunteer work days, which inherently involves risks of injury from manual labor, tools, and site conditions. There's also a potential for children to be exposed to hazards if not properly managed around active construction sites. While the initiative strongly emphasizes community ownership and local leadership, which mitigates cultural friction, the focus on ensuring girls' equal access to education could, in some specific contexts, encounter cultural resistance if not handled with extreme sensitivity. The design of resilient schools helps mitigate post-construction physical safety risks from natural disasters."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
