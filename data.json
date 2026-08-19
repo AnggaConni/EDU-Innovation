@@ -15804,5 +15804,262 @@
         "priority_score": 61,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "47faab190cecf578e3129b91bddc5b9a",
+        "timestamp": "2026-08-19T00:27:40.484159",
+        "title": "Manistee County Schools: General and Special Education Alignment through MTSS and Co-Teaching",
+        "sources": [
+            "https://eluma.com/blog/breaking-down-silos-how-school-leaders-can-align-general-education-and-special-education-with-co-teaching-strategies/"
+        ],
+        "summary": "Manistee County Schools in Michigan implemented a comprehensive approach to integrate general and special education services. This initiative involved establishing a shared framework using Multi-Tiered System of Supports (MTSS), developing consistent behavioral support strategies, and allocating dedicated time for co-planning, which included co-teaching opportunities. The collaboration between general and special education teams led to coordinated student support, reduced conflicting messages, and eliminated duplicated efforts, resulting in effective differentiated instruction and a more inclusive learning environment with improved student outcomes.",
+        "category": [
+            "Special Education",
+            "Inclusive Education",
+            "Educational Reform",
+            "Teacher Collaboration",
+            "Multi-Tiered System of Supports (MTSS)"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Michigan",
+            "city_or_village": "Manistee County",
+            "institution_name": "Manistee County Schools",
+            "lat": 44.3308044,
+            "lon": -86.0262043
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "K-12 students in Manistee County Schools, including those with special needs",
+            "learning_outcomes": [
+                "Improved student outcomes",
+                "Coordinated student support",
+                "Reduced conflicting messages for students",
+                "Elimination of duplicated educational efforts",
+                "Effective differentiation of instruction",
+                "More inclusive learning environment"
+            ],
+            "pedagogical_approach": "Multi-Tiered System of Supports (MTSS), consistent behavioral support strategies, co-planning, co-teaching, differentiated instruction, collaborative teaching"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "MTSS framework resources",
+                "Behavioral support curriculum/guidelines",
+                "Professional development materials for co-teaching and differentiation",
+                "Curriculum materials for general and special education"
+            ],
+            "preparation_steps": [
+                "Create a shared educational framework (e.g., MTSS) across general and special education departments.",
+                "Establish and standardize consistent behavioral support strategies.",
+                "Allocate dedicated time for general and special education teachers to co-plan.",
+                "Provide training and support for co-teaching methodologies."
+            ],
+            "execution_steps": [
+                "Implement co-teaching models in classrooms, where general and special education teachers collaborate.",
+                "Deliver differentiated instruction to address diverse student needs effectively.",
+                "Ensure continuous collaboration and communication between general and special education teams.",
+                "Monitor student progress within the MTSS framework to adjust support as needed."
+            ],
+            "tips_for_success": "Foster a culture of collaboration and shared responsibility between general and special education. Ensure strong administrative support for dedicated co-planning time and professional development. Regularly review and adapt strategies based on student data and feedback."
+        },
+        "impact": {
+            "problem_solved": "Lack of alignment and coordination between general and special education, resulting in conflicting messages, duplicated efforts, and less effective support for diverse student needs.",
+            "evidence_of_success": "Demonstrated significant improvements in student outcomes.",
+            "beneficiaries_reach": "All students enrolled in Manistee County Schools, particularly those requiring special education services.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "other"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The innovation significantly enhances an inclusive learning environment and coordinated support for students, which generally improves child safety and reduces exclusion. The primary potential risk associated with such a comprehensive integration model is the increased workload and cognitive demands on teachers for co-planning and co-teaching, potentially leading to burnout if not adequately supported. However, the description highlights 'dedicating time for co-planning' and 'significant improvements in student outcomes,' suggesting that these challenges were successfully managed, and the innovation is achieving its intended positive impact."
+        },
+        "priority_score": 68,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "18e4ee39e85f2746c1d010f35bba70e4",
+        "timestamp": "2026-08-19T00:28:21.026438",
+        "title": "RTI International's Localized Inclusive Education Tools: Sensory Stories and Smartphone Screening",
+        "sources": [
+            "https://www.rti.org/news/rti-international-supports-inclusive-education-cambodia-and-ethiopia",
+            "https://www.rti.org/impact/inclusive-education-cambodia",
+            "https://www.rti.org/impact/reading-ethiopias-achievement-developed-technical-assistance-read-ta-project",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2pY54B_ktULcAo9IFB735Yez4hFx08DXd1JPTsX2fxvp_WsJDWfvNsjj_dSuCSDjXieiga3ergTM5UKcE5REM1JyLwJG2wWUxwI3YwU1zKA8YiaElXEkEZoBK5uzh8c42WCawZZsoeZN5esZ8ZRM1ZOrC9SD5-LrHZKrM-rqj9MFcxroK6rKLFftHegypKk4="
+        ],
+        "summary": "RTI International supports localized inclusive education by developing and implementing innovative tools in collaboration with local communities. In Cambodia, teachers use 'sensory stories' – engaging tools with elements to do, touch, smell, hold, or listen to – to make learning more accessible for all students, especially those with disabilities. In Ethiopia, the Reading for Ethiopia's Achievement Developed—Technical Assistance (READ TA) project partnered with local associations for the blind, deaf, and persons with disabilities from 2016-2017 to identify and implement smartphone-based screening tools for vision and hearing impairment, enabling tailored support for children with disabilities. These initiatives exemplify a grassroots approach, working directly with local educators and community groups to create context-appropriate solutions.",
+        "category": [
+            "Inclusive Education",
+            "Special Education",
+            "Educational Technology",
+            "Curriculum Development"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "RTI International",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Special Needs",
+                "Literacy",
+                "Curriculum Development",
+                "Technology"
+            ],
+            "target_learners": "All students, particularly those with disabilities (Cambodia); Children with disabilities (Ethiopia)",
+            "learning_outcomes": [
+                "Increased accessibility and engagement in learning for students with disabilities",
+                "Identification of vision and hearing impairments",
+                "Provision of tailored support for children with disabilities"
+            ],
+            "pedagogical_approach": "Sensory learning, Community-based tool development, Inclusive education practices, Technology-aided screening"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Sensory elements (e.g., objects to touch, smell, hold)",
+                "Smartphones",
+                "Vision and hearing screening applications/tools"
+            ],
+            "preparation_steps": [
+                "Collaborate with local educators, communities, and disability associations to identify specific needs.",
+                "Develop or adapt educational tools (e.g., sensory stories) and screening tools (e.g., smartphone apps) based on local context.",
+                "Train teachers and community workers on the use of these tools."
+            ],
+            "execution_steps": [
+                "Provide trained teachers with sensory stories for classroom use to engage all students.",
+                "Implement smartphone-based screening for vision and hearing impairment in schools or communities.",
+                "Utilize screening results to provide tailored educational support and interventions for identified children with disabilities."
+            ],
+            "tips_for_success": "Prioritize direct collaboration with local communities and educators to ensure solutions are context-appropriate. Focus on engaging multiple senses for inclusive learning. Leverage accessible technology for efficient identification of specific needs. Emphasize capacity building and training for local implementers."
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible and engaging learning materials for students with disabilities; Unidentified vision and hearing impairments hindering tailored support for children with disabilities.",
+            "evidence_of_success": "Learning made more accessible and engaging for all students, particularly those with disabilities (Cambodia). Successful identification of vision and hearing impairments leading to tailored support for children with disabilities (Ethiopia).",
+            "beneficiaries_reach": "Teachers and all students in Cambodia, especially those with disabilities. Children with disabilities in Ethiopia (2016-2017). Local associations for the blind, deaf, and persons with disabilities.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The smartphone-based screening tools for vision and hearing impairment in Ethiopia pose a significant data privacy risk, as sensitive health data of children is collected. Without robust data protection protocols, secure storage, and clear consent mechanisms, this information could be vulnerable. For the 'sensory stories' in Cambodia, there is a minor physical safety risk related to the materials used (e.g., choking hazards from small parts, potential allergens from smells or textures), requiring careful selection and supervision. Overall, the data privacy concern for children's health information elevates the risk significantly, necessitating clear interventions."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "7bac535c1ba9bed82e83a5d3f58afb7b",
+        "timestamp": "2026-08-19T00:28:52.499320",
+        "title": "Teach For All Inclusive Educators Lab Community and Fellowship",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw_DpwbS4uiCZpozsUafGTrHl_-bTwkV3mNUvQsopMPbN8eTX72ASd5pPeW90FoExhBvPllgRVOKqHqlSEw-rw_XYQeB0ndeXxuO1VRuGGHg1PC85glYDxPHoZr6ITHIvsNRa_SUK_MYAuYCpVOYvtAg=="
+        ],
+        "summary": "Teach For All's Inclusive Educators Lab Community and annual Inclusive Education Fellowship foster grassroots innovation in inclusive education. This initiative brings together educators and teacher coaches globally to explore critical questions and lead local projects focused on inclusive practices. Fellows adapt research-based best practices like Universal Design for Learning, metacognition, and culturally sustaining pedagogy to their local contexts. These projects are then shared across the network, promoting collective learning and the development of more inclusive strategies to ensure all learners, particularly those with learning differences and disabilities, can achieve their full potential.",
+        "category": [
+            "Inclusive Education",
+            "Teacher Professional Development",
+            "Global Collaboration"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Global",
+            "region": "Global",
+            "city_or_village": "N/A",
+            "institution_name": "Teach For All",
+            "lat": 14.5537239,
+            "lon": 121.0489139
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Special Needs",
+                "Other"
+            ],
+            "target_learners": "Educators and teacher coaches from across the global network, ultimately benefiting all learners, especially those with learning differences and disabilities.",
+            "learning_outcomes": [
+                "Explore critical learning questions related to inclusive practices",
+                "Lead local projects focused on inclusive education",
+                "Contextualize research-based best practices (e.g., UDL, metacognition, culturally sustaining pedagogy)",
+                "Facilitate collective learning and development of more inclusive practices",
+                "Empower local educators to drive innovation and adapt strategies to community needs",
+                "Ensure all learners, especially those with learning differences and disabilities, reach their full potential"
+            ],
+            "pedagogical_approach": "Collaborative learning community, project-based learning, contextualization of research-based best practices, global knowledge sharing."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of contextualized and effective inclusive education practices, preventing all learners (especially those with learning differences and disabilities) from reaching their full potential.",
+            "evidence_of_success": "Fellows actively lead local projects focused on inclusive education, and these projects are shared globally, facilitating collective learning and development of more inclusive practices.",
+            "beneficiaries_reach": "Educators and teacher coaches across a global network, indirectly reaching a large number of students with learning differences and disabilities.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The global nature of the 'Teach For All' initiative, while fostering innovation, presents several risks. There's a potential for **data privacy** concerns if project outcomes shared globally contain sensitive (even if anonymized) student data across varying international regulations. **Exclusion/accessibility barriers** might arise for educators from resource-limited regions or those facing language/digital divides, hindering their participation in the global network. Despite the focus on culturally sustaining pedagogy, **cultural friction** can occur when adapting and sharing practices across diverse global contexts, potentially leading to misapplication or reduced effectiveness. Finally, the intensive demands on educators to lead local projects, contextualize research, and contribute globally could lead to **cognitive overload** for participants."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
