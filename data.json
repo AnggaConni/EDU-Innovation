@@ -16593,5 +16593,260 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "e92a76c56c5337b4f6a728edb5d1a74c",
+        "timestamp": "2026-08-26T00:30:31.230503",
+        "title": "Lake Canyon Elementary's Repurposed Smartphone Digital Media Lab",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW0OIonDeKP6XmA5yzTBlUUlQ06MOfr_accCxzpt6F1wzb8M7ftO_eSDOGUgcUEWQIrXRFXlETShDJiHC8HFY_Tl9qqVpMkOIfIwvPy928HqYNfQEcbVkpsO2nkrANWzrcpmDpTN8PteK2GEzHL13YHIVlwtJkTP_SbQBXiwReXn6ey57XxWc2x246uspEgsG5w2qoQhX8eHpF-b3_hJV3"
+        ],
+        "summary": "Lake Canyon Elementary School launched a community initiative to collect donated old, inactivated smartphones. These devices are repurposed and integrated into the school's new digital media lab and curriculum, providing students with hands-on access to technology and fostering digital literacy within the school community.",
+        "category": [
+            "Technology Integration",
+            "Community Engagement",
+            "Digital Literacy",
+            "Resourcefulness"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Lake Canyon Elementary School",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Other"
+            ],
+            "target_learners": "Elementary school students within the school community",
+            "learning_outcomes": [
+                "Access to technology for educational purposes",
+                "Hands-on experience with digital devices",
+                "Enhanced digital literacy"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning, resource-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Old, inactivated smartphones",
+                "Digital media lab infrastructure (if applicable)",
+                "Curriculum materials for digital media"
+            ],
+            "preparation_steps": [
+                "Initiate a community request for donations of old, inactivated smartphones",
+                "Collect and inventory donated devices",
+                "Prepare devices for educational use (e.g., wiping data, installing necessary apps, ensuring safety)"
+            ],
+            "execution_steps": [
+                "Integrate repurposed smartphones into the school's digital media lab",
+                "Develop or adapt digital media curriculum to utilize the smartphones",
+                "Provide students with hands-on experience using the devices for educational purposes"
+            ],
+            "tips_for_success": "Engage the local community for donations, ensure proper data privacy and device security, integrate devices meaningfully into the curriculum, and provide technical support for maintenance."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to technology for educational purposes among students; underutilization or waste of old electronic devices.",
+            "evidence_of_success": "Provides students with access to technology; transforms unused devices into valuable learning tools; fosters digital literacy.",
+            "beneficiaries_reach": "Students within Lake Canyon Elementary School community",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks are related to data privacy and child safety. For data privacy, even 'inactivated' smartphones may retain residual data from previous owners if not professionally wiped, posing a risk of sensitive information exposure. Furthermore, if these devices connect to the school network, student usage data or access to unsecured platforms could create new privacy vulnerabilities. For child safety (categorized as 'other' risk type), while inactivated, if connected to Wi-Fi, students could potentially access inappropriate content or communicate with external parties if robust content filtering, monitoring, and usage policies are not strictly enforced. Interventions are needed for data wiping protocols, network security, content filtering, and clear usage guidelines."
+        },
+        "priority_score": 74,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "603fed8b59fefbd2c1f38c05e5a2a1c4",
+        "timestamp": "2026-08-26T00:31:17.258041",
+        "title": "iDream Education's Learning Phone Initiative",
+        "sources": [
+            "https://www.idreameducation.org/blog/what-to-do-with-old-mobiles/"
+        ],
+        "summary": "iDream Education promotes a community-driven approach to bridge the learning gap for underserved children. The initiative encourages individuals to convert their old mobile phones into 'learning phones' by downloading the iDream Learning App onto unused smartphones and then donating these devices to children who lack access to educational resources. This empowers children to continue their learning in their own language from home, providing access to video lessons, chapters from books, and practice questions. Donors are also encouraged to guide recipients on how to best utilize these repurposed devices for educational benefit.",
+        "category": [
+            "Digital Learning",
+            "Community Engagement",
+            "Access to Education",
+            "EdTech"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Underserved children lacking access to educational resources",
+            "learning_outcomes": [
+                "Access to self-paced learning content (video lessons, book chapters, practice questions)",
+                "Continued learning in their own language",
+                "Empowerment through digital educational tools"
+            ],
+            "pedagogical_approach": "Self-directed learning; Digital learning; Community-supported learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Old mobile phones",
+                "iDream Learning App",
+                "Internet access (for app download)"
+            ],
+            "preparation_steps": [
+                "Download the iDream Learning App onto an unused smartphone."
+            ],
+            "execution_steps": [
+                "Donate the repurposed 'learning phone' to a child lacking educational resources.",
+                "Guide the recipient on how to best utilize the device for educational benefit."
+            ],
+            "tips_for_success": "Encourage community participation in donating unused smartphones to bridge the digital learning divide for children in need."
+        },
+        "impact": {
+            "problem_solved": "Bridging the learning gap for underserved children who lack access to educational resources and digital learning tools.",
+            "evidence_of_success": "",
+            "beneficiaries_reach": "Underserved children",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "child_safety",
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks for iDream Education are related to child safety and data privacy. While providing educational content, repurposed smartphones inherently carry risks of children accessing inappropriate online content or being exposed to cyber risks if not strictly controlled and monitored. Robust parental controls, content filtering, and digital literacy guidance are crucial. Data privacy for children using the app, including what data is collected, how it's stored, and parental consent, is also a significant concern. Furthermore, while bridging the access gap, potential exclusion barriers could arise for children with disabilities (lack of accessibility features), those without reliable electricity for charging, or issues with device maintenance over time."
+        },
+        "priority_score": 74,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "0f6cd835d0bd2e80342f773c953c70a0",
+        "timestamp": "2026-08-26T00:31:43.272957",
+        "title": "Upcycle STEM Club Model",
+        "sources": [
+            "https://medium.com/@tasospapalias/from-trash-to-treasure-reviving-stem-education-with-e-waste-upcycling-3d386b79907d",
+            "https://www.ricarecycling.com/blog/ultimate-guide-to-upcycled-tech-gadgets"
+        ],
+        "summary": "The Upcycle STEM Club Model integrates the repurposing of e-waste, such as old smartphones, into student projects and educational tools. This initiative aims to transform students from passive consumers into active creators, fostering their agency in shaping the future by making discarded items useful again. Schools partner with corporate and individual donors for used electronics, and parent networks organize e-waste collection drives. Beyond providing hands-on STEM learning experiences, the model also raises environmental awareness and promotes social responsibility by diverting electronics from landfills and funding educational programs.",
+        "category": [
+            "STEM Education",
+            "Environmental Education",
+            "Community Engagement",
+            "Circular Economy"
+        ],
+        "innovation_level": "semi-formal",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Vocational",
+                "Civics"
+            ],
+            "target_learners": "Students",
+            "learning_outcomes": [
+                "Transform students from consumers to creators",
+                "Foster agency in shaping the future",
+                "Develop skills in repurposing discarded items",
+                "Gain hands-on learning experiences in STEM fields",
+                "Increase environmental awareness",
+                "Promote social responsibility"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning, experiential learning, community-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "E-waste (e.g., old smartphones, used electronics)"
+            ],
+            "preparation_steps": [
+                "Establish collaborations with corporate and individual donors for used electronics.",
+                "Organize e-waste collection drives through parent networks and community partnerships."
+            ],
+            "execution_steps": [
+                "Integrate the collected and repurposed e-waste into student projects and educational tools within STEM clubs or classrooms."
+            ],
+            "tips_for_success": "Focus on strong community partnerships for e-waste collection and resource acquisition. Emphasize the 'creator' mindset to maximize student engagement and learning outcomes."
+        },
+        "impact": {
+            "problem_solved": "E-waste accumulation in landfills, lack of practical STEM application, limited environmental awareness among youth, lack of opportunities for students to engage in creative problem-solving with real-world materials.",
+            "evidence_of_success": "Implied by the model's objectives and activities (e.g., diversion of e-waste, student engagement in projects, funding for educational programs), but specific metrics are not provided in the text.",
+            "beneficiaries_reach": "Students, local communities (through e-waste diversion and potential program funding)",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The Upcycle STEM Club model carries significant risks, primarily in data privacy and physical safety. Repurposing e-waste, especially old smartphones, poses a high risk of exposing sensitive personal data from previous owners, as data can often be recovered even from 'wiped' devices. Physically, students are exposed to hazardous materials (e.g., lead, cadmium, mercury, flame retardants) and risks from sharp components, electrical hazards, and potentially damaged batteries (fire/explosion) during disassembly. Without stringent safety protocols, protective equipment, and expert supervision, these activities are dangerous. Additionally, reliance on donated e-waste could lead to exclusion or accessibility barriers if resource quality and quantity are uneven across participating schools or if projects are not adapted for diverse learning needs."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
