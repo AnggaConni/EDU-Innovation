@@ -17662,5 +17662,249 @@
         "priority_score": 56,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "eb5476834bb20c949bbf7afe762b8f96",
+        "timestamp": "2026-09-06T01:25:47.311515",
+        "title": "M-Shule (Mobile School)",
+        "sources": [
+            "https://files.eric.ed.gov/fulltext/EJ1449752.pdf"
+        ],
+        "summary": "M-Shule, meaning 'mobile school' in Kiswahili, is an SMS-based educational platform in Kenya. It delivers learning content to primary school students and their caregivers via mobile phones, without requiring an internet connection. The initiative was particularly vital during the COVID-19 pandemic as part of the 'Keep Kenya Learning' program, addressing the digital divide between urban and rural areas. M-Shule aims to enhance foundational learning for children and involve caregivers in their educational support.",
+        "category": [
+            "Mobile Learning",
+            "Distance Learning",
+            "EdTech",
+            "Primary Education",
+            "Caregiver Engagement"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Kenya",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "M-Shule",
+            "lat": 0.2793165,
+            "lon": 37.5164935
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Primary school children and their caregivers.",
+            "learning_outcomes": [
+                "Improve foundational learning for primary school children",
+                "Engage caregivers in supporting their children's education"
+            ],
+            "pedagogical_approach": "SMS-based adaptive learning content delivery; Mobile learning; Caregiver engagement through mobile communication."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mobile phone (feature phone compatible)"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Receive learning content via SMS",
+                "Respond to SMS messages for interaction/assessment (inferred)"
+            ],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Disparities in internet access and lack of learning content in low-connectivity areas; Support for primary education during school closures (COVID-19).",
+            "evidence_of_success": "Reached approximately 20,000 households across 30 Kenyan counties; Impactful during the COVID-19 pandemic as part of the Keep Kenya Learning (KKL) initiative.",
+            "beneficiaries_reach": "Approximately 20,000 households across 30 Kenyan counties.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "M-Shule presents significant data privacy risks due to the collection of phone numbers, student learning data, and caregiver engagement information for 20,000 households, especially concerning children's data. Robust protocols for data storage, access, consent, and usage are crucial. While addressing internet access disparities, the platform introduces new exclusion barriers related to consistent mobile phone access within households, varying caregiver/child literacy levels for SMS content, and potential language diversity beyond Kiswahili. Indirect child safety concerns might arise from general mobile phone use, and cognitive overload could occur if SMS content is too frequent or complex for primary learners."
+        },
+        "priority_score": 76,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "9eeb501ecc1adb3ec015ab58dee7e6bd",
+        "timestamp": "2026-09-06T01:26:09.358709",
+        "title": "ElimuLeo",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2ZmVBxGNg5nCL35798_5R_dHlzpGY-kKWyUJCA08pDbbXN8JZxgyJCi-6u0MbWfozBJBafqKML7OhEyXnkFVweWKoM-oqWWGPGFNKmJFXG4iG1q_pAWRelM2xilb8O8rJruRE-KFjvjJT_6rlVk3wVYEvOjsPyLwk80Vh5zjf4iOhUpRhaS_ZQXYdXlL3NOHPFZHeCl0jxZTVVrPb",
+            "https://edworkingpapers.com/sites/default/files/ai23-791.pdf"
+        ],
+        "summary": "ElimuLeo is a free, SMS-based adaptive mathematics learning service developed by Precision Development (PxD) and the Kenya Institute of Curriculum Development (KICD). It provides primary school children with practice problems, real-time feedback, and adjusts question difficulty based on their responses, all via a two-way SMS shortcode. Implemented in rural Kenya, it aims to improve math skills, school attendance, and grade attainment, particularly benefiting children in low-resource households without electricity or internet access.",
+        "category": [
+            "Mathematics",
+            "EdTech",
+            "Adaptive Learning",
+            "SMS-based Learning",
+            "Educational Equity"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Kenya",
+            "region": "rural Kenya",
+            "city_or_village": "",
+            "institution_name": "Precision Development (PxD), Kenya Institute of Curriculum Development (KICD)",
+            "lat": -0.0590124,
+            "lon": 34.7701515
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM"
+            ],
+            "target_learners": "Primary school children",
+            "learning_outcomes": [
+                "Improved math skills",
+                "Increased school attendance",
+                "Improved grade attainment"
+            ],
+            "pedagogical_approach": "Adaptive learning, practice-based learning, real-time feedback, SMS-based instruction"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Basic mobile phone (feature phone compatible)",
+                "Access to SMS service"
+            ],
+            "preparation_steps": [
+                "Enrollment in the ElimuLeo service (managed by PxD/KICD)",
+                "Curriculum mapping and content development (by PxD/KICD)"
+            ],
+            "execution_steps": [
+                "Learner receives mathematics problems via SMS.",
+                "Learner sends answers via SMS.",
+                "Learner receives immediate feedback on their answers.",
+                "System adapts the difficulty of subsequent questions based on learner's performance."
+            ],
+            "tips_for_success": "Consistent engagement with the SMS service, parental/guardian encouragement for participation, leveraging the adaptive nature for personalized learning."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to quality educational resources, particularly mathematics, in low-resource settings with limited internet and electricity; educational inequality.",
+            "evidence_of_success": "Demonstrated positive impacts on students' math skills, school attendance, and grade attainment. Efficacy evaluated through randomized studies.",
+            "beneficiaries_reach": "Primary school children in rural Kenya, especially those in households without electricity or internet access.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "child_safety"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk is data privacy, as the SMS-based system collects performance data from primary school children, inherently linking it to a phone number. Robust protocols for data collection, storage, anonymization, and parental consent are crucial to ensure the privacy and safety of young users. While the service offers significant educational benefits, the handling of sensitive student data requires stringent oversight and clear policies."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "21b7f5cf308bf1eef6a925117bafff1f",
+        "timestamp": "2026-09-06T01:26:32.811729",
+        "title": "Health and Literacy Intervention (HALI) project",
+        "sources": [
+            "https://poverty-action.org/blog/text-message-support-teachers-kenya-improves-teaching-learning-and-keeps-children-school"
+        ],
+        "summary": "The Health and Literacy Intervention (HALI) project in Kenya implemented an innovative approach to teacher professional development by utilizing weekly text messages. This system provided crucial support to teachers, improving their pedagogy and, consequently, children's reading abilities. It also significantly reduced school dropout rates by 50 percent. The SMS-based model fostered a virtual community of practice, allowing for two-way communication, experience sharing, and question-asking among teachers, particularly benefiting those in remote areas by offering a scalable and cost-effective alternative to in-person coaching.",
+        "category": [
+            "Education Technology",
+            "Teacher Professional Development",
+            "Literacy",
+            "Dropout Prevention"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Kenya",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 0.2793165,
+            "lon": 37.5164935
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Teachers and primary school children",
+            "learning_outcomes": [
+                "Improved teacher pedagogy",
+                "Improved children's reading skills",
+                "Reduced school dropout rates"
+            ],
+            "pedagogical_approach": "Supportive professional development through weekly text messages, fostering a virtual community of practice via two-way SMS communication."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mobile phones capable of SMS",
+                "SMS messaging system/platform"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Send weekly text messages to teachers providing pedagogical support.",
+                "Facilitate two-way communication via SMS for teachers to ask questions and share experiences.",
+                "Cultivate a virtual community of practice among teachers through the SMS platform."
+            ],
+            "tips_for_success": "Focus on reaching teachers in remote areas and ensuring consistent professional development across a wide geographical region to maximize impact and scalability."
+        },
+        "impact": {
+            "problem_solved": "Lack of affordable and scalable teacher professional development, low literacy rates among children, and high school dropout rates.",
+            "evidence_of_success": "Reduced school dropout rates by 50 percent, improved teacher pedagogy, helped children learn to read.",
+            "beneficiaries_reach": "Teachers across a wide geographical region, including those in remote areas, and primary school children.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks relate to data privacy, as teachers share experiences and questions via SMS, potentially including sensitive professional or indirectly student-related information. Robust data handling, consent, and anonymization protocols are crucial. Exclusion is another concern, as consistent access to mobile phones, network coverage, and credit might not be universal, particularly in remote areas, despite the project's aim to reach them. There's also a potential for cultural friction by replacing traditional in-person coaching with text-based communication, which may not fully replicate the value of face-to-face interaction and community building. Cognitive overload for teachers from weekly messages and two-way communication could also be a factor if not managed carefully. While the project has significant positive impacts on learning and dropout rates, these implementation-level risks need careful management."
+        },
+        "priority_score": 82,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
