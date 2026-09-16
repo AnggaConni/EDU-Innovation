@@ -18164,5 +18164,248 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "3f8d41b8855edb57f9eb47ed04f74339",
+        "timestamp": "2026-09-16T01:50:11.925089",
+        "title": "Neural Education Movement",
+        "sources": [
+            "https://www.facebook.com/BrainFactsOrg/posts/bright-light-neuro-is-an-initiative-to-enable-students-to-better-understand-how-/1526368962843122/"
+        ],
+        "summary": "Neural Education is a grassroots movement uniting educators, parents, and students to integrate neuroscience principles into teaching and learning. It focuses on understanding how factors like implicit bias, Adverse Childhood Experiences (ACES), and stress affect brain development and function. The movement aims to co-create solutions that foster increased neural connections in the prefrontal cortex, helping students reach their full human potential. A specific initiative, Bright Light Neuro, embeds neuroscience lessons and engaging activities directly into classrooms, teaching both teachers and students about brain 'plasticity' – the brain's ability to change and mold through experience – to enhance intelligence and learning outcomes.",
+        "category": [
+            "Education",
+            "Neuroscience",
+            "Psychology",
+            "Well-being"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Health",
+                "Other"
+            ],
+            "target_learners": "Educators, parents, students",
+            "learning_outcomes": [
+                "Increased neural connections in the prefrontal cortex",
+                "Students reaching full human potential",
+                "Understanding of brain plasticity",
+                "Enhanced intelligence and learning outcomes",
+                "Mitigation of negative impacts from implicit bias, ACES, and stress"
+            ],
+            "pedagogical_approach": "Integration of neuroscience principles, co-creation of solutions, embedding lessons and engaging activities directly into classroom settings."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Negative impacts of implicit bias, Adverse Childhood Experiences (ACES), and stress on brain development and function, hindering student potential and learning outcomes.",
+            "evidence_of_success": "",
+            "beneficiaries_reach": "Educators, parents, and students involved in the movement and participating classrooms.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The initiative's focus on sensitive topics like Adverse Childhood Experiences (ACES), stress, and implicit bias, while well-intentioned, poses significant psychological safety risks if educators lack specialized training to handle potential re-traumatization or distress (categorized as 'other' risk). If individual student data related to these factors is collected, it also presents substantial data privacy concerns. The emphasis on 'molding the brain' and 'enhancing intelligence' could inadvertently create undue pressure or a sense of failure for students who do not show expected progress, leading to exclusion. Furthermore, discussing these deeply personal and culturally nuanced topics requires extreme cultural sensitivity to avoid friction or alienating students."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "74176632b91c02a47713ba0928c0672e",
+        "timestamp": "2026-09-16T01:51:04.861951",
+        "title": "The NeuroBeacon Foundation",
+        "sources": [
+            "https://www.neurobeacon.org/"
+        ],
+        "summary": "The NeuroBeacon Foundation is a nonprofit organization that began as a grassroots initiative by a high school student to democratize access to cognitive science and health education, particularly for students in underserved communities. It provides curricula and activities to empower high school students to establish their own neuroscience clubs. These engaged students then volunteer to teach in under-resourced schools, delivering hands-on science experiences, multilingual educational materials, and mentorship through a 'Service through Science' model. The foundation aims to cultivate a more inclusive future in cognitive fields by making scientific knowledge community-driven and accessible to all.",
+        "category": [
+            "Education",
+            "Science",
+            "Community Service",
+            "Health"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "NeuroBeacon Foundation",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "High school students (to form clubs), students in under-resourced schools (beneficiaries)",
+            "learning_outcomes": [
+                "Increased access to cognitive science and health education",
+                "Development of neuroscience clubs by high school students",
+                "Acquisition of leadership and teaching skills by high school students",
+                "Delivery of hands-on science experiences and mentorship to under-resourced classrooms",
+                "Cultivation of an inclusive future in cognitive fields"
+            ],
+            "pedagogical_approach": "Peer-to-peer teaching, hands-on learning, community-driven education, mentorship, curriculum-based activities"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Curricula",
+                "Activities",
+                "Multilingual educational materials"
+            ],
+            "preparation_steps": [
+                "Develop comprehensive curricula and activities for cognitive science and health education",
+                "Empower high school students to establish and manage neuroscience clubs"
+            ],
+            "execution_steps": [
+                "High school neuroscience club members volunteer to teach in under-resourced schools",
+                "Deliver hands-on science experiences to students in these schools",
+                "Provide mentorship and multilingual educational materials"
+            ],
+            "tips_for_success": "Foster student leadership and engagement; prioritize underserved communities; develop accessible and engaging educational content; build strong partnerships with schools."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to cognitive science and health education in underserved communities; limited hands-on science opportunities in under-resourced schools.",
+            "evidence_of_success": "High school students establishing neuroscience clubs; successful delivery of hands-on science experiences, multilingual materials, and mentorship to under-resourced classrooms.",
+            "beneficiaries_reach": "High school students (club founders/teachers) and students in under-resourced schools (learners).",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "self-taught"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The primary risk, categorized under 'other', is child safety. The model relies on high school students volunteering to teach younger children in under-resourced schools. Without explicit protocols for volunteer vetting (e.g., background checks, if applicable), mandatory training in child protection and appropriate interaction, and consistent adult supervision during teaching sessions, there is a significant risk to the safety and well-being of the younger students. Additionally, there's a risk of cognitive overload for the high school students, who are expected to establish clubs, learn complex neuroscience, and then develop and deliver educational content. Data privacy is a concern, as a grassroots organization may lack formal policies for collecting, storing, or sharing personal information of both the high school volunteers and the younger students they teach. Lastly, while multilingual materials are provided, there is a potential for cultural friction, particularly with 'health education' components, if the content is not meticulously adapted to be sensitive to diverse community beliefs and practices."
+        },
+        "priority_score": 52,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "c221754c1f97ce9891f8949af3317aef",
+        "timestamp": "2026-09-16T01:51:48.173395",
+        "title": "Casa Pueblo: Energy Democracy and Community Self-Management",
+        "sources": [
+            "https://www.degrowthinstitute.org/deschool-workshops"
+        ],
+        "summary": "Casa Pueblo is a grassroots organization in Adjuntas, Puerto Rico, that exemplifies deschooling innovation. Initially focused on environmental conservation to protect local forests and water from destructive gold mining, the initiative significantly evolved after Hurricane Maria. It transitioned to actively building energy democracy and self-management by establishing solar microgrids to power critical community areas. Casa Pueblo's approach offers practical lessons in fostering community resilience through local leadership, participatory decision-making, and integrating ecological conservation with social justice, effectively creating learning pathways outside traditional educational institutions by addressing real-world challenges through community self-management.",
+        "category": [
+            "Environmental Education",
+            "Community Development",
+            "Energy Democracy",
+            "Social Justice"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Puerto Rico",
+            "region": "",
+            "city_or_village": "Adjuntas",
+            "institution_name": "Casa Pueblo",
+            "lat": 18.1813094,
+            "lon": -66.7524515
+        },
+        "education_details": {
+            "education_type": "alternative",
+            "related_fields": [
+                "Environment",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Community members of Adjuntas, Puerto Rico",
+            "learning_outcomes": [
+                "Community resilience",
+                "Local leadership",
+                "Participatory decision-making",
+                "Ecological conservation",
+                "Social justice",
+                "Self-management in energy systems"
+            ],
+            "pedagogical_approach": "Community-led action, Experiential learning, Problem-based learning, Empowerment through action"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Destructive gold mining, lack of energy resilience and power after Hurricane Maria",
+            "evidence_of_success": "Transformed community from resistance to active building of energy democracy, established solar microgrids providing power to critical areas.",
+            "beneficiaries_reach": "Community of Adjuntas, Puerto Rico",
+            "scale": "medium",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "self-taught"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The innovation involves hands-on community engagement in establishing and maintaining solar microgrids. Working with electrical systems, solar panels, and associated infrastructure inherently carries significant physical safety risks, including electrocution, falls, and injuries from tools or heavy equipment. While the initiative fosters community resilience and learning, the practical implementation of energy systems requires robust safety protocols, training, and supervision to mitigate these dangers for all participants."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
