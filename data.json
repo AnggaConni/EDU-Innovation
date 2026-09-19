@@ -18407,5 +18407,284 @@
         "priority_score": 61,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "3dc3cfff51500b95047cfa57e33d71a9",
+        "timestamp": "2026-09-19T01:49:30.573978",
+        "title": "Program for Inclusion and Neurodiversity Education (PINE)",
+        "sources": [
+            "https://www.pine-education.org/"
+        ],
+        "summary": "The Program for Inclusion and Neurodiversity Education (PINE) is a comprehensive initiative designed to empower schools, educators, and communities with resources and training to cultivate inclusive, accessible, and neurodiversity-affirming learning environments. It addresses the gap in neurodiversity understanding through expert content, online courses, virtual consultations, and professional development. PINE adopts a system-wide approach to support neurodivergent students, promoting a culture that values individual strengths, and collaborates with various stakeholders including school districts, community organizations, and caregivers.",
+        "category": [
+            "Special Needs Education",
+            "Teacher Training",
+            "Community Engagement",
+            "Neurodiversity"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Education",
+                "Other"
+            ],
+            "target_learners": "Schools, educators, communities, neurodivergent students, caregivers, school districts, enrichment programs",
+            "learning_outcomes": [
+                "Create inclusive, accessible, and neurodiversity-affirming learning environments",
+                "Improve understanding of neurodiversity",
+                "Recognize and support the unique strengths of neurodivergent students",
+                "Foster a culture of neuroinclusive education"
+            ],
+            "pedagogical_approach": "Expert-driven content, online coursework, virtual consultations, professional development activities, system-wide approach, collaborative learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Expert-developed educational content on neurodiversity",
+                "Online learning platform for coursework",
+                "Virtual consultation tools (e.g., video conferencing)",
+                "Professional development curriculum and materials",
+                "Resources for community organizations and caregivers"
+            ],
+            "preparation_steps": [
+                "Develop comprehensive, expert-driven curriculum on neurodiversity",
+                "Design and implement online coursework modules",
+                "Establish virtual consultation services with trained professionals",
+                "Create professional development programs for educators",
+                "Forge partnerships with school districts, community organizations, and enrichment programs"
+            ],
+            "execution_steps": [
+                "Deliver online coursework to educators and community members",
+                "Provide virtual consultations to schools and families",
+                "Conduct professional development workshops and training sessions",
+                "Disseminate expert-driven content and resources to stakeholders",
+                "Facilitate ongoing collaboration among schools, communities, and caregivers"
+            ],
+            "tips_for_success": "Emphasize a system-wide approach for comprehensive impact. Foster a culture that recognizes and supports the unique strengths of every child. Ensure continuous learning and adaptation based on feedback and evolving understanding of neurodiversity. Actively engage all stakeholders, including caregivers, to create a cohesive support network."
+        },
+        "impact": {
+            "problem_solved": "The existing gap in understanding neurodiversity and the lack of inclusive, accessible, and neurodiversity-affirming learning environments in schools and communities.",
+            "evidence_of_success": "Equips schools, educators, and communities with necessary resources and training. Fosters a culture where every child's unique strengths are recognized and supported. Ensures continuous learning and lasting impact in neuroinclusive education through collaboration.",
+            "beneficiaries_reach": "Schools, educators, communities, neurodivergent students, caregivers, school districts, enrichment programs, community organizations.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "PINE involves handling sensitive student and educator data (e.g., neurodiversity status, learning profiles) through online coursework and virtual consultations, posing a significant data privacy risk. While its mission is inclusion, the delivery methods (online platforms, virtual consultations) could inadvertently create accessibility barriers for some educators or communities, leading to exclusion. There's also a risk of cultural friction if the 'system-wide approach' doesn't adequately adapt to diverse community values and perspectives on neurodiversity. Furthermore, as the program directly impacts neurodivergent children, robust child safeguarding protocols are essential to prevent misinterpretation, stigmatization, or unintended harm (categorized under 'other' risk type)."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "6892d2155e70569c80c633d639d1e5ad",
+        "timestamp": "2026-09-19T01:52:16.965926",
+        "title": "ADISA's Education on Wheels",
+        "sources": [
+            "https://focuscentralamerica.org/inclusive-education-on-wheels-transforming-tzutujil-maya-communities/"
+        ],
+        "summary": "ADISA's 'Education on Wheels' is a transformative project operating in over ten Tzutujil Maya communities in Guatemala. It utilizes a mobile unit to deliver inclusive educational support, materials, hope, and opportunities to children with learning challenges and disabilities. The program employs the Universal Design for Learning Model, tailoring education to individual interests and diverse learning styles, and integrates elements like art, play, and technology. A core objective is fostering social inclusion, demonstrated by children adapting activities to ensure participation from all peers, including those with disabilities.",
+        "category": [
+            "Education",
+            "Inclusion",
+            "Disability Support",
+            "Community Development"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Guatemala",
+            "region": "Tzutujil Maya communities",
+            "city_or_village": "",
+            "institution_name": "ADISA",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "alternative",
+            "related_fields": [
+                "Other",
+                "Arts",
+                "Technology"
+            ],
+            "target_learners": "children with learning challenges and disabilities",
+            "learning_outcomes": [
+                "Inclusive educational support",
+                "Increased opportunities for children with disabilities",
+                "Enhanced social inclusion",
+                "Adaptation of activities for universal participation"
+            ],
+            "pedagogical_approach": "Employs the Universal Design for Learning Model, adapting education to each child's interests and diverse learning styles, and incorporates art, play, and technology."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Mobile unit (van/bus)",
+                "Educational materials (diverse and adaptable)",
+                "Art supplies",
+                "Technology (e.g., tablets, educational apps)",
+                "Play equipment"
+            ],
+            "preparation_steps": [
+                "Identify target communities and assess needs of children with learning challenges and disabilities.",
+                "Develop or acquire a mobile unit equipped for educational delivery.",
+                "Train educators in the Universal Design for Learning (UDL) Model and inclusive pedagogical practices.",
+                "Curate a diverse range of educational materials, art supplies, and technology suitable for varied learning styles."
+            ],
+            "execution_steps": [
+                "Deploy the mobile unit to designated Tzutujil Maya communities.",
+                "Deliver inclusive educational support tailored to individual children's interests and learning styles.",
+                "Integrate art, play, and technology into learning activities.",
+                "Actively foster social inclusion by encouraging peer adaptation of activities to ensure participation of all children, including those with disabilities."
+            ],
+            "tips_for_success": "Prioritize community engagement and understanding of local culture. Continuously adapt educational content and activities based on children's feedback and progress. Emphasize the importance of peer support and collective problem-solving for inclusion, such as modifying game rules."
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible and inclusive educational support for children with learning challenges and disabilities in remote Tzutujil Maya communities.",
+            "evidence_of_success": "Children's willingness to adapt activities (e.g., changing soccer rules) to ensure all peers, including those with disabilities, can participate, demonstrating fostered social inclusion.",
+            "beneficiaries_reach": "Children with learning challenges and disabilities in over ten Tzutujil Maya communities.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While the initiative is highly positive in addressing exclusion and adapting to learning styles, several risks warrant attention. The use of 'technology' with vulnerable children, especially those with learning challenges and disabilities, raises significant data privacy concerns regarding the collection, storage, and protection of sensitive personal and educational information. Child safety is also a concern, encompassing online safety (if technology involves internet access) and the general vetting and training of staff working with vulnerable populations in mobile settings. Operating in Tzutujil Maya communities requires ongoing cultural sensitivity to ensure materials, methods, and technological introductions are appropriate and respectful, mitigating potential cultural friction. Although the program actively combats exclusion and cognitive overload, and physical safety (STEAM/hardware) is not explicitly detailed as a major risk, the identified concerns elevate the overall risk profile."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "b6d5eb75928f4e289f89a97172791ebb",
+        "timestamp": "2026-09-19T01:52:43.244496",
+        "title": "Neurodiversity Alliance",
+        "sources": [
+            "https://apnews.com/article/neurodivergent-students-inclusive-schools-4054593414963283307b2269a82e99f5"
+        ],
+        "summary": "The Neurodiversity Alliance is a student-led, peer-to-peer movement on high school and college campuses dedicated to creating more inclusive educational environments for neurodivergent youth. It reframes neurodivergence as a strength, fostering belonging and liberation. Chapters organize sensory-friendly events, advocate for reduced-stimuli spaces, and implement mentorship programs like 'Eye to Eye,' where older neurodivergent students guide younger ones in coping strategies and reframing cognitive differences through creative activities, ultimately promoting inclusion and systemic adaptation.",
+        "category": [
+            "Inclusion",
+            "Student Empowerment",
+            "Mental Health",
+            "Advocacy",
+            "Neurodiversity"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "high school and college campuses",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other",
+                "Health",
+                "Civics"
+            ],
+            "target_learners": "Neurodivergent youth (high school and college students), younger neurodivergent students",
+            "learning_outcomes": [
+                "Fostering a sense of liberation and belonging",
+                "Sharing coping strategies",
+                "Reframing cognitive differences as strengths",
+                "Promoting inclusion in educational spaces",
+                "Challenging existing systems to adapt to diverse needs"
+            ],
+            "pedagogical_approach": "Peer-to-peer mentoring, student-led initiatives, advocacy, collaborative community building, creative activities"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Materials for sensory-friendly events (e.g., fidget toys, noise-canceling headphones)",
+                "Advocacy tools (e.g., petitions, presentation materials)",
+                "Supplies for creative activities (e.g., art supplies, journaling materials)"
+            ],
+            "preparation_steps": [
+                "Form student-led chapters on campuses",
+                "Educate members on reframing neurodivergence as a strength",
+                "Identify existing campus spaces and events for potential adaptation",
+                "Establish mentorship pairings (e.g., 'Eye to Eye' program)"
+            ],
+            "execution_steps": [
+                "Organize and host sensory-friendly events",
+                "Advocate for physical spaces with reduced stimuli on campus",
+                "Conduct peer-to-peer mentoring sessions, sharing coping strategies",
+                "Facilitate creative activities to reframe cognitive differences",
+                "Collaborate with campus administration to build more inclusive policies and environments"
+            ],
+            "tips_for_success": "Focus on reframing neurodivergence as a strength, not a deficit, to empower participants. Prioritize fostering a strong sense of community, liberation, and belonging. Actively engage in advocacy to challenge and adapt existing systems to better serve diverse needs."
+        },
+        "impact": {
+            "problem_solved": "Lack of inclusive educational spaces for neurodivergent youth, perception of neurodivergence as a deficit, and absence of peer support and coping strategies.",
+            "evidence_of_success": "Fosters a sense of liberation and belonging among neurodivergent classmates, promotes inclusion, and actively challenges existing systems to adapt to diverse needs.",
+            "beneficiaries_reach": "Neurodivergent youth across high school and college campuses.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The initiative carries a significant data privacy risk due to the encouragement of 'embracing diagnoses' and sharing personal coping strategies, which involves sensitive health information. Without clear protocols for data handling and confidentiality, this information could be mishandled or exposed. There is also a notable 'other' risk related to child safety, specifically within the 'Eye to Eye' peer mentoring program where older neurodivergent students mentor younger ones. This cross-age interaction, while beneficial, requires robust safeguarding measures, adult supervision, and clear boundaries to prevent potential exploitation or inappropriate disclosures, none of which are explicitly mentioned. Cultural friction is also a risk as the initiative aims to 'challenge existing systems to adapt to diverse needs,' which can lead to resistance from established institutions or individuals."
+        },
+        "priority_score": 72,
+        "hidden_gem": true,
+        "critical_flag": true
     }
 ]
