@@ -1065,8 +1065,41 @@ function applyFilters() {
   // ═══════════════════════════════════════════════════════
   function initMap() {
     map = L.map('map').setView([20,0],2);
-    // Esri WorldStreetMap — no API key required for this public tile service.\n    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {\n      attribution: '&copy; Esri contributors &mdash; Sources: Esri, HERE, Garmin, Intermap, increment P Corp., GEBCO, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), (c) OpenStreetMap contributors, and the GIS User Community',\n      maxZoom: 18\n    }).addTo(map);
+
+    // Esri World Street Map.
+    // The primary endpoint is services.arcgisonline.com.
+    // A fallback Esri hostname is activated if the primary tile service fails.
+    const esriAttribution = '&copy; Esri contributors &mdash; Sources: Esri, HERE, Garmin, Intermap, increment P Corp., GEBCO, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), (c) OpenStreetMap contributors, and the GIS User Community';
+
+    const esriPrimary = L.tileLayer(
+      'https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: esriAttribution,
+        maxZoom: 18
+      }
+    );
+
+    const esriFallback = L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: esriAttribution,
+        maxZoom: 18
+      }
+    );
+
+    let esriFallbackActivated = false;
+
+    esriPrimary.on('tileerror', () => {
+      if (!esriFallbackActivated) {
+        esriFallbackActivated = true;
+        map.removeLayer(esriPrimary);
+        esriFallback.addTo(map);
+      }
+    });
+
+    esriPrimary.addTo(map);
   }
+
   function drawMapElements() {
     if(!map) return;
     if(markersLayer) map.removeLayer(markersLayer);
