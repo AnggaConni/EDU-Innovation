@@ -116,6 +116,40 @@
       box-shadow: 0 0 20px rgba(0, 158, 219, 0.7);
       transform: translateY(-1px);
     }
+
+    /* TRANSLATION MENU */
+    .translate-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      min-width: 210px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.14);
+      padding: 6px;
+      z-index: 100;
+    }
+    .translate-menu.hidden { display: none; }
+    .translate-menu button {
+      width: 100%;
+      text-align: left;
+      padding: 9px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s ease;
+    }
+    .translate-menu button:hover { background: #f1f5f9; }
+    .translate-menu .auto-option {
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 4px;
+      padding-bottom: 9px;
+    }
   </style>
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col overflow-x-hidden">
@@ -145,6 +179,38 @@
         <button onclick="openGuideModal()" class="text-indigo-600 hover:bg-indigo-50 bg-white border border-indigo-200 transition-all flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded-md shadow-sm">
           <i class="ph-bold ph-question text-lg"></i> <span class="hidden md:inline">System Guide</span>
         </button>
+        <!-- Language / Google Translate -->
+        <div class="relative">
+          <button onclick="toggleTranslateMenu()" class="text-slate-600 hover:text-unesco-blue bg-white border border-slate-200 transition-all flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-md shadow-sm" aria-expanded="false" aria-controls="translate-menu">
+            <i class="ph ph-translate text-lg"></i> <span class="hidden md:inline">Translate</span>
+            <i class="ph ph-caret-down text-xs"></i>
+          </button>
+
+          <div id="translate-menu" class="translate-menu hidden">
+            <button type="button" class="auto-option" onclick="translatePage('auto')">
+              <i class="ph-fill ph-sparkle text-blue-600"></i>
+              <span id="translate-auto-label">Auto — Detecting…</span>
+            </button>
+            <button type="button" onclick="translatePage('fr')">
+              <span>🇫🇷</span><span>Français</span>
+            </button>
+            <button type="button" onclick="translatePage('es')">
+              <span>🇪🇸</span><span>Español</span>
+            </button>
+            <button type="button" onclick="translatePage('ar')">
+              <span>🇸🇦</span><span>العربية</span>
+            </button>
+            <button type="button" onclick="translatePage('zh-CN')">
+              <span>🇨🇳</span><span>中文</span>
+            </button>
+            <button type="button" onclick="translatePage('ru')">
+              <span>🇷🇺</span><span>Русский</span>
+            </button>
+            <button type="button" onclick="translatePage('en')">
+              <span>🇬🇧</span><span>English (Original)</span>
+            </button>
+          </div>
+        </div>
         <!-- Tombol Export -->
         <button onclick="exportToXML()" class="text-slate-600 hover:text-unesco-blue bg-white border border-slate-200 transition-all flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-md shadow-sm">
           <i class="ph ph-export text-lg"></i> <span class="hidden md:inline">Export DB</span>
@@ -717,7 +783,55 @@
   let currentPage = 1; let itemsPerPage = 9; let activeItemId = null;
   let currentModalRadar = null; let resumeCharts = {};
 
+  function getDetectedLanguage() {
+    const locale = (navigator.language || 'en').toLowerCase();
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+
+    if (locale.startsWith('id') || tz === 'Asia/Jakarta' || tz === 'Asia/Makassar' || tz === 'Asia/Jayapura') return { code: 'id', label: 'Auto — Indonesia' };
+    if (locale.startsWith('fr') || tz.startsWith('Europe/Paris') || tz.startsWith('Africa/Paris')) return { code: 'fr', label: 'Auto — Français' };
+    if (locale.startsWith('es') || tz.startsWith('Europe/Madrid') || tz.startsWith('America/Mexico_City') || tz.startsWith('America/Argentina')) return { code: 'es', label: 'Auto — Español' };
+    if (locale.startsWith('ar') || tz.startsWith('Asia/Riyadh') || tz.startsWith('Asia/Dubai') || tz.startsWith('Africa/Cairo') || tz.startsWith('Asia/Doha')) return { code: 'ar', label: 'Auto — العربية' };
+    if (locale.startsWith('zh') || tz.startsWith('Asia/Shanghai') || tz.startsWith('Asia/Chongqing') || tz.startsWith('Asia/Hong_Kong') || tz.startsWith('Asia/Macau')) return { code: 'zh-CN', label: 'Auto — 中文' };
+    if (locale.startsWith('ru') || tz.startsWith('Europe/Moscow') || tz.startsWith('Europe/Kaliningrad')) return { code: 'ru', label: 'Auto — Русский' };
+    return { code: 'en', label: 'Auto — English' };
+  }
+
+  function toggleTranslateMenu() {
+    const menu = document.getElementById('translate-menu');
+    const button = document.querySelector('[aria-controls="translate-menu"]');
+    const isHidden = menu.classList.toggle('hidden');
+    if (button) button.setAttribute('aria-expanded', String(!isHidden));
+  }
+
+  function translatePage(language) {
+    const detected = getDetectedLanguage();
+    const target = language === 'auto' ? detected.code : language;
+
+    const currentUrl = window.location.href.split('#')[0];
+    const translateUrl = 'https://translate.google.com/translate?sl=auto&tl='
+      + encodeURIComponent(target)
+      + '&u='
+      + encodeURIComponent(currentUrl);
+
+    window.open(translateUrl, '_blank', 'noopener,noreferrer');
+    document.getElementById('translate-menu')?.classList.add('hidden');
+  }
+
+  document.addEventListener('click', (event) => {
+    const menu = document.getElementById('translate-menu');
+    const container = event.target.closest('.relative');
+    if (menu && !menu.contains(event.target) && !(container && container.contains(menu))) {
+      menu.classList.add('hidden');
+      const button = document.querySelector('[aria-controls="translate-menu"]');
+      if (button) button.setAttribute('aria-expanded', 'false');
+    }
+  });
+
   async function init() {
+    const detectedLanguage = getDetectedLanguage();
+    const autoLabel = document.getElementById('translate-auto-label');
+    if (autoLabel) autoLabel.textContent = detectedLanguage.label;
+
     try { const r = await fetch('data.json'); if(r.ok) { globalData = await r.json(); } else throw new Error(); } catch(e) { globalData = RAW_JSON; }
     try { const r = await fetch('resume.json'); if(r.ok) { globalResume = await r.json(); } else throw new Error(); } catch(e) { globalResume = RAW_RESUME; }
     
