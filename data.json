@@ -18970,5 +18970,246 @@
         "priority_score": 80,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "788b4b7b5ef0c3ff4e1be4bf520c2288",
+        "timestamp": "2026-09-23T01:59:28.656079",
+        "title": "USAID Shobai Miley Shikhi (Everyone Learns Together) Project",
+        "sources": [
+            "https://www.rti.org/insights/inclusive-education-disabilities-locally-led-development"
+        ],
+        "summary": "The USAID Shobai Miley Shikhi project in Bangladesh is a grassroots initiative focused on fostering inclusive education within local communities. It trains school community facilitators to lead campaigns through various community engagement activities, such as parent meetings, courtyard gatherings, and inclusion fairs. These facilitators work directly with community members to reduce disability-related stigma and raise awareness about school attendance for children with disabilities. The project also introduces innovative tools like sensory stories to make learning more engaging and accessible for all students, particularly those with disabilities, by stimulating multiple senses. This approach ensures educational interventions are tailored to local needs and implemented through active community participation.",
+        "category": [
+            "Inclusive Education",
+            "Community Engagement",
+            "Disability Rights",
+            "Educational Innovation"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Bangladesh",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 24.4769288,
+            "lon": 90.2934413
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Literacy",
+                "Health",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Children with disabilities, their parents, and wider community members",
+            "learning_outcomes": [
+                "Reduced stigma associated with disability",
+                "Increased awareness about school attendance for children with disabilities",
+                "Enhanced learning engagement and accessibility for all students, especially those with disabilities"
+            ],
+            "pedagogical_approach": "Community-led inclusive education campaigns, direct engagement with parents and community members, use of innovative tools like sensory stories, tailored interventions based on local needs"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Training materials for school community facilitators",
+                "Materials for creating sensory stories (e.g., textures, scents, sounds, visuals)",
+                "Campaign materials (e.g., posters, brochures for awareness)"
+            ],
+            "preparation_steps": [
+                "Identify and recruit local community members to serve as school community facilitators",
+                "Provide comprehensive training to facilitators on inclusive education principles, disability awareness, and community engagement techniques",
+                "Develop or adapt innovative learning tools and accommodations, such as sensory stories, to suit local contexts and needs"
+            ],
+            "execution_steps": [
+                "Facilitators organize and lead various community engagement activities, including parent meetings, community courtyard gatherings, and inclusion fairs",
+                "Facilitators directly engage with parents and community members to reduce stigma associated with disability and raise awareness about the importance of school attendance for children with disabilities",
+                "Implement and integrate innovative tools and accommodations, like sensory stories, into learning environments to make education more engaging and accessible"
+            ],
+            "tips_for_success": "Empower local communities and ensure their active participation in designing and implementing inclusive education initiatives. Tailor interventions to specific local needs, cultural contexts, and available resources. Focus on direct engagement and dialogue to effectively reduce stigma. Utilize engaging and multi-sensory learning tools to cater to diverse learning needs."
+        },
+        "impact": {
+            "problem_solved": "Exclusion of children with disabilities from education due to social stigma, lack of awareness, and inadequate accessible learning environments.",
+            "evidence_of_success": "Successfully fostering inclusive education through robust community engagement and reducing stigma associated with disability. Increased awareness among parents and community members regarding school attendance for children with disabilities. Introduction of innovative tools like sensory stories to enhance learning accessibility.",
+            "beneficiaries_reach": "Children with disabilities, their parents, and wider community members in participating communities across Bangladesh.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While the project's grassroots and community-led approach significantly mitigates many risks, potential cultural friction may arise in shifting deeply ingrained societal perceptions and stigma associated with disability, even with tailored interventions. Additionally, as community facilitators engage directly with families and children, robust child safeguarding policies, training, and vetting processes for these facilitators are crucial to ensure the safety and well-being of all children involved, categorised under 'other' safety concerns not directly linked to physical or data risks."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "8e9afdf039e212f8cfc4ef211e93291b",
+        "timestamp": "2026-09-23T02:01:27.102291",
+        "title": "Sustainable Community-Based Rehabilitation (SCBR) with Sarva Shiksha Abhiyan (SSA)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQMcecpBY3omVXi_7Lg6WWaj0FItw_wUsQjyDRNE8DxQjrB4xSS97dHKhTW5QWGezIcPEdniA0Ikxr6r5soHI2qCBPLDJJA8QgUaJ0TPWToePQmmXSfzJZ1VdsgbQadqG1qnyzDIBJr11hDsSYp1FT0WKt4KblA7MZnw_yK2kUtEbNENk9WVRVLIhMMvhN6gBy7_yRcnEQnzb9fCNTd11h-bo="
+        ],
+        "summary": "The Sustainable Community-Based Rehabilitation (SCBR) framework, integrated with India's Sarva Shiksha Abhiyan (SSA) program, is a grassroots initiative focused on transforming primary schools into inclusive environments for all children, regardless of ability. This approach emphasizes the critical role of teachers and local communities in fostering inclusive practices. Key interventions include curriculum adaptation, integration of assistive technology, and individualized education plans. Community involvement is facilitated by CBR workers who bridge the gap between schools and families, promoting participatory decision-making. SSA specifically supports children with special needs through identification, assessment, provision of free aids, appliances, and transport assistance. The model is community-driven, ensuring that inclusive education is informed by local needs and implemented through collaborative problem-solving and flexible use of existing resources.",
+        "category": [
+            "Inclusive Education",
+            "Special Needs Education",
+            "Community Engagement"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "India",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Primary schools",
+            "lat": 22.3511148,
+            "lon": 78.6677428
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Every child, regardless of ability, especially children with special needs in primary schools.",
+            "learning_outcomes": [
+                "Genuine participation of all children in primary education",
+                "Learning tailored to individual student needs",
+                "Access to education for children with special needs"
+            ],
+            "pedagogical_approach": "Curriculum adaptation, integration of assistive technology, individualized education plans, community involvement in decision-making, collaborative problem-solving."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Learning materials",
+                "Assistive technology",
+                "Aids and appliances"
+            ],
+            "preparation_steps": [
+                "Identification of children with special needs",
+                "Assessment of individual needs",
+                "Development of individualized education plans"
+            ],
+            "execution_steps": [
+                "Adapt curriculum and learning methods",
+                "Integrate assistive technology",
+                "Provide free aids, appliances, and transport assistance",
+                "CBR workers bridge gap between schools and families",
+                "Foster participatory decision-making with communities"
+            ],
+            "tips_for_success": "Emphasize the crucial role of teachers and local communities; utilize collaborative problem-solving and flexible use of existing resources."
+        },
+        "impact": {
+            "problem_solved": "Exclusion of children with special needs from mainstream primary education and lack of inclusive learning environments.",
+            "evidence_of_success": "Actively transforms primary schools into environments where every child can genuinely participate; ensures inclusive education is informed by local needs and implemented through collaborative problem-solving.",
+            "beneficiaries_reach": "Every child in primary schools, particularly children with special needs.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While highly beneficial for inclusion, the SCBR framework carries several risks. Data privacy is a significant concern due to the collection of sensitive individual assessment data for individualized education plans. Despite its inclusive design, real-world implementation challenges, resource variability, and inconsistent community engagement could lead to continued exclusion for some children. Teachers, central to curriculum adaptation and inclusive practices, may experience cognitive overload without adequate training and ongoing support. Furthermore, integrating diverse local communities in India carries a risk of cultural friction when adapting educational practices and curriculum to varied beliefs and values."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "7d0980e8a0d0830b042de6023514f2e0",
+        "timestamp": "2026-09-23T02:05:01.887790",
+        "title": "Neolimb Project",
+        "sources": [
+            "https://solvefortomorrowlatam.com/en/5-projetos-para-promover-a-inclusao-de-estudantes-com-deficiencia-no-ensino-medio/"
+        ],
+        "summary": "The Neolimb project, a grassroots initiative from Paraguay, involves student teams developing affordable 3D-printed prosthetic hands. This innovation addresses the local challenge of high-cost prosthetics, making them ten times more affordable than existing alternatives. The project aims for an open-source model to encourage community involvement and continuous improvement, directly contributing to inclusive education by providing critical accommodations for individuals with limb loss.",
+        "category": [
+            "Assistive Technology",
+            "Inclusive Education",
+            "3D Printing",
+            "Community Development",
+            "STEM"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Paraguay",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": -23.3165935,
+            "lon": -58.1693445
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Health",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Individuals with limb loss requiring affordable prosthetics; students involved in design and development.",
+            "learning_outcomes": [
+                "Improved access to affordable assistive technology for individuals with disabilities",
+                "Enhanced physical mobility and social participation for beneficiaries",
+                "Development of problem-solving, engineering design, and collaborative skills among student creators"
+            ],
+            "pedagogical_approach": "Student-led design and development, project-based learning, community-based problem solving, open-source collaboration."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of access to affordable prosthetics for individuals with limb loss in Paraguay.",
+            "evidence_of_success": "Creation of a 3D-printed prosthetic hand that is ten times more affordable than existing alternatives.",
+            "beneficiaries_reach": "Individuals with limb loss in Paraguay.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {},
+        "priority_score": 70,
+        "hidden_gem": true,
+        "critical_flag": false
     }
 ]
