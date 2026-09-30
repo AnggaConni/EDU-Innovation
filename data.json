@@ -19712,5 +19712,240 @@
         "priority_score": 54,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "697155f7bc6aa29428ebeb14474e6fd8",
+        "timestamp": "2026-09-30T02:32:59.253143",
+        "title": "The Friendship Foundation",
+        "sources": [
+            "https://www.friendshipfoundation.com/join-as-volunteer"
+        ],
+        "summary": "The Friendship Foundation offers inclusive social and recreational programs for youth and adults (ages 8+) with intellectual and developmental disabilities. This grassroots initiative, which started with 22 members in 2005 and now engages over 2,000 dedicated volunteers, aims to create a safe, accepting, and inclusive environment. Participants engage in various activities like sports, art, and music with their peers. The program utilizes a peer-to-peer volunteer model to foster bonds, teach life and social skills, promote independence, and build friendships, employing a tiered, community-centric approach to social-emotional learning adapted to individual needs.",
+        "category": [
+            "Special Education",
+            "Community Development",
+            "Social-Emotional Learning",
+            "Youth Development",
+            "Inclusion"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "The Friendship Foundation",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Health",
+                "Arts",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Youth and adults (ages 8+) with intellectual and developmental disabilities.",
+            "learning_outcomes": [
+                "Fostering remarkable bonds",
+                "Teaching valuable life and social skills",
+                "Promoting independence",
+                "Building friendships"
+            ],
+            "pedagogical_approach": "Peer-to-peer support, community-centric model, tiered approach to social-emotional learning and development, adapting to individual needs."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of inclusive social and recreational programs for youth and adults with intellectual and developmental disabilities, leading to social isolation and limited opportunities for skill development.",
+            "evidence_of_success": "Grew from 22 members in 2005 to over 2,000 dedicated volunteers, indicating significant reach and engagement. Successfully fosters bonds, teaches life/social skills, promotes independence, and builds friendships for participants.",
+            "beneficiaries_reach": "Over 2,000 volunteers involved, implying a substantial number of participants with disabilities are served through peer-to-peer programs.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 9,
+            "risk_type": [
+                "other",
+                "data_privacy",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is child safety and safeguarding, given the involvement of over 2,000 volunteers interacting with vulnerable youth and adults (ages 8+) with intellectual and developmental disabilities. Robust volunteer vetting, training, supervision, and incident response protocols are critical but not detailed in the description. Data privacy is also a significant concern due to the collection of sensitive personal and medical information for this population. While the program aims for inclusion, potential accessibility barriers for diverse individual needs remain a continuous consideration, warranting ongoing assessment and adaptation."
+        },
+        "priority_score": 54,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "e4fc367fc61724e9766b27075b1b84b4",
+        "timestamp": "2026-09-30T02:33:51.501360",
+        "title": "Grassroots Parent Advocacy Groups for Inclusive Education",
+        "sources": [
+            "https://www.adayinourshoes.com/20-examples-of-inclusion-in-the-classroom/",
+            "https://www.pta.org/home/advocacy/grassroots-advocacy",
+            "https://www.clemson.edu/libraries/research/open-access-publishing/clemson-open/index.html"
+        ],
+        "summary": "Grassroots parent advocacy groups represent a significant innovation for inclusive education by empowering families to collectively fight for their children's educational rights and appropriate supports. These informal groups provide a platform for parents to discuss and understand educational policies such as the Individuals with Disabilities Education Act (IDEA), Individualized Education Programs (IEPs), Free Appropriate Public Education (FAPE), and Least Restrictive Environment (LRE). Through collective action, parents learn to navigate the school system, advocate for individualized education, and push for the implementation of tiered support systems, ultimately influencing systemic change and promoting a more inclusive educational environment.",
+        "category": [
+            "Parental Engagement",
+            "Advocacy",
+            "Inclusive Education",
+            "Special Education",
+            "Community Organizing"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "Civics",
+                "Special Needs",
+                "Policy Advocacy"
+            ],
+            "target_learners": "Parents and families of children requiring special educational supports or accommodations.",
+            "learning_outcomes": [
+                "Understanding educational policies (IDEA, IEPs, FAPE, LRE)",
+                "Navigating the school system effectively",
+                "Advocating for individualized education programs",
+                "Promoting implementation of tiered support systems"
+            ],
+            "pedagogical_approach": "Peer learning, collective problem-solving, information sharing, and community advocacy."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of understanding and enforcement of educational rights and appropriate supports for children with disabilities within the school system.",
+            "evidence_of_success": "Influences systemic change and promotes a more inclusive educational environment from the ground up.",
+            "beneficiaries_reach": "Families of children with disabilities, children with disabilities themselves, and the broader educational system.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "self-taught"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While grassroots parent advocacy groups are highly beneficial for inclusive education, significant risks exist. Data privacy is a major concern as sensitive information about children's educational needs and disabilities may be shared informally within these groups without adequate safeguards, potentially leading to inappropriate disclosure or misuse. Exclusion and accessibility barriers are also prominent, as informal groups may inadvertently exclude parents due to language, digital literacy, time constraints, or lack of awareness, thereby limiting the reach of advocacy. Additionally, the advocacy nature of these groups can lead to cultural friction with school systems or within diverse parent communities if not managed sensitively."
+        },
+        "priority_score": 76,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "a1d48d23c80ad8f9330185dcaee571e9",
+        "timestamp": "2026-09-30T02:34:32.772611",
+        "title": "Solar4Us @ Henderson-Hopkins project",
+        "sources": [
+            "https://rmi.org/resources/how-one-school-became-a-power-plant-for-its-community/"
+        ],
+        "summary": "The Solar4Us @ Henderson-Hopkins project transformed the Elmer A Henderson: A Johns Hopkins Partnership School in Baltimore, Maryland, into an 808-kilowatt community solar array. This initiative allows students' families, school staff, and the broader low-to-moderate income community to subscribe to receive discounted electricity, projected to save subscribers an estimated $1.1 million over its lifetime with a 20-25% discount on bills. Beyond financial benefits, the project significantly reduces greenhouse gas emissions, offers job training and local hiring opportunities through partnerships, and integrates clean energy education into the school's curriculum, demonstrating wide-ranging benefits to local stakeholders.",
+        "category": [
+            "Environment",
+            "Community Development",
+            "Renewable Energy",
+            "Infrastructure",
+            "Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "Maryland",
+            "city_or_village": "Baltimore",
+            "institution_name": "Elmer A Henderson: A Johns Hopkins Partnership School",
+            "lat": 39.2908816,
+            "lon": -76.610759
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "STEM",
+                "Civics",
+                "Vocational"
+            ],
+            "target_learners": "Students, students' families, school staff, and the broader low-to-moderate income community",
+            "learning_outcomes": [
+                "Understanding of clean energy benefits",
+                "Awareness of community solar models",
+                "Practical application of renewable energy technologies",
+                "Job skills in the clean energy sector"
+            ],
+            "pedagogical_approach": "Experiential learning through a real-world community solar project, integrated curriculum, partnerships for job training"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "High electricity costs for low-to-moderate income communities, lack of access to clean energy benefits, greenhouse gas emissions, limited local job opportunities in green sectors.",
+            "evidence_of_success": "Projected $1.1 million in savings for subscribers, 20-25% discount on electricity bills, significant reduction in greenhouse gas emissions, provision of job training and local hiring opportunities, integration of clean energy education.",
+            "beneficiaries_reach": "Students' families, school staff, and the broader low-to-moderate income community subscribing to the solar array.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The project involves collecting sensitive personal and financial data from subscribers (families, staff, community members) for discounted electricity, posing a significant data privacy risk if not securely managed. The large-scale solar array on school grounds introduces physical safety considerations related to installation, maintenance, and securing the infrastructure from unauthorized access, especially by children. While the project aims for inclusion, the subscription process for community solar could create accessibility barriers for some low-to-moderate income community members due to digital literacy, language, or administrative complexities, potentially leading to exclusion."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
