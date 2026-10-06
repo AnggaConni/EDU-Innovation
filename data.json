@@ -20186,5 +20186,257 @@
         "priority_score": 56,
         "hidden_gem": true,
         "critical_flag": true
+    },
+    {
+        "id": "50aa83ace83e03b845485d69e8295c36",
+        "timestamp": "2026-10-06T03:26:53.019660",
+        "title": "PBL in Rural Schools Program",
+        "sources": [
+            "https://www.colorado.edu/mechanical/project-based-learning-pbl-rural-schools"
+        ],
+        "summary": "The University of Colorado Boulder's 'PBL in Rural Schools' program trains university students in instructional techniques and air/soil quality technology. These CU students then travel to rural middle and high school classrooms across Colorado to collaborate with K-12 students on hands-on air and soil quality experiments. This year-long commitment involves CU students visiting the schools four times, allowing rural students to engage in authentic scientific inquiry, develop practical skills, develop a deeper understanding of environmental issues relevant to their local communities. The program reaches over 600 middle and high school students annually, fostering student-centered, experiential learning through real-world problem-solving.",
+        "category": [
+            "STEM",
+            "Environmental Education",
+            "Community Engagement"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Colorado",
+            "city_or_village": "Boulder",
+            "institution_name": "University of Colorado Boulder",
+            "lat": 40.0149856,
+            "lon": -105.270545
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment"
+            ],
+            "target_learners": "Rural middle and high school students",
+            "learning_outcomes": [
+                "Engage in authentic scientific inquiry",
+                "Develop practical skills",
+                "Gain a deeper understanding of environmental issues relevant to local communities"
+            ],
+            "pedagogical_approach": "Problem-Based Learning (PBL), hands-on experiments, student-centered learning, experiential learning, real-world problem-solving"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Air quality technology",
+                "Soil quality technology",
+                "Instructional materials"
+            ],
+            "preparation_steps": [
+                "Train university students in instructional techniques",
+                "Train university students in air and soil quality technology"
+            ],
+            "execution_steps": [
+                "University students travel to rural middle and high school classrooms",
+                "University students collaborate with K-12 students on hands-on air and soil quality experiments",
+                "University students visit schools four times over a year"
+            ],
+            "tips_for_success": "Foster student-centered, experiential learning through real-world problem-solving relevant to local communities."
+        },
+        "impact": {
+            "problem_solved": "Lack of opportunities for authentic scientific inquiry and engagement with local environmental issues in rural middle and high schools.",
+            "evidence_of_success": "Reaches over 600 middle and high school students annually.",
+            "beneficiaries_reach": "Over 600 middle and high school students annually.",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "other",
+                "physical",
+                "cultural",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risks revolve around child safety and physical safety during hands-on experiments. The program description does not explicitly state that CU students undergo background checks or receive training in child protection policies before interacting with K-12 minors. Without these measures, there's a significant risk to child safety regarding supervision and appropriate interaction. Additionally, hands-on experiments, especially with 'air/soil quality technology,' carry inherent physical risks (e.g., potential chemical exposure, equipment handling) that require robust safety protocols and trained supervision, which are not detailed. There's also a potential for cultural friction between university students and rural communities if cultural sensitivity training is not provided, and potential exclusion barriers for students with diverse learning needs if accessibility is not explicitly addressed in the instructional design."
+        },
+        "priority_score": 52,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "80865c24819ee9aebc5c23369f4a6ba9",
+        "timestamp": "2026-10-06T03:27:29.806533",
+        "title": "Munford Schools: STEAM-Focused Environmental Project-Based Learning",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7-ClG3S4szpy7OnqcgTqgLIqIkquQDWvBvZ6seXDYsHjC8dOu2vWzr-JvWg9jKxLbvsPcrH9ogWmBlAJ0vMB8B8HcwftZtqEwrsrJ_yuKGmdVz0fNKqvtj3icTKZ-RODZHfE8h0V0ElpjaUc7ES7GdWFpywcalQx_vakhtJOE4CJHYjC3PlWJCaBsAYvWzfN6t914IYwlQBX9CVjKj58NXWzY="
+        ],
+        "summary": "Munford schools in Alabama have implemented a whole-school, PreK-12th grade STEAM-focused project-based learning (PBL) approach. This innovation is deeply integrated with the natural surroundings and local community, largely through a partnership with the U.S. Forest Service. Students engage in projects directly tied to local environmental assets like the Talladega National Forest and Cheaha State Park, fostering community pride and preparing them for future college and career opportunities by connecting learning to real-world contexts.",
+        "category": [
+            "Environmental Education",
+            "Project-Based Learning",
+            "STEAM",
+            "Community Engagement"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Alabama",
+            "city_or_village": "Munford",
+            "institution_name": "Munford Schools",
+            "lat": 33.5298282,
+            "lon": -85.9508006
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Environment",
+                "Civics"
+            ],
+            "target_learners": "PreK through 12th grade students",
+            "learning_outcomes": [
+                "Instill community pride",
+                "Prepare students for college opportunities",
+                "Prepare students for career opportunities",
+                "Connect learning to local resources",
+                "Connect learning to real-world contexts"
+            ],
+            "pedagogical_approach": "Whole-school, STEAM-focused project-based learning (PBL) deeply integrated with natural surroundings and local community through partnerships."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Natural local environment (e.g., forests, parks)",
+                "Community resources and partners (e.g., U.S. Forest Service)",
+                "Curriculum development resources for PBL and STEAM integration"
+            ],
+            "preparation_steps": [
+                "Establish strong partnerships with local environmental and community organizations (e.g., U.S. Forest Service)",
+                "Develop a whole-school curriculum framework that integrates STEAM and project-based learning across all grades (PreK-12)",
+                "Identify local natural and community resources that can serve as contexts for learning projects",
+                "Train educators in STEAM and PBL methodologies, emphasizing environmental and community connections"
+            ],
+            "execution_steps": [
+                "Design and implement projects that directly tie student learning to local environmental features (e.g., Talladega National Forest, Cheaha State Park)",
+                "Facilitate student engagement in hands-on, real-world problem-solving within the community and natural environment",
+                "Utilize local sites (e.g., a cave replica at school entrance) to immerse students in regional 'naturescapes'",
+                "Encourage community involvement and showcase student work to foster local pride"
+            ],
+            "tips_for_success": "Foster deep, long-term partnerships with local environmental and community organizations. Ensure curriculum integration is comprehensive across all grade levels. Continuously connect learning outcomes to local career and college pathways. Emphasize authentic, place-based experiences for students."
+        },
+        "impact": {
+            "problem_solved": "Lack of connection between school curriculum and local environment/community, potentially leading to disengagement and insufficient preparation for local college/career opportunities.",
+            "evidence_of_success": "Instills community pride and prepares students for college and career opportunities by connecting their learning to local resources and real-world contexts.",
+            "beneficiaries_reach": "All PreK through 12th grade students in Munford schools.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The extensive, whole-school (PreK-12) engagement in natural environments like the Talladega National Forest and Cheaha State Park introduces significant physical safety risks. These include potential hazards from uneven terrain, wildlife encounters, exposure to varied weather conditions, and the safe handling of any tools or equipment used in STEAM-related outdoor projects. Without explicit mention of robust safety protocols, trained supervision, and emergency preparedness, the inherent risks are substantial. Furthermore, the reliance on outdoor, nature-based learning environments poses potential exclusion and accessibility barriers for students with physical disabilities or other mobility challenges, who may find it difficult to fully participate in projects conducted in rugged or non-accessible natural settings."
+        },
+        "priority_score": 60,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "e509bceb3c78cb3a09e35e3b9793d9eb",
+        "timestamp": "2026-10-06T03:28:10.937588",
+        "title": "Teton Science Schools: Place-Based Education",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETTUVqU7YSh8yDkEbOu4lTKUjgESJalAjGiCgMz2SeiiEDBaX4yOo9StPHtbFPvJvDJNoHFsRUdf3P3F6LyCeU83wrr0SEg0uXULD3Rm9sPw--u0sJL02ng9JH5JtN0puM-KW3PaO4huRQuUh2BDbAuUOYPHGHKh-l-6LRAEjx4gDNnORjQn0PPIMxcVdkBu_SwsFh5ES4_kUMClMJ"
+        ],
+        "summary": "Teton Science Schools, a 50-year-old nonprofit in northwest Wyoming, champions student-centered, place-based education. Their approach integrates community connections, partnerships, inquiry and design-based learning, and interdisciplinary studies. Students engage deeply with their local heritage, cultures, landscapes, and experiences to study various subjects. This immersive model aims to foster community connection, develop relationship skills, and prepare students for a project-based world by making them active participants in their learning communities.",
+        "category": [
+            "Environmental Education",
+            "Experiential Learning",
+            "Community Engagement",
+            "Interdisciplinary Studies"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Northwest Wyoming",
+            "city_or_village": "",
+            "institution_name": "Teton Science Schools",
+            "lat": 41.1620232,
+            "lon": -104.8011121
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Students",
+            "learning_outcomes": [
+                "Connect students to their community",
+                "Build relationship skills",
+                "Prepare students for a project-based world",
+                "Make students integral and participatory members of learning communities"
+            ],
+            "pedagogical_approach": "Place-based education, community-connected, partnership-focused, inquiry and design-based, student-centered, interdisciplinary"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of student connection to local community and environment; insufficient preparation for project-based learning and relationship skills.",
+            "evidence_of_success": "50 years of continuous operation, demonstrating sustained relevance and impact.",
+            "beneficiaries_reach": "Students in northwest Wyoming and potentially beyond through their model.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "exclusion",
+                "cultural",
+                "physical",
+                "data_privacy"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The place-based, community-connected model inherently carries risks related to child safety (student interactions with diverse community members, off-site learning), physical safety (outdoor activities, varied community settings), and potential exclusion/cultural friction for students unfamiliar with the local context or from diverse backgrounds. Accessibility for students with disabilities must also be carefully considered for landscape-based learning. Data privacy could be a concern if student information or project data is shared with partners without clear protocols."
+        },
+        "priority_score": 44,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
