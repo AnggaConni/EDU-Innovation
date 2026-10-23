@@ -21705,5 +21705,274 @@
         "priority_score": 60,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "7730ec5a0b553c7b1860fa99f66f757d",
+        "timestamp": "2026-10-23T02:06:56.633842",
+        "title": "Community-Based Inclusive Education Facilitators",
+        "sources": [
+            "https://www.rti.org/insights/inclusive-education-disabilities-locally-led-development",
+            "https://www.rti.org/sites/default/files/related-content-files/inclusive_education.pdf"
+        ],
+        "summary": "The USAID Shobai Miley Shikhi (“Everyone Learns Together”) project empowers local community members to become 'school community facilitators.' These facilitators are trained to lead campaigns, organize parent meetings, and host inclusion fairs within their communities to raise awareness about disability and promote inclusive education. By engaging parents and local leaders directly, the program fosters a supportive environment that encourages children with disabilities to attend school and provides a network of community-based resources. This approach exemplifies a grassroots effort to integrate inclusive education principles into the fabric of daily community life through local leadership and participation.",
+        "category": [
+            "Inclusive Education",
+            "Community Engagement",
+            "Disability Awareness",
+            "Local Leadership Development"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Children with disabilities, parents, local leaders, and general community members.",
+            "learning_outcomes": [
+                "Increased community awareness about disability",
+                "Promotion of inclusive education principles",
+                "Enhanced supportive environment for children with disabilities",
+                "Increased school attendance for children with disabilities",
+                "Empowerment of local community members as facilitators"
+            ],
+            "pedagogical_approach": "Community-based learning, peer education, advocacy and awareness campaigns, multi-tiered support strategies."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Training materials for facilitators",
+                "Campaign materials (leaflets, posters)",
+                "Meeting spaces",
+                "Resources for inclusion fairs"
+            ],
+            "preparation_steps": [
+                "Identify and select local community members to serve as facilitators",
+                "Provide comprehensive training to facilitators on disability awareness, inclusive education principles, campaign leadership, and meeting organization"
+            ],
+            "execution_steps": [
+                "Facilitators lead community-wide awareness campaigns on disability and inclusive education",
+                "Facilitators organize and conduct parent meetings to discuss inclusive education and support for children with disabilities",
+                "Facilitators host inclusion fairs to engage the community and showcase resources",
+                "Facilitators encourage children with disabilities to attend school"
+            ],
+            "tips_for_success": "Directly engage parents and local leaders to foster a strong support network. Build foundational community understanding and support for inclusive education. Ensure facilitators are well-trained and equipped with resources."
+        },
+        "impact": {
+            "problem_solved": "Lack of community awareness and support for children with disabilities, leading to barriers in accessing inclusive education.",
+            "evidence_of_success": "Fosters a supportive environment, encourages children with disabilities to attend school, provides a network of community-based resources, integrates inclusive education principles into daily community life.",
+            "beneficiaries_reach": "Children with disabilities, their families, local community members, parents, and local leaders within participating communities.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "exclusion",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While the initiative's goal is highly positive, several potential risks warrant attention. The primary risk is 'cultural friction,' as addressing disability awareness and inclusive education can challenge existing community norms, beliefs, or stigmas. If facilitators are not adequately trained in cultural sensitivity and nuanced communication, their efforts could lead to resistance or misunderstanding. There's also a potential for 'exclusion' if the facilitators or the 'inclusion fairs' are not genuinely accessible or sensitive to the diverse needs within the community, inadvertently failing to reach the most marginalized children and families. Under 'other,' concerns include ensuring robust vetting and training of community facilitators regarding child protection protocols, as they will be interacting with families and discussing children's well-being. The quality and consistency of the training provided to these facilitators are critical to ensure accurate messaging and effective, inclusive practices, preventing misinformation or unintended negative impacts."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "679baf1c521b304727ccd89699129a23",
+        "timestamp": "2026-10-23T02:07:28.396304",
+        "title": "Cambodia Community-Based Cambodian Sign Language (CSL) Coaching and Family Support",
+        "sources": [
+            "https://www.rti.org/insights/inclusive-education-disabilities-locally-led-development"
+        ],
+        "summary": "This initiative, part of the USAID All Children Learning project in Cambodia, focused on building local capacity for inclusive education. It involved training local volunteers to become Cambodian Sign Language (CSL) coaches who then provided CSL instruction to deaf children within their communities. Additionally, these volunteers established peer support groups for families with children experiencing developmental delays and disabilities, creating sustainable local networks for inclusive learning and social integration.",
+        "category": [
+            "Inclusive Education",
+            "Community Development",
+            "Sign Language Education",
+            "Disability Support"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Cambodia",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "USAID All Children Learning project",
+            "lat": 12.5433216,
+            "lon": 104.8144914
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "Deaf children, families with children experiencing developmental delays and disabilities",
+            "learning_outcomes": [
+                "Improved Cambodian Sign Language (CSL) proficiency for deaf children",
+                "Enhanced communication skills for deaf children",
+                "Increased peer support for families of children with disabilities",
+                "Greater social integration for children with disabilities within their communities"
+            ],
+            "pedagogical_approach": "Community-based volunteer training and instruction, peer support group facilitation, tiered intervention for communication and social integration."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Cambodian Sign Language (CSL) curriculum and learning materials",
+                "Training modules for CSL coaches",
+                "Resources for establishing and facilitating peer support groups"
+            ],
+            "preparation_steps": [
+                "Identify and recruit local community members interested in inclusive education and support for children with disabilities.",
+                "Develop or adapt a culturally relevant Cambodian Sign Language (CSL) training program for volunteers.",
+                "Train selected volunteers to become proficient CSL coaches and facilitators for peer support groups."
+            ],
+            "execution_steps": [
+                "CSL coaches provide direct CSL instruction to deaf children in their local communities.",
+                "Volunteers establish and facilitate peer support groups for families with children experiencing developmental delays and disabilities.",
+                "Monitor progress of CSL learners and the effectiveness of support groups, adapting as needed."
+            ],
+            "tips_for_success": "Leverage existing community networks and members for sustainability. Ensure training is culturally and linguistically appropriate. Foster a sense of ownership and empowerment among local volunteers. Emphasize the creation of safe and supportive spaces for both children and families."
+        },
+        "impact": {
+            "problem_solved": "Lack of local capacity for inclusive education, particularly for deaf children, and insufficient support systems for families of children with developmental delays and disabilities in Cambodian communities.",
+            "evidence_of_success": "Training of local volunteers as CSL coaches, provision of CSL instruction to deaf children, establishment of peer support groups for families.",
+            "beneficiaries_reach": "Deaf children, families with children experiencing developmental delays and disabilities in participating communities.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk is child safety, as local volunteers directly interact with vulnerable deaf children and children with developmental delays in community settings. Robust safeguarding policies, including comprehensive background checks, training on child protection, and ongoing supervision for volunteers, are crucial to mitigate this. There is also a data privacy risk concerning the sensitive information collected about children with disabilities and their families. While the program aims to reduce exclusion, there's a potential risk that some highly marginalized children or communities might still be missed, requiring continuous efforts to ensure comprehensive reach and accessibility."
+        },
+        "priority_score": 56,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "7c099a5ac7d6ed6913538b09c71fa884",
+        "timestamp": "2026-10-23T02:08:09.498317",
+        "title": "Community-Based Instruction (CBI)",
+        "sources": [
+            "https://www.edutopia.org/article/building-students-confidence-community-based-instruction/",
+            "https://autismspectrumnews.org/the-world-is-our-classroom-using-community-based-instruction-to-advance-socially-significant-behavior-in-students-with-disabilities/"
+        ],
+        "summary": "Community-Based Instruction (CBI) is a grassroots approach that moves special education students from traditional classrooms into community environments, such as grocery stores or public transport, to practice essential life skills. This initiative offers sustained and repeated real-world opportunities for students with disabilities to apply academic and social skills in natural contexts, directly addressing their Individualized Education Program (IEP) objectives. Under the supervision of special education teachers and assistants, students work on practical goals like budgeting, asking for help, and navigating public spaces, fostering independence and facilitating a smoother transition into community living. Its innovation lies in direct, experiential learning within the community, providing intensive, individualized interventions with tiered support beyond classroom simulations.",
+        "category": [
+            "Special Education",
+            "Life Skills",
+            "Experiential Learning"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "special_needs",
+            "related_fields": [
+                "Other",
+                "Civics",
+                "Vocational"
+            ],
+            "target_learners": "special education students, students with disabilities requiring intensive, individualized interventions",
+            "learning_outcomes": [
+                "Apply academic and social skills in natural contexts",
+                "Practice budgeting",
+                "Learn to ask for help in community settings",
+                "Navigate public spaces independently",
+                "Foster independence",
+                "Achieve a smoother transition into community living",
+                "Address Individualized Education Program (IEP) objectives"
+            ],
+            "pedagogical_approach": "Real-world, grassroots-oriented experiential learning; direct application of skills in natural contexts; sustained and repeated opportunities; tiered level of support; individualized interventions."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Community environments (e.g., grocery stores, public transport)",
+                "Special education teachers",
+                "Special education assistants"
+            ],
+            "preparation_steps": [
+                "Identify and align activities with students' Individualized Education Program (IEP) objectives",
+                "Plan community outings to relevant environments"
+            ],
+            "execution_steps": [
+                "Take students out of the traditional classroom setting",
+                "Integrate students into community environments (e.g., grocery stores, public transport)",
+                "Provide supervised opportunities to practice essential life skills (e.g., budgeting, asking for help, navigating public spaces)",
+                "Ensure sustained and repeated engagement in these community settings",
+                "Offer tiered levels of support based on individual student needs"
+            ],
+            "tips_for_success": "Provide sustained and repeated opportunities for skill practice; ensure direct application in natural contexts; offer a tiered level of support tailored to individual student needs; focus on practical goals that foster independence."
+        },
+        "impact": {
+            "problem_solved": "The challenge of special education students applying academic and social skills in real-world contexts and transitioning smoothly into community living, moving beyond classroom simulations.",
+            "evidence_of_success": "Fostering independence, enabling a smoother transition into community living, and directly addressing Individualized Education Program (IEP) objectives.",
+            "beneficiaries_reach": "Students with disabilities requiring intensive, individualized interventions.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "Community-Based Instruction, while highly beneficial, introduces significant child safety risks due to placing vulnerable students in uncontrolled public environments (e.g., traffic, interactions with strangers, public transport). While supervised, the inherent unpredictability of community settings necessitates robust safety protocols, emergency plans, and extensive staff training. There is also a potential for exclusion if chosen community environments are not fully accessible for all students with diverse physical or sensory needs. Additionally, students may encounter cultural friction or biases from the general public, requiring teachers to be prepared to mediate and educate. Cognitive overload is a moderate risk, though the program's tiered support aims to mitigate this. Data privacy is a lower risk, assuming existing IEP data is handled securely and no new sensitive data is collected in the community."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
