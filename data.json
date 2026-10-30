@@ -22507,5 +22507,261 @@
         "priority_score": 82,
         "hidden_gem": true,
         "critical_flag": false
+    },
+    {
+        "id": "5f1b4b404a8c96a0b0826849169641ad",
+        "timestamp": "2026-10-30T03:06:14.818717",
+        "title": "Coding 4 All Workshops",
+        "sources": [
+            "https://www.nucamp.co/blog/top-10-free-tech-training-at-libraries-and-community-centers-in-austin-tx-in-2026",
+            "https://www.mycodingplace.com/post/why-austin-is-ideal-for-kids-coding-education-discover-local-coding-schools-in-austin"
+        ],
+        "summary": "The Austin Public Library's Central Library offers recurring 'Coding 4 All' workshops in its Innovation Lounge. These free, walk-in sessions are designed for beginners, focusing on collaborative, hands-on, project-based learning to introduce and demystify programming concepts. Held throughout the year, often on Tuesday evenings, they aim to create a welcoming environment for all skill levels to engage with introductory coding using beginner-friendly tools.",
+        "category": [
+            "Digital Literacy",
+            "Community Education",
+            "Coding"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Texas",
+            "city_or_village": "Austin",
+            "institution_name": "Austin Public Library, Central Library (Innovation Lounge)",
+            "lat": 30.2649261,
+            "lon": -97.7474086
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Digital Literacy"
+            ],
+            "target_learners": "Beginners and individuals of all skill levels interested in introductory coding concepts.",
+            "learning_outcomes": [
+                "Demystify programming concepts",
+                "Engage with introductory coding concepts",
+                "Develop basic coding skills through hands-on projects"
+            ],
+            "pedagogical_approach": "Collaborative, hands-on, project-based learning."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Beginner-friendly coding tools (specifics not provided)"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Host walk-in sessions in a dedicated innovation space.",
+                "Facilitate collaborative, hands-on coding projects.",
+                "Guide participants through beginner-friendly tools and concepts."
+            ],
+            "tips_for_success": "Create a welcoming environment for all skill levels; emphasize practical, project-based learning; ensure sessions are free and easily accessible (walk-in)."
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible, beginner-friendly coding education for the general public within a community setting.",
+            "evidence_of_success": "Recurring nature of the workshops ('throughout the year'), indicating sustained interest and perceived value; creation of a 'welcoming environment' for learning.",
+            "beneficiaries_reach": "Local community members, particularly beginners and those seeking to engage with coding in a low-barrier setting.",
+            "scale": "low",
+            "impact_score": 6
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "other",
+                "exclusion"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The 'Coding 4 All' workshops, being free, walk-in, and open to 'all skill levels' in a public library setting, present a medium risk concerning child safety. While libraries are generally safe, the lack of explicit details on child protection policies, supervision ratios for mixed-age groups, or background checks for facilitators for these specific workshops raises concerns. Additionally, as walk-in sessions, potential capacity limitations could lead to exclusion if demand exceeds available spots, despite the 'all are welcome' intent."
+        },
+        "priority_score": 52,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "95ebe9671cd4e7dd08caffb78d3316f6",
+        "timestamp": "2026-10-30T03:07:04.391675",
+        "title": "codePHX",
+        "sources": [
+            "https://www.raisingarizonakids.com/2018/01/phoenix-offers-free-coding-and-robotics-classes-for-ages-4-17/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRGgN2PP2a-Quv--WCwbmuUhXmaThfl5u26dIQcU5BGrqWvwp1B5uLPhMYdiBbdex0R9UzuLbb4G2Rg9EMlV38WopwLEo5rNptVS2rJnufkgXu1pr5NNkwTquaUfzkZ8QcrcNJna_AG4rlq0hpPpwpC0rUolT6YYXqjn24=="
+        ],
+        "summary": "codePHX is a Phoenix, Arizona-based initiative offering free, in-person coding, robotics, and 3D modeling classes for youth aged 4 to 17. The program operates at various libraries and recreation centers, aiming to provide accessible and equitable tech education to all of Phoenix's youth and address gender and demographic disparities in tech jobs. Funded by the Arizona Community Foundation and Phoenix IDA in partnership with the Phoenix City Council, codePHX started in 12 locations with plans to expand to 29, including a mobile coding lab. It offers both drop-in classes and eight-week courses with curricula tailored to different age groups.",
+        "category": [
+            "Technology Education",
+            "Youth Development",
+            "Community Programs",
+            "Digital Literacy"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Arizona",
+            "city_or_village": "Phoenix",
+            "institution_name": "Phoenix City Council, Arizona Community Foundation, Phoenix IDA (in partnership with local libraries and recreation centers)",
+            "lat": 33.4484367,
+            "lon": -112.074141
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Technology",
+                "Computer Science",
+                "Robotics",
+                "3D Modeling"
+            ],
+            "target_learners": "Youth aged 4 to 17",
+            "learning_outcomes": [
+                "Learn basic and advanced coding concepts",
+                "Develop robotics skills",
+                "Acquire 3D modeling proficiency",
+                "Increase access to technology education",
+                "Bridge gender and demographic gaps in tech fields"
+            ],
+            "pedagogical_approach": "Hands-on, in-person instruction with age-appropriate curricula, offering both drop-in sessions and structured eight-week courses."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of accessible, equitable, and free coding, robotics, and 3D modeling education for youth; gender and demographic gaps in tech jobs.",
+            "evidence_of_success": "Successful launch in 12 locations, planned expansion to 29 locations, including a mobile coding lab, indicating strong community engagement and institutional support.",
+            "beneficiaries_reach": "Youth aged 4 to 17 across the city of Phoenix.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "data_privacy",
+                "exclusion",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The codePHX initiative presents several significant risks. **Physical safety** is a primary concern due to hands-on robotics and 3D modeling classes involving hardware and machinery, especially given the broad age range from 4 to 17 years old. This necessitates strict age-appropriate equipment, supervision, and safety protocols. Under the 'other' category, **child safety** broadly includes the need for robust background checks for all instructors and volunteers, appropriate child-to-adult ratios, and secure drop-off/pick-up procedures for minors attending classes in public facilities. **Data privacy** risks exist for the personal information collected during registration for courses and drop-in classes, requiring secure handling and storage of minors' data. While the program aims for accessibility, **exclusion/accessibility barriers** may still arise due to transportation challenges to various locations, potential language barriers for diverse families, or the need for specific accommodations for children with disabilities, despite the program's expansion efforts. Continuous intervention and robust protocols are essential to mitigate these risks."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "b3e09aecbfa23f3cfa4d92e988da46cf",
+        "timestamp": "2026-10-30T03:08:17.436203",
+        "title": "Code Tenderloin",
+        "sources": [
+            "https://www.coursereport.com/blog/ultimate-guide-to-non-profit-coding-bootcamps",
+            "https://secondchanceinfo.com/education/coding-bootcamps"
+        ],
+        "summary": "Code Tenderloin is a San Francisco-based nonprofit that provides free tech and job-readiness training, including coding and web development, to marginalized and underserved populations in the Tenderloin neighborhood. The organization focuses on achieving economic equity through long-term employment. It actively removes barriers to education by covering essential needs like transportation and childcare. Code Tenderloin collaborates with various community services, such as Glide and St. Anthony's Foundation, to offer comprehensive social, financial, legal, and emotional support. Its 'Code Ramp' program specifically targets individuals with criminal records, offering wraparound support, job placement, and mentorship.",
+        "category": [
+            "Economic Empowerment",
+            "Tech Education",
+            "Community Development",
+            "Social Justice",
+            "Workforce Development"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "California",
+            "city_or_village": "San Francisco",
+            "institution_name": "Code Tenderloin",
+            "lat": 37.7879363,
+            "lon": -122.4075201
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Vocational",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Marginalized and underserved populations, including individuals with criminal records, in and around the Tenderloin neighborhood.",
+            "learning_outcomes": [
+                "Attain long-term employment",
+                "Achieve economic equity",
+                "Develop coding and web development skills",
+                "Improve job-readiness",
+                "Gain digital literacy"
+            ],
+            "pedagogical_approach": "Offline, community-focused training with comprehensive wraparound support (transportation, childcare, social, financial, legal, emotional), mentorship, and job placement assistance."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Computers with internet access",
+                "Curriculum for coding, web development, and job-readiness",
+                "Funding for participant support (transportation, childcare)",
+                "Partnerships with community support services"
+            ],
+            "preparation_steps": [
+                "Establish a nonprofit organization focused on economic equity for marginalized groups.",
+                "Develop or acquire a relevant tech and job-readiness curriculum.",
+                "Secure funding for operational costs and participant support.",
+                "Forge partnerships with local community services (e.g., social, legal, financial aid organizations).",
+                "Identify and engage target learner populations within the community."
+            ],
+            "execution_steps": [
+                "Offer free, accessible tech training programs in an offline, community-centric setting.",
+                "Provide essential wraparound services to remove barriers to education (e.g., transportation, childcare).",
+                "Integrate social, financial, legal, and emotional support through community partnerships.",
+                "Implement specialized programs (e.g., 'Code Ramp') for specific underserved groups like individuals with criminal records.",
+                "Offer mentorship and job placement assistance to facilitate long-term employment."
+            ],
+            "tips_for_success": "Prioritize removing barriers to education by addressing participants' essential needs. Build strong, comprehensive community partnerships to provide holistic support beyond just technical training. Focus on long-term employment outcomes and provide ongoing mentorship. Explicitly welcome and support populations often excluded from traditional education and employment pathways."
+        },
+        "impact": {
+            "problem_solved": "Lack of economic equity and employment opportunities for marginalized populations due to systemic barriers, including criminal records, and insufficient access to tech education and support services.",
+            "evidence_of_success": "Successfully brings economic equity through long-term employment. Actively removes barriers to education by covering essential needs like transportation and childcare. Provides comprehensive social, financial, legal, and emotional support through extensive community partnerships.",
+            "beneficiaries_reach": "Marginalized and underserved populations in and around the Tenderloin neighborhood of San Francisco, including individuals with criminal records.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "high",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk lies in data privacy, given that Code Tenderloin serves highly marginalized and vulnerable populations, including individuals with criminal records. The collection and sharing of sensitive personal, social, financial, and legal data with multiple community partners (e.g., Public Defender's office, Glide) necessitates robust data security, consent protocols, and clear data-sharing agreements to protect participants from potential misuse or breaches. Additionally, while not a core educational activity, the provision of childcare introduces an 'other' risk category related to child safety, requiring thorough vetting and ongoing monitoring of childcare partners to ensure a safe environment for children."
+        },
+        "priority_score": 46,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
