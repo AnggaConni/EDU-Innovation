@@ -22763,5 +22763,231 @@
         "priority_score": 46,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "0f3f872a98d47ab125cfc4910583fdc0",
+        "timestamp": "2026-11-02T02:52:42.948996",
+        "title": "Austin Partners in Education (APIE)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfNgYYLVuRl6jL7qGRdvoFqXurQOadf1Y4xMWdtV-IoLJQptjodns5lTNzH_GSZt68DQuBS09DZwmnWbr5sSg7G3XZ2joLRP53Ix7K1mgGJodXHfd9-MZAY54NPK6hYEKrWLMvds1UbefO5gDcGNQ0PPuoGuqQWWXRVvD2ZYQZpF9icl_EEa7YEqZ5ZSDiC9Bgb-YRAQl9WoAB2CrcWp4FwEWza5924_uqs9qr2QKxSNiwQrBkEhPh2Zyi7Lfs81D71g=="
+        ],
+        "summary": "Austin Partners in Education (APIE) is a long-standing community mentorship and tutoring initiative that connects the Austin community with classrooms. For nearly two decades, APIE has been dedicated to enhancing student college and career readiness by recruiting and training hundreds of volunteers and employing full-time staff to provide crucial tutoring and mentoring services to over 2,500 students annually. The program aims to bridge the gap between community resources and educational needs, ensuring students receive comprehensive support for academic and future success.",
+        "category": [
+            "Mentorship",
+            "Community Engagement",
+            "College & Career Readiness",
+            "Tutoring"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Texas",
+            "city_or_village": "Austin",
+            "institution_name": "Austin Partners in Education (APIE)",
+            "lat": 30.2649261,
+            "lon": -97.7474086
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Literacy",
+                "Vocational",
+                "Other"
+            ],
+            "target_learners": "Students (K-12, focused on college and career readiness)",
+            "learning_outcomes": [
+                "Enhanced college readiness",
+                "Enhanced career readiness",
+                "Improved academic performance",
+                "Increased access to community support"
+            ],
+            "pedagogical_approach": "Community-based mentorship and tutoring, volunteer-led instruction, individualized support"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of adequate community-based support for student college and career readiness; gap between community resources and educational needs.",
+            "evidence_of_success": "Nearly two decades of operation, serving over 2,500 students annually, active recruitment and training of hundreds of volunteers, employment of full-time staff.",
+            "beneficiaries_reach": "Over 2,500 students annually",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The initiative involves direct interaction between community volunteers and students, raising potential child safety concerns (categorized under 'other' risk type) if vetting processes like comprehensive background checks are not rigorously applied and transparently communicated. Sharing student information with volunteers for tutoring and mentoring purposes also presents data privacy risks if strict protocols for data handling and access are not in place. Additionally, volunteers from diverse community backgrounds interacting with students could lead to cultural friction if cultural competency and sensitivity training are not adequately emphasized. While 'recruits and trains' volunteers, the specifics of these safeguards are not detailed, warranting intervention for clarity and robustness."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "ef0d2267bbda9ee44256b017454e257b",
+        "timestamp": "2026-11-02T02:53:30.639692",
+        "title": "Uncommon Good's Connect to College Mentoring Program",
+        "sources": [
+            "https://uncommongood.org/c2c/"
+        ],
+        "summary": "Uncommon Good's Connect to College Mentoring Program in the Pomona Valley, Southern California, targets low-income students from 4th to 12th grade. Its goal is to inspire pursuit of higher education and break cycles of poverty. The program offers a comprehensive support system including role models, supportive services, tutoring, and diverse educational and enrichment opportunities, achieving a 100% success rate in guiding participants into college.",
+        "category": [
+            "Mentorship",
+            "College Access",
+            "Poverty Alleviation",
+            "Academic Support"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "Southern California",
+            "city_or_village": "Pomona Valley",
+            "institution_name": "Uncommon Good",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Other"
+            ],
+            "target_learners": "Low-income students from 4th to 12th grade",
+            "learning_outcomes": [
+                "Increased college enrollment rates",
+                "Enhanced academic achievement",
+                "Improved access to higher education",
+                "Poverty reduction"
+            ],
+            "pedagogical_approach": "Dedicated mentorship, tutoring, provision of diverse educational and enrichment opportunities, comprehensive support system"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of college access and academic support for low-income students; perpetuation of poverty cycles.",
+            "evidence_of_success": "100% success rate in guiding participants into college.",
+            "beneficiaries_reach": "Low-income students from 4th to 12th grade in the Pomona Valley.",
+            "scale": "medium",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "cultural",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risks for this mentoring program are child safety (categorized under 'other' risk type) due to the involvement of adult mentors with minors, necessitating robust background checks, training, and supervision protocols. Data privacy is also a significant concern given the collection of sensitive personal and financial information from low-income students and their families. Furthermore, cultural friction could arise if mentors and program staff lack sufficient cultural competency to effectively engage with the diverse backgrounds of students in the Pomona Valley. While the program boasts a high success rate, continuous intervention through strong policies and practices is essential to mitigate these inherent risks."
+        },
+        "priority_score": 61,
+        "hidden_gem": false,
+        "critical_flag": true
+    },
+    {
+        "id": "2c231f5ff68226cf0c0c81cb5949a137",
+        "timestamp": "2026-11-02T02:54:36.208259",
+        "title": "Hostos Community College Mentoring Program",
+        "sources": [
+            "https://www.communitycollegereview.com/blog/empowering-success-how-mentoring-transforms-community-college-experiences"
+        ],
+        "summary": "The Hostos Community College Mentoring Program is a collaborative initiative by the Center for Teaching and Learning (CTL) and the Office of Academic Advisement. It aims to provide a comprehensive support network for all students at Hostos Community College, involving students, staff, and a mentor steering committee. The program's goals include helping mentees build strong support systems, fostering self-reliance, ensuring successful graduation, facilitating transfers to four-year institutions or job placements, and enhancing self-esteem and confidence throughout their academic and professional development.",
+        "category": [
+            "Mentorship",
+            "Student Support",
+            "Higher Education"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "USA",
+            "region": "New York",
+            "city_or_village": "Bronx",
+            "institution_name": "Hostos Community College",
+            "lat": 40.8466508,
+            "lon": -73.8785937
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Vocational",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "All Hostos Community College students",
+            "learning_outcomes": [
+                "Establish a robust support system",
+                "Guide toward self-reliance",
+                "Ensure successful graduation",
+                "Facilitate transfer to a four-year institution or job placement",
+                "Build stronger self-esteem and confidence"
+            ],
+            "pedagogical_approach": "Mentorship, collaborative support network"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": ""
+        },
+        "impact": {
+            "problem_solved": "Lack of comprehensive support for students, challenges in academic and professional navigation, low self-esteem and confidence among students.",
+            "evidence_of_success": "Aims to ensure successful graduation, facilitate transfer to four-year institutions or job placement, and build stronger self-esteem and confidence.",
+            "beneficiaries_reach": "All Hostos Community College students",
+            "scale": "medium",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 6,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The Hostos Community College Mentoring Program, while highly beneficial, presents several risks primarily related to its implementation and scope. Data privacy is a concern as the program will collect and store sensitive student information, including academic progress, personal goals, and challenges, requiring robust data protection protocols. Potential for exclusion exists if the program's capacity (number of mentors) cannot meet the demand of 'all' students, or if the diversity of mentors and program approaches do not adequately cater to the varied backgrounds and needs of the student body. Cultural friction may arise from the interpersonal nature of mentoring, particularly if mentors lack sufficient training in cultural sensitivity or if there are mismatches in communication styles or expectations between mentors and mentees from diverse backgrounds. These risks are common in large-scale support initiatives and necessitate ongoing intervention and careful management."
+        },
+        "priority_score": 56,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
