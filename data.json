@@ -22989,5 +22989,285 @@
         "priority_score": 56,
         "hidden_gem": false,
         "critical_flag": false
+    },
+    {
+        "id": "3edccdc4e1c0d07ecc3dc3b348a9e5f6",
+        "timestamp": "2026-11-04T03:27:46.004951",
+        "title": "DIY Smartphone Projector",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFk8KJYVVqRsEbWhCpAkwtDegy49DHZjtXASvhWHIZfjXwBeIUunFpmIQ5KKiZln2E7AQY4mZnxfTyzzkEXGUoY6ukKsJ7p1I8E8xAj3q8G7H-KM8rwYsezHZ5sTIDwFPaxKrCMhEsdLY8oeoLon-H502qYhh53Dse8WXcvA==",
+            "https://stevespangler.com/experiments/homemade-projector/",
+            "https://www.wikihow.com/Build-a-Projector-Out-of-Cardboard",
+            "https://www.motherearthnews.com/diy/diy-smartphone-projector-ze0z1611zfis/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGltUsk2CqccXtD8To6rPgZs0HGfgGnd6-dV_Ac6DNHWzQ21jcg6ib3cGAseBqoHCxRZovdNKMfT8YQ_VabXBj1f_IE9JNliBZ5f0yw6wOhAJsTnAEvW4pYy5PGwWjJ9ecL5CUjP_Y49kxJA==",
+            "https://innerchildfun.com/2016/01/how-to-make-a-smartphone-projector.html",
+            "https://www.team.repair/blogs/free-resource-diy-projector-activity",
+            "https://photoworks.org.uk/learn/how-to/create-a-smartphone-projector/",
+            "https://www.youtube.com/watch?v=a2ZwPT0657A",
+            "https://www.youtube.com/watch?v=gIDNX9w6jJA"
+        ],
+        "summary": "This widely adopted DIY concept enables students and educators to convert a smartphone or tablet into a functional projection device. Utilizing readily available and inexpensive materials such as a cardboard box and a magnifying glass, the project demonstrates fundamental principles of optics, light, and projection in a hands-on and engaging manner. The core process involves fitting a magnifying glass into a hole in a darkened cardboard box, positioning a smartphone (upside down) at an adjustable distance, and projecting the magnified image onto a surface in a dark room.",
+        "category": [
+            "DIY",
+            "Education",
+            "Technology",
+            "Optics"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Global",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": 55.702215,
+            "lon": 12.5592485
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Other"
+            ],
+            "target_learners": "Students of all ages, educators, hobbyists, and anyone interested in basic optics and DIY technology.",
+            "learning_outcomes": [
+                "Understanding of basic principles of optics, including lens function and light projection.",
+                "Demonstration of how images are formed and magnified.",
+                "Development of practical construction and problem-solving skills.",
+                "Appreciation for accessible technology solutions and scientific concepts."
+            ],
+            "pedagogical_approach": "Hands-on learning, experiential learning, project-based learning, inquiry-based learning."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Sturdy cardboard box (e.g., shoebox)",
+                "Magnifying glass (to serve as the lens)",
+                "Smartphone or tablet",
+                "Black matte paint or black matte paper (to line the interior)",
+                "Cutting tools (e.g., utility knife, scissors)",
+                "Adhesive (e.g., glue, tape)"
+            ],
+            "preparation_steps": [
+                "Select a sturdy cardboard box of an appropriate size for your magnifying glass and smartphone.",
+                "On one end of the box, cut a circular hole that is precisely sized to securely fit the magnifying glass.",
+                "Paint the entire interior of the box with black matte paint or line it with black matte paper to eliminate internal light reflections and enhance image clarity."
+            ],
+            "execution_steps": [
+                "Securely insert the magnifying glass into the cut-out hole on the front end of the box.",
+                "Create an internal stand or support structure inside the box to hold the smartphone or tablet.",
+                "Position the smartphone or tablet inside the box, typically upside down, with its screen facing the magnifying glass.",
+                "Adjust the distance between the smartphone/tablet screen and the magnifying glass to achieve optimal focus on a projection surface.",
+                "Maximize the brightness of the smartphone/tablet screen.",
+                "Use the projector in a completely darkened room, projecting the image onto a blank wall or screen for best results."
+            ],
+            "tips_for_success": "Ensure the room is as dark as possible for the best image quality. Experiment with the distance between the phone and the magnifying glass to achieve sharp focus. Maximize your device's screen brightness. For best results, use a phone with a bright screen and a good quality magnifying glass."
+        },
+        "impact": {
+            "problem_solved": "Lack of access to expensive projection equipment for educational demonstrations; difficulty in visualizing abstract optical principles; need for engaging, hands-on STEM learning activities.",
+            "evidence_of_success": "Described as a 'widely adopted DIY projector concept,' indicating broad recognition and use across various informal and educational settings.",
+            "beneficiaries_reach": "Students, educators, informal learning environments, and individuals interested in science and DIY projects worldwide.",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk is physical safety due to the magnifying glass acting as a lens, which can concentrate sunlight and potentially start a fire if left unattended or misused. There is also a minor physical risk from using cutting tools during the construction phase. An exclusion barrier could arise if students lack access to a personal smartphone or tablet required for the project. While less critical, enclosing a smartphone/tablet in a cardboard box could lead to device overheating, and working in a darkened room may present minor tripping hazards if not managed properly. Interventions are essential for safe handling of the magnifying glass, supervision during construction, and ensuring equitable access to devices."
+        },
+        "priority_score": 78,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "54bf6f5c80e8ecf82c18e2ee94424b53",
+        "timestamp": "2026-11-04T03:28:17.071025",
+        "title": "DIY Cardboard Tube Projector",
+        "sources": [
+            "https://www.playandseek.app/play/diy-projector",
+            "https://www.laurelschoolbrewsteronline.com/ms-amanda/homemade-projector",
+            "https://www.youtube.com/watch?v=6Qmt7ahlgwo",
+            "https://mcm.org/make-your-own-projectors/"
+        ],
+        "summary": "This elementary DIY projector utilizes a cardboard tube, plastic wrap, markers, and a flashlight to teach younger students about light, shadows, and basic projection. Children draw designs on plastic wrap stretched over one end of the tube, then shine a flashlight through the other end to project the image onto a surface in a dark room. It's a hands-on activity that fosters creativity and introduces concepts like light refraction, shadows, and can be used for storytelling or practicing literacy and numeracy.",
+        "category": [
+            "Science",
+            "Arts",
+            "Literacy",
+            "Numeracy"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "informal",
+            "related_fields": [
+                "STEM",
+                "Arts",
+                "Literacy",
+                "Other"
+            ],
+            "target_learners": "younger students",
+            "learning_outcomes": [
+                "Explore light, shadows, and basic projection",
+                "Encourage creativity",
+                "Introduce concepts of light refraction and shadows",
+                "Develop storytelling skills",
+                "Practice literacy and numeracy skills"
+            ],
+            "pedagogical_approach": "hands-on activity, discovery-based learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Cardboard tube (toilet paper or paper towel roll)",
+                "Clear plastic wrap",
+                "Permanent markers",
+                "Tape or rubber band",
+                "Flashlight"
+            ],
+            "preparation_steps": [
+                "Stretch a piece of clear plastic wrap tightly over one end of the cardboard tube.",
+                "Secure the plastic wrap with tape or a rubber band."
+            ],
+            "execution_steps": [
+                "Draw a design, character, letter, or number onto the plastic wrap using permanent markers.",
+                "In a dark room, shine a flashlight through the open end of the tube onto a wall or ceiling."
+            ],
+            "tips_for_success": "Ensure the room is dark for the best projection results."
+        },
+        "impact": {
+            "problem_solved": "Provides an accessible and engaging method for young students to explore fundamental scientific concepts (light, shadows) and practice early literacy/numeracy skills using common household items.",
+            "evidence_of_success": "The activity effectively projects drawn images, demonstrating principles of light and shadows in a tangible way for children.",
+            "beneficiaries_reach": "Younger students, potentially in homes, classrooms, or informal learning settings.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "easy"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The DIY projector uses common, non-toxic materials such as cardboard, plastic wrap, markers, and a battery-operated flashlight, posing minimal physical safety risks. The primary physical safety consideration is the proper handling of plastic wrap to prevent potential choking or suffocation hazards, which is easily mitigated with adult supervision. The activity's simplicity and hands-on nature prevent cognitive overload, and its reliance on widely available, low-cost materials minimizes exclusion barriers. However, students with severe visual impairments might require adaptations to fully engage with the projection aspect."
+        },
+        "priority_score": 84,
+        "hidden_gem": true,
+        "critical_flag": false
+    },
+    {
+        "id": "d70f3889284eacbd5f3014073aa3e04f",
+        "timestamp": "2026-11-04T03:28:39.771624",
+        "title": "DIY LCD Monitor and Overhead Projector Hybrid Projector",
+        "sources": [
+            "https://www.instructables.com/DIY-Projector-on-the-Cheap/"
+        ],
+        "summary": "This innovation involves repurposing an old LCD monitor and a traditional overhead projector to create a larger, potentially higher-resolution display for classroom use. It requires disassembling an LCD monitor to extract its glass panel, which is then placed onto the projection surface of an overhead projector. The overhead projector's light source shines through the LCD panel, magnifying and projecting the image onto a screen or wall. The project demands careful handling of electronic components, mounting solutions, heat management (e.g., adding a fan), and proper electrical connections.",
+        "category": [
+            "Technology",
+            "DIY",
+            "Education Innovation",
+            "Resource Repurposing"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "STEM",
+                "Technology"
+            ],
+            "target_learners": "Educators, students, DIY enthusiasts, schools with limited budgets",
+            "learning_outcomes": [
+                "Understanding of optical projection principles",
+                "Practical electronics assembly and handling skills",
+                "Problem-solving in hardware integration",
+                "Resourcefulness in repurposing old technology"
+            ],
+            "pedagogical_approach": "Hands-on learning, project-based learning, experiential learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Old LCD monitor",
+                "Traditional overhead projector",
+                "Mounting solutions for LCD panel",
+                "Fan for heat management",
+                "Electrical connection components"
+            ],
+            "preparation_steps": [
+                "Carefully disassemble an LCD monitor to extract its glass panel."
+            ],
+            "execution_steps": [
+                "Place the extracted LCD panel onto the projection surface of the overhead projector.",
+                "Ensure proper electrical connections for the LCD panel.",
+                "Implement solutions for mounting the LCD panel securely.",
+                "Integrate heat management solutions, such as adding a fan, to prevent overheating."
+            ],
+            "tips_for_success": "Exercise careful handling of electronic components during disassembly and assembly. Pay close attention to heat management to ensure longevity and safety of the device. Ensure proper electrical connections to avoid damage or hazards."
+        },
+        "impact": {
+            "problem_solved": "Provides an affordable solution for creating a large-screen display in classrooms where dedicated projectors might be too expensive. Repurposes old electronic equipment, reducing waste.",
+            "evidence_of_success": "Offers a way to create a larger and potentially higher-resolution display for classroom use by giving new life to old equipment.",
+            "beneficiaries_reach": "Students and educators in classrooms, individuals seeking affordable large display solutions.",
+            "scale": "low",
+            "impact_score": 6
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "hard"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "physical",
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": true,
+            "explanation": "The DIY projector project involves significant physical safety risks due to the disassembly of electronic components (LCD monitor), handling of glass and sharp edges, making electrical connections, and managing the intense heat generated by an overhead projector. Potential hazards include electrical shock, fire, cuts, and burns. It also presents exclusion barriers due to the high level of technical skill, specialized tools, and specific materials required, which may not be accessible to all learners or educators without significant prior experience and resources. Strict safety protocols, expert supervision, and detailed guidance are crucial."
+        },
+        "priority_score": 36,
+        "hidden_gem": false,
+        "critical_flag": true
     }
 ]
