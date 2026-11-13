@@ -24031,5 +24031,244 @@
         "priority_score": 58,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "8e8577d3f93f00cd1bb58220dcb3300b",
+        "timestamp": "2026-11-13T03:43:01.056731",
+        "title": "Youth Environmental Academy (YEA)",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgbUoZZAd7nEty9ZRsAfuvs4P1wezpSTnRHsYyOldAEQqtpJCmMuRZPQTj3WWmXWcAA7Ce6CZ3ixmTP8GG8_TPSugVzGoP4Byvuil9MWGGL_Za617Zj8V5FSHDA1OUTdwz4Vp-cktNBzqK0ZbWZ5UJVi53yUXZtcY5kAMRDw=="
+        ],
+        "summary": "The Youth Environmental Academy (YEA), a program by The Ecology Center, is a grassroots initiative launched in 2015 to develop climate and environmental justice leaders. It targets young people aged 15–24, particularly BIPOC youth and those from low-income communities, who have been historically underrepresented in environmental leadership. The program offers comprehensive environmental literacy training, practical work experience, and mentorship, empowering participants through workshops, community engagement, and outreach campaigns to contribute to local sustainability efforts and pursue environmental careers.",
+        "category": [
+            "Environment",
+            "Civics",
+            "Vocational"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "USA",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "The Ecology Center",
+            "lat": 39.7837304,
+            "lon": -100.445882
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Environment",
+                "Vocational",
+                "Civics"
+            ],
+            "target_learners": "Young people aged 15–24, with a particular focus on BIPOC youth and those from low-income communities.",
+            "learning_outcomes": [
+                "Gain environmental literacy",
+                "Develop leadership skills",
+                "Become effective advocates for environmental justice",
+                "Contribute to local waste reduction and sustainability efforts",
+                "Foster pathways into environmental careers"
+            ],
+            "pedagogical_approach": "Comprehensive environmental literacy training, practical work experience, mentorship, workshops, community engagement, and outreach campaigns. Utilizes a hands-on approach."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [
+                "Conduct workshops on environmental literacy and justice.",
+                "Organize community engagement activities.",
+                "Implement outreach campaigns on sustainability topics.",
+                "Provide practical work experience in waste reduction and sustainability.",
+                "Offer mentorship to participants."
+            ],
+            "tips_for_success": "Focus on engaging historically excluded youth (BIPOC, low-income). Combine theoretical knowledge with practical, hands-on experience and direct community involvement. Integrate mentorship to support career pathways."
+        },
+        "impact": {
+            "problem_solved": "Lack of climate and environmental justice leaders, and the historical exclusion of BIPOC youth and low-income communities from environmental leadership roles.",
+            "evidence_of_success": "Participants gain knowledge and leadership skills, directly contribute to local sustainability efforts, become effective advocates, and are provided pathways into environmental careers.",
+            "beneficiaries_reach": "Young people aged 15–24, particularly BIPOC youth and those from low-income communities.",
+            "scale": "low",
+            "impact_score": 7
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "data_privacy",
+                "other"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The Youth Environmental Academy (YEA) is a commendable initiative, but risks emerge from its operation with minors (15-17 years old) and its grassroots nature. The 'other' risk type primarily refers to **child safety**, as mentorship programs and community engagement activities involving minors necessitate robust safeguarding policies, including comprehensive background checks for all staff and mentors, clear codes of conduct, and established procedures for reporting concerns. Without explicit mention of these protocols, there's a medium safety risk. Additionally, as a grassroots organization, **data privacy** for participants, especially minors, might not have the same level of formalized infrastructure as larger institutions, posing a potential risk regarding the collection and storage of personal information. The program actively mitigates exclusion, and there are no clear indications of cognitive overload, cultural friction, or significant physical safety risks associated with its described activities."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "b6e957ed8fc42adf73a38c91026a3db5",
+        "timestamp": "2026-11-13T03:43:28.977780",
+        "title": "Indigenous Environmental Network (IEN)",
+        "sources": [
+            "https://sites.evergreen.edu/zoltan/wp-content/uploads/sites/358/2019/09/Grossman-Native-Environmental-Grassroots-Movements.pdf",
+            "https://www.ienearth.org/protecting-mother-earth-a-year-of-advocacy-education-and-resistance/",
+            "https://eepro.naaee.org/community/blog/indigenous-led-approaches-environmental-education-moving-beyond-integration"
+        ],
+        "summary": "The Indigenous Environmental Network (IEN), founded in 1990, is a grassroots movement dedicated to empowering Indigenous communities across the Americas. It focuses on educating and enabling Indigenous peoples to develop strategies for environmental protection, reaffirm traditional and natural laws, and promote environmentally sound lifestyles. IEN actively influences politics at local, regional, national, and international levels, ensuring Indigenous voices are central to environmental decision-making. Its approach is deeply intergenerational, involving youth and elders in all activities, from grassroots activism to UN hearings.",
+        "category": [
+            "Environmental Protection",
+            "Indigenous Rights",
+            "Community Organizing",
+            "Advocacy"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Americas",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "Indigenous Environmental Network (IEN)",
+            "lat": 9.2548361,
+            "lon": -79.8805617
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Environment",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Indigenous communities across the Americas, including youth and elders",
+            "learning_outcomes": [
+                "Enhanced capacity for environmental protection",
+                "Reaffirmation of traditional and natural laws",
+                "Promotion of environmentally sound lifestyles",
+                "Increased Indigenous influence in environmental policy-making"
+            ],
+            "pedagogical_approach": "Community-based education, intergenerational knowledge transfer, grassroots activism, advocacy training"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Foster deep community engagement, prioritize intergenerational knowledge sharing, build strong advocacy networks, and integrate traditional ecological knowledge with contemporary environmental strategies."
+        },
+        "impact": {
+            "problem_solved": "Lack of Indigenous representation and influence in environmental decision-making, environmental degradation impacting Indigenous lands, erosion of traditional laws and sustainable practices.",
+            "evidence_of_success": "Actively influences politics at multiple levels, ensures Indigenous voices are central to environmental decision-making, empowers communities to protect their environment and uphold traditional laws.",
+            "beneficiaries_reach": "Indigenous communities across the Americas",
+            "scale": "high",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "traditional"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "child_safety"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The active inclusion of youth in grassroots activism, community organizing, and political advocacy, including testifying at UN hearings, presents potential child safety risks. While empowering, these activities can expose young participants to stressful environments, public scrutiny, or situations requiring specific safeguarding protocols. The description does not detail the measures in place to protect youth from potential psychological stress, exploitation, or harm, indicating a need for robust child protection policies and training."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "2af713ee266bba7fbe80484c9e52e7ce",
+        "timestamp": "2026-11-13T03:43:53.392467",
+        "title": "Aberporth Plastic-Free Initiative",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1zMMwqz01aUtHgvCABse5Qyig-vndcg9IR0Zpx6cUiRkqf0YNMLiP4PXco9JYg7e8pVkk30vOr_51cK2-ktLBmvyHru1YRSaJp0e--XsImHJyJmMeTLDP2LwABDw0otOa553NMbIPdffaRBu-c6sNL8bDSozoC4SBuck=="
+        ],
+        "summary": "Aberporth, Wales, launched a successful grassroots initiative to become plastic-free. This involved a collaborative effort between residents, local businesses, and authorities to eliminate waste. The campaign focused on promoting reusable alternatives, reducing plastic packaging in local businesses, and extensive community education on sustainable practices. It transformed the town's approach to plastic pollution and serves as a global model for community-led environmental action and sustainable living.",
+        "category": [
+            "Environmental Education",
+            "Community Development",
+            "Sustainability"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Wales",
+            "region": "",
+            "city_or_village": "Aberporth",
+            "institution_name": "",
+            "lat": 52.1341692,
+            "lon": -4.5462206
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Environment",
+                "Civics"
+            ],
+            "target_learners": "Residents, local businesses, and authorities within the community",
+            "learning_outcomes": [
+                "Elimination of community waste",
+                "Adoption of reusable alternatives",
+                "Reduction of plastic packaging in local businesses",
+                "Increased community knowledge of sustainable practices",
+                "Fostering a town-wide commitment to sustainable living"
+            ],
+            "pedagogical_approach": "Community-wide education, collaborative action, promotion of sustainable alternatives, and policy influence within local businesses and authorities."
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "Engage and mobilize residents, local businesses, and local authorities.",
+                "Establish a shared vision for a plastic-free community.",
+                "Identify key areas and sources of plastic waste within the community."
+            ],
+            "execution_steps": [
+                "Implement extensive community education programs on the impacts of plastic pollution and sustainable alternatives.",
+                "Work collaboratively with local businesses to reduce plastic packaging and promote reusable options.",
+                "Encourage and facilitate the adoption of reusable alternatives among residents.",
+                "Foster a continuous dialogue and commitment to sustainable practices across the community."
+            ],
+            "tips_for_success": "Success hinges on broad community collaboration, including residents, businesses, and authorities. The initiative should go beyond simple cleanups to foster a deep, town-wide commitment to sustainable living through education and systemic changes."
+        },
+        "impact": {
+            "problem_solved": "Plastic pollution and excessive environmental footprint at a community level.",
+            "evidence_of_success": "Transformed the town's approach to plastic pollution; serves as a model for other communities globally aiming to reduce their environmental footprint.",
+            "beneficiaries_reach": "The entire community of Aberporth, and potentially other communities globally through its model.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 2,
+            "risk_type": [
+                "exclusion"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The Aberporth initiative is described as a highly successful, collaborative, and grassroots movement, indicating strong community buy-in and low overall risk. The extensive community education and policy changes are positive. However, a minor potential risk lies in 'exclusion' or 'accessibility barriers'. While the effort is collaborative, the adoption of reusable alternatives and changes in business practices (e.g., reducing plastic packaging) could potentially pose economic or practical challenges for certain individuals or small businesses, leading to a feeling of exclusion if support or accessible alternatives are not universally available. This is a very low risk given the described success and collaborative nature, but it's a general consideration for any community-wide change."
+        },
+        "priority_score": 68,
+        "hidden_gem": true,
+        "critical_flag": false
     }
 ]
