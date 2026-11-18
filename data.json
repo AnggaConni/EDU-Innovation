@@ -24529,5 +24529,277 @@
         "priority_score": 76,
         "hidden_gem": true,
         "critical_flag": false
+    },
+    {
+        "id": "72ae8a169f5022ffdb953d872190f4ce",
+        "timestamp": "2026-11-18T04:48:20.701359",
+        "title": "USAID Shobai Miley Shikhi (“Everyone Learns Together”) Project",
+        "sources": [
+            "https://www.rti.org/insights/inclusive-education-disabilities-locally-led-development"
+        ],
+        "summary": "The USAID Shobai Miley Shikhi project in Bangladesh is a grassroots initiative focused on fostering inclusive education for children with disabilities. It achieves this by training school community facilitators and conducting extensive community engagement, including parent and courtyard meetings, and inclusion fairs. The project actively works to reduce disability-related stigma and raise awareness about school attendance, empowering local communities, leaders, and families to support an inclusive educational environment.",
+        "category": [
+            "Inclusive Education",
+            "Community Engagement",
+            "Disability Awareness",
+            "Parental Involvement"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Bangladesh",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "USAID Shobai Miley Shikhi Project",
+            "lat": 24.4769288,
+            "lon": 90.2934413
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Children with disabilities, their parents and families, local community leaders, and school community facilitators.",
+            "learning_outcomes": [
+                "Reduced stigma associated with disability",
+                "Increased awareness of the importance of school attendance for children with disabilities",
+                "Empowered communities to support inclusive education",
+                "Improved local support for the needs of all students"
+            ],
+            "pedagogical_approach": "Community-based awareness campaigns, facilitator training, parent and community meetings, and inclusive fairs to foster dialogue and collective action."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Trained community facilitators",
+                "Meeting spaces (e.g., school courtyards)",
+                "Awareness campaign materials (e.g., posters, pamphlets)",
+                "Logistical support for organizing fairs and meetings"
+            ],
+            "preparation_steps": [
+                "Identify and train school community facilitators",
+                "Develop awareness campaign content and materials",
+                "Plan and schedule community meetings (parent meetings, courtyard meetings) and inclusion fairs",
+                "Engage local leaders and stakeholders to secure participation and support"
+            ],
+            "execution_steps": [
+                "Conduct regular parent meetings to discuss inclusive education and support strategies",
+                "Organize community courtyard meetings to reach a broader audience and raise awareness",
+                "Host inclusion fairs to showcase inclusive practices and foster community dialogue",
+                "Facilitate discussions to reduce disability stigma and highlight the importance of school attendance for all children"
+            ],
+            "tips_for_success": "Foster strong community ownership and participation, ensure consistent engagement with local leaders and families, provide ongoing support and training for facilitators, and tailor messages to local cultural contexts."
+        },
+        "impact": {
+            "problem_solved": "Stigma associated with disability and low school attendance rates for children with disabilities.",
+            "evidence_of_success": "Actively works to reduce the stigma associated with disability and raise awareness about the importance of school attendance. Empowers communities to become active participants and resource providers in creating an inclusive educational environment.",
+            "beneficiaries_reach": "Children with disabilities, their families, local community members, and leaders across participating communities in Bangladesh.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "medium",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 5,
+            "risk_type": [
+                "data_privacy",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The 'Shobai Miley Shikhi' project, while laudable in its goals, presents moderate risks. Data privacy is a concern as the initiative involves identifying children with disabilities and discussing their specific needs within community settings. Without stringent protocols for handling this sensitive information, there's a risk of inadvertent disclosure or misuse, potentially leading to unintended stigma or discrimination. Secondly, despite extensive community engagement, challenging deeply ingrained cultural perceptions and stigma associated with disability can lead to cultural friction or resistance from certain community segments. While the project is designed to mitigate this through local leadership and parent involvement, significant social change initiatives inherently carry this risk. Ongoing monitoring, clear data protection policies, and continuous cultural sensitivity training for facilitators are crucial interventions to manage these risks effectively."
+        },
+        "priority_score": 62,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "41df4072c37fb4f045d8a05bcb91d550",
+        "timestamp": "2026-11-18T04:48:44.520474",
+        "title": "Family-Led Advocacy for Inclusive Education in Sub-Saharan Africa and Latin America",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX39Vz6qHMQFA5L4hz-W0vh4FqrSlYSBRaL3quMUHZrBFTwzxFRdWN_4M-Ye3x59JszXvhBgl-wHFmgOlrjXpJsLdusaY-mH6QUBALWK85kJ0dHRfi-y1-k6hoXRtLtbDQBd06xEeajG4Hf9eSZm8C-x7HnwwLN-OKClRFJbG_QcYaA7UMPysxjXYOTDmZjU68Ss9ggVsQic5O9oos1nEzz0qsLeLyI3uwdEO7LFcbmSMPc-pWnwCQYPLufg="
+        ],
+        "summary": "Inclusion International, supported by the World Bank's Inclusive Education Initiative (IEI), implemented a project from 2021 to 2023 focused on empowering families to become strong advocates for inclusive education within their communities. This grassroots effort involved working with member organizations in Sub-Saharan Africa and Latin America to document effective family advocacy strategies. The project aimed to share these strategies regionally, develop practical tools for families to take on local leadership roles, and connect members to translate grassroots family voices into national policy advocacy. By collecting family-level and community-level data, the initiative created resources in local languages, enabling families to replicate successful community mobilization models and advance inclusive education.",
+        "category": [
+            "Education",
+            "Advocacy",
+            "Community Development",
+            "Inclusion"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "Sub-Saharan Africa, Latin America",
+            "city_or_village": "",
+            "institution_name": "Inclusion International (with funding from World Bank's Inclusive Education Initiative)",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Families, local communities, member organizations of Inclusion International",
+            "learning_outcomes": [
+                "Families empowered as advocates for inclusive education",
+                "Families assume local leadership roles in inclusive education",
+                "Successful community mobilization models replicated",
+                "Grassroots family voices translated into national policy advocacy"
+            ],
+            "pedagogical_approach": "Community-based learning, advocacy training, resource development, peer-to-peer strategy sharing"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Practical advocacy tools (developed by project)",
+                "Resources in local languages (developed by project)",
+                "Documented family advocacy strategies"
+            ],
+            "preparation_steps": [
+                "Identify local families and community members interested in inclusive education advocacy.",
+                "Access and adapt practical advocacy tools and resources to local context.",
+                "Connect with existing member organizations or community groups."
+            ],
+            "execution_steps": [
+                "Utilize practical tools to train and empower families in advocacy techniques.",
+                "Facilitate community mobilization efforts using documented successful models.",
+                "Support families in assuming local leadership roles.",
+                "Establish connections to elevate grassroots advocacy to regional and national policy discussions."
+            ],
+            "tips_for_success": "Focus on culturally relevant resources and strategies. Foster strong community networks and empower local leaders. Ensure continuous feedback loops between grassroots efforts and policy advocacy."
+        },
+        "impact": {
+            "problem_solved": "Lack of empowered family advocacy for inclusive education and limited translation of grassroots voices into policy.",
+            "evidence_of_success": "Documentation of effective family advocacy strategies, creation of practical tools and resources in local languages, establishment of connections for policy advocacy, enabling replication of community mobilization models.",
+            "beneficiaries_reach": "Families and communities in Sub-Saharan Africa and Latin America, member organizations of Inclusion International.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 8,
+            "risk_type": [
+                "data_privacy",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "low",
+            "needs_intervention": true,
+            "explanation": "The primary risk stems from the project's explicit mention of \"collecting detailed family-level and community-level data.\" This involves sensitive information about families and potentially children with disabilities, which, if mishandled, could lead to privacy breaches, stigmatization, or misuse. Robust data privacy protocols, informed consent processes, secure storage, and clear data usage policies are critical. Secondary risks include potential exclusion if the 'practical tools' and strategies are not universally accessible or culturally appropriate for all diverse communities and literacy levels across Sub-Saharan Africa and Latin America, despite the intent to use local languages."
+        },
+        "priority_score": 56,
+        "hidden_gem": true,
+        "critical_flag": true
+    },
+    {
+        "id": "15ee65c11c0218b4fea3382694100ad0",
+        "timestamp": "2026-11-18T04:49:12.553915",
+        "title": "Peer Networks and Peer Support Arrangements",
+        "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxp9T8-rU06imAl7SVZFtCHKpz10EkynBqETGRsJandnGrCCndKCMz_F6qZ1OHYQqKkBP18cFgTJovRagVpY60pBpGVr4lrPRh7Ak4THw01M-p3DdYoL-cAtum0kjT30W6sMS9HThnJIsRd_Ne9N6mcC9CkvQoSBofx19HiO5V4YSsQYqYT7lng0gqnrHOsxJa-A=",
+            "https://www.kypeersupport.org/sample-page-2/"
+        ],
+        "summary": "Peer Networks and Peer Support Arrangements are grassroots initiatives implemented within schools to enhance social connections, belonging, and academic support for students with and without disabilities. Peer Networks involve small groups of non-disabled students meeting regularly with a focus student with a disability, guided by an adult facilitator, to build friendships and expand social circles through shared activities. Peer Support Arrangements integrate peers within general education classrooms to provide academic, social, and behavioral assistance, such as note-taking and participation support. Both strategies aim to strengthen social, communication, and academic skills, fostering a more inclusive and collaborative school culture by promoting engagement, independence, and reducing reliance on adult support.",
+        "category": [
+            "Education",
+            "Inclusion",
+            "Social-Emotional Learning",
+            "Special Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "schools",
+            "lat": null,
+            "lon": null
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Social-Emotional Learning",
+                "Special Education",
+                "Inclusion",
+                "Collaborative Learning"
+            ],
+            "target_learners": "Students with and without disabilities",
+            "learning_outcomes": [
+                "Foster social connections",
+                "Promote belonging",
+                "Provide academic support",
+                "Build meaningful friendships",
+                "Expand social circles",
+                "Enhance student engagement",
+                "Promote independence",
+                "Reduce reliance on adult support",
+                "Strengthen social skills",
+                "Strengthen communication skills",
+                "Strengthen academic skills",
+                "Cultivate an inclusive school culture",
+                "Cultivate a collaborative school culture"
+            ],
+            "pedagogical_approach": "Peer-to-peer learning, Collaborative learning, Inclusive education, Social learning"
+        },
+        "tutorial_how_to": {
+            "materials_required": [],
+            "preparation_steps": [
+                "For Peer Networks: Form small groups of 3-6 non-disabled students and one focus student with a disability.",
+                "For Peer Networks: Identify and assign an adult facilitator for each group.",
+                "For Peer Support Arrangements: Equip and train peers to provide academic, social, and behavioral assistance (e.g., note-taking, communication, participation)."
+            ],
+            "execution_steps": [
+                "For Peer Networks: Groups meet regularly outside of class, engaging in shared activities and conversations, guided by the adult facilitator.",
+                "For Peer Support Arrangements: Peers work alongside students with disabilities within general education classrooms, offering support throughout the school day."
+            ],
+            "tips_for_success": "Ensure adult facilitators are adequately trained and committed to guiding Peer Networks. Thoroughly equip and train peers for their roles in Peer Support Arrangements to maximize effectiveness and promote independence."
+        },
+        "impact": {
+            "problem_solved": "Social isolation and lack of belonging for students with disabilities, limited academic support within general education settings, over-reliance on adult support for students with disabilities.",
+            "evidence_of_success": "Strengthened social, communication, and academic skills; cultivation of a more inclusive and collaborative school culture; enhanced engagement and promoted independence.",
+            "beneficiaries_reach": "Students with disabilities, students without disabilities, school community.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "data_privacy",
+                "child_safety",
+                "exclusion",
+                "cultural"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "While fostering inclusion, Peer Networks and Peer Support Arrangements carry risks. Child safety concerns arise from potential for social discomfort, power imbalances, or unintentional harm/patronization by peers, especially for students with disabilities if not sensitively managed. Exclusion is a risk if students feel tokenized, pressured, or if peer support is poorly matched or implemented, potentially leading to new forms of marginalization. Cultural friction may occur due to diverse norms around help-seeking, peer interaction, and friendship. Data privacy is a concern as peers may access sensitive academic or personal information during note-taking or communication support. Additionally, peer supporters could experience cognitive overload balancing their own academic tasks with support roles. Robust training for peers and facilitators, continuous adult supervision, clear guidelines, and cultural sensitivity are crucial interventions."
+        },
+        "priority_score": 58,
+        "hidden_gem": true,
+        "critical_flag": true
     }
 ]
