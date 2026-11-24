@@ -25064,5 +25064,257 @@
         "priority_score": 54,
         "hidden_gem": false,
         "critical_flag": true
+    },
+    {
+        "id": "76c73a5534adc8951f452d44783ca3d0",
+        "timestamp": "2026-11-24T07:12:33.546029",
+        "title": "Innova Project: 3D-Printed Braille Keyboard for Visually Impaired Students",
+        "sources": [
+            "https://solvefortomorrowlatam.com/en/5-projetos-para-promover-a-inclusao-de-estudantes-com-deficiencia-no-ensino-medio/"
+        ],
+        "summary": "The 'Innova' project, a 2023 Solve for Tomorrow finalist from Argentina, is a grassroots innovation that developed a practical, affordable, and customizable 3D-printed Braille keyboard. Designed by four girls, it addresses the critical lack of adequate resources for students with visual impairments. Its modular design allows for adjustments in size, spacing, and functionality, making it highly inclusive and adaptable for various educational settings and individual user needs. This initiative provides a personalized learning tool (Tier 2/3 intervention) to bridge educational gaps and empower visually impaired learners to access curriculum more effectively.",
+        "category": [
+            "Assistive Technology",
+            "Inclusive Education",
+            "3D Printing",
+            "Special Needs Education"
+        ],
+        "innovation_level": "grassroots",
+        "location": {
+            "country": "Argentina",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "",
+            "lat": -34.9964963,
+            "lon": -64.9672817
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "STEM",
+                "Literacy",
+                "Special Needs"
+            ],
+            "target_learners": "Students with visual impairments",
+            "learning_outcomes": [
+                "Improved access to curriculum",
+                "Enhanced literacy skills (Braille)",
+                "Increased educational empowerment for visually impaired learners"
+            ],
+            "pedagogical_approach": "Personalized learning tool, tiered support intervention (Tier 2/3)"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "3D printer",
+                "3D printing filament (e.g., PLA)",
+                "Design software (CAD)"
+            ],
+            "preparation_steps": [],
+            "execution_steps": [],
+            "tips_for_success": "Focus on modular design for customization; involve target users in the design process for optimal adaptability and inclusivity."
+        },
+        "impact": {
+            "problem_solved": "Lack of adequate and customizable resources for students with visual impairments in educational settings.",
+            "evidence_of_success": "Finalist in the 2023 Solve for Tomorrow competition; developed a practical, affordable, and customizable solution.",
+            "beneficiaries_reach": "Students with visual impairments requiring accessible learning tools.",
+            "scale": "low",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "formal_education"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 1,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The 'Innova' project is an overwhelmingly positive and inclusive educational innovation that directly addresses accessibility barriers for visually impaired students. Its customizable, affordable, and student-led nature makes it a powerful tool for personalized learning, effectively bridging educational gaps. Risks are extremely low; as a 3D-printed hardware device, there are only minor potential physical safety considerations related to material quality, print finish, or durability, which are inherent to any manufactured item but easily managed. The project actively mitigates exclusion and cognitive barriers, and there are no indications of data privacy, cultural friction, or significant child safety risks."
+        },
+        "priority_score": 70,
+        "hidden_gem": true,
+        "critical_flag": false
+    },
+    {
+        "id": "982e9dc950308e5e87f24a74c9f46d2a",
+        "timestamp": "2026-11-24T07:13:23.356813",
+        "title": "Plastic Bricks Project: Transforming Waste into Classrooms",
+        "sources": [
+            "https://www.unicefusa.org/stories/benefits-building-classrooms-out-recycled-plastic-bricks",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExmAHYGFhhtvs3asUf5eYiytTOvHDwiHd65aQ1O40pfVtPX1urENxb7VM57ZCYDv2N5EgCnae8WU80U5n0Ho4gDwsoVMSNh2BxlM7ukbdBeErlykmG-fTZ4fRGkVfP8MZxWwNU74UVU3AHx0OAec1QI1PxGGcyrQj3wrUt5DJ020MyxyChEO6p1AQMzopw76fOdtzcTtKmYYyAFhHRMzA0Im_bAynUebP-As1ef8pSeSeLxPE=",
+            "https://www.youtube.com/watch?v=wT_k9rCEiOI"
+        ],
+        "summary": "The Plastic Bricks Project, a partnership between UNICEF and Conceptos Plasticos in Côte d'Ivoire, converts plastic waste into durable and affordable construction materials for school classrooms. Launched in 2019, the initiative addresses both educational infrastructure deficits and environmental pollution. It has resulted in 383 new classrooms for 19,150 children, utilizing over 3,000 tons of plastic. The project also empowers women through waste collection efforts and provides low-cost, comfortable, and fire-retardant learning environments, with adaptations made for material porosity in specific applications.",
+        "category": [
+            "Environment",
+            "Education",
+            "Infrastructure",
+            "Social Enterprise"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Côte d'Ivoire",
+            "region": "",
+            "city_or_village": "",
+            "institution_name": "UNICEF / Conceptos Plasticos",
+            "lat": 7.9897371,
+            "lon": -5.5679458
+        },
+        "education_details": {
+            "education_type": "formal",
+            "related_fields": [
+                "Environment",
+                "Civics",
+                "Other"
+            ],
+            "target_learners": "Children in Côte d'Ivoire requiring access to formal education",
+            "learning_outcomes": [
+                "Increased access to formal education for children",
+                "Improved learning environments (durable, comfortable classrooms)",
+                "Enhanced community engagement in waste management"
+            ],
+            "pedagogical_approach": "Provision of conducive physical infrastructure to support traditional formal education delivery."
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Plastic waste (collected by women)",
+                "Machinery for converting plastic into bricks",
+                "Standard construction materials and tools for building classrooms"
+            ],
+            "preparation_steps": [
+                "Mobilize and train women's groups for plastic waste collection.",
+                "Establish or utilize facilities for processing collected plastic waste into durable, fire-retardant bricks."
+            ],
+            "execution_steps": [
+                "Design and plan school classroom construction using the plastic bricks.",
+                "Construct classrooms, ensuring appropriate adaptations for material properties (e.g., avoiding use for bathrooms due to porosity).",
+                "Equip and open classrooms for student use."
+            ],
+            "tips_for_success": "Focus on community engagement for waste collection, ensure industrial-scale processing for brick quality, and adapt construction methods based on material properties (e.g., porosity considerations for specific uses like bathrooms)."
+        },
+        "impact": {
+            "problem_solved": "Critical educational infrastructure deficits and environmental plastic pollution.",
+            "evidence_of_success": "Construction of 383 classrooms, utilization of over 3,000 tons of plastic, providing new learning spaces for 19,150 children. Empowerment of women through collection efforts.",
+            "beneficiaries_reach": "19,150 children, numerous women collectors, local communities benefiting from reduced plastic waste and improved educational facilities.",
+            "scale": "high",
+            "impact_score": 9
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 1,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "high",
+            "needs_intervention": false,
+            "explanation": "The Plastic Bricks Project significantly enhances child safety by providing durable and fire-retardant classroom structures, directly addressing critical educational infrastructure deficits. The initiative actively mitigates physical safety risks associated with inadequate learning environments. While construction materials inherently carry physical safety considerations, the project's focus on material properties (durability, fire-retardancy) and adaptive learning (e.g., addressing porosity for bathrooms) demonstrates a proactive approach to ensuring a safe learning environment. No new significant risks related to data privacy, cognitive overload, or exclusion are introduced; instead, the project improves access to education and empowers women, contributing positively to the community."
+        },
+        "priority_score": 74,
+        "hidden_gem": false,
+        "critical_flag": false
+    },
+    {
+        "id": "b0919f04bc86efc4849ad07466467185",
+        "timestamp": "2026-11-24T07:13:59.813368",
+        "title": "Earthbag Building Method for Educational Infrastructure",
+        "sources": [
+            "http://www.worldwideaction.org/new-page-1"
+        ],
+        "summary": "The Earthbag Building method is an innovative, low-cost, and ecologically friendly construction technique that utilizes polypropylene bags filled with local soil or other earthen materials. These bags are stacked and compacted to create resilient and sustainable walls. This method is particularly effective for rapid deployment in areas requiring urgent educational infrastructure, such as post-disaster zones. It leverages recycled and locally sourced materials, making it highly cost-effective and environmentally sustainable. The innovation also includes training local communities in its application, fostering self-sufficiency in construction.",
+        "category": [
+            "Construction",
+            "Sustainable Development",
+            "Disaster Relief",
+            "Education Infrastructure"
+        ],
+        "innovation_level": "institutional",
+        "location": {
+            "country": "Nepal",
+            "region": "",
+            "city_or_village": "Palchok",
+            "institution_name": "Worldwide Action",
+            "lat": 27.8935339,
+            "lon": 85.5756291
+        },
+        "education_details": {
+            "education_type": "non-formal",
+            "related_fields": [
+                "Vocational",
+                "Environment",
+                "Other"
+            ],
+            "target_learners": "Local builders, communities affected by disasters, students (as beneficiaries of infrastructure)",
+            "learning_outcomes": [
+                "Ability to construct resilient, low-cost buildings using local materials",
+                "Enhanced community capacity for self-reliant construction",
+                "Access to safe and durable educational facilities"
+            ],
+            "pedagogical_approach": "Hands-on training, experiential learning, practical skill development"
+        },
+        "tutorial_how_to": {
+            "materials_required": [
+                "Polypropylene bags",
+                "Local soil or readily available earthen materials",
+                "Tampers/compactors",
+                "Barbed wire (for stability between layers)"
+            ],
+            "preparation_steps": [
+                "Identify suitable local soil or earthen materials",
+                "Prepare and level the building site",
+                "Gather polypropylene bags and necessary tools"
+            ],
+            "execution_steps": [
+                "Fill polypropylene bags with local soil/earthen materials",
+                "Compact the filled bags thoroughly",
+                "Stack the compacted bags in courses to form walls",
+                "Lay barbed wire between courses for tensile strength and friction",
+                "Continue stacking and compacting to desired wall height",
+                "Apply plaster or finish coats (optional, for protection and aesthetics)"
+            ],
+            "tips_for_success": "Utilize readily available local materials to minimize costs and environmental impact. Ensure thorough compaction of each bag and layer for maximum structural integrity. Provide practical, hands-on training to local communities for sustainable adoption."
+        },
+        "impact": {
+            "problem_solved": "Lack of resilient, affordable, and rapidly deployable educational infrastructure, particularly in remote or disaster-affected areas. Dependence on costly and environmentally intensive conventional construction methods.",
+            "evidence_of_success": "Construction of a classroom in Palchok, Nepal, in just six days post-2015 earthquake. Local builders were trained and independently completed additional classrooms. Successful application in Uganda for school construction.",
+            "beneficiaries_reach": "Students and educators gaining access to improved learning environments; local communities acquiring sustainable construction skills; communities in disaster-prone regions benefiting from resilient infrastructure.",
+            "scale": "medium",
+            "impact_score": 8
+        },
+        "replicability": {
+            "cost_level": "low",
+            "difficulty": "medium"
+        },
+        "origin": {
+            "knowledge_source": [
+                "adapted_from_existing"
+            ]
+        },
+        "risk_assessment": {
+            "risk_score": 7,
+            "risk_type": [
+                "physical"
+            ],
+            "safety_level": "medium",
+            "needs_intervention": true,
+            "explanation": "The primary risk lies in the physical safety of the structures, both during construction and as finished classrooms. While Earthbag building is designed for resilience and uses local materials, improper execution, lack of consistent quality control, or insufficient engineering oversight could compromise structural integrity, especially in earthquake-prone regions. Ensuring comprehensive training for local builders, adherence to strict safety protocols on construction sites, and incorporating accessible design features into the final buildings are critical interventions to mitigate these risks and ensure the long-term safety of occupants."
+        },
+        "priority_score": 58,
+        "hidden_gem": false,
+        "critical_flag": false
     }
 ]
